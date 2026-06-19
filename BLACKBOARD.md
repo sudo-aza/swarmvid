@@ -65,15 +65,10 @@ Build an automated video production pipeline where multiple AI agents collaborat
 | ~~16~~ | ~~Restore Communication Log (again): Communication Log already present in current BLACKBOARD.md. No action needed.~~ | Programmer | **done** | 2026-06-20 |
 | ~~17~~ | ~~Remove dead code from pipeline.py: Removed unused `run_cmd()` function and `import shutil`. Verified via ast.parse + pipeline parse step (28 scenes/218 segs).~~ | Programmer | **done** | 2026-06-20 |
 | ~~18~~ | ~~Remove `__pycache__` from git and add `.gitignore`: Untracked `scripts/__pycache__/pipeline.cpython-312.pyc`, created `.gitignore` (Python bytecode, output/, media files, OS/IDE files).~~ | Programmer | **done** | 2026-06-20 |
-| ~~19~~ | ~~(Merged into #20)~~ | Programmer | **done** | 2026-06-20 |
-| 20 | **Rewrite render_scene.py — full visual overhaul**: Replace the entire renderer with a professional documentary-quality motion graphics engine. Includes: (a) Cinematic title cards — no "Szene N" labels, large centered title with fade-in/out, subtitle, accent line, ZDF/ARD style. (b) Proper typography — centered text block, consistent margins, word wrap respecting German compounds, dark panel behind text, fade-in per segment. (c) Lower-third fact banners — slide-in for dates/names, accent border, auto-extracted from narration. (d) Per-segment cross-dissolve transitions (0.5s fade between text). (e) Historical timeline bar at bottom — 28 scene nodes, era labels, current scene highlighted. (f) Source citation watermark — persistent bottom-right, semi-transparent. (g) Performance: cache gradient, pre-compute particles, target <0.1s/frame. Does NOT include AI-generated illustrations or maps (separate task if needed). | Programmer | **pending** | 2026-06-20 |
-| ~~21~~ | ~~(Merged into #20)~~ | Programmer | **done** | 2026-06-20 |
-| ~~22~~ | ~~(Merged into #20)~~ | Programmer | **done** | 2026-06-20 |
-| ~~23~~ | ~~(Removed — no AI-generated images in video per zoe)~~ | Programmer | **done** | 2026-06-20 |
-| ~~24~~ | ~~(Merged into #20)~~ | Programmer | **done** | 2026-06-20 |
-| ~~25~~ | ~~(Merged into #20)~~ | Programmer | **done** | 2026-06-20 |
-| ~~26~~ | ~~(Merged into #20)~~ | Programmer | **done** | 2026-06-20 |
-| ~~27~~ | ~~(Merged into #20)~~ | Programmer | **done** | 2026-06-20 |
+| ~~19~~ | ~~(Merged)~~ | Programmer | **done** | 2026-06-20 |
+| 20 | **Rewrite render_scene.py — core renderer**: Replace entire renderer. Cinematic title cards (no "Szene N", large centered title, subtitle, accent line, ZDF-style fade-in/out). Proper narration text rendering (centered block, consistent margins, German-aware word wrap, dark panel behind text, fade-in per segment). Per-segment cross-dissolve transitions (0.5s fade). Floating particles. Keep same CLI interface and scene JSON format. | Programmer | **pending** | 2026-06-20 |
+| 21 | **Add UI overlays to render_scene.py**: Historical timeline bar (bottom, 28 scene nodes, era labels, current highlighted). Lower-third fact banners (slide-in for dates/names, accent border, `facts` array in scene JSON). Source citation watermark (persistent bottom-right, semi-transparent). | Programmer | **pending** | 2026-06-20 |
+| 22 | **Performance optimization of render_scene.py**: Cache gradient background per scene, pre-compute all particle positions, pre-wrap text lines. Target <0.1s/frame (currently ~0.5s). 60min at 24fps = 86k frames, must finish in <2.5 hours. | Programmer | **pending** | 2026-06-20 |
 
 ---
 
@@ -102,3 +97,4 @@ Build an automated video production pipeline where multiple AI agents collaborat
 | 2026-06-20 06:00 | Programmer | No Programmer tasks pending. Self-check: all 4 scripts parse cleanly, repo clean. Narration removed (pending Writer rewrite with sources). Standing down. |
 | 2026-06-20 06:08 | Programmer | Created tasks #19-#27: renderer overhaul (title cards, timeline, map, lower-thirds, illustrations, typography, transitions, source watermark, performance). Prompted by review of test render output. |
 | 2026-06-20 06:16 | Programmer | Consolidated #19-#27 into single Task #20 (full visual overhaul). Removed #23 (no AI images per zoe). |
+| 2026-06-20 06:19 | Programmer | Split into 3 tasks: #20 (core renderer rewrite), #21 (UI overlays: timeline, lower-thirds, watermark), #22 (performance optimization). |
