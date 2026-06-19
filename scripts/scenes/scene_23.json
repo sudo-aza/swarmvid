@@ -1,0 +1,42 @@
+{
+  "scene_num": 23,
+  "title": "Trümmerfrauen",
+  "subtitle": "und der Neuanfang",
+  "era": "1945–1950",
+  "segments": [
+    {
+      "text": "Nach dem Ende des Zweiten Weltkriegs präsentierte sich Hannover als ein Feld der Trümmer. Die britische Militärregierung übernahm die Verwaltung und richtete ihr Hauptquartier für die britische Besatzungszone in Hannover ein. Die Stadt wurde zum Verwaltungszentrum des neu entstehenden Landes Niedersachsen.",
+      "duration_s": 17.0
+    },
+    {
+      "text": "Die Trümmerfrauen wurden zum Symbol des Wiederaufbaus. Frauen jeder Altersgruppe räumten mit bloßen Händen und einfachen Werkzeugen die Straßen und Häuser frei. Sie sortierten verwertbares Material von Schutt. Ihre Leistung war enorm und ist bis heute ein Mythos der Nachkriegszeit.",
+      "duration_s": 17.0
+    },
+    {
+      "text": "Nahrungsmittel waren knapp. Rationierung und Schwarzmarkt bestimmten den Alltag. Die Versorgungslage verbesserte sich nur langsam. Der Winter neunzehnhundertsechsundvierzig war besonders hart. Kälte und Hunger suchten die Bevölkerung heim.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Vertriebene und Flüchtlinge aus den ehemaligen deutschen Ostgebieten strömten nach Niedersachsen. Die Bevölkerung Hannovers explodierte. Neue Wohnquartiere mussten improvisiert werden. Die Integration der Neubürger war eine der größten Herausforderungen der Nachkriegszeit.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Im Jahr neunzehnhundertsechsundvierzig wurde das Land Niedersachsen gegründet. Hannover wurde seine Landeshauptstadt. Hinrich Wilhelm Kopf, der erste Ministerpräsident, leitete den demokratischen Neuaufbau ein. Die Stadt hatte eine neue politische Rolle gefunden.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Die Währungsreform von neunzehnhundertachtundvierzig läutete das Wirtschaftswunder ein. Die D-Mark ersetzte die wertlose Reichsmark. Über Nacht verbesserte sich die wirtschaftliche Lage. Das Wirtschaftswunder hatte begonnen, und Hannover sollte davon maßgeblich profitieren.",
+      "duration_s": 16.0
+    }
+  ],
+  "sources": [
+    "Höfling, Die Trümmerfrauen (2010)",
+    "Landeszentrale für politische Bildung Niedersachsen"
+  ],
+  "gradient": [
+    "#2a1a0a",
+    "#4a3a2a",
+    "#6a5a4a"
+  ],
+  "accent": "#d4a574"
+}

@@ -1,0 +1,42 @@
+{
+  "scene_num": 9,
+  "title": "König Georg I.",
+  "subtitle": "Von Hannover nach London",
+  "era": "1714–1727",
+  "segments": [
+    {
+      "text": "Der Act of Settlement von neunzehnhunderteins legte die rechtliche Grundlage für eine der bemerkenswertesten dynastischen Verbindungen der europäischen Geschichte. Nach dem Tod Königin Annas von Großbritannien ging die Krone an den hannoverschen Kurfürsten Georg Ludwig.",
+      "duration_s": 17.0
+    },
+    {
+      "text": "Georg Ludwig reiste nach London und wurde als Georg der Erste König von Großbritannien und Irland. Die Personalunion zwischen Hannover und Großbritannien war geboren. Ein deutscher Fürst saß auf dem englischen Thron. Diese Konstellation sollte einhundertdreiundzwanzig Jahre währen.",
+      "duration_s": 17.0
+    },
+    {
+      "text": "Die Personalunion funktionierte durch Doppelregierung. Georg regierte Großbritannien persönlich, während er hannoversche Minister mit der Verwaltung des Kurfürstentums betraute. Der König besuchte Hannover nur selten, doch die Verbindung blieb eng.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Für Hannover bedeutete die Personalunion britische Investitionen und architektonische Förderung. Das Leineschloss wurde erweitert. Englische Architektur beeinflusste das Stadtbild. Die Regierung in London nahm hannoversche Interessen in die europäische Politik auf.",
+      "duration_s": 15.0
+    },
+    {
+      "text": "Die Guelph succession war gesichert. Georgs Sohn sollte ihm auf beiden Thronen folgen. Die dynastische Verbindung veränderte das Selbstverständnis Hannovers grundlegend. Die Stadt war nicht mehr nur Residenz eines deutschen Kurfürsten, sondern Hauptstadt eines Königreichs in Personalunion.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Kultureller Austausch zwischen den Höfen bereicherte beide Seiten. Englische Literatur und Philosophie erreichten Hannover, während deutsche Kultur nach England strömte. Die Personalunion schuf eine einzigartige britisch-deutsche Verbindung, die bis heute spürbar ist.",
+      "duration_s": 15.0
+    }
+  ],
+  "sources": [
+    "Hatton, George I (1978)",
+    "Redwood, Die hannoversche Dynastie (2015)"
+  ],
+  "gradient": [
+    "#132a13",
+    "#1e4d2b",
+    "#2d6a4f"
+  ],
+  "accent": "#95d5b2"
+}

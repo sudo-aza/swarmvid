@@ -1,0 +1,42 @@
+{
+  "scene_num": 4,
+  "title": "Die Welfen kommen",
+  "subtitle": "Residenzstadt wird",
+  "era": "1400–1500",
+  "segments": [
+    {
+      "text": "Das Haus Welf, eine der ältesten und mächtigsten Dynastien Europas, sollte die Geschicke Hannovers für Jahrhunderte bestimmen. Die Welfen stammten aus dem schwäbischen Raum und hatten sich im Laufe des Mittelalters zu Herzögen von Braunschweig-Lüneburg entwickelt.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Herzog Otto der Quade, so genannt wegen seiner wechselnden Bündnisse, wählte Hannover als Residenz. Diese Entscheidung veränderte die Stadt grundlegend. Als Residenzstadt zog Hannover Adelige, Beamte und Künstler an. Die Bevölkerung wuchs, und der Wohlstand nahm zu.",
+      "duration_s": 15.0
+    },
+    {
+      "text": "Das Leineschloss, die herzogliche Residenz, entstand am Ufer der Leine. Es sollte für Jahrhunderte das Machtzentrum der Welfen in Hannover bleiben. Von hier aus verwalteten die Herzöge ihre Ländereien, hielten Hof und empfingen ausländische Gesandten.",
+      "duration_s": 15.0
+    },
+    {
+      "text": "Die Hofkultur veränderte das städtische Leben. Die herzogliche Verwaltung brauchte Juristen, Schreiber und Kleriker. Eine gebildete Elite entstand. Handwerker und Kaufleute profitierten von der Nachfrage des Hofes nach Luxusgütern und Dienstleistungen.",
+      "duration_s": 15.0
+    },
+    {
+      "text": "Das Verhältnis zwischen den Welfenherzögen und der städtischen Bürgerschaft war nicht immer spannungsfrei. Der Rat der Stadt verteidigte städtische Privilegen gegen herzogliche Eingriffe. Steuerfragen, Gerichtsbarkeit und Marktregulierungen waren ständige Konfliktpunkte.",
+      "duration_s": 15.0
+    },
+    {
+      "text": "Hannover wuchs in politischer Bedeutung. Die Welfen stellten den dynastischen Rahmen zur Verfügung, innerhalb dessen die Stadt sich entwickeln konnte. Der Grundstein für Hannovers Aufstieg zu einer der bedeutendsten Städte Norddeutschlands war gelegt.",
+      "duration_s": 14.0
+    }
+  ],
+  "sources": [
+    "Dunken, Die Welfen und ihr Braunschweiger Land (2014)",
+    "Kleine Niedersächsische Literaturgeschichte"
+  ],
+  "gradient": [
+    "#1b1a17",
+    "#3a3932",
+    "#5d5c55"
+  ],
+  "accent": "#d4af37"
+}

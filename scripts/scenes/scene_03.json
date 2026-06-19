@@ -1,0 +1,42 @@
+{
+  "scene_num": 3,
+  "title": "Stadtmauern, Kirchen",
+  "subtitle": "und das gotische Hannover",
+  "era": "1300–1400",
+  "segments": [
+    {
+      "text": "Im vierzehnten Jahrhundert erlebte Hannover einen bedeutenden Ausbau. Die Stadtmauer wurde errichtet und mit Toren und Türmen versehen. Das Leintor, das Aegidientor und das Steintor bildeten die Hauptzugänge zur Stadt. Innerhalb der Mauern verdichtete sich das städtische Leben.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Der Bau großer Kirchen prägte das Stadtbild. Die Marktkirche am alten Marktplatz wurde zur wichtigsten Pfarrkirche. Die Aegidienkirche, die Kreuzkirche und weitere Gotteshäuser entstanden in gotischem Stil. Diese Kirchen waren nicht nur Orte des Glaubens, sondern auch soziale Zentren.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Hannover schloss sich der Hanse an, wenn auch als sekundäre Mitgliedsstadt. Der Handel über die Leine und die Landwege florierte. Hanseatische Kaufleute brachten Waren aus den Baltischen und Nordseegebieten in die Stadt. Tuche, Salz, Holz und Fische wurden gehandelt.",
+      "duration_s": 15.0
+    },
+    {
+      "text": "Das Rathaus wurde gebaut und diente als Sitz der städtischen Verwaltung. Hier tagte der Rat, wurden Gesetze erlassen und Streitigkeiten geschlichtet. Die Stadtverwaltung wurde immer professioneller. Stadtschreiber und Kämmerer sorgten für eine geordnete Führung.",
+      "duration_s": 14.0
+    },
+    {
+      "text": "Die soziale Struktur der Stadt spiegelte sich in den Vierteln wider. Patrizier wohnten nahe dem Markt, Handwerker in den Gassen der Altstadt. Die große Pestilenz, der Schwarze Tod, erreichte Hannover und raffte einen großen Teil der Bevölkerung dahin. Die Folgen waren verheerend.",
+      "duration_s": 15.0
+    },
+    {
+      "text": "Nach der Pest erholte sich die Stadt langsam. Die überlebenden Bewohner übernahmen Häuser und Werkstätten der Verstorbenen. Neue städtische Aufzeichnungen begannen. Die Stadt trat in eine Phase des langsamen, aber stetigen Wachstums ein, die bis in die frühe Neuzeit anhielt.",
+      "duration_s": 16.0
+    }
+  ],
+  "sources": [
+    "Grote, Hannoversche Geschichten (1900)",
+    "Stadtarchiv Hannover, Bestand Kirchenbauakten"
+  ],
+  "gradient": [
+    "#2d132c",
+    "#801336",
+    "#c72c41"
+  ],
+  "accent": "#ee4540"
+}

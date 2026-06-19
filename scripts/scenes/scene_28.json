@@ -1,0 +1,42 @@
+{
+  "scene_num": 28,
+  "title": "Epilog",
+  "subtitle": "Eine Stadt im Wandel",
+  "era": "Gegenwart",
+  "segments": [
+    {
+      "text": "Die Geschichte Hannovers spannt sich über mehr als eintausend Jahre. Von einer germanischen Siedlung an der Leine zur modernen Großstadt, von einer mittelalterlichen Handelsstadt zur Hauptstadt eines Königreichs, von einer zerstörten Ruine zum Symbol des Wirtschaftswunders.",
+      "duration_s": 17.0
+    },
+    {
+      "text": "Wiederstandskraft ist das Leitmotiv dieser Stadt. Kriege, Zerstörung und Besatzung haben Hannover wieder und wieder getroffen. Jedes Mal hat die Stadt sich erholt und neu erfunden. Die Trümmerfrauen des Wiederaufbaus stehen für diesen unbeugsamen Geist.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Handel und Innovation haben Hannover seit jeher geprägt. Von der mittelalterlichen Gilde zur globalen Messe, von der Handwerksstatt zum Hightech-Unternehmen. Die Stadt hat immer an der Spitze wirtschaftlicher und technologischer Entwicklung gestanden.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Kulturelles Streben und der Wunsch nach Bedeutung zeichnen Hannover aus. Die Welfen-Dynastie, die Universität Göttingen, die Herrenhäuser Gärten, die EXPO — die Stadt hat immer nach kultureller und intellektueller Exzellenz gestrebt.",
+      "duration_s": 15.0
+    },
+    {
+      "text": "Hannovers einzigartige Position ist das Ergebnis dieser tausendjährigen Entwicklung. Hauptstadt von Niedersachsen, internationale Messestadt, Universitätsstadt, Industriezentrum und grüne Stadt. Der Eilenriede, einer der größten Stadtwälder Europas, zeugt von der Verbundenheit mit der Natur.",
+      "duration_s": 17.0
+    },
+    {
+      "text": "Dies ist die Geschichte einer Stadt, die sich nie aufgehört hat zu wandeln. Und doch bleibt sie erkennbar. Die Leine fließt noch immer durch die Stadtmitte. Die Marktkirche thront über dem Platz, wo vor achthundert Jahren die ersten Händler ihre Waren anboten. Hannover — eine Stadt im Wandel, doch stets sich selbst treu.",
+      "duration_s": 18.0
+    }
+  ],
+  "sources": [
+    "Hans-Claus Riepe, Kleine Geschichte Hannovers (2013)",
+    "Stadt Hannover, Offizielle Chronik"
+  ],
+  "gradient": [
+    "#1a1a2e",
+    "#16213e",
+    "#0f3460"
+  ],
+  "accent": "#e94560"
+}

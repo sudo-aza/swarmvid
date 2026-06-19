@@ -1,0 +1,42 @@
+{
+  "scene_num": 16,
+  "title": "Preußische Annexion",
+  "subtitle": "Georg V und das Ende des Königreichs",
+  "era": "1851–1866",
+  "segments": [
+    {
+      "text": "Georg der Fünfte, der blinde König, regierte Hannover von achtzehnhunderteinundfünfzig bis sechzehnhundertsechsundsechzig. Trotz seiner Blindheit war er ein energischer Herrscher, der die Unabhängigkeit seines Königreichs zu verteidigen suchte. Sein Charakter wurde als stur und eigensinnig beschrieben.",
+      "duration_s": 17.0
+    },
+    {
+      "text": "Im Konflikt zwischen Preußen und Österreich um die Vorherrschaft in Deutschland versuchte Hannover, neutral zu bleiben. Doch in der Entscheidungsschlacht des Deutschen Bundeskrieges von sechzehnhundertsechsundsechzig schlug sich Hannover auf die Seite Österreichs.",
+      "duration_s": 17.0
+    },
+    {
+      "text": "In der Schlacht bei Langensalza erzielte die hannoversche Armee einen taktischen Sieg über die preußischen Truppen. Doch dieser Erfolg war nur von kurzer Dauer. Preußische Verstärkungen näherten sich, und Hannover musste kapitulieren. Die preußische Besatzung folgte.",
+      "duration_s": 17.0
+    },
+    {
+      "text": "Preußen annektierte Hannover. Das Königreich hörte auf zu existieren. Die Welfen-Dynastie ging ins Exil. Der Welfenfonds, das beschlagnahmte Vermögen der königlichen Familie, wurde von Preußen verwaltet. Eine Epoche war unwiderruflich zu Ende.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Die öffentliche Reaktion in Hannover war gespalten. Viele beweinten den Verlust der Unabhängigkeit. Monarchistische Widerstandsbewegungen entstanden, und die Welfenlegende, der Glaube an die Rückkehr des Königs, lebte in Teilen der Bevölkerung weiter.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Die Annexion war ein Wendepunkt in der Geschichte Hannovers. Die Stadt verlor ihre Funktion als Hauptstadt und Residenz. Preußische Beamte übernahmen die Verwaltung. Hannover wurde zur Hauptstadt der preußischen Provinz Hannover. Die Identität der Stadt musste sich neu definieren.",
+      "duration_s": 17.0
+    }
+  ],
+  "sources": [
+    "Hirschfeld, Der preußische Annexionismus (2011)",
+    "Mommsen, Das Ringen um den Nationalstaat (1993)"
+  ],
+  "gradient": [
+    "#0d1b2a",
+    "#1b2838",
+    "#2a475e"
+  ],
+  "accent": "#c7d5e0"
+}

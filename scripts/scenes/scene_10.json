@@ -1,0 +1,42 @@
+{
+  "scene_num": 10,
+  "title": "Hannover als Residenz",
+  "subtitle": "Georg II und die europäische Diplomatie",
+  "era": "1727–1760",
+  "segments": [
+    {
+      "text": "Georg der Zweite besuchte Hannover häufiger als sein Vater. Unter seiner Herrschaft blühte die Residenzstadt auf. Das Leineschloss war ein lebendiges Zentrum höfischen Lebens, von dem aus die Geschäfte des Kurfürstentums gelenkt wurden.",
+      "duration_s": 15.0
+    },
+    {
+      "text": "Im Jahr siebzehnhundertsiebenunddreißig wurde die Universität Göttingen gegründet. Dies war ein Meilenstein für die Aufklärung in Deutschland. Die Universität sollte bald als eine der führenden Bildungsinstitutionen Europas gelten und berühmte Gelehrte anziehen.",
+      "duration_s": 17.0
+    },
+    {
+      "text": "Am Leineschloss florieren Oper, Theater und Ballett. Der hannoversche Hof war ein Zentrum der barocken Musikkultur. Komponisten und Musiker aus ganz Europa gastierten in Hannover. Die höfische Gesellschaft pflegte einen luxuriösen Lebensstil.",
+      "duration_s": 15.0
+    },
+    {
+      "text": "Architektonisch wandelte sich das Stadtbild. Barocke Stadthäuser entstanden entlang der Hauptstraßen. Kirchen wurden im barocken Stil umgebaut oder erneuert. Die Stadt nahm das Gepräge einer europäischen Residenz an, vergleichbar mit Berlin oder Dresden.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Hannover spielte eine aktive Rolle in der europäischen Diplomatie. Das Kurfürstentum vertrat seine Interessen im Reichstag und in internationalen Verhandlungen. Die Verbundenheit mit Großbritannien verlieh Hannover ein ungewöhnliches diplomatisches Gewicht.",
+      "duration_s": 15.0
+    },
+    {
+      "text": "Der Siebenjährige Krieg brachte schwere Zeiten. Frankreich besetzte Hannover im Jahr sechzehnhundertsiebenundfünfzig. Der Herzog von Cumberland wurde bei Hastenbeck geschlagen. Die Stadt litt unter der Besatzung, doch widerstand sie tapfer. Der Krieg endete mit der Wiederherstellung der welfischen Herrschaft.",
+      "duration_s": 17.0
+    }
+  ],
+  "sources": [
+    "Aretin, Das Alte Reich (1997)",
+    "Murray, Die Universität Göttingen (2005)"
+  ],
+  "gradient": [
+    "#2b0a0a",
+    "#5c1a1a",
+    "#8b3a3a"
+  ],
+  "accent": "#ff6b6b"
+}

@@ -1,0 +1,46 @@
+{
+  "scene_num": 6,
+  "title": "Der Dreißigjährige Krieg",
+  "subtitle": "Besatzung und Leid",
+  "era": "1618–1648",
+  "segments": [
+    {
+      "text": "Der Dreißigjährige Krieg, eines der verheerendsten Konflikte der europäischen Geschichte, erreichte Hannover früh. Die strategisch wichtige Stadt an der Leine war für alle kriegführenden Parteien von Interesse. Keine der Fraktionen konnte die Neutralität der Stadt garantieren.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Kaiserliche Truppen unter dem Feldherrn Tilly besetzten die Stadt. Die Besatzung brachte Einquartierungen, Kontributionen und Plünderungen mit sich. Die Bürger Hannovers litten unter der Last, fremde Truppen versorgen zu müssen. Die Stadtkassen wurden geleert.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Dänische und schwedische Truppen folgten den kaiserlichen Besatzern. Jeder Machtwechsel bedeutete neue Tribute und neue Drangsalierungen für die Zivilbevölkerung. Die Festungsanlagen der Stadt wurden ausgebaut, um den Belagerungen standzuhalten.",
+      "duration_s": 15.0
+    },
+    {
+      "text": "Die Pest begleitete den Krieg. Hungersnöte und Seuchen dezimierten die Bevölkerung. Von etwa zehntausend Einwohnern vor dem Krieg schrumpfte die Zahl auf unter sechstausend. Ganze Straßenzüge standen leer. Die demographische und wirtschaftliche Erholung sollte Jahrzehnte dauern.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Hannover diente als Versorgungslager für durchziehende Heere. Magazine und Lagerhäuser füllten sich und leerten sich mit den wechselnden Fronten. Die städtische Wirtschaft lag am Boden. Handel und Handwerk kamen nahezu zum Erliegen.",
+      "duration_s": 15.0
+    },
+    {
+      "text": "Der Westfälische Frieden von achtundvierzig beendete das Blutvergießen. Hannover gehörte nicht zu den Verhandlungsorten, profitierte aber vom allgemeinen Friedensschluss. Der Wiederaufbau begann zögerlich. Die Stadt musste sich von ihren Wunden erholen und an eine neue politische Realität anpassen.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Die Erinnerung an den Dreißigjährigen Krieg prägte die städtische Kultur für Generationen. Das Bewusstsein der Verwundbarkeit trieb die Stadtväter zu neuen Befestigungsanlagen und diplomatischen Bündnissen. Hannover lernte, dass Sicherheit keine Selbstverständlichkeit war.",
+      "duration_s": 15.0
+    }
+  ],
+  "sources": [
+    "Parker, Der Dreißigjährige Krieg (2018)",
+    "Stadtarchiv Hannover, Kriegsakten 1618-1648"
+  ],
+  "gradient": [
+    "#0b0c10",
+    "#1f2833",
+    "#45a29e"
+  ],
+  "accent": "#66fcf1"
+}

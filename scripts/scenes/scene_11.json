@@ -1,0 +1,42 @@
+{
+  "scene_num": 11,
+  "title": "Die Universität Göttingen",
+  "subtitle": "Zentrum der Aufklärung",
+  "era": "1737–1800",
+  "segments": [
+    {
+      "text": "Die Georgia Augusta, wie die Universität Göttingen offiziell hieß, war eine Gründung von europäischer Bedeutung. Herzog Georg August von Braunschweig-Lüneburg stiftete sie als Universität nach dem Vorbild von Halle und Oxford. Freiheit von Forschung und Lehre waren ihre Grundsätze.",
+      "duration_s": 17.0
+    },
+    {
+      "text": "Berühmte Gelehrte lehrten und forschten in Göttingen. Carl Friedrich Gauß, der Fürst der Mathematiker, wirkte hier. Albrecht von Haller revolutionierte die Medizin. Georg Christoph Lichtenberg hinterließ scharfsinnige Aphorismen und experimentelle Forschungen.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Der Göttinger Hain, eine Gruppe junger Dichter, machte die Universität zu einem Zentrum der Empfindsamkeit und des Sturm und Drang. Johann Heinrich Voß und Ludwig Hölty gehörten zu diesem Kreis. Ihre Gedichte fanden weite Verbreitung im deutschsprachigen Raum.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Die Königliche Gesellschaft der Wissenschaften zu Göttingen wurde als eine der ersten Akademien ihrer Art gegründet. Sie förderte die Erforschung der Natur, der Geschichte und der Sprachen. Wissenschaftliche Entdeckungen aus Göttingen fanden internationale Anerkennung.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Die Göttinger Bibliothek war eine der größten und modernsten Europas. Sie war offen für Gelehrte aller Nationen. Ihr Bestand wuchs stetig und umfasste Werke aus allen Wissensgebieten. Die Bibliothek war das intellektuelle Herz der Universität.",
+      "duration_s": 15.0
+    },
+    {
+      "text": "Die Verbindung zwischen der Universität Göttingen und Hannover war eng. Gelehrte reisten zwischen den beiden Städten. Die aufklärerischen Ideen der Universität beeinflussten das städtische Leben in Hannover. Die Residenzstadt profitierte vom intellektuellen Glanz ihrer Universität.",
+      "duration_s": 16.0
+    }
+  ],
+  "sources": [
+    "Hammerstein, Aufklärung und Universität (2012)",
+    "Fuchs, Die Göttinger Akademie der Wissenschaften (2006)"
+  ],
+  "gradient": [
+    "#132a13",
+    "#1e4d2b",
+    "#2d6a4f"
+  ],
+  "accent": "#95d5b2"
+}

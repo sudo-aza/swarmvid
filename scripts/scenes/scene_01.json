@@ -1,0 +1,42 @@
+{
+  "scene_num": 1,
+  "title": "Vor der Stadt",
+  "subtitle": "Siedlung an der Leine",
+  "era": "vor 1100",
+  "segments": [
+    {
+      "text": "Die Geschichte Hannovers beginnt lange vor der ersten Stadtmauer, lange vor dem ersten Marktplatz. Um die Leine herum, einem der vielen Flüsse, die durch die norddeutsche Tiefebene fließen, fanden sich schon in vorgeschichtlicher Zeit Menschen ein.",
+      "duration_s": 15.0
+    },
+    {
+      "text": "Die geografische Lage war entscheidend. Die Leine, ein Nebenfluss der Aller, bot eine natürliche Furtstelle und damit einen strategischen Kreuzungspunkt für Handel und Reiseverkehr. Die fruchtbaren Schwemmebenen des Flusses versorgten die Siedler mit Ackerland und Weide.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Archäologische Funde belegen eine Besiedlung der Region seit der Steinzeit. In der Bronzezeit und Eisenzeit ließen sich germanische Stämme in der Umgebung nieder. Die Cherusker, berühmt durch den Cheruskerfürsten Arminius, bewohnten Teile Niedersachsens.",
+      "duration_s": 15.0
+    },
+    {
+      "text": "Während der römischen Kaiserzeit lag die Region jenseits des Limes, der festen Grenze des Römischen Reiches. Die Römer drachten bis an die Weser und Elbe vor, doch blieb das Gebiet der Leine frei von dauerhafter römischer Besatzung. Dieser Umstand prägte die kulturelle Eigenständigkeit.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Im frühen Mittelalter siedelten sich die Sachsen im Bereich der mittleren und unteren Leine an. Sie betrieben Ackerbau und Viehzucht und handelten mit benachbarten Stämmen. Die christianisierung erreichte die Region im achten und neunten Jahrhundert durch karolingische Missionare.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Die Landschaft um die heutige Stadt war reich an Wäldern, Mooren und Flussauen. Die Ihme, ein kleiner Nebenfluss, mündete nahe der späteren Siedlung in die Leine. Der Eilenriede, einer der größten Stadtwälder Europas, bot Holz, Wild und Schutz. Diese natürlichen Ressourcen machten den Ort ideal für eine dauerhafte Besiedlung.",
+      "duration_s": 17.0
+    }
+  ],
+  "sources": [
+    "Hannover Chronik, Stadtarchiv Hannover",
+    "Widemann, Geschichte der Stadt Hannover (1880)"
+  ],
+  "gradient": [
+    "#0d1b2a",
+    "#1b263b",
+    "#415a77"
+  ],
+  "accent": "#778da9"
+}

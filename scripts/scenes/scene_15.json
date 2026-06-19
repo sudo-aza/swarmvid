@@ -1,0 +1,42 @@
+{
+  "scene_num": 15,
+  "title": "Ernst August",
+  "subtitle": "Reaktion und Revolution",
+  "era": "1837–1851",
+  "segments": [
+    {
+      "text": "Ernst August bestieg den hannoverschen Thron als einer der umstrittensten Herrscher der neueren Geschichte. Seine erste Amtshandlung war die Aufhebung der liberalen Verfassung von tausendachthundertneunzehn. Dieser Schritt löste einen Sturm der Entrüstung aus.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Die Göttinger Sieben, sieben Professoren der Universität Göttingen, protestierten öffentlich gegen die Aufhebung der Verfassung. Unter ihnen waren die Brüder Grimm, die berühmten Märchensammler und Sprachforscher. Ernst August entließ sie alle aus ihren Ämtern.",
+      "duration_s": 17.0
+    },
+    {
+      "text": "Die Entlassung der Göttinger Sieben wurde zu einem internationalen Skandal. Zeitungen in ganz Europa berichteten über den Vorfall. Die Göttinger Sieben wurden zu Symbolen des akademischen Widerstands. Drei der Professoren verließen das Land und fanden Zuflucht im Ausland.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Die Revolution von achtzehnhundertachtundvierzig erreichte auch Hannover. Barrikaden wurden errichtet, Demonstrationen forderten Reformen. Die Bürger forderten die Wiedereinführung der Verfassung und die Einberufung eines Parlaments. Ernst August sah sich gezwungen, Zugeständnisse zu machen.",
+      "duration_s": 17.0
+    },
+    {
+      "text": "Eine neue Verfassung wurde ausgearbeitet. Sie war ein Kompromiss zwischen den liberalen Forderungen der Bürger und den konservativen Vorstellungen des Königs. Die politischen Lager, Liberale, Konservative und Demokraten, rangen um die Zukunft des Landes.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Im breiteren europäischen Kontext war die Revolution von vierundachtzig ein gescheitertes Aufbegehren gegen die etablierte Ordnung. In Hannover kehrte nach einer kurzen Phase der Liberalisierung die konservative Restauration zurück. Die Grundrechte blieben auf dem Papier, wurden aber in der Praxis eingeschränkt.",
+      "duration_s": 17.0
+    }
+  ],
+  "sources": [
+    "Schröder, Die Göttinger Sieben (2012)",
+    "Siemann, Die deutsche Revolution von 1848/49 (2018)"
+  ],
+  "gradient": [
+    "#2b0a0a",
+    "#5c1a1a",
+    "#8b3a3a"
+  ],
+  "accent": "#ff6b6b"
+}

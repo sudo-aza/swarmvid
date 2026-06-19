@@ -1,0 +1,42 @@
+{
+  "scene_num": 20,
+  "title": "Die Weimarer Republik",
+  "subtitle": "Hannover zwischen Chaos und Kreativität",
+  "era": "1918–1933",
+  "segments": [
+    {
+      "text": "Die Weimarer Republik begann in Hannover mit politischem Chaos. Spartakusaufstände und rechtsextreme Freikorps kämpften um die Macht in der Straßenpolitik. Die Stadt war ein Schlachtfeld konkurrierender politischer Ideologien. Die junge Demokratie stand von Anfang an unter Druck.",
+      "duration_s": 17.0
+    },
+    {
+      "text": "Hannover war eine Hochburg der SPD und der Arbeiterbewegung. Der Kapp-Putsch von neunzehnhundertzwanzig löste einen Generalstreik aus, an dem sich auch hannoversche Arbeiter massenhaft beteiligten. Die Stadt stand fest auf der Seite der Republik.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "In den goldenen zwanziger Jahren erlebte Hannover eine Blütezeit der Architektur. Moderne Siedlungen im Stil des Neuen Bauens entstanden. Der Stadtplaner Otto Haesler schuf in Alfeld, nahe Hannover, richtungsweisende Wohnbauten. Die Gartenstadtbewegung beeinflusste die Stadtplanung.",
+      "duration_s": 17.0
+    },
+    {
+      "text": "Das kulturelle Leben florierte. Kabarett, avantgardistische Kunst und moderne Architektur prägten die Stadtkultur. Hannover wurde zu einem Zentrum der klassischen Moderne. Museen und Galerien zeigten Werke der expressionistischen und konstruktivistischen Avantgarde.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Die Weltwirtschaftskrise traf Hannover hart. Arbeitslosigkeit grassierte, Armut verbreitete sich. Die politische Radikalisierung nahm zu. Extremistische Parteien, sowohl Kommunisten als auch Nationalsozialisten, gewannen an Anhängerschaft. Die Weimarer Koalition zerfiel.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Bei den Wahlen von neunzehnhundertzweiunddreißig erzielte die NSDAP erhebliche Gewinne auch in Hannover. Die Weimarer Republik befand sich im Endstadium. Die Demokratie war geschwächt, und dunkle Zeiten kündigten sich an.",
+      "duration_s": 15.0
+    }
+  ],
+  "sources": [
+    "Peukert, Die Weimarer Republik (1987)",
+    "Stadtarchiv Hannover, Weimarer Republik Bestand"
+  ],
+  "gradient": [
+    "#1a1a2e",
+    "#2d2d44",
+    "#4a4a6a"
+  ],
+  "accent": "#ffd700"
+}

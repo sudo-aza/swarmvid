@@ -1,0 +1,42 @@
+{
+  "scene_num": 21,
+  "title": "Nationalsozialismus",
+  "subtitle": "Die Machtergreifung in Hannover",
+  "era": "1933–1938",
+  "segments": [
+    {
+      "text": "Die Machtübernahme der Nationalsozialisten im Jahr neunzehnhundertdreiunddreißig veränderte Hannover grundlegend. Gleichschaltung wurde das Leitmotiv. Politische Parteien und Gewerkschaften wurden aufgelöst. Demokratische Institutionen wurden entmachtet. Die Stadt verlor ihre Freiheit.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Die jüdische Gemeinde Hannovers hatte eine lange und reiche Geschichte. Jahrhundertelang hatten jüdische Bürger zum wirtschaftlichen und kulturellen Leben der Stadt beigetragen. Unter den Nationalsozialisten begann ihre systematische Verfolgung. Boykotte, Gesetze und Enteignungen folgten einander.",
+      "duration_s": 17.0
+    },
+    {
+      "text": "Die Synagoge in der Calenberger Neustadt, einst das Zentrum des jüdischen Gemeindelebens, wurde während der Reichspogromnacht vom neunten zum zehnten November neunzehnhundertachtunddreißig zerstört. Jüdische Geschäfte wurden geplündert, Wohnungen verwüstet. Hannoverer Juden wurden verhaftet.",
+      "duration_s": 18.0
+    },
+    {
+      "text": "Die Gestapo richtete sich in Hannover ein. Ihr Hauptquartier wurde zum Ort des Terrors. Verhöre, Folter und Verschleppungen waren an der Tagesordnung. Opponenten des Regimes, Gewerkschafter, Sozialdemokraten und andere, wurden verfolgt und inhaftiert.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Große Bauvorhaben prägten die Stadt im nationalsozialistischen Stil. Der Maschsee, ein künstlicher See im Süden der Stadt, wurde zwischen neunzehnhundertdreiunddreißig und sechsunddreißig vom Reichsarbeitsdienst angelegt. Ein Stadion für die Olympia-Vorbereitungen wurde gebaut.",
+      "duration_s": 17.0
+    },
+    {
+      "text": "Widerstand gab es, aber er war isoliert und gefährlich. Einzelne Personen und kleine Gruppen leisteten stillen oder offenen Widerstand. Sie riskierten ihr Leben. Die Geschichte des Widerstands in Hannover ist ein Kapitel, das erst in jüngerer Zeit voll gewürdigt wurde.",
+      "duration_s": 16.0
+    }
+  ],
+  "sources": [
+    "Stadtarchiv Hannover, Dokumentationszentrum NS-Zwangsarbeit",
+    "Barkai, Das Judentum in Hannover (2015)"
+  ],
+  "gradient": [
+    "#1a0000",
+    "#330000",
+    "#660000"
+  ],
+  "accent": "#cc0000"
+}

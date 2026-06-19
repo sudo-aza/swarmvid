@@ -1,0 +1,38 @@
+{
+  "scene_num": 7,
+  "title": "Wiederaufbau",
+  "subtitle": "und der Weg zur Macht",
+  "era": "1648–1680",
+  "segments": [
+    {
+      "text": "Nach dem Westfälischen Frieden stand Hannover vor der gewaltigen Aufgabe des Wiederaufbaus. Zerstörte Häuser mussten erneuert, die Wirtschaft wieder belebt werden. Herzog Georg Wilhelm regierte das Fürstentum Calenberg mit Sitz in Hannover und trieb den Aufbau voran.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Herzog Ernst August übernahm die Regierung und brachte neue Ambitionen. Er ließ die Befestigungsanlagen nach neuesten militärischen Erkenntnissen umbauen, im Stil von Vauban. Hannover wurde zur modernen Festungsstadt. Die Bastionen und Gräben prägten das Stadtbild.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Die Wirtschaft erholte sich allmählich. Handelsgilden gewannen an Stärke. Die Textilproduktion, das Brauwesen und der Handel über die Leine bildeten das wirtschaftliche Rückgrat. DerFluss als Handelsader wurde instand gesetzt und ausgebaut.",
+      "duration_s": 15.0
+    },
+    {
+      "text": "Ernste wissenschaftliche und kulturelle Entwicklungen deuteten sich an. Die ersten Anfänge einer aufklärerischen Denkweise erreichten die Stadt. Die höfische Kultur begann sich zu entfalten. Hannover sollte bald eine Rolle in der europäischen Geistesgeschichte spielen.",
+      "duration_s": 15.0
+    },
+    {
+      "text": "Die Bevölkerung wuchs durch Zuwanderung aus den umliegenden Dörfern und kriegszerstörten Gebieten. Neue Handwerker und Kaufleute brachten frische Energie. Die Stadt nahm einen neuen, dynamischen Charakter an. Das Fundament für das barocke Hannover des folgenden Jahrhunderts war bereitet.",
+      "duration_s": 16.0
+    }
+  ],
+  "sources": [
+    "Dunken, Geschichte der Stadt Hannover (1992)",
+    "Stadtarchiv Hannover, Wiederaufbauakten"
+  ],
+  "gradient": [
+    "#1a1423",
+    "#3c2a4a",
+    "#6b4c7a"
+  ],
+  "accent": "#c9a0dc"
+}

@@ -1,0 +1,42 @@
+{
+  "scene_num": 17,
+  "title": "Preußische Provinz",
+  "subtitle": "Hannover im Kaiserreich",
+  "era": "1866–1890",
+  "segments": [
+    {
+      "text": "Als preußische Provinz musste sich Hannover neu erfinden. Die Integration in den preußischen Staat verlief nicht reibungslos. Viele Hannoveraner lehnten die preußische Herrschaft ab und betonten ihre welfische Identität. Der hannoversche Stolz ließ sich nicht durch einen Erlass tilgen.",
+      "duration_s": 17.0
+    },
+    {
+      "text": "Die wirtschaftliche Transformation war dramatisch. Die Eisenbahn machte Hannover zu einem der wichtigsten Verkehrsknotenpunkte Norddeutschlands. Das Hauptbahnhofgebäude, ein architektonisches Wahrzeichen, wurde zum Symbol des modernen Hannover.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Die Industrialisierung erfasste die Stadt mit voller Kraft. Im Jahr tausendachthunderteinundsiebzig wurde die Continental Gummiwerke gegründet, die später zu einem globalen Player in der Reifenindustrie werden sollte. Stahl, Maschinenbau und Textilien folgten als wichtige Industrien.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Die Bevölkerung explodierte. Aus einer Provinzstadt wurde eine große Industriestadt. Neue Quartiere entstanden, um die wachsende Zahl von Arbeitern und ihren Familien unterzubringen. Die städtische Infrastruktur, Wasser, Gas, Abwasser, wurde ausgebaut.",
+      "duration_s": 15.0
+    },
+    {
+      "text": "Die Herrenhäuser Allee, eine breite Prachtstraße, verband die Stadt mit den Schlossgärten. Parks und Grünanlagen wurden angelegt. Das Eilenriede, der riesige Stadtwald, blieb als Erholungsgebiet erhalten und wurde zum grünen Herz der Stadt.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Das kulturelle Leben blieb lebendig. Theater, Konzerte und Ausstellungen fanden statt. Die hannoversche Identität bewahrte sich trotz preußischer Herrschaft eine gewisse Eigenständigkeit. Die Erinnerung an die königliche Zeit war in Denkmälern und Traditionen gegenwärtig.",
+      "duration_s": 16.0
+    }
+  ],
+  "sources": [
+    "Hein, Die preußische Provinz Hannover (2016)",
+    "Continental AG, Firmenchronik"
+  ],
+  "gradient": [
+    "#1a0a00",
+    "#3d1f00",
+    "#6b3a00"
+  ],
+  "accent": "#e8a838"
+}

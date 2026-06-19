@@ -1,0 +1,42 @@
+{
+  "scene_num": 18,
+  "title": "Wilhelminisches Hannover",
+  "subtitle": "Industrie, Wissenschaft, Fortschritt",
+  "era": "1890–1914",
+  "segments": [
+    {
+      "text": "Continental Gummiwerke wuchs zu einem globalen Industriegiganten heran. Von Hannover aus belieferte das Unternehmen Märkte in ganz Europa und Übersee. Die Gummiindustrie schuf tausende Arbeitsplätze und zog Arbeiter aus den umliegenden Regionen an.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Arbeiterbewegungen und frühe sozialistische Organisationen entstanden. Die Industriearbeiterschicht formierte sich und forderte bessere Arbeitsbedingungen, kürzere Arbeitszeiten und politische Mitbestimmung. Die SPD wurde in Hannover zu einer starken politischen Kraft.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Die Ursprünge der Hannover Messe, des wichtigsten Industriemesses der Welt, reichen in diese Zeit zurück. Erste Industrieausstellungen präsentierten die neuesten Erzeugnisse hannoverscher Fabriken. Die Messe sollte Hannovers Ruf als Industriestadt für das zwanzigste Jahrhundert begründen.",
+      "duration_s": 17.0
+    },
+    {
+      "text": "Wissenschaftliche Institutionen erweiterten sich. Die Technische Hochschule Hannover, heute Leibniz Universität, bildete Ingenieure und Naturwissenschaftler aus. Die Stadt wurde zu einem Zentrum der technischen Forschung und Entwicklung.",
+      "duration_s": 15.0
+    },
+    {
+      "text": "Der Zoo Hannover, im Jahr tausendachthundertsiebenundsiebzig gegründet, wurde zu einem beliebten Ausflugsziel. Architektonisch prägten Gründerzeit und Jugendstil das Stadtbild. Prachtvolle Wohnhäuser und Geschäftshäuser entstanden in den neuen Stadtvierteln.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Die sozialen Bedingungen der Arbeiter waren hart. Enge Wohnquartiere, lange Arbeitszeiten und geringe Löhne kennzeichneten den Alltag vieler. Öffentliche Gesundheitsfürsorge und Bildungseinrichtungen wurden langsam ausgebaut, reichten aber nicht aus, um die sozialen Probleme zu lösen.",
+      "duration_s": 16.0
+    }
+  ],
+  "sources": [
+    "Hannover Messe, Archiv und Historie",
+    "Tießler, Arbeiterbewegung in Hannover (2014)"
+  ],
+  "gradient": [
+    "#1a0a00",
+    "#3d1f00",
+    "#6b3a00"
+  ],
+  "accent": "#e8a838"
+}

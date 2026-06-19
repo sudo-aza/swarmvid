@@ -1,0 +1,42 @@
+{
+  "scene_num": 2,
+  "title": "Die erste Erwähnung",
+  "subtitle": "und das Mittelalter",
+  "era": "1100–1300",
+  "segments": [
+    {
+      "text": "Die erste urkundliche Erwähnung des Namens Hannover stammt aus dem Jahr elfhundertfünfzig. In einer Urkunde Kaiser Friedrichs Barbarossa erscheint der Ort als Honovere. Der Name bedeutet hoher Uferort und verweist auf die erhöhte Lage der Siedlung am Leineufer.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Die Siedlung entwickelte sich aus einer kleinen Furtstelle zu einem Marktflecken. Die Leine diente als wichtiger Handelsweg, der den Ostwestverkehr mit dem Nord-Süd-Handel verband. Kaufleute und Handwerker siedelten sich entlang der Uferstraßen an.",
+      "duration_s": 15.0
+    },
+    {
+      "text": "Im zwölften und dreizehnten Jahrhundert wuchs Hannover stetig. Marktrechte wurden verliehen, und die Siedlung erhielt erste städtische Privilegien. Eine feste Brücke über die Leine erleichterte den Handel erheblich. Der beginnende Bau der Marktkirche zeugte von wachsendem Wohlstand.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Zünfte und Gilden entstanden. Schmiede, Weber, Bäcker und Töpfer organisierten sich und regelten ihr Handwerk. Die Merchantalklasse bildete die Grundlage einer bürgerlichen Selbstverwaltung. Ein Rat der Ältesten übernahm zunehmend städtische Aufgaben.",
+      "duration_s": 15.0
+    },
+    {
+      "text": "Die Beziehungen zu den Nachbarstädten waren vielfältig. Braunschweig im Osten und Hildesheim im Süden waren mächtige Konkurrenten und Handelspartner zugleich. Hannover lag im Einflussbereich der Welfen, der mächtigen Herzöge, die über große Teile Niedersachsens herrschten.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Erste Verteidigungsanlagen entstanden. Palisaden und Erdwälle schützten die wachsende Siedlung vor feindlichen Übergriffen. Die strategische Lage an der Leine machte diese Schutzmaßnahmen notwendig. Die Grundlagen der späteren Stadtmauer waren gelegt.",
+      "duration_s": 14.0
+    }
+  ],
+  "sources": [
+    "Urkundenbuch der Stadt Hannover, Stadtarchiv",
+    "Hans-Claus Riepe, Kleine Geschichte Hannovers (2013)"
+  ],
+  "gradient": [
+    "#1a1a2e",
+    "#16213e",
+    "#0f3460"
+  ],
+  "accent": "#e94560"
+}

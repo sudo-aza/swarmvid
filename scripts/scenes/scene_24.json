@@ -1,0 +1,42 @@
+{
+  "scene_num": 24,
+  "title": "Wiederaufbau",
+  "subtitle": "Das moderne Hannover entsteht",
+  "era": "1950–1970",
+  "segments": [
+    {
+      "text": "Der Wiederaufbau Hannovers prägte das Stadtbild bis in die Gegenwart. Moderne Architektur ersetzte die zerstörte Altstadt. Dieser Prozess war nicht ohne Kontroversen. Kritiker bemängelten den Verbleib noch stehender historischer Gebäude, die dem modernen Straßenbau weichen mussten.",
+      "duration_s": 17.0
+    },
+    {
+      "text": "Das neue Rathaus, ein Architekturdenkmal zwischen Vorfahren und Moderne, wurde zwischen neunzehnhundertsiebenunddreißig und den fünfziger Jahren erbaut. Seine Kuppel mit dem Aufzug bot einen Panoramablick über die wachsende Stadt. Das Rathaus wurde zum Symbol des neuen Hannover.",
+      "duration_s": 17.0
+    },
+    {
+      "text": "Die Industrie erholte sich rasch. Continental, Volkswagen, das hannoversche Werk eröffnete neunzehnhundertachtundfünfzig und ist heute das wichtigste Nutzfahrzeugwerk der Marke, Sennheiser und Hanomag beschäftigten Tausende. Die Hannover Messe erlebte ihre Renaissance als internationale Leitmesse.",
+      "duration_s": 17.0
+    },
+    {
+      "text": "Die städtische Planung wandte sich der Infrastruktur zu. Ringstraßen und Autobahnanschlüsse wurden gebaut. Die Vororte wuchsen. Die Technische Hochschule wurde zur Universität erhoben und zog Studierende aus ganz Deutschland an.",
+      "duration_s": 15.0
+    },
+    {
+      "text": "Gastarbeiter aus der Türkei und Südeuropa kamen in den sechziger Jahren nach Hannover. Sie halfen, den Arbeitskräftemangel in den Fabriken zu beheben. Die türkische Gemeinde wuchs und bereicherte die städtische Kultur. Hannover wurde allmählich zu einer multikulturellen Stadt.",
+      "duration_s": 16.0
+    },
+    {
+      "text": "Die Herrenhäuser Gärten wurden restauriert und zu einem der beliebtesten Ausflugsziele der Region. Der Große Garten erstrahlte in seiner alten barocken Pracht. Die Restaurierung war ein Zeichen der Rückbesinnung auf die kulturelle Identität der Stadt.",
+      "duration_s": 16.0
+    }
+  ],
+  "sources": [
+    "Stadtplanungsamt Hannover, Wiederaufbauakten",
+    "Volkswagen AG, Geschichte des Hannover-Werks"
+  ],
+  "gradient": [
+    "#1a2a3a",
+    "#2a4a5a",
+    "#3a6a7a"
+  ],
+  "accent": "#64ffda"
+}
