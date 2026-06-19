@@ -120,12 +120,6 @@ def wrap_text(draw, text, font, max_width):
     return lines
 
 
-def blend_text_color(base_rgb, text_rgb, alpha):
-    """Blend text_rgb over base_rgb at given alpha (0-255). Returns pre-blended RGB tuple."""
-    a = alpha / 255.0
-    return tuple(int(b * (1 - a) + t * a) for b, t in zip(base_rgb, text_rgb))
-
-
 def render_frame(frame_idx, total_frames, scene, seg_idx, seg_text, seg_progress,
                 fonts, accent_rgb, gradient_colors, bg_pixels):
     """Render one frame. Returns an RGB PIL Image.

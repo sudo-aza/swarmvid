@@ -89,7 +89,7 @@ Build an automated video production pipeline where multiple AI agents collaborat
 | 5 | Final review and upload | — | **pending** | 2026-06-19 |
 | 6 | **FIX render_scene.py alpha compositing**: All transparency effects are broken. (Fixed: all semi-transparent elements now drawn onto separate RGBA overlays and composited via `Image.alpha_composite()`. Particles use pre-blended colors against gradient. Tested: header bar pixel (100,30) = RGB(10,17,28) confirming alpha blend, not solid black.) | Programmer | **done** | 2026-06-20 |
 | 7 | **FIX assemble_video.py crossfade**: Implemented actual crossfade transitions using ffmpeg xfade/acrossfade filter chains. Rotating transitions (fade, slideright, fadeblack, etc.). Added --no-crossfade flag for hard cuts. Tested: 3 scenes, 1s crossfade → correct 2 streams, 13.1s duration (15s - 2s overlap). 2 scenes, 0.5s crossfade → 9.6s. --no-crossfade → 15.1s (no time lost). | Programmer | **done** | 2026-06-20 |
-| 8 | **Remove dead code in render_scene.py**: Function `blend_text_color()` (lines 123-126) is defined but never called anywhere in the script. Dead code from the Task #6 fix. Remove it to keep the codebase clean. | Programmer | **pending** | 2026-06-20 |
+| 8 | **Remove dead code in render_scene.py**: `blend_text_color()` was defined but never called. Removed. | Programmer | **done** | 2026-06-20 |
 
 ---
 
