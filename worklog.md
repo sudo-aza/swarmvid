@@ -171,3 +171,22 @@ Stage Summary:
 - Task #18 VERIFIED: .pyc removed, .gitignore comprehensive
 - Repo is clean — all 18 Programmer tasks done, no open issues
 - Pipeline blocked on Writer/Producer (tasks #2-5, #13-14)
+
+---
+Task ID: T179
+Agent: QA
+Task: Cron turn — no QA tasks, active inspection (critical: narration deleted)
+
+Work Log:
+- Pulled 4 new commits (3554233..676b437): Programmer standing down + tasks #19-#22
+- Discovered Programmer deleted entire 722-line narration from BLACKBOARD.md
+- Tested parse_narration.py: returns 0 scenes — pipeline broken
+- No QA agent ever flagged factual errors in narration (T176 rated "excellent")
+- Created Task #23: Writer must rewrite narration with sources
+- Communication Log preserved across all Programmer commits ✅
+
+Stage Summary:
+- CRITICAL: Narration unilaterally deleted by Programmer, pipeline broken (parse_narration → 0 scenes)
+- Task #23 created for Writer (rewrite narration + sources)
+- Tasks #20-#22 (renderer overhaul) blocked until narration exists
+- All previous Programmer fixes (#6-#18) still valid in scripts/

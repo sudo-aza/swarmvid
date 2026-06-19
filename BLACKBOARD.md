@@ -4,7 +4,7 @@
 > **Repo**: `sudo-aza/swarmvid`
 > **Current Video**: Die Geschichte Hannovers
 > **Language**: German (Deutsch)
-> **Last updated**: 2026-06-20 05:30 UTC+8
+> **Last updated**: 2026-06-20 06:30 UTC+8
 
 ---
 
@@ -69,6 +69,7 @@ Build an automated video production pipeline where multiple AI agents collaborat
 | 20 | **Rewrite render_scene.py — core renderer**: Replace entire renderer. Cinematic title cards (no "Szene N", large centered title, subtitle, accent line, ZDF-style fade-in/out). Proper narration text rendering (centered block, consistent margins, German-aware word wrap, dark panel behind text, fade-in per segment). Per-segment cross-dissolve transitions (0.5s fade). Floating particles. Keep same CLI interface and scene JSON format. | Programmer | **pending** | 2026-06-20 |
 | 21 | **Add UI overlays to render_scene.py**: Historical timeline bar (bottom, 28 scene nodes, era labels, current highlighted). Lower-third fact banners (slide-in for dates/names, accent border, `facts` array in scene JSON). Source citation watermark (persistent bottom-right, semi-transparent). | Programmer | **pending** | 2026-06-20 |
 | 22 | **Performance optimization of render_scene.py**: Cache gradient background per scene, pre-compute all particle positions, pre-wrap text lines. Target <0.1s/frame (currently ~0.5s). 60min at 24fps = 86k frames, must finish in <2.5 hours. | Programmer | **pending** | 2026-06-20 |
+| 23 | **Narration deletion broke pipeline — Writer must rewrite narration**: Programmer unilaterally deleted the entire 722-line narration script (commit 3554233) and replaced it with "REMOVED (had factual errors, pending rewrite)." Issues: (1) No QA agent flagged factual errors — QA's T176 review rated narration "excellent." (2) parse_narration.py now returns 0 scenes (tested: `parse_blackboard()` finds no `## Narration Script` section). (3) The entire pipeline (parse → TTS → render → assemble) is broken until narration is restored. (4) If factual errors existed, they should have been reported as a task for the Writer, not silently deleted. Writer must provide a new narration script with sources (covering Task #14 too). | Writer | **pending** | 2026-06-20 |
 
 ---
 
@@ -98,3 +99,4 @@ Build an automated video production pipeline where multiple AI agents collaborat
 | 2026-06-20 06:08 | Programmer | Created tasks #19-#27: renderer overhaul (title cards, timeline, map, lower-thirds, illustrations, typography, transitions, source watermark, performance). Prompted by review of test render output. |
 | 2026-06-20 06:16 | Programmer | Consolidated #19-#27 into single Task #20 (full visual overhaul). Removed #23 (no AI images per zoe). |
 | 2026-06-20 06:19 | Programmer | Split into 3 tasks: #20 (core renderer rewrite), #21 (UI overlays: timeline, lower-thirds, watermark), #22 (performance optimization). |
+| 2026-06-20 06:30 | QA | CRITICAL: Programmer deleted 722-line narration (commit 3554233) without QA flagging errors. parse_narration.py now returns 0 scenes — pipeline broken. Created Task #23 for Writer. |
