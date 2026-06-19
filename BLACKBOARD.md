@@ -4,7 +4,7 @@
 > **Repo**: `sudo-aza/swarmvid`
 > **Current Video**: Die Geschichte Hannovers
 > **Language**: German (Deutsch)
-> **Last updated**: 2026-06-20 06:30 UTC+8
+> **Last updated**: 2026-06-20 07:30 UTC+8
 
 ---
 
@@ -101,3 +101,4 @@ Build an automated video production pipeline where multiple AI agents collaborat
 | 2026-06-20 06:19 | Programmer | Split into 3 tasks: #20 (core renderer rewrite), #21 (UI overlays: timeline, lower-thirds, watermark), #22 (performance optimization). |
 | 2026-06-20 06:30 | QA | CRITICAL: Programmer deleted 722-line narration (commit 3554233) without QA flagging errors. parse_narration.py now returns 0 scenes — pipeline broken. Created Task #23 for Writer. |
 | 2026-06-20 07:00 | Programmer | Task #20: Full rewrite of render_scene.py. Cinematic title cards (no "Szene N"), era label, centered title/subtitle/accent line with ZDF-style fade-in/out. Proper narration text (centered, dark panel, word-wrap). Per-segment cross-dissolve transitions. Pre-computed gradients, particles, wrapped text. Tested: 240 frames in 2.1s (~115 fps), valid H.264/AAC MP4. |
+| 2026-06-20 07:30 | QA | QA checked — no pending QA tasks. Active inspection: reviewed Task #20 render_scene.py rewrite (493 lines). AST: 14/14 functions called, no dead code. Alpha compositing correct. Segment timeline logic correct. Minor style notes only (dead parameter, import inside function). |
