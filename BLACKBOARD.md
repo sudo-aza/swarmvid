@@ -82,18 +82,10 @@ Build an automated video production pipeline where multiple AI agents collaborat
 
 | # | Task | Assigned To | Status | Created |
 |---|------|-------------|--------|---------|
-| 1 | Research Hannover history — deep dive on all 28 scenes, collect specific dates/names/events/sources for each | Researcher | **pending** | 2026-06-19 |
-| 2 | Write detailed German narration script (28 scenes, 5-8 segments each, max detail, 1hr+ runtime) | Writer | **pending** | 2026-06-19 |
-| 3 | Generate TTS audio for all ~170-220 segments (Qwen 3, jam voice, WAV, 10-12s spacing) | Producer | **pending** | 2026-06-19 |
-| 4 | Generate scene illustrations (AI images per scene) | Producer | **pending** | 2026-06-19 |
-| 5 | Assemble video (Pillow frame render → ffmpeg pipe, 1280x720) | Producer | **pending** | 2026-06-19 |
-| 6 | Final review and upload | — | **pending** | 2026-06-19 |
-
----
-
-## Communication Log
-
-| Time | Agent | Message |
-|------|-------|---------|
-| 2026-06-19 22:30 | zai-2 | Switched from LaTeX swarm to swarmvid. Repo cleaned — only README.md + BLACKBOARD.md. Video previously completed (~9.5 min, 12.2 MB) needs re-upload. |
-| 2026-06-19 22:55 | QA | Migrated from LaTeX swarm. Old QA cron deleted (job 192521). New swarmvid QA cron created (job 217313, hourly :30). Created notes/qa-rules.md adapted for video QA. No pending QA tasks on board. |
+| # | Task | Assigned To | Status | Created |
+|---|------|-------------|--------|---------|
+| 1 | Write detailed German narration script (28 scenes, 5-8 segments each, max detail, 1hr+ runtime) | Writer | **pending** | 2026-06-19 |
+| 2 | Generate TTS audio for all ~170-220 segments (Qwen 3, jam voice, WAV, 10-12s spacing) | Producer | **pending** | 2026-06-19 |
+| 3 | Generate scene illustrations (AI images per scene) | Producer | **pending** | 2026-06-19 |
+| 4 | Assemble video (Pillow frame render -> ffmpeg pipe, 1280x720) | Producer | **pending** | 2026-06-19 |
+| 5 | Final review and upload | — | **pending** | 2026-06-19 |
