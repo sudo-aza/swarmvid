@@ -4,7 +4,7 @@
 > **Repo**: `sudo-aza/swarmvid`
 > **Current Video**: Die Geschichte Hannovers
 > **Language**: German (Deutsch)
-> **Last updated**: 2026-06-20 01:07 UTC+8
+> **Last updated**: 2026-06-20 01:26 UTC+8
 
 ---
 
@@ -90,6 +90,7 @@ Build an automated video production pipeline where multiple AI agents collaborat
 | 6 | **FIX render_scene.py alpha compositing**: All transparency effects are broken. (Fixed: all semi-transparent elements now drawn onto separate RGBA overlays and composited via `Image.alpha_composite()`. Particles use pre-blended colors against gradient. Tested: header bar pixel (100,30) = RGB(10,17,28) confirming alpha blend, not solid black.) | Programmer | **done** | 2026-06-20 |
 | 7 | **FIX assemble_video.py crossfade**: Implemented actual crossfade transitions using ffmpeg xfade/acrossfade filter chains. Rotating transitions (fade, slideright, fadeblack, etc.). Added --no-crossfade flag for hard cuts. Tested: 3 scenes, 1s crossfade → correct 2 streams, 13.1s duration (15s - 2s overlap). 2 scenes, 0.5s crossfade → 9.6s. --no-crossfade → 15.1s (no time lost). | Programmer | **done** | 2026-06-20 |
 | 8 | **Remove dead code in render_scene.py**: `blend_text_color()` was defined but never called. Removed. | Programmer | **done** | 2026-06-20 |
+| 9 | **Add missing audio stream handling to assemble_video.py**: `has_audio_stream()` probes each scene via ffprobe; `ensure_audio()` adds silent AAC track to any scene lacking audio (temp copy, cleaned up after assembly). Prevents ffmpeg crash when `[N:a]` references fail. Tested: 3 scenes (1 without audio) → crossfade (14.0s, both streams present) and hard-cut (15.0s, both streams present). | Programmer | **done** | 2026-06-20 |
 
 ---
 
@@ -104,3 +105,4 @@ Build an automated video production pipeline where multiple AI agents collaborat
 | 2026-06-20 00:30 | QA | QA checked — no pending QA tasks. Active inspection: independently verified Task #6 alpha fix with 3-pixel test (header bar, text box, RGB conversion all pass). Found dead code: `blend_text_color()` function (lines 123-126) defined but never called — reported as Task #8. Task #7 (crossfade) still pending. Repo clean. |
 | 2026-06-20 01:00 | Programmer | Fixed Task #7: assemble_video.py crossfade. Implemented ffmpeg xfade/acrossfade filter chain with sequential label routing. Rotating transitions. Added --no-crossfade fallback. Tested: 3 scenes → 2 streams, 13.1s correct. 2 scenes → 9.6s correct. Hard cuts → 15.1s correct. |
 | 2026-06-20 01:07 | QA | QA checked — no pending QA tasks. Active inspection: verified Task #7 crossfade fix (4 filter chain tests: 2/3/5/28 scenes — all label chains valid, offset math correct, [vout]/[aout] terminal labels confirmed). Verified Task #8 dead code removal (blend_text_color confirmed absent). No new issues found. All 3 Programmer tasks (#6/#7/#8) now done. |
+| 2026-06-20 01:26 | Programmer | Self-tasked #9: added missing audio stream handling to assemble_video.py. `has_audio_stream()` probes via ffprobe `-select_streams a`; `ensure_audio()` creates temp copies with silent AAC for audio-less scenes, cleaned up in `finally` block. Tested: 3 scenes (scene_02 intentionally no audio) — crossfade mode 14.0s with both streams, hard-cut mode 15.0s with both streams. Without fix, both would crash on `[1:a]` reference. |

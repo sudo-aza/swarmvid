@@ -35,6 +35,56 @@ def get_duration(filepath):
         return 0.0
 
 
+def has_audio_stream(filepath):
+    """Check if a media file contains an audio stream."""
+    result = subprocess.run(
+        ["ffprobe", "-v", "quiet", "-show_streams", "-select_streams", "a",
+         "-of", "json", filepath],
+        capture_output=True, text=True
+    )
+    if result.returncode != 0:
+        return False
+    try:
+        info = json.loads(result.stdout)
+        return len(info.get("streams", [])) > 0
+    except (KeyError, ValueError):
+        return False
+
+
+def ensure_audio(scene_files, tmp_dir):
+    """Add silent audio track to any scene that lacks one.
+
+    Returns a list of file paths (originals or temp copies with audio).
+    Caller is responsible for cleaning up tmp_dir.
+    """
+    os.makedirs(tmp_dir, exist_ok=True)
+    result_files = []
+    for sf in scene_files:
+        if has_audio_stream(sf):
+            result_files.append(sf)
+        else:
+            # Add silent audio matching video duration
+            out = os.path.join(tmp_dir, os.path.basename(sf))
+            dur = get_duration(sf)
+            cmd = [
+                "ffmpeg", "-y",
+                "-i", sf,
+                "-f", "lavfi", "-i", f"anullsrc=channel_layout=stereo:sample_rate=44100",
+                "-c:v", "copy",
+                "-c:a", "aac", "-b:a", "192k",
+                "-shortest",
+                out,
+            ]
+            print(f"  {os.path.basename(sf)}: no audio — adding silent track ({dur:.1f}s)")
+            proc = subprocess.run(cmd, capture_output=True, text=True)
+            if proc.returncode != 0:
+                print(f"ERROR: failed to add audio to {sf}: {proc.stderr[-300:]}",
+                      file=sys.stderr)
+                sys.exit(1)
+            result_files.append(out)
+    return result_files, any(sf != orig for sf, orig in zip(result_files, scene_files))
+
+
 def assemble_crossfade(scene_files, output_path, crossfade_s=1.0):
     """Concatenate scenes with xfade crossfade transitions.
 
@@ -210,6 +260,7 @@ def assemble(scenes_dir, output_path, crossfade_s=1.0, use_crossfade=True):
         crossfade_s: Crossfade duration in seconds (default 1.0)
         use_crossfade: If True, use xfade transitions; if False, hard cuts
     """
+    import shutil
     scene_files = sorted(glob.glob(os.path.join(scenes_dir, "scene_*.mp4")))
     if not scene_files:
         print(f"No scene_*.mp4 files found in {scenes_dir}", file=sys.stderr)
@@ -217,10 +268,20 @@ def assemble(scenes_dir, output_path, crossfade_s=1.0, use_crossfade=True):
 
     print(f"Found {len(scene_files)} scenes")
 
-    if use_crossfade and len(scene_files) > 1:
-        assemble_crossfade(scene_files, output_path, crossfade_s)
-    else:
-        assemble_concat(scene_files, output_path)
+    # Ensure all scenes have an audio track before assembly
+    tmp_dir = os.path.join(os.path.dirname(output_path), ".assemble_tmp")
+    safe_files, had_temps = ensure_audio(scene_files, tmp_dir)
+
+    try:
+        if use_crossfade and len(safe_files) > 1:
+            assemble_crossfade(safe_files, output_path, crossfade_s)
+        else:
+            assemble_concat(safe_files, output_path)
+    finally:
+        # Clean up temp files if any were created
+        if had_temps and os.path.isdir(tmp_dir):
+            shutil.rmtree(tmp_dir)
+            print(f"Cleaned up temp audio-fix files")
 
 
 def main():
