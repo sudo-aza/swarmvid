@@ -60,21 +60,45 @@ def make_gradient(draw, colors, w, h):
         draw.line([(0, y), (w, y)], fill=c)
 
 
-def draw_particles(draw, frame_idx, w, h, count=BG_PARTICLES, seed=42):
-    """Floating particles for ambient animation."""
+def draw_particles(overlay, bg_pixels, frame_idx, w, h, count=BG_PARTICLES, seed=42):
+    """Floating particles for ambient animation.
+
+    Draws onto an RGBA overlay with proper alpha, then returns the overlay
+    so it can be alpha_composite'd onto the base image.
+    bg_pixels is a list of (x, y, rgb) tuples from the gradient for blending.
+    """
     import random
     rng = random.Random(seed)
+    od = ImageDraw.Draw(overlay)
     for _ in range(count):
-        px = rng.randint(0, w)
-        py_base = rng.randint(0, h)
+        px = rng.randint(0, w - 1)
+        py_base = rng.randint(0, h - 1)
         speed = rng.uniform(0.2, 1.0)
         size = rng.randint(1, 3)
         alpha_base = rng.randint(40, 120)
         # Move upward slowly
         py = (py_base - frame_idx * speed * 2) % h
         alpha = int(alpha_base * (0.5 + 0.5 * math.sin(frame_idx * 0.05 + px * 0.01)))
-        # Draw as a small dot with simulated alpha (blend toward bg)
-        draw.ellipse([px - size, py - size, px + size, py + size], fill=(255, 255, 255, alpha))
+        # Blend particle color with background at alpha
+        # Background pixel approximate: sample gradient
+        bg_rgb = bg_pixels[int(py) % h]
+        # White particle blended over bg
+        r = int(bg_rgb[0] * (1 - alpha / 255) + 255 * (alpha / 255))
+        g = int(bg_rgb[1] * (1 - alpha / 255) + 255 * (alpha / 255))
+        b = int(bg_rgb[2] * (1 - alpha / 255) + 255 * (alpha / 255))
+        od.ellipse([px - size, py - size, px + size, py + size], fill=(r, g, b, 255))
+
+
+def build_bg_pixel_row(gradient_colors, h):
+    """Pre-compute one row of gradient RGB values for particle blending."""
+    n = len(gradient_colors)
+    pixels = []
+    for y in range(h):
+        t = y / max(h - 1, 1) * (n - 1)
+        idx = min(int(t), n - 2)
+        frac = t - idx
+        pixels.append(lerp_color(gradient_colors[idx], gradient_colors[idx + 1], frac))
+    return pixels
 
 
 def wrap_text(draw, text, font, max_width):
@@ -96,27 +120,40 @@ def wrap_text(draw, text, font, max_width):
     return lines
 
 
+def blend_text_color(base_rgb, text_rgb, alpha):
+    """Blend text_rgb over base_rgb at given alpha (0-255). Returns pre-blended RGB tuple."""
+    a = alpha / 255.0
+    return tuple(int(b * (1 - a) + t * a) for b, t in zip(base_rgb, text_rgb))
+
+
 def render_frame(frame_idx, total_frames, scene, seg_idx, seg_text, seg_progress,
-                fonts, accent_rgb, gradient_colors):
-    """Render one frame. Returns a PIL Image."""
+                fonts, accent_rgb, gradient_colors, bg_pixels):
+    """Render one frame. Returns an RGB PIL Image.
+
+    All semi-transparent elements are drawn onto RGBA overlay images
+    and composited via Image.alpha_composite() before final RGB conversion.
+    """
+    # Base: RGBA with gradient
     img = Image.new("RGBA", (W, H))
     draw = ImageDraw.Draw(img)
-
-    # Background gradient
     make_gradient(draw, gradient_colors, W, H)
 
-    # Particles
-    draw_particles(draw, frame_idx, W, H, seed=scene.get("scene_num", 0) * 100)
+    # ── Particles (overlay with pre-blended colors) ──
+    particle_overlay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    draw_particles(particle_overlay, bg_pixels, frame_idx, W, H, seed=scene.get("scene_num", 0) * 100)
+    img = Image.alpha_composite(img, particle_overlay)
 
-    # ── Top bar: scene number + era ──
+    # ── Top bar (overlay) ──
     header_font, title_font, body_font, source_font = fonts
-    draw.rectangle([(0, 0), (W, 60)], fill=(0, 0, 0, 100))
-    draw.text((30, 12), f"Szene {scene['scene_num']}", fill=accent_rgb, font=header_font)
-    draw.text((W - 30, 12), scene.get("era", ""), fill=(200, 200, 200, 200), font=header_font, anchor="rt")
+    bar_overlay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    bd = ImageDraw.Draw(bar_overlay)
+    bd.rectangle([(0, 0), (W, 60)], fill=(0, 0, 0, 100))
+    bd.text((30, 12), f"Szene {scene['scene_num']}", fill=(*accent_rgb, 255), font=header_font)
+    bd.text((W - 30, 12), scene.get("era", ""), fill=(200, 200, 200, 200), font=header_font, anchor="rt")
+    img = Image.alpha_composite(img, bar_overlay)
 
     # ── Title card (fade in during first segment) ──
     if seg_idx == 0 and seg_progress < 0.15:
-        # Show title during first 15% of first segment
         title_alpha = int(255 * min(1.0, seg_progress / 0.05)) if seg_progress < 0.10 else int(255 * max(0, (0.15 - seg_progress) / 0.05))
         overlay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         od = ImageDraw.Draw(overlay)
@@ -126,54 +163,61 @@ def render_frame(frame_idx, total_frames, scene, seg_idx, seg_text, seg_progress
         od.text((W // 2, ty), title, fill=(*accent_rgb, title_alpha), font=title_font, anchor="mt")
         if subtitle:
             od.text((W // 2, ty + 60), subtitle, fill=(200, 200, 200, title_alpha), font=body_font, anchor="mt")
-        # Decorative line
         line_w = 200
         od.line([(W // 2 - line_w // 2, ty + 110), (W // 2 + line_w // 2, ty + 110)], fill=(*accent_rgb, title_alpha), width=2)
         img = Image.alpha_composite(img, overlay)
-        draw = ImageDraw.Draw(img)
 
     # ── Narration text (centered, with subtle animation) ──
     if seg_text:
-        # Text area: centered, with padding
         text_area_x = 100
         text_area_w = W - 200
         text_area_y = 300
         text_area_h = 280
 
-        # Semi-transparent box behind text
-        draw.rounded_rectangle(
+        # Text box overlay (semi-transparent)
+        text_overlay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        td = ImageDraw.Draw(text_overlay)
+        td.rounded_rectangle(
             [(text_area_x - 20, text_area_y - 20), (text_area_x + text_area_w + 20, text_area_y + text_area_h + 20)],
             radius=15, fill=(0, 0, 0, 80)
         )
 
-        lines = wrap_text(draw, seg_text, body_font, text_area_w - 40)
-        max_lines = 8  # fit ~8 lines on screen
+        # Text with fade-in — use pre-blended colors on the overlay
+        lines = wrap_text(td, seg_text, body_font, text_area_w - 40)
+        max_lines = 8
         if len(lines) > max_lines:
-            # Scroll: offset based on progress within segment
             scroll_offset = seg_progress * (len(lines) - max_lines)
             visible_start = int(scroll_offset)
             visible_lines = lines[visible_start:visible_start + max_lines]
         else:
             visible_lines = lines
 
+        # Text is drawn with alpha on the overlay — alpha_composite handles the blend
+        line_alpha = min(255, int(seg_progress * 600))
         for i, line in enumerate(visible_lines):
-            # Subtle fade-in per line
-            line_alpha = min(255, int(seg_progress * 600))
             y = text_area_y + i * 36
-            draw.text((text_area_x, y), line, fill=(240, 240, 240, line_alpha), font=body_font)
+            td.text((text_area_x, y), line, fill=(240, 240, 240, line_alpha), font=body_font)
 
-    # ── Progress bar at bottom ──
+        img = Image.alpha_composite(img, text_overlay)
+
+    # ── Progress bar (overlay) ──
+    progress = frame_idx / max(total_frames - 1, 1)
+    prog_overlay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    pd = ImageDraw.Draw(prog_overlay)
     bar_y = H - 30
     bar_h = 4
-    progress = frame_idx / max(total_frames - 1, 1)
-    draw.rectangle([(0, bar_y), (W, bar_y + bar_h)], fill=(50, 50, 50, 150))
-    draw.rectangle([(0, bar_y), (int(W * progress), bar_y + bar_h)], fill=accent_rgb)
+    pd.rectangle([(0, bar_y), (W, bar_y + bar_h)], fill=(50, 50, 50, 150))
+    pd.rectangle([(0, bar_y), (int(W * progress), bar_y + bar_h)], fill=(*accent_rgb, 255))
+    img = Image.alpha_composite(img, prog_overlay)
 
     # ── Sources (bottom-right, small text) ──
     sources = scene.get("sources", [])
     if sources and seg_idx == len(scene["segments"]) - 1:
-        src_text = " | ".join(sources[:2])  # max 2 sources on screen
-        draw.text((W - 30, H - 60), src_text, fill=(150, 150, 150, 180), font=source_font, anchor="rb")
+        src_overlay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        sd = ImageDraw.Draw(src_overlay)
+        src_text = " | ".join(sources[:2])
+        sd.text((W - 30, H - 60), src_text, fill=(150, 150, 150, 180), font=source_font, anchor="rb")
+        img = Image.alpha_composite(img, src_overlay)
 
     return img.convert("RGB")
 
@@ -228,6 +272,7 @@ def render_scene(scene_path, audio_path, output_path, fps=FPS):
     time_scale = audio_duration / total_seg_duration if total_seg_duration > 0 else 1.0
 
     fonts = get_fonts()
+    bg_pixels = build_bg_pixel_row(gradient_colors, H)
 
     # ffmpeg command: pipe raw RGB frames
     cmd = [
@@ -269,7 +314,7 @@ def render_scene(scene_path, audio_path, output_path, fps=FPS):
         img = render_frame(
             frame_idx, total_frames, scene,
             seg_idx, seg.get("text", ""), seg_progress,
-            fonts, accent_rgb, gradient_colors,
+            fonts, accent_rgb, gradient_colors, bg_pixels,
         )
         proc.stdin.write(img.tobytes())
 
