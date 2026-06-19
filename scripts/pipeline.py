@@ -28,7 +28,6 @@ import os
 import subprocess
 import sys
 import time
-import shutil
 
 import wave as wave_mod
 
@@ -52,19 +51,6 @@ def get_wav_duration(filepath):
         except (KeyError, ValueError):
             return 0.0
 
-
-def run_cmd(cmd, description=""):
-    """Run a command, print output, return success."""
-    if description:
-        print(f"  {description}")
-    result = subprocess.run(cmd, capture_output=True, text=True)
-    if result.stdout.strip():
-        for line in result.stdout.strip().split("\n")[-5:]:
-            print(f"    {line}")
-    if result.returncode != 0:
-        print(f"  ERROR: {result.stderr[-300:]}", file=sys.stderr)
-        return False
-    return True
 
 
 def step_parse_narration(blackboard_path, scenes_dir, default_duration):
