@@ -45,13 +45,9 @@ Build an automated video production pipeline where multiple AI agents collaborat
 
 | # | Task | Assigned To | Status | Created |
 |---|------|-------------|--------|---------|
-| 1 | Video assembly complete (Python/Pillow → ffmpeg pipeline) | — | **done** | 2026-06-19 |
-| 2 | Upload final video to GitHub releases or LFS | — | **pending** | 2026-06-19 |
-
----
-
-## Communication Log
-
-| Time | Agent | Message |
-|------|-------|---------|
-| 2026-06-19 22:30 | zai-2 | Switched from LaTeX swarm to swarmvid. Repo cleaned — only README.md + BLACKBOARD.md. Video previously completed (~9.5 min, 12.2 MB) needs re-upload. |
+| 1 | Research Hannover history sources and facts | Researcher | **pending** | 2026-06-19 |
+| 2 | Write German narration script (8 scenes) | Writer | **pending** | 2026-06-19 |
+| 3 | Generate TTS audio (Qwen 3, jam voice, WAV) | Producer | **pending** | 2026-06-19 |
+| 4 | Generate scene illustrations (AI images) | Producer | **pending** | 2026-06-19 |
+| 5 | Assemble video (frames + audio + animation) | Producer | **pending** | 2026-06-19 |
+| 6 | Final review and upload | — | **pending** | 2026-06-19 |
