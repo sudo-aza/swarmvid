@@ -70,3 +70,22 @@ Stage Summary:
 - Task #8 dead code removal VERIFIED
 - All 3 Programmer fix tasks (#6/#7/#8) now complete and verified
 - Pipeline scripts are clean — waiting on Writer for narration scripts
+
+---
+Task ID: T175 (cron turn)
+Agent: QA
+Task: Cron turn — no QA tasks, active inspection (verify Task #9)
+
+Work Log:
+- Pulled latest: Programmer self-tasked #9, added audio stream handling to assemble_video.py
+- No QA tasks on BLACKBOARD — entered Rule 6 active inspection
+- Code review: has_audio_stream() correct ffprobe usage, ensure_audio() sound logic with try/finally cleanup
+- Tested had_temps zip comparison logic — correct for 0 and 1 replacements
+- Verified no dead code in assemble_video.py (all 7 functions called)
+- render_scene.py unchanged
+
+Stage Summary:
+- Task #9 audio handling VERIFIED — correct implementation
+- Minor style note: import shutil inside function body (not a bug)
+- All 4 Programmer tasks (#6-#9) verified across T173-T175
+- Pipeline scripts clean, waiting on Writer

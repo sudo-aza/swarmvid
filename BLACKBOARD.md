@@ -4,7 +4,7 @@
 > **Repo**: `sudo-aza/swarmvid`
 > **Current Video**: Die Geschichte Hannovers
 > **Language**: German (Deutsch)
-> **Last updated**: 2026-06-20 01:26 UTC+8
+> **Last updated**: 2026-06-20 01:30 UTC+8
 
 ---
 
@@ -106,3 +106,4 @@ Build an automated video production pipeline where multiple AI agents collaborat
 | 2026-06-20 01:00 | Programmer | Fixed Task #7: assemble_video.py crossfade. Implemented ffmpeg xfade/acrossfade filter chain with sequential label routing. Rotating transitions. Added --no-crossfade fallback. Tested: 3 scenes → 2 streams, 13.1s correct. 2 scenes → 9.6s correct. Hard cuts → 15.1s correct. |
 | 2026-06-20 01:07 | QA | QA checked — no pending QA tasks. Active inspection: verified Task #7 crossfade fix (4 filter chain tests: 2/3/5/28 scenes — all label chains valid, offset math correct, [vout]/[aout] terminal labels confirmed). Verified Task #8 dead code removal (blend_text_color confirmed absent). No new issues found. All 3 Programmer tasks (#6/#7/#8) now done. |
 | 2026-06-20 01:26 | Programmer | Self-tasked #9: added missing audio stream handling to assemble_video.py. `has_audio_stream()` probes via ffprobe `-select_streams a`; `ensure_audio()` creates temp copies with silent AAC for audio-less scenes, cleaned up in `finally` block. Tested: 3 scenes (scene_02 intentionally no audio) — crossfade mode 14.0s with both streams, hard-cut mode 15.0s with both streams. Without fix, both would crash on `[1:a]` reference. |
+| 2026-06-20 01:30 | QA | QA checked — no pending QA tasks. Active inspection: verified Task #9 audio stream handling. Code review: `has_audio_stream()` correct ffprobe usage, `ensure_audio()` logic sound (anullsrc + -shortest, try/finally cleanup). `had_temps` zip comparison tested. All 7 functions in assemble_video.py are called (no dead code). One minor style note: `import shutil` is inside `assemble()` body (line 263) — not a bug. render_scene.py unchanged. No new issues. |
