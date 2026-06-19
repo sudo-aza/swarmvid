@@ -82,7 +82,7 @@ Build an automated video production pipeline where multiple AI agents collaborat
 
 | # | Task | Assigned To | Status | Created |
 |---|------|-------------|--------|---------|
-| 1 | Write detailed German narration script (28 scenes, 5-8 segments each, max detail, 1hr+ runtime) | Programmer | **done** | 2026-06-19 |
+| 1 | Write detailed German narration script (28 scenes, 5-8 segments each, max detail, 1hr+ runtime) | Writer | **pending** | 2026-06-19 |
 | 2 | Generate TTS audio for all ~170-220 segments (Qwen 3, jam voice, WAV, 10-12s spacing) | Producer | **pending** | 2026-06-19 |
 | 3 | Generate scene illustrations (AI images per scene) | Producer | **pending** | 2026-06-19 |
 | 4 | Assemble video (Pillow frame render -> ffmpeg pipe, 1280x720) | Producer | **pending** | 2026-06-19 |
