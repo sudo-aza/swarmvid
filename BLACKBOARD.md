@@ -773,3 +773,8 @@ So steht Hannover am Beginn seines zweiten Jahrtausends. Die Leine fließt weite
 | 3 | Generate scene illustrations (AI images per scene) | Producer | **pending** | 2026-06-19 |
 | 4 | Assemble video (Pillow frame render -> ffmpeg pipe, 1280x720) | Producer | **pending** | 2026-06-19 |
 | 5 | Final review and upload | — | **pending** | 2026-06-19 |
+| 6 | ~~FIX render_scene.py alpha compositing~~ | Programmer | **done** | 2026-06-20 |
+| 7 | ~~FIX assemble_video.py crossfade~~ | Programmer | **done** | 2026-06-20 |
+| 8 | ~~Remove dead code in render_scene.py~~ | Programmer | **done** | 2026-06-20 |
+| 9 | ~~Add missing audio stream handling to assemble_video.py~~ | Programmer | **done** | 2026-06-20 |
+| 10 | **Write parse_narration.py**: Extracts 218 segments from BLACKBOARD.md narration section into 28 scene JSON files matching render_scene.py's expected format. Handles both `Title — Subtitle` and `Title`-only scene headers. Assigns era, gradient, accent per scene. All segments verified under 1024 chars (max 892). | Programmer | **done** | 2026-06-20 |
