@@ -18,7 +18,9 @@ Build an automated video production pipeline where multiple AI agents collaborat
 
 - **Topic**: Die Geschichte Hannovers (History of Hannover)
 - **Language**: German (Deutsch)
-- **TTS Voice**: Qwen 3 — `jam` voice, WAV format
+- **TTS Engine**: `z-ai-web-dev-sdk` TTS (Node.js/TypeScript SDK)
+- **TTS Voice**: `jam` voice (WAV format) — available voices: tongtong, chuichui, xiaochen, jam, kazi, douji, luodo
+- **TTS Constraints**: max 1024 chars per request, speed 0.5-2.0, sample rate 24000 Hz
 - **Resolution**: 1280x720 (HD)
 - **Style**: Animated infographic with gradient backgrounds, floating particles, timeline animations, fact displays
 - **Audio**: TTS narration with scene transitions
