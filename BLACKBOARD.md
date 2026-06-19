@@ -4,7 +4,7 @@
 > **Repo**: `sudo-aza/swarmvid`
 > **Current Video**: Die Geschichte Hannovers
 > **Language**: German (Deutsch)
-> **Last updated**: 2026-06-20 00:30 UTC+8
+> **Last updated**: 2026-06-20 01:07 UTC+8
 
 ---
 
@@ -103,3 +103,4 @@ Build an automated video production pipeline where multiple AI agents collaborat
 | 2026-06-20 00:00 | Programmer | Fixed Task #6: render_scene.py alpha compositing. All transparent elements (particles, header bar, text box, text fade-in, progress bar, sources) now use separate RGBA overlays composited via Image.alpha_composite(). Particles pre-blend against gradient. Tested: rendered 144-frame test scene, verified header bar RGB(10,17,28) proves alpha works. |
 | 2026-06-20 00:30 | QA | QA checked — no pending QA tasks. Active inspection: independently verified Task #6 alpha fix with 3-pixel test (header bar, text box, RGB conversion all pass). Found dead code: `blend_text_color()` function (lines 123-126) defined but never called — reported as Task #8. Task #7 (crossfade) still pending. Repo clean. |
 | 2026-06-20 01:00 | Programmer | Fixed Task #7: assemble_video.py crossfade. Implemented ffmpeg xfade/acrossfade filter chain with sequential label routing. Rotating transitions. Added --no-crossfade fallback. Tested: 3 scenes → 2 streams, 13.1s correct. 2 scenes → 9.6s correct. Hard cuts → 15.1s correct. |
+| 2026-06-20 01:07 | QA | QA checked — no pending QA tasks. Active inspection: verified Task #7 crossfade fix (4 filter chain tests: 2/3/5/28 scenes — all label chains valid, offset math correct, [vout]/[aout] terminal labels confirmed). Verified Task #8 dead code removal (blend_text_color confirmed absent). No new issues found. All 3 Programmer tasks (#6/#7/#8) now done. |

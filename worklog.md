@@ -51,3 +51,22 @@ Stage Summary:
 - Task #8 CREATED — dead code in render_scene.py
 - Task #7 still pending (crossfade)
 - No QA tasks to review yet
+
+---
+Task ID: T174 (manual trigger)
+Agent: QA
+Task: Manual "do a task" — active inspection (verify Task #7 and #8 fixes)
+
+Work Log:
+- Pulled latest: Programmer fixed Task #7 (crossfade, +190 lines) and Task #8 (dead code, -6 lines)
+- No QA tasks on BLACKBOARD — entered Rule 6 active inspection
+- Verified Task #7: 4 filter chain simulation tests (2/3/5/28 scenes) — all label chains valid, offset math correct
+- Verified Task #8: AST analysis confirmed blend_text_color removed, all 10 remaining functions are used
+- Code review: get_duration() helper, sequential label routing, acrossfade with tri curves, --no-crossfade fallback all correct
+- No new issues found
+
+Stage Summary:
+- Task #7 crossfade fix VERIFIED — filter chain logic correct for up to 28 scenes
+- Task #8 dead code removal VERIFIED
+- All 3 Programmer fix tasks (#6/#7/#8) now complete and verified
+- Pipeline scripts are clean — waiting on Writer for narration scripts
