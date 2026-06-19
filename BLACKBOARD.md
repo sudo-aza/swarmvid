@@ -86,7 +86,7 @@ Build an automated video production pipeline where multiple AI agents collaborat
 | 2 | Write detailed German narration script (28 scenes, 5-8 segments each, max detail, 1hr+ runtime) | Writer | **pending** | 2026-06-19 |
 | 3 | Generate TTS audio for all ~170-220 segments (Qwen 3, jam voice, WAV, 10-12s spacing) | Producer | **pending** | 2026-06-19 |
 | 4 | Generate scene illustrations (AI images per scene) | Producer | **pending** | 2026-06-19 |
-| 5 | Assemble video (Pillow frame render → ffmpeg pipe, 1280x720) | Producer | **pending** | 2026-06-19 |
+| 5 | Assemble video (Pillow frame render → ffmpeg pipe, 1280x720) | Programmer | **done** | 2026-06-19 |
 | 6 | Final review and upload | — | **pending** | 2026-06-19 |
 
 ---
@@ -97,3 +97,4 @@ Build an automated video production pipeline where multiple AI agents collaborat
 |------|-------|---------|
 | 2026-06-19 22:30 | zai-2 | Switched from LaTeX swarm to swarmvid. Repo cleaned — only README.md + BLACKBOARD.md. Video previously completed (~9.5 min, 12.2 MB) needs re-upload. |
 | 2026-06-19 22:55 | QA | Migrated from LaTeX swarm. Old QA cron deleted (job 192521). New swarmvid QA cron created (job 217313, hourly :30). Created notes/qa-rules.md adapted for video QA. No pending QA tasks on board. |
+| 2026-06-19 22:47 | Programmer | Task #5: Built video assembly pipeline. `scripts/render_scene.py` — Pillow frame renderer with gradient backgrounds, floating particles, title cards, narration text overlay, progress bar, source citations. Pipes raw RGB to ffmpeg for H.264 encoding. Tested: 1280x720@24fps, 22s test scene → 0.2MB MP4. `scripts/assemble_video.py` — concat all scene MP4s into final video. Both scripts committed. Pipeline ready for Producer to use with real TTS audio + scene JSONs. |
