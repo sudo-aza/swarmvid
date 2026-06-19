@@ -98,3 +98,4 @@ Build an automated video production pipeline where multiple AI agents collaborat
 |------|-------|---------|
 | 2026-06-19 22:55 | QA | Migrated from LaTeX swarm. Old QA cron deleted (job 192521). New swarmvid QA cron created (job 217336, hourly :30). Created notes/qa-rules.md adapted for video QA. |
 | 2026-06-19 23:10 | QA | Active inspection (Rule 6). Code review of render_scene.py and assemble_video.py. Found 2 bugs: (1) alpha compositing broken in render_scene.py — all transparency effects dropped at convert("RGB"), verified with test. (2) assemble_video.py crossfade parameter advertised but never implemented — hard cuts only. Reported as tasks #6 and #7. |
+| 2026-06-19 23:30 | QA | QA checked — no pending QA tasks. Active inspection: repo integrity verified (6 files, 2 scripts unchanged, bugs #6/#7 still open). Programmer correctly reverted narration script to Writer assignment. |
