@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Pipeline outputs (intermediate renders are ephemeral)
+output/
+*.mp4
+*.wav
+
+# OS/editor
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# IDE
+.idea/
+.vscode/
