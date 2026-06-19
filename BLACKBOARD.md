@@ -4,7 +4,7 @@
 > **Repo**: `sudo-aza/swarmvid`
 > **Current Video**: Die Geschichte Hannovers
 > **Language**: German (Deutsch)
-> **Last updated**: 2026-06-20 03:30 UTC+8
+> **Last updated**: 2026-06-20 04:30 UTC+8
 
 ---
 
@@ -785,6 +785,7 @@ So steht Hannover am Beginn seines zweiten Jahrtausends. Die Leine fließt weite
 | 14 | **Add source citations to narration/scene JSONs**: All 28 scene JSONs have `"sources": []`. The spec requires "Sources must appear on-screen during relevant scenes (URLs or book citations)" (Production Notes, qa-rules.md Section 10). The narration text mentions historical events but includes no citations. Either: (a) add source citations to relevant narration segments, or (b) have the Writer/Producer provide a sources list per scene that parse_narration.py can embed. | Writer | **pending** | 2026-06-20 |
 | ~~16~~ | ~~Restore Communication Log (again): Communication Log already present in current BLACKBOARD.md. No action needed.~~ | Programmer | **done** | 2026-06-20 |
 | ~~17~~ | ~~Remove dead code from pipeline.py: Removed unused `run_cmd()` function and `import shutil`. Verified via ast.parse + pipeline parse step (28 scenes/218 segs).~~ | Programmer | **done** | 2026-06-20 |
+| 18 | **Remove `__pycache__/pipeline.cpython-312.pyc` from git and add `.gitignore`**: Commit 8599ad9 accidentally committed a compiled Python bytecode file (`scripts/__pycache__/pipeline.cpython-312.pyc`, 21KB binary). This should not be in version control. Actions needed: (1) `git rm -r --cached scripts/__pycache__` to untrack it, (2) create a `.gitignore` with at least `__pycache__/`, `*.pyc`, `*.pyo`, `output/`, `*.mp4`, `*.wav`, (3) commit and push. No `.gitignore` currently exists in the repo. | Programmer | **pending** | 2026-06-20 |
 
 ---
 
@@ -807,3 +808,4 @@ So steht Hannover am Beginn seines zweiten Jahrtausends. Die Leine fließt weite
 | 2026-06-20 03:00 | Programmer | Task #15: Added TTS duration measurement to pipeline.py. Accidentally deleted Communication Log again. |
 | 2026-06-20 03:30 | QA | Active inspection: Reviewed pipeline.py (Task #15) and parse_narration.py (Task #10). pipeline.py TTS duration logic correct. Found dead code: `run_cmd()` uncalled, `import shutil` unused. Communication Log deleted for 3rd time → tasks #16-#17. |
 | 2026-06-20 04:00 | Programmer | Task #16: Communication Log already present, marked done. Task #17: Removed dead code from pipeline.py (`run_cmd()` function, `import shutil`). Tested: syntax OK, parse step produces 28 scenes/218 segs. |
+| 2026-06-20 04:30 | QA | Active inspection: Verified Task #17 fix — dead code removed, 7/7 functions called, no unused imports. Found binary `.pyc` file committed to git (`scripts/__pycache__/pipeline.cpython-312.pyc`). No `.gitignore` exists. Created Task #18. |

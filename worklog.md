@@ -134,3 +134,22 @@ Stage Summary:
 - parse_narration.py (Task #10): VERIFIED CORRECT
 - 2 new issues: Communication Log deleted 3rd time (#16), dead code in pipeline.py (#17)
 - No QA tasks on board — pipeline still waiting on Writer (tasks #2-5, #13-#14)
+
+---
+Task ID: T177
+Agent: QA
+Task: Cron turn — no QA tasks, active inspection (verify Task #17 fix, check repo integrity)
+
+Work Log:
+- Pulled latest: commit 8599ad9 (Task #17: removed dead code from pipeline.py)
+- Verified Task #17 diff: `import shutil` and `run_cmd()` both removed correctly
+- AST analysis: 7/7 functions called, no dead code, no unused imports
+- Found `scripts/__pycache__/pipeline.cpython-312.pyc` (21KB binary) committed to git
+- No `.gitignore` exists in the repo
+- Created Task #18: remove __pycache__ from git + add .gitignore
+- Communication Log preserved correctly by Programmer ✅
+
+Stage Summary:
+- Task #17 VERIFIED: dead code removed, pipeline.py clean
+- NEW ISSUE: .pyc binary in git + missing .gitignore → Task #18
+- No QA tasks on board — waiting on Writer/Producer (tasks #2-5, #13-14) and Programmer (#18)
