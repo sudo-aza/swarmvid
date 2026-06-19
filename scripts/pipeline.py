@@ -30,7 +30,27 @@ import sys
 import time
 import shutil
 
+import wave as wave_mod
+
 from parse_narration import parse_blackboard, build_scene_json
+
+
+def get_wav_duration(filepath):
+    """Get duration of a WAV file in seconds."""
+    try:
+        with wave_mod.open(filepath, "rb") as wf:
+            return wf.getnframes() / wf.getframerate()
+    except Exception:
+        # Fallback to ffprobe for non-standard WAVs
+        result = subprocess.run(
+            ["ffprobe", "-v", "quiet", "-show_entries", "format=duration",
+             "-of", "json", filepath],
+            capture_output=True, text=True
+        )
+        try:
+            return float(json.loads(result.stdout)["format"]["duration"])
+        except (KeyError, ValueError):
+            return 0.0
 
 
 def run_cmd(cmd, description=""):
@@ -97,6 +117,10 @@ def step_generate_tts(scenes_dir, audio_dir, voice, tts_delay, start_from=1):
 
         print(f"\n  Scene {scene_num}: {scene['title']}")
 
+        # Track actual durations for JSON update
+        actual_durations = []
+        scene_dirty = False
+
         for seg_idx, segment in enumerate(scene["segments"]):
             seg_id = f"S{scene_num}.{seg_idx + 1}"
             out_path = os.path.join(audio_dir, f"scene_{scene_num:02d}_seg_{seg_idx:02d}.wav")
@@ -127,6 +151,7 @@ def step_generate_tts(scenes_dir, audio_dir, voice, tts_delay, start_from=1):
                 print(f"FAILED")
                 print(f"      {result.stderr[-200:]}")
                 errors += 1
+                actual_durations.append(segment.get("duration_s", 12.0))
                 # Create a silent placeholder so pipeline can continue
                 subprocess.run([
                     "ffmpeg", "-y", "-f", "lavfi",
@@ -136,7 +161,16 @@ def step_generate_tts(scenes_dir, audio_dir, voice, tts_delay, start_from=1):
                 ], capture_output=True)
             else:
                 size = os.path.getsize(out_path)
-                print(f"OK ({size//1024}KB)")
+                # Measure actual duration
+                actual_dur = get_wav_duration(out_path)
+                actual_durations.append(actual_dur)
+                total_duration += actual_dur
+                print(f"OK ({size//1024}KB, {actual_dur:.1f}s)")
+
+                # Update JSON duration_s if it differs significantly
+                if abs(actual_dur - segment.get("duration_s", 12.0)) > 0.5:
+                    scene_dirty = True
+                    segment["duration_s"] = round(actual_dur, 2)
 
             total_segments += 1
 
@@ -144,7 +178,13 @@ def step_generate_tts(scenes_dir, audio_dir, voice, tts_delay, start_from=1):
             if tts_delay > 0:
                 time.sleep(tts_delay)
 
-    print(f"\n  TTS complete: {total_segments} segments, {errors} errors")
+        # Update scene JSON with actual TTS durations
+        if scene_dirty:
+            with open(scene_path, "w", encoding="utf-8") as f:
+                json.dump(scene, f, ensure_ascii=False, indent=2)
+            print(f"    Updated scene JSON with actual TTS durations")
+
+    print(f"\n  TTS complete: {total_segments} segments, {errors} errors, {total_duration:.0f}s total audio")
     return audio_dir, errors == 0
 
 
