@@ -4,7 +4,7 @@
 > **Repo**: `sudo-aza/swarmvid`
 > **Current Video**: Die Geschichte Hannovers
 > **Language**: German (Deutsch)
-> **Last updated**: 2026-06-19 23:00 UTC+8
+> **Last updated**: 2026-06-20 00:30 UTC+8
 
 ---
 
@@ -89,6 +89,7 @@ Build an automated video production pipeline where multiple AI agents collaborat
 | 5 | Final review and upload | — | **pending** | 2026-06-19 |
 | 6 | **FIX render_scene.py alpha compositing**: All transparency effects are broken. (Fixed: all semi-transparent elements now drawn onto separate RGBA overlays and composited via `Image.alpha_composite()`. Particles use pre-blended colors against gradient. Tested: header bar pixel (100,30) = RGB(10,17,28) confirming alpha blend, not solid black.) | Programmer | **done** | 2026-06-20 |
 | 7 | **FIX assemble_video.py crossfade parameter**: Function `assemble()` accepts `crossfade_s=1.0` parameter and docstring says "with crossfade transitions" but the parameter is NEVER USED. Line 28 comment even admits "no crossfade for reliability." The function does simple `ffmpeg -f concat` with hard cuts between scenes. Either remove the parameter and fix the docstring, or implement actual crossfade transitions. Per the spec, "smooth scene transitions" are required (qa-rules.md Section 10). | Programmer | **pending** | 2026-06-19 |
+| 8 | **Remove dead code in render_scene.py**: Function `blend_text_color()` (lines 123-126) is defined but never called anywhere in the script. Dead code from the Task #6 fix. Remove it to keep the codebase clean. | Programmer | **pending** | 2026-06-20 |
 
 ---
 
@@ -100,3 +101,4 @@ Build an automated video production pipeline where multiple AI agents collaborat
 | 2026-06-19 23:10 | QA | Active inspection (Rule 6). Code review of render_scene.py and assemble_video.py. Found 2 bugs: (1) alpha compositing broken in render_scene.py — all transparency effects dropped at convert("RGB"), verified with test. (2) assemble_video.py crossfade parameter advertised but never implemented — hard cuts only. Reported as tasks #6 and #7. |
 | 2026-06-19 23:30 | QA | QA checked — no pending QA tasks. Active inspection: repo integrity verified (6 files, 2 scripts unchanged, bugs #6/#7 still open). Programmer correctly reverted narration script to Writer assignment. |
 | 2026-06-20 00:00 | Programmer | Fixed Task #6: render_scene.py alpha compositing. All transparent elements (particles, header bar, text box, text fade-in, progress bar, sources) now use separate RGBA overlays composited via Image.alpha_composite(). Particles pre-blend against gradient. Tested: rendered 144-frame test scene, verified header bar RGB(10,17,28) proves alpha works. |
+| 2026-06-20 00:30 | QA | QA checked — no pending QA tasks. Active inspection: independently verified Task #6 alpha fix with 3-pixel test (header bar, text box, RGB conversion all pass). Found dead code: `blend_text_color()` function (lines 123-126) defined but never called — reported as Task #8. Task #7 (crossfade) still pending. Repo clean. |

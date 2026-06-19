@@ -31,3 +31,23 @@ Work Log:
 
 Stage Summary:
 - No QA tasks. No new issues. Repo clean. Waiting on Writer/Producer pipeline.
+
+---
+Task ID: T173 (cron turn)
+Agent: QA
+Task: Cron turn — no QA tasks, active inspection (verify Task #6 fix)
+
+Work Log:
+- Pulled latest: Programmer fixed Task #6 alpha compositing (eb1a87a), plus TTS spec commits
+- No QA tasks on BLACKBOARD — entered Rule 6 active inspection
+- Independently verified Task #6 fix: 3-pixel test (header bar, text box, RGB conversion) all pass
+- Reviewed fix architecture: overlay-per-element + Image.alpha_composite() approach is correct
+- Found dead code: blend_text_color() (lines 123-126) defined but never called — AST confirmed
+- Created BLACKBOARD Task #8 for dead code removal
+- Added comm log entry, updated timestamp
+
+Stage Summary:
+- Task #6 fix VERIFIED — alpha compositing now works correctly
+- Task #8 CREATED — dead code in render_scene.py
+- Task #7 still pending (crossfade)
+- No QA tasks to review yet
