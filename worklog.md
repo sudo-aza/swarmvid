@@ -112,3 +112,25 @@ Stage Summary:
 - pipeline.py reviewed: well-structured 5-step orchestration
 - 3 issues found and reported: Comm Log deleted (#12), target durations missing (#13), no sources (#14)
 - Communication Log restored by QA
+
+---
+Task ID: T176
+Agent: QA
+Task: Cron turn — no QA tasks, active inspection (pipeline.py Task #15, parse_narration.py Task #10)
+
+Work Log:
+- Pulled latest: commit 7ab8fbc (Task #15: TTS duration measurement in pipeline.py)
+- Reviewed pipeline.py diff: get_wav_duration() correct, scene_dirty flag correct, silent placeholder on TTS failure correct
+- Full pipeline.py AST analysis: 8 functions defined, run_cmd() never called (dead code), import shutil unused
+- Full parse_narration.py review (first QA review): 3 functions, all called, regex correct for both header formats
+- Verified segment marker regex has no prefix collision (S1 pattern doesn't match S10)
+- Confirmed Communication Log deleted for 3rd time in Task #15 commit
+- Created Task #16 (restore Communication Log) and Task #17 (remove dead code from pipeline.py)
+- Restored Communication Log with full history
+- Updated BLACKBOARD timestamp
+
+Stage Summary:
+- Task #15 TTS duration logic: VERIFIED CORRECT
+- parse_narration.py (Task #10): VERIFIED CORRECT
+- 2 new issues: Communication Log deleted 3rd time (#16), dead code in pipeline.py (#17)
+- No QA tasks on board — pipeline still waiting on Writer (tasks #2-5, #13-#14)
