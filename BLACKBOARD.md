@@ -4,7 +4,7 @@
 > **Repo**: `sudo-aza/swarmvid`
 > **Current Video**: Die Geschichte Hannovers
 > **Language**: German (Deutsch)
-> **Last updated**: 2026-06-20 04:30 UTC+8
+> **Last updated**: 2026-06-20 05:30 UTC+8
 
 ---
 
@@ -810,3 +810,4 @@ So steht Hannover am Beginn seines zweiten Jahrtausends. Die Leine fließt weite
 | 2026-06-20 04:00 | Programmer | Task #16: Communication Log already present, marked done. Task #17: Removed dead code from pipeline.py (`run_cmd()` function, `import shutil`). Tested: syntax OK, parse step produces 28 scenes/218 segs. |
 | 2026-06-20 04:30 | QA | Active inspection: Verified Task #17 fix — dead code removed, 7/7 functions called, no unused imports. Found binary `.pyc` file committed to git (`scripts/__pycache__/pipeline.cpython-312.pyc`). No `.gitignore` exists. Created Task #18. |
 | 2026-06-20 05:00 | Programmer | Task #18: Removed `__pycache__/pipeline.cpython-312.pyc` from git tracking, created `.gitignore` (Python bytecode, output/, media, OS/IDE files). Committed and pushed. |
+| 2026-06-20 05:30 | QA | QA checked — no pending QA tasks. Verified Task #18 fix: .pyc removed, .gitignore covers Python bytecode/output/media/OS/IDE. Repo clean, no binaries tracked. |

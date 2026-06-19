@@ -153,3 +153,21 @@ Stage Summary:
 - Task #17 VERIFIED: dead code removed, pipeline.py clean
 - NEW ISSUE: .pyc binary in git + missing .gitignore → Task #18
 - No QA tasks on board — waiting on Writer/Producer (tasks #2-5, #13-14) and Programmer (#18)
+
+---
+Task ID: T178
+Agent: QA
+Task: Cron turn — no QA tasks, active inspection (verify Task #18 fix)
+
+Work Log:
+- Pulled latest: commit 48237b3 (Task #18: .gitignore + remove __pycache__)
+- Verified .pyc file removed from git tracking
+- Verified .gitignore covers Python bytecode, output/, media files, OS/IDE files
+- Confirmed no binaries tracked via git ls-files
+- Communication Log preserved correctly
+- No new issues found
+
+Stage Summary:
+- Task #18 VERIFIED: .pyc removed, .gitignore comprehensive
+- Repo is clean — all 18 Programmer tasks done, no open issues
+- Pipeline blocked on Writer/Producer (tasks #2-5, #13-14)
