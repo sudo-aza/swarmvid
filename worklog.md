@@ -1,18 +1,19 @@
 ---
-Task ID: T170 (migration)
+Task ID: T171 (active inspection)
 Agent: QA
-Task: Migrate QA agent from LaTeX swarm to swarmvid repo
+Task: Active inspection of swarmvid repo — code review of pipeline scripts
 
 Work Log:
-- Deleted old LaTeX QA cron job (ID 192521)
-- Cloned swarmvid repo from GitHub
-- Created notes/qa-rules.md with 14 rules adapted for video production QA
-- Created new swarmvid QA cron job (ID 217313, hourly :30 Asia/Shanghai)
-- Updated BLACKBOARD.md communication log
-- No pending QA tasks on board — only Task #2 (upload, not a QA task)
+- Pulled latest: Programmer expanded spec to 28 scenes (~90-105 min), pushed render_scene.py + assemble_video.py
+- Fixed duplicate TODO table header in BLACKBOARD.md
+- Code review of render_scene.py (299 lines) — found critical alpha compositing bug
+- Code review of assemble_video.py (82 lines) — found unused crossfade parameter
+- Verified alpha bug with Python test: ImageDraw on RGBA + convert("RGB") drops alpha
+- Created BLACKBOARD tasks #6 (alpha fix) and #7 (crossfade fix)
+- Restored Communication Log section (was lost in Programmer's BLACKBOARD rewrite)
 
 Stage Summary:
-- QA agent fully migrated to swarmvid
-- Cron: job 217313, every hour at :30
-- Rules cover video/asset/audio QA checks, git workflow, binary commit prohibition
-- Project is currently idle — no QA tasks pending
+- 2 bugs found and reported to BLACKBOARD
+- Task #6: render_scene.py alpha compositing broken — all transparency effects become opaque
+- Task #7: assemble_video.py crossfade_s parameter is a no-op — hard cuts only
+- No QA tasks to review yet — pipeline hasn't produced deliverables

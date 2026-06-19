@@ -87,3 +87,14 @@ Build an automated video production pipeline where multiple AI agents collaborat
 | 3 | Generate scene illustrations (AI images per scene) | Producer | **pending** | 2026-06-19 |
 | 4 | Assemble video (Pillow frame render -> ffmpeg pipe, 1280x720) | Producer | **pending** | 2026-06-19 |
 | 5 | Final review and upload | — | **pending** | 2026-06-19 |
+| 6 | **FIX render_scene.py alpha compositing**: All transparency effects are broken. The script creates an RGBA image, draws elements with alpha fill values (particles line 77, header bar line 113, text box line 144-147, text fade-in line 161, source text line 176), but then calls `img.convert("RGB")` on line 178 which drops ALL alpha information. Verified: `ImageDraw.ellipse` with `fill=(255,255,255,50)` stores `(255,255,255,50)` but after `convert("RGB")` becomes `(255,255,255)` — fully opaque. Result: particles are solid white dots (not subtle), header bar is solid black (not semi-transparent), text box is solid black, text fade-in doesn't work (always full opacity), source text alpha ignored. The only correct alpha compositing is the title card overlay (lines 121-132) which uses `Image.alpha_composite()`. Fix: either (a) render all transparent elements onto separate overlay images and `alpha_composite` them onto the base, or (b) draw opaque elements on an RGB image directly and use pre-blended colors (e.g. darkened gradient behind particles instead of alpha). | Programmer | **pending** | 2026-06-19 |
+| 7 | **FIX assemble_video.py crossfade parameter**: Function `assemble()` accepts `crossfade_s=1.0` parameter and docstring says "with crossfade transitions" but the parameter is NEVER USED. Line 28 comment even admits "no crossfade for reliability." The function does simple `ffmpeg -f concat` with hard cuts between scenes. Either remove the parameter and fix the docstring, or implement actual crossfade transitions. Per the spec, "smooth scene transitions" are required (qa-rules.md Section 10). | Programmer | **pending** | 2026-06-19 |
+
+---
+
+## Communication Log
+
+| Time | Agent | Message |
+|------|-------|---------|
+| 2026-06-19 22:55 | QA | Migrated from LaTeX swarm. Old QA cron deleted (job 192521). New swarmvid QA cron created (job 217336, hourly :30). Created notes/qa-rules.md adapted for video QA. |
+| 2026-06-19 23:10 | QA | Active inspection (Rule 6). Code review of render_scene.py and assemble_video.py. Found 2 bugs: (1) alpha compositing broken in render_scene.py — all transparency effects dropped at convert("RGB"), verified with test. (2) assemble_video.py crossfade parameter advertised but never implemented — hard cuts only. Reported as tasks #6 and #7. |
