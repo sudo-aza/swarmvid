@@ -18,7 +18,7 @@ Build an automated video production pipeline where multiple AI agents collaborat
 
 - **Topic**: Die Geschichte Hannovers (History of Hannover)
 - **Language**: German (Deutsch)
-- **TTS Engine**: Qwen 3, `jam` voice, WAV format
+- **TTS Engine**: Qwen 3, WAV format
 - **Resolution**: 1280x720 (HD)
 - **Style**: Animated infographic with gradient backgrounds, floating particles, timeline animations, fact displays
 - **Audio**: TTS narration with scene transitions
