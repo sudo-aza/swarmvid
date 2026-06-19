@@ -25,8 +25,7 @@ Research → Script → TTS → Illustration → Animation → Assembly → Uplo
 swarmvid/
 ├── BLACKBOARD.md      ← active task board (only tracking doc)
 ├── README.md
-├── output/             ← final video + assets
-└── scripts/            ← generation scripts
+└── output/             ← final video + assets
 ```
 
 ## License
