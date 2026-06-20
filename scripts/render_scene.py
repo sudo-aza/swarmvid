@@ -553,6 +553,26 @@ def draw_map_panel(draw, od, panel_x, panel_y, panel_w, panel_h,
         for i in range(len(river_px) - 1):
             od.line([river_px[i], river_px[i+1]], fill=river_glow, width=7)
 
+    # Draw River Weser (secondary river)
+    for river_path in [WESER_RIVER, ALLER_RIVER]:
+        rpx = [geo_to_map(lon, lat, panel_x, panel_y, panel_w, panel_h)
+               for lon, lat in river_path]
+        if len(rpx) > 1:
+            for i in range(len(rpx) - 1):
+                od.line([rpx[i], rpx[i+1]], fill=(40, 80, 130, 70), width=2)
+
+    # Draw road connections (subtle dashed lines)
+    for city_a, city_b in ROAD_CONNECTIONS:
+        if city_a in HANNOVER_LOCATIONS and city_b in HANNOVER_LOCATIONS:
+            ax, ay = geo_to_map(HANNOVER_LOCATIONS[city_a]["lon"],
+                               HANNOVER_LOCATIONS[city_a]["lat"],
+                               panel_x, panel_y, panel_w, panel_h)
+            bx, by = geo_to_map(HANNOVER_LOCATIONS[city_b]["lon"],
+                               HANNOVER_LOCATIONS[city_b]["lat"],
+                               panel_x, panel_y, panel_w, panel_h)
+            od.line([(ax, ay), (bx, by)],
+                    fill=alpha_color((80, 80, 90), 50), width=1)
+
     # Determine which locations to highlight for this scene
     highlight_names = SCENE_LOCATIONS.get(scene_num, ["Hannover"])
 
@@ -602,6 +622,13 @@ def draw_map_panel(draw, od, panel_x, panel_y, panel_w, panel_h,
             # Smaller dim dots for other cities
             od.ellipse([px - 2, py - 2, px + 2, py + 2],
                       fill=(120, 130, 140, 140))
+            # Show label for non-highlighted cities too
+            short = name if len(name) <= 10 else name[:9] + "."
+            bbox = od.textbbox((0, 0), short, font=fonts["map_label"])
+            tw = bbox[2] - bbox[0]
+            od.text((px - tw // 2, py + 5), short,
+                    fill=alpha_color((130, 130, 140), 120),
+                    font=fonts["map_label"])
 
     # "NIEDERSACHSEN" region label at top of map
     region_label = "NIEDERSACHSEN"
