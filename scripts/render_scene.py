@@ -28,6 +28,7 @@ from PIL import Image, ImageDraw
 from visuals import registry
 from visuals.treatments.base import RenderContext
 from visuals.colors import hex_rgb
+from visuals.events import EventTimeline, render_visual_events
 from visuals.fonts import get_fonts, W, H, FPS
 
 # Trigger treatment registration
@@ -84,6 +85,12 @@ def render_scene(scene_path: str, audio_path: str, output_path: str, fps: int = 
     treatment.prepare(ctx)
     print(f"{time.time() - t0:.1f}s")
 
+    # Build visual events timeline (per-scene programming)
+    media_base = os.path.join(os.path.dirname(scene_path), "media")
+    event_timeline = EventTimeline.from_scene(scene, media_base)
+    if event_timeline.events:
+        print(f"  Visual events: {len(event_timeline.events)} events loaded")
+
     # FFmpeg pipe
     cmd = [
         "ffmpeg", "-y",
@@ -131,6 +138,15 @@ def render_scene(scene_path: str, audio_path: str, output_path: str, fps: int = 
         # Render frame via treatment
         img = treatment.render_frame(ctx, frame_idx, total_frames,
                                    seg_idx, seg_progress, cross_fade)
+
+        # Overlay visual events (per-scene programmed content)
+        if event_timeline.events:
+            img_rgba = img.convert("RGBA")
+            events_overlay = render_visual_events(
+                event_timeline, t_sec, W, H, accent_rgb, fonts)
+            img_rgba = Image.alpha_composite(img_rgba, events_overlay)
+            img = img_rgba.convert("RGB")
+
         proc.stdin.write(img.tobytes())
 
         if frame_idx > 0 and frame_idx % 100 == 0:
