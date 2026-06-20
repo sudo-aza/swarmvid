@@ -29,7 +29,7 @@ import wave
 
 import numpy as np
 
-from PIL import Image, ImageDraw, ImageFont, ImageFilter
+from PIL import Image, ImageDraw, ImageFont
 
 # ── Constants ──────────────────────────────────────────────────────────────────
 W, H = 1280, 720
@@ -213,40 +213,8 @@ def hex_rgb(h):
     h = h.lstrip("#")
     return tuple(int(h[i:i+2], 16) for i in (0, 2, 4))
 
-def lerp(c1, c2, t):
-    return tuple(int(a + (b - a) * t) for a, b in zip(c1, c2))
-
 def alpha_color(rgb, a):
     return (*rgb, int(max(0, min(255, a))))
-
-
-# ── Gradient ──────────────────────────────────────────────────────────────────
-def make_gradient(w, h, colors):
-    """Radial-ish gradient: darker edges, lighter center (numpy)."""
-    n = len(colors)
-    cx, cy = w / 2.0, h / 2.0
-    y_coords, x_coords = np.mgrid[0:h, 0:w]
-    dx = (x_coords - cx) / cx
-    dy = (y_coords - cy) / cy
-    d = np.sqrt(dx*dx + dy*dy) / 1.414
-    d = np.clip(d, 0, 1.0)
-    t = d * (n - 1)
-    colors_arr = np.array(colors, dtype=np.float64)
-    idx = np.clip(t.astype(int), 0, n - 2)
-    frac = (t - idx)[..., np.newaxis]
-    result = colors_arr[idx] * (1 - frac) + colors_arr[idx + 1] * frac
-    return Image.fromarray(result.astype(np.uint8), "RGB")
-
-
-def make_vignette(w, h, strength=0.6):
-    """Dark vignette overlay (numpy)."""
-    cx, cy = w / 2.0, h / 2.0
-    y_coords, x_coords = np.mgrid[0:h, 0:w]
-    dx = (x_coords - cx) / cx
-    dy = (y_coords - cy) / cy
-    d = np.sqrt(dx*dx + dy*dy)
-    brightness = (255 * np.clip(1.0 - d * strength, 0, 1)).astype(np.uint8)
-    return Image.fromarray(brightness, "L")
 
 
 def make_bg_composited(w, h, colors, vignette_strength=0.5, dark_factor=0.85):
@@ -651,15 +619,6 @@ def draw_map_panel(draw, od, panel_x, panel_y, panel_w, panel_h,
         gy = panel_y + 40 + int(lat_frac * (panel_h - 85))
         od.line([(panel_x + 30, gy), (panel_x + panel_w - 30, gy)],
                 fill=alpha_color((60, 60, 70), 20), width=1)
-
-
-# ── Drawing Helpers ───────────────────────────────────────────────────────────
-def draw_accent_line(draw, x1, y1, x2, y2, color, width=2, progress=1.0):
-    if progress <= 0:
-        return
-    px = int(x1 + (x2 - x1) * min(progress, 1.0))
-    py = int(y1 + (y2 - y1) * min(progress, 1.0))
-    draw.line([(x1, y1), (px, py)], fill=color, width=width)
 
 
 # ── Render Frame ─────────────────────────────────────────────────────────────
