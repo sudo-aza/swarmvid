@@ -17,12 +17,14 @@ Each output JSON matches the format expected by render_scene.py:
   "era": "...",
   "segments": [{"text": "...", "duration_s": 12.0}],
   "sources": [],
+  "facts": ["1150: First mention as Honovere", "772–804: Saxon Wars"],
   "gradient": ["#1a1a2e", "#16213e", "#0f3460"],
   "accent": "#e94560"
 }
 
 Duration defaults to 12s per segment (Producer can adjust after TTS generation).
 Era is inferred from scene number.
+Facts are auto-extracted from narration text for lower-third banners.
 """
 
 import argparse
@@ -178,6 +180,124 @@ def parse_blackboard(blackboard_path):
     return scenes
 
 
+def _clean_fact(text):
+    """Clean a fact string: remove trailing punctuation, normalize whitespace."""
+    text = re.sub(r'\s+', ' ', text).strip()
+    text = text.rstrip('.,;:!?')
+    text = text.strip()
+    # Remove leading articles/conjunctions that look wrong
+    text = re.sub(r'^(und|oder|sowie|aber|doch|denn)\s+', '', text)
+    return text
+
+
+def extract_facts(segments_text):
+    """Extract concise fact strings from narration text for lower-third banners.
+
+    Looks for sentences containing years, dates, and key events.
+    Returns list of fact strings (max 75 chars each, max 8 per scene).
+    """
+    facts = []
+    seen = set()
+
+    # Split into sentences
+    sentences = re.split(r'(?<=[.!?])\s+', segments_text)
+
+    # Patterns that indicate factual content suitable for lower-third display
+    year_patterns = [
+        # "Im Jahr YYYY" + nearby text
+        re.compile(r'Im\s+Jahr(?:e)?\s+(\d{3,4})[,.]?\s+(.{10,80})', re.IGNORECASE),
+        # "Zwischen YYYY und YYYY" date ranges
+        re.compile(r'(?:Zwischen|zwischen)\s+(\d{3,4})\s+und\s+(\d{3,4})\s+(.{10,80})'),
+        # "von YYYY bis YYYY"
+        re.compile(r'von\s+(\d{3,4})\s+bis\s+(\d{3,4})\s+(.{10,80})'),
+        # "YYYY wurde/war/erhielt" (year as subject start)
+        re.compile(r'(?:^|,\s)(\d{3,4})\s+(wurde|war|erhielt|erschien|folgte|begann|endete|startete|wurden|gründete|baute|errichtete)\s+(.{10,80})', re.MULTILINE),
+        # "Am DD. Monat YYYY" full dates
+        re.compile(r'Am\s+\d{1,2}\.\s+\w+\s+(\d{3,4})\s+(.{10,80})'),
+        # "in YYYY" (generic, lower priority — placed later)
+        re.compile(r'(?:^|,\s)in\s+(\d{3,4})\s+(.{10,80})', re.IGNORECASE | re.MULTILINE),
+    ]
+
+    # Broad pattern: any sentence with a standalone 3-4 digit year
+    year_any = re.compile(r'(?<!\d)(\d{3,4})(?!\d)')
+
+    for sentence in sentences:
+        sentence = sentence.strip()
+        if len(sentence) < 20:
+            continue
+
+        fact = None
+
+        # Try specific patterns first (higher quality)
+        for pat in year_patterns:
+            m = pat.search(sentence)
+            if m:
+                groups = [g for g in m.groups() if g is not None]
+                if len(groups) >= 2:
+                    date_part = groups[0]
+                    desc_part = groups[1].strip()
+                    # If second group is also a year (date range), combine
+                    if re.match(r'^\d{3,4}$', groups[1]) and len(groups) >= 3:
+                        date_part = f"{groups[0]}–{groups[1]}"
+                        desc_part = groups[2].strip()
+                    # Truncate at sentence/clause boundary
+                    desc_part = re.split(r'[,;.]\s', desc_part)[0].strip()
+                    # Remove trailing conjunctions
+                    desc_part = re.sub(r'\s+(und|oder|sowie|aber|doch)\s+.*$', '', desc_part)
+                    desc_part = _clean_fact(desc_part)
+                    if len(desc_part) >= 8:
+                        fact = f"{date_part}: {desc_part}"
+                break
+
+        # Fallback: any sentence with a year, extract a concise version
+        if not fact:
+            years_in_sent = year_any.findall(sentence)
+            if years_in_sent:
+                for y in years_in_sent:
+                    yr = int(y)
+                    if 500 <= yr <= 2100:
+                        clauses = re.split(r'[,;]\s', sentence)
+                        for clause in clauses:
+                            if str(yr) in clause:
+                                idx = clause.find(str(yr))
+                                start = max(0, idx - 15)
+                                end = min(len(clause), idx + 55)
+                                fact_base = clause[start:end].strip()
+                                # Fix word boundaries: strip leading/trailing partial words
+                                if start > 0 and not fact_base[0].isupper():
+                                    first_space = fact_base.find(' ')
+                                    if first_space > 0:
+                                        fact_base = fact_base[first_space + 1:]
+                                fact_base = _clean_fact(fact_base)
+                                if len(fact_base) > 75:
+                                    fact_base = fact_base[:72] + "..."
+                                if len(fact_base) >= 25:
+                                    fact = fact_base
+                                break
+                        if fact:
+                            break
+
+        if fact:
+            fact = _clean_fact(fact)
+            # Enforce max length
+            if len(fact) > 75:
+                fact = fact[:72] + "..."
+            # Skip low-quality facts
+            if fact.startswith('NOTE:'):
+                continue
+            # Skip fragments that are just a number or too short
+            if len(fact) < 15:
+                continue
+            # Skip "In den 1920er/1930er Jahren" style (decade ranges without specific info)
+            if re.match(r'^In\s+den\s+\d{4}er\s+Jahren', fact):
+                continue
+            if fact not in seen:
+                seen.add(fact)
+                facts.append(fact)
+
+    return facts[:8]
+
+
 def build_scene_json(scene, default_duration=12.0):
     """Build the full scene JSON dict matching render_scene.py's expected format."""
     scene_num = scene["scene_num"]
@@ -196,6 +316,10 @@ def build_scene_json(scene, default_duration=12.0):
     # Use sources from parsed narration (or empty if none)
     sources = scene.get("sources", [])
 
+    # Extract facts from all segment texts for lower-third banners
+    all_text = " ".join(seg["text"] for seg in scene["segments"])
+    facts = extract_facts(all_text)
+
     return {
         "scene_num": scene_num,
         "title": scene["title"],
@@ -203,6 +327,7 @@ def build_scene_json(scene, default_duration=12.0):
         "era": era,
         "segments": segments,
         "sources": sources,
+        "facts": facts,
         "gradient": GRADIENTS[grad_idx],
         "accent": ACCENTS[acc_idx],
     }
