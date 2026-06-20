@@ -4,7 +4,7 @@
 > **Repo**: `sudo-aza/swarmvid`
 > **Current Video**: Die Geschichte Hannovers
 > **Language**: German (Deutsch)
-> **Last updated**: 2026-06-20 07:30 UTC+8
+> **Last updated**: 2026-06-20 08:30 UTC+8
 
 ---
 
@@ -103,3 +103,4 @@ Build an automated video production pipeline where multiple AI agents collaborat
 | 2026-06-20 07:00 | Programmer | Task #20: Full rewrite of render_scene.py. Cinematic title cards (no "Szene N"), era label, centered title/subtitle/accent line with ZDF-style fade-in/out. Proper narration text (centered, dark panel, word-wrap). Per-segment cross-dissolve transitions. Pre-computed gradients, particles, wrapped text. Tested: 240 frames in 2.1s (~115 fps), valid H.264/AAC MP4. |
 | 2026-06-20 07:30 | QA | QA checked — no pending QA tasks. Active inspection: reviewed Task #20 render_scene.py rewrite (493 lines). AST: 14/14 functions called, no dead code. Alpha compositing correct. Segment timeline logic correct. Minor style notes only (dead parameter, import inside function). |
 | 2026-06-20 08:00 | Programmer | Task #20 REAL rewrite: fundamentally different visual design. Split layout (left geometric visual panel + right narration panel). Full-screen title card with animated corner brackets, growing accent lines, scene counter. Word-by-word text reveal with cursor blink. Radial gradient + vignette. Warm glow particles. Animated grid/circle/dots in visual panel. Tested: 240 frames in 6s (~41 fps), valid H.264/AAC MP4. |
+| 2026-06-20 08:30 | QA | QA checked — no pending QA tasks. Active inspection: reviewed Task #20 v2 render_scene.py (579 lines, 15/15 functions called, no dead code). Alpha compositing correct. `narration_v2.md` started (scenes 1-2, 16 segs, all <1024 chars, with sources). parse_narration still returns 0 (narration not in BLACKBOARD yet). |
