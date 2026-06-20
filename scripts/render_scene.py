@@ -41,7 +41,7 @@ MAP_PANEL_X = 0
 MAP_PANEL_Y = 0
 
 TEXT_PANEL_LEFT = 540
-TEXT_PANEL_RIGHT = 1250
+TEXT_PANEL_RIGHT = 1240
 TEXT_PANEL_W = TEXT_PANEL_RIGHT - TEXT_PANEL_LEFT
 
 # Title card
@@ -127,6 +127,34 @@ LEINE_RIVER = [
     (9.75, 52.6), (9.70, 52.5), (9.72, 52.4), (9.74, 52.37),
     (9.73, 52.35), (9.73, 52.3), (9.74, 52.2), (9.75, 52.15),
     (9.80, 52.0), (9.85, 51.8),
+]
+
+# River Weser path (major river west of Leine)
+WESER_RIVER = [
+    (9.15, 52.85), (9.10, 52.75), (9.08, 52.65), (9.10, 52.55),
+    (9.12, 52.45), (9.15, 52.35), (9.18, 52.25), (9.20, 52.15),
+    (9.22, 52.05), (9.25, 51.9),
+]
+
+# River Aller path (joins Leine at Schwarmstedt)
+ALLER_RIVER = [
+    (9.60, 52.9), (9.65, 52.8), (9.68, 52.7), (9.72, 52.6),
+    (9.75, 52.6),
+]
+
+# Major road connections (simplified)
+ROAD_CONNECTIONS = [
+    ("Hannover", "Hildesheim"),
+    ("Hannover", "Braunschweig"),
+    ("Hannover", "Celle"),
+    ("Hannover", "Hameln"),
+    ("Hannover", "Lehrte"),
+    ("Hannover", "Wunstorf"),
+    ("Hannover", "Langenhagen"),
+    ("Braunschweig", "Wolfsburg"),
+    ("Hildesheim", "Gottingen"),
+    ("Celle", "Nienburg"),
+    ("Hameln", "Nienburg"),
 ]
 
 # Approximate border of Lower Saxony (simplified polygon)
@@ -313,7 +341,7 @@ def draw_timeline_bar(od, scene_num, total_scenes, accent, fonts):
     # Semi-transparent background strip
     od.rounded_rectangle(
         [(bar_left - 10, bar_top - 4), (bar_right + 10, bar_top + TIMELINE_BAR_H + 4)],
-        radius=4, fill=(0, 0, 0, 120)
+        radius=4, fill=(0, 0, 0, 160)
     )
 
     # Compute x positions for each scene node (evenly spaced)
@@ -349,13 +377,13 @@ def draw_timeline_bar(od, scene_num, total_scenes, accent, fonts):
         # Place era label above timeline only if there's enough space
         if x2 - x1 > tw + 10:
             od.text((era_center_x - tw // 2, bar_top - 15), label_text,
-                    fill=alpha_color((160, 160, 170), 100),
+                    fill=alpha_color((180, 180, 190), 180),
                     font=fonts["timeline_label"])
 
     # Draw the main timeline line
     od.line([(bar_left, bar_top + TIMELINE_BAR_H // 2),
              (bar_right, bar_top + TIMELINE_BAR_H // 2)],
-            fill=alpha_color((80, 80, 90), 100), width=1)
+            fill=alpha_color((120, 120, 130), 180), width=1)
 
     # Draw scene nodes
     for s in range(1, total + 1):
@@ -467,12 +495,12 @@ def draw_source_watermark(od, sources, accent, fonts):
     )
     # Subtle accent top border
     od.line([(box_x + 3, box_y), (box_x + box_w - 3, box_y)],
-            fill=alpha_color(accent, 60), width=1)
+            fill=alpha_color(accent, 100), width=1)
 
     # Draw source text
     for i, line in enumerate(lines):
         od.text((box_x + 8, box_y + 5 + i * line_h), line,
-                fill=alpha_color((150, 150, 155), SOURCE_WATERMARK_MAX_ALPHA),
+                fill=alpha_color((170, 170, 175), SOURCE_WATERMARK_MAX_ALPHA),
                 font=font)
 
 
@@ -500,28 +528,28 @@ def draw_map_panel(draw, od, panel_x, panel_y, panel_w, panel_h,
     # Draw border
     od.rectangle(
         [(panel_x + 1, panel_y + 1), (panel_x + panel_w - 2, panel_y + panel_h - 2)],
-        outline=alpha_color(accent, 50), width=1
+        outline=alpha_color(accent, 100), width=1
     )
 
     # Draw Lower Saxony border (subtle)
     border_px = [geo_to_map(lon, lat, panel_x, panel_y, panel_w, panel_h)
                  for lon, lat in LOWER_SAXONY_BORDER]
     if len(border_px) > 2:
-        od.polygon(border_px, outline=alpha_color(accent, 35), fill=None)
+        od.polygon(border_px, outline=alpha_color(accent, 80), fill=None)
 
     # Draw River Leine (animated flow)
     river_px = [geo_to_map(lon, lat, panel_x, panel_y, panel_w, panel_h)
                 for lon, lat in LEINE_RIVER]
     if len(river_px) > 1:
         # Main river line
-        river_color = (40, 80, 130, 90)
+        river_color = (50, 100, 160, 140)
         for i in range(len(river_px) - 1):
             # Animated dash effect
             dash_phase = (frame_idx * 0.02 + i * 0.15) % 1.0
             if dash_phase < 0.7:
                 od.line([river_px[i], river_px[i+1]], fill=river_color, width=3)
         # River glow
-        river_glow = (50, 100, 160, 40)
+        river_glow = (60, 120, 190, 60)
         for i in range(len(river_px) - 1):
             od.line([river_px[i], river_px[i+1]], fill=river_glow, width=7)
 
@@ -573,7 +601,7 @@ def draw_map_panel(draw, od, panel_x, panel_y, panel_w, panel_h,
         elif loc_type in ("city",):
             # Smaller dim dots for other cities
             od.ellipse([px - 2, py - 2, px + 2, py + 2],
-                      fill=(100, 110, 120, 80))
+                      fill=(120, 130, 140, 140))
 
     # "NIEDERSACHSEN" region label at top of map
     region_label = "NIEDERSACHSEN"
@@ -581,18 +609,18 @@ def draw_map_panel(draw, od, panel_x, panel_y, panel_w, panel_h,
     tw = bbox[2] - bbox[0]
     od.text((panel_x + panel_w // 2 - tw // 2, panel_y + 12),
             text=region_label,
-            fill=alpha_color((140, 140, 150), 100),
+            fill=alpha_color((170, 170, 180), 180),
             font=fonts["map_region"])
 
     # Compass rose (top-left corner of map)
     cx, cy = panel_x + 50, panel_y + 55
     # N arrow
     od.polygon([(cx, cy - 18), (cx - 5, cy), (cx + 5, cy)],
-               fill=alpha_color((200, 60, 60), 120))
+               fill=alpha_color((220, 70, 70), 200))
     od.polygon([(cx, cy + 18), (cx - 5, cy), (cx + 5, cy)],
-               fill=alpha_color((120, 120, 130), 80))
+               fill=alpha_color((140, 140, 150), 140))
     od.text((cx - 4, cy - 30), text="N",
-            fill=alpha_color((180, 180, 180), 120), font=fonts["map_label"])
+            fill=alpha_color((210, 210, 210), 200), font=fonts["map_label"])
 
     # Scale bar (bottom of map)
     sb_x = panel_x + 30
@@ -600,25 +628,25 @@ def draw_map_panel(draw, od, panel_x, panel_y, panel_w, panel_h,
     # ~50km roughly = (MAP_LON_MAX - MAP_LON_MIN) * 0.5
     scale_len = int((panel_w - 60) * 0.2)
     od.line([(sb_x, sb_y), (sb_x + scale_len, sb_y)],
-            fill=alpha_color((150, 150, 160), 80), width=1)
+            fill=alpha_color((180, 180, 190), 160), width=1)
     od.line([(sb_x, sb_y - 3), (sb_x, sb_y + 3)],
-            fill=alpha_color((150, 150, 160), 80), width=1)
+            fill=alpha_color((180, 180, 190), 160), width=1)
     od.line([(sb_x + scale_len, sb_y - 3), (sb_x + scale_len, sb_y + 3)],
-            fill=alpha_color((150, 150, 160), 80), width=1)
+            fill=alpha_color((180, 180, 190), 160), width=1)
     od.text((sb_x + scale_len // 2 - 12, sb_y + 4), text="~50 km",
-            fill=alpha_color((120, 120, 130), 80), font=fonts["map_label"])
+            fill=alpha_color((160, 160, 170), 160), font=fonts["map_label"])
 
     # Latitude/longitude grid lines (very subtle)
     for lon_deg in [9, 10, 11]:
         lon_frac = (lon_deg - MAP_LON_MIN) / (MAP_LON_MAX - MAP_LON_MIN)
         gx = panel_x + 30 + int(lon_frac * (panel_w - 60))
         od.line([(gx, panel_y + 40), (gx, panel_y + panel_h - 45)],
-                fill=alpha_color((60, 60, 70), 20), width=1)
+                fill=alpha_color((70, 70, 80), 40), width=1)
     for lat_deg in [52, 53]:
         lat_frac = 1.0 - (lat_deg - MAP_LAT_MIN) / (MAP_LAT_MAX - MAP_LAT_MIN)
         gy = panel_y + 40 + int(lat_frac * (panel_h - 85))
         od.line([(panel_x + 30, gy), (panel_x + panel_w - 30, gy)],
-                fill=alpha_color((60, 60, 70), 20), width=1)
+                fill=alpha_color((70, 70, 80), 40), width=1)
 
 
 # ── Render Frame ─────────────────────────────────────────────────────────────
@@ -849,17 +877,17 @@ def render_frame(frame_idx, total_frames, scene, seg_idx, seg_progress,
         # ── Top-right: scene number ──
         num_text = f"{scene_num} / {total_scenes}"
         od.text((W - 40, 20), num_text,
-                fill=(100, 100, 100, 120), font=fonts["tiny"], anchor="rt")
+                fill=(130, 130, 130, 200), font=fonts["tiny"], anchor="rt")
 
         # ── Top of text panel: era + title ──
         era = scene.get("era", "")
         if era:
             od.text((TEXT_PANEL_LEFT, 20), era,
-                    fill=alpha_color(accent, 140), font=fonts["small"])
+                    fill=alpha_color(accent, 220), font=fonts["small"])
         title = scene.get("title", "")
         if title:
             od.text((TEXT_PANEL_LEFT, 45), title,
-                    fill=alpha_color((200, 200, 200), 160), font=fonts["subtitle"])
+                    fill=alpha_color((220, 220, 220), 230), font=fonts["subtitle"])
 
         img_rgba = Image.alpha_composite(img_rgba, overlay)
 
@@ -927,7 +955,9 @@ def render_scene(scene_path, audio_path, output_path, fps=FPS):
         "-i", "-",
         "-i", audio_path,
         "-c:v", "libx264", "-preset", "medium", "-crf", "23",
+        "-profile:v", "main", "-pix_fmt", "yuv420p",
         "-c:a", "aac", "-b:a", "192k",
+        "-movflags", "+faststart",
         "-shortest",
         output_path,
     ]
