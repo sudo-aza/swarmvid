@@ -83,6 +83,40 @@ ACCENTS = [
     "#ff7979", "#eb4d4b", "#f0932b", "#e55039",
 ]
 
+# Visual treatments per scene — maps scene numbers to treatment names.
+# Treatments: default, title_card, map_focus, fullscreen_text, stark
+# Unlisted scenes fall back to "default".
+VISUAL_TREATMENTS = {
+    1: "title_card",     # Opening — dramatic full-screen intro
+    2: "default",        # Medieval foundations — map + narration
+    3: "map_focus",      # Trade routes geography — full map focus
+    4: "default",        # Medieval Hannover — map + narration
+    5: "default",        # Medieval trade — map + narration
+    6: "default",        # Renaissance — map + narration
+    7: "map_focus",      # Infrastructure/rail — full map focus
+    8: "title_card",     # Baroque intro — dramatic transition
+    9: "stark",          # Thirty Years' War — harsh, dramatic
+    10: "stark",         # War aftermath — harsh, dramatic
+    11: "fullscreen_text", # Post-war reflection — typographic focus
+    12: "default",        # Baroque rebuilding — map + narration
+    13: "default",        # Baroque culture — map + narration
+    14: "title_card",     # Electorate era intro — dramatic transition
+    15: "default",        # Electoral expansion — map + narration
+    16: "map_focus",      # Kingdom expansion — full map focus
+    17: "fullscreen_text", # Napoleonic era — typographic focus
+    18: "title_card",     # Kingdom of Hannover intro — dramatic
+    19: "default",        # Kingdom politics — map + narration
+    20: "default",        # Industrial era — map + narration
+    21: "default",        # Constitutional era — map + narration
+    22: "fullscreen_text", # Prussian annexation — typographic focus
+    23: "stark",          # WWI impact — harsh, dramatic
+    24: "stark",          # Weimar instability — harsh, dramatic
+    25: "stark",          # Nazi era — harsh, dramatic
+    26: "stark",          # WWII destruction — harsh, dramatic
+    27: "title_card",     # Post-war rebirth intro — dramatic
+    28: "fullscreen_text", # Modern Hannover — typographic reflection
+}
+
 
 def parse_blackboard(blackboard_path):
     """Parse BLACKBOARD.md and return list of scene dicts with segments."""
@@ -320,6 +354,9 @@ def build_scene_json(scene, default_duration=12.0):
     all_text = " ".join(seg["text"] for seg in scene["segments"])
     facts = extract_facts(all_text)
 
+    # Determine visual treatment
+    treatment = VISUAL_TREATMENTS.get(scene_num, "default")
+
     return {
         "scene_num": scene_num,
         "title": scene["title"],
@@ -330,6 +367,7 @@ def build_scene_json(scene, default_duration=12.0):
         "facts": facts,
         "gradient": GRADIENTS[grad_idx],
         "accent": ACCENTS[acc_idx],
+        "visual_treatment": treatment,
     }
 
 
