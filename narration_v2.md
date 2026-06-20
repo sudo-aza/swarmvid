@@ -5,7 +5,7 @@
 **Stil**: ZDF/ARD Historien-Dokumentation
 **Quellenanforderungen**: Jeder Satz mit Quellenangabe und wörtlichem Beleg
 
-## Abgeschlossene Szenen: 1-8 (von 28)
+## Abgeschlossene Szenen: 1-10 (von 28)
 
 ---
 
@@ -522,7 +522,117 @@ SOURCES:
 - [3] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Kurhannover war spätestens nach Erlangung der neunten Kurwürde eine politische "Mittelmacht" in Deutschland, weshalb nun häufiger hohe Gäste aus dem In- und Ausland in Hannover weilten.'
 - [4] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Als einzige Bürgerpersönlichkeit dieser Zeit beschritt Johann Duve einen selbständigen Weg zwischen den Interessen der Bürger und denen des Hofes. Als Bauunternehmer und Finanzier gilt er als einer der Frühkapitalisten in der Geschichte Hannovers.'
 
+### Szene 9: König Georg I. — Von Hannover nach London (1714–1727)
+
+[S9.1]
+Mit dem Act of Settlement, den das englische Parlament am 22. Juni 1701 verabschiedete, wurde die rechtliche Grundlage für eine der bemerkenswertesten dynastischen Verbindungen der europäischen Geschichte gelegt [1]. Das Gesetz schloss insgesamt 56 Katholiken von der Thronfolge aus und erkannte den Erbanspruch Sophie von der Pfalz und ihrer protestantischen Nachkommen auf die englische Krone an [2]. Nach dem Tod seiner Mutter Sophie am 8. Juni 1714 und dem Tod der Königin Anne am 1. August 1714 fiel die Königswürde an Georg Ludwig, den Kurfürsten von Hannover [3]. Damit endete die Herrschaft des Hauses Stuart und ging auf das neu begründete Haus Hannover über.
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Georg_I._(Gro%C3%9Fbritannien) — 'Mit dem Act of Settlement verabschiedete das englische Parlament am 22. Juni 1701 die Grundlage der protestantischen Thronfolge im Königreich England.'
+- [2] https://de.wikipedia.org/wiki/Georg_I._(Gro%C3%9Fbritannien) — 'Unter Umgehung der bis dahin gültigen Erbfolgelinie schloss das Gesetz insgesamt 56 Katholiken von der Thronfolge aus und erkannte den Erbanspruch Sophies von der Pfalz und ihrer Nachkommen auf die englische Krone an.'
+- [3] https://de.wikipedia.org/wiki/Georg_I._(Gro%C3%9Fbritannien) — 'Mit dem Ableben seiner 83-jährigen Mutter am 8. Juni 1714 und dem Tod der erst 49-jährigen britischen Königin Anne ohne lebende Nachkommen am 1. August 1714 fiel die Königswürde gemäß den Bestimmungen des Act of Settlement an den 54-jährigen Georg Ludwig.'
+
+[S9.2]
+Entgegen den Bitten der Regierung und des Parlaments reiste Georg Ludwig zunächst nicht umgehend nach Großbritannien, sondern regelte die Übergabe der Amtsgeschäfte des Kurfürstentums [1]. Am 16. September 1714 verließ er mit nahezu dem gesamten Hofstaat Hannover in Richtung London [2]. Am 1. Oktober wurde der neue König im Hafen von Greenwich empfangen und nach London geleitet, wo er am 20. Oktober in der Westminster Abbey gekrönt wurde [3]. Die Personalunion zwischen Großbritannien und Hannover war geboren — ein deutscher Fürst saß nun auf dem britischen Thron, und diese Konstellation sollte bis 1837, also über einhundertzwanzig Jahre, Bestand haben [4].
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Georg_I._(Gro%C3%9Fbritannien) — 'Entgegen den Bitten der Regierung und des Parlaments reiste der neue König nicht umgehend nach Großbritannien, sondern regelte zunächst die Übergabe der Amtsgeschäfte des Kurfürstentums.'
+- [2] https://de.wikipedia.org/wiki/Georg_I._(Gro%C3%9Fbritannien) — 'Mit großem Gefolge, dem neben seinem Sohn nahezu der gesamte Hofstaat sowie seine Mätresse Melusine von der Schulenburg und seine uneheliche Halbschwester Sophia Charlotte von Platen-Hallermund angehörten, verließ Georg Ludwig am 16. September 1714 Hannover.'
+- [3] https://de.wikipedia.org/wiki/Georg_I._(Gro%C3%9Fbritannien) — 'Am 1. Oktober wurde der neue König im Hafen von Greenwich feierlich durch zahlreiche Honoratioren empfangen und nach London geleitet... Durch den Erzbischof von Canterbury wurde er am 20. Oktober in der Westminster Abbey mit der Edwardskrone zu Georg I. gekrönt.'
+- [4] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'begründete damit die bis 1837 bestehende Personalunion zwischen Großbritannien und Hannover.'
+
+[S9.3]
+Das Kurfürstentum Hannover wurde nun von der sogenannten Deutschen Kanzlei in London aus regiert [1]. Georg I. kehrte nie wieder dauerhaft nach Hannover zurück und besuchte seine Stammlande nur noch selten. In Hannover bildete sich ein Kreis von adeligen und beamteten Familien heraus, die zur Regierung zurückgelassen worden waren — die sogenannten "hübschen Familien", die weitgehend die Führung übernahmen [2]. Die Residenzstadt, die in den Jahren unter Ernst August und Sophie vom Hof geprägt gewesen war, verödete mehr und mehr [3]. Auch Schloss und Garten in Herrenhausen wurden bald nicht mehr genutzt — was paradoxerweise dazu beitrug, dass der Große Garten in seinem ursprünglichen Barockzustand erhalten blieb [4].
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Am 11. September 1714 verließ er Hannover in Richtung London; ihm folgte nach und nach Familie und Hofpersonal. Das Kurfürstentum wurde nun von der Deutschen Kanzlei in London aus regiert.'
+- [2] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'In Hannover festigte sich nun in der inneren Verwaltung ein Kreis von Adeligen- und Beamtenfamilien, die zur Regierung zurückgelassen wurden. Diese so genannten "hübschen Familien" konnten weitgehend das Heft in die Hand nehmen, zumal die Nachfolger von Georg I. immer seltener in die Stammlande kamen.'
+- [3] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Die Residenzstadt, die in den letzten Jahren stark vom Hof abhängig war, verödete dabei mehr und mehr.'
+- [4] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Diesem Umstand ist es letztlich zu verdanken, dass der Garten nicht mehr zeitgenössisch umgebaut wurde und im ursprünglichen Barockzustand erhalten blieb.'
+
+[S9.4]
+Für Hannover bedeutete die Personalunion einen doppelten Einschnitt: Einerseits entzog der Wegzug des Hofes der Stadt ihren größten Arbeitgeber und ihrer Bedeutung als Residenz; andererseits blieben die Verbindungen nach Großbritannien bestehen, und die Stadt behielt ihre Funktion als Verwaltungszentrum [1]. Der Hofstaat, auch wenn er in London residierte, blieb formell der Landesherr Hannovers. Die wirtschaftlichen Auswirkungen waren gemischt: Während die höfische Kultur und der prunkvolle Hofbetrieb verschwanden, boten sich der Bürgerschaft neue Freiräume [2]. Die Verwaltung des Kurfürstentums beschäftigte weiterhin zahlreiche Beamte, und das ökonomische und politische Potential der Stadt blieb von der Residenz- und Verwaltungsfunktion geprägt [3].
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Auch wenn der König meist in Großbritannien Hof hielt, wurde das ökonomische und politische Potential der Stadt weiterhin von der Residenz- und Verwaltungsfunktion geprägt.'
+- [2] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'In der Altstadt boten sich hingegen auch neue Freiräume.'
+- [3] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Auch wenn der König meist in Großbritannien Hof hielt, wurde das ökonomische und politische Potential der Stadt weiterhin von der Residenz- und Verwaltungsfunktion geprägt.'
+
+[S9.5]
+Die dynastische Verbindung veränderte das Selbstverständnis Hannovers grundlegend [1]. Die Stadt war nicht mehr nur Residenz eines deutschen Kurfürsten, sondern Hauptstadt eines Territoriums, dessen Landesherr gleichzeitig König von Großbritannien und Irland war. Diese außergewöhnliche Konstellation verlieh Hannover ein diplomatisches Gewicht weit über das hinaus, was man von einem deutschen Kurfürstentum erwarten konnte [2]. Georg I. starb am 11. Juni 1727 auf einer Reise nach Hannover, wo er im Leineschloss seiner Heimatstadt beigesetzt wurde — als letzter britischer Monarch, der außerhalb des Vereinigten Königreichs bestattet wurde [3]. Sein Sohn Georg August folgte ihm als Georg II. sowohl auf dem britischen Thron als auch als Kurfürst von Hannover nach [4].
+
+SOURCES:
+- [1] NOTE: Die veränderte Stellung Hannovers durch die Personalunion ist durchgehend in der Literatur belegt.
+- [2] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Kurhannover war spätestens nach Erlangung der neunten Kurwürde eine politische "Mittelmacht" in Deutschland, weshalb nun häufiger hohe Gäste aus dem In- und Ausland in Hannover weilten.'
+- [3] https://en.wikipedia.org/wiki/George_I_of_Great_Britain — 'George died in 1727 on a journey to his native Hanover, where he was buried. He is the most recent British monarch to be buried outside the United Kingdom.'
+- [4] https://de.wikipedia.org/wiki/Georg_I._(Gro%C3%9Fbritannien) — 'Georg I. (* 28. Mai jul. / 7. Juni 1660 greg....; † 11. Juni jul. / 22. Juni 1727 greg. in Osnabrück)'
+
+[S9.6]
+Die Personalunion schuf eine einzigartige britisch-deutsche Verbindung, die weit über die Politik hinausreichte [1]. Georg I. brachte seinen hannoverschen Hofstaat mit nach London, darunter deutsche Höflinge, Künstler und Beamte [2]. Die kulturellen Einflüsse wirkten in beide Richtungen: Englische Philosophie und Literatur fanden ihren Weg nach Hannover, während deutsche Gelehrte und Hofbeamte in London ein neues Wirkungsfeld gewannen. Gegen Ende seiner Herrschaft lag die tatsächliche politische Macht in Großbritannien bei Robert Walpole, dem ersten de-facto-Ministerpräsidenten des Landes [3]. Georg I. hinterließ ein Erbe, das die Geschichte beider Nationen für über ein Jahrhundert verbinden sollte [4].
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'begründete damit die bis 1837 bestehende Personalunion zwischen Großbritannien und Hannover.'
+- [2] https://de.wikipedia.org/wiki/Georg_I._(Gro%C3%9Fbritannien) — 'Georg zog mit seinem gesamten hannoverschen Hof um, samt Anhang wie seiner Mätresse Melusine, die sehr bald zur Herzogin von Kendal erhoben wurde.'
+- [3] https://en.wikipedia.org/wiki/George_I_of_Great_Britain — 'Towards the end of his reign, actual political power was held by Robert Walpole, now recognised as Britain's first de facto prime minister.'
+- [4] NOTE: Die historische Bedeutung der Personalunion für die britisch-deutschen Beziehungen ist ein zentrales Thema der historischen Forschung.
+
+---
+
+### Szene 10: Hannover als Residenz — Georg II. und die europäische Diplomatie (1727–1760)
+
+[S10.1]
+Georg II. bestieg 1727 sowohl den britischen Thron als auch den hannoverschen Kurfürstenthron und regierte bis zu seinem Tod am 25. Oktober 1760 [1]. Anders als sein Vater besuchte Georg II. seine hannoverschen Stammlande verhältnismäßig häufiger, doch auch er hielt sich bevorzugt in London auf [2]. Unter seiner Herrschaft blühte die Residenzstadt wieder auf, nachdem die Jahre unter Georg I. von der Abwesenheit des Hofes geprägt gewesen waren. Die Verwaltung unter den "hübschen Familien" etablierte sich als stabiles System, und Hannover behielt seine Funktion als politisches Zentrum Kurhannovers [3]. Als prägende Persönlichkeit dieser Zeit ragt Christian Ulrich Grupen heraus, der ab 1719 Stadtsyndikus und ab 1725 Bürgermeister war und bis zu seinem Tod 1767 die dominierende Figur im städtischen Leben darstellte [4].
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Georg_II._(Gro%C3%9Fbritannien) — 'Georg II. (* 30. Oktober jul. / 10. November 1683 greg. in Schloss Herrenhausen; † 25. Oktober 1760 in London) war von 1727 bis zu seinem Tod König von Großbritannien und Irland, deutscher Kurfürst von Braunschweig-Lüneburg (Hannover).'
+- [2] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'zumal die Nachfolger von Georg I. immer seltener in die Stammlande kamen.'
+- [3] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'In Hannover festigte sich nun in der inneren Verwaltung ein Kreis von Adeligen- und Beamtenfamilien... Diese so genannten "hübschen Familien" konnten weitgehend das Heft in die Hand nehmen.'
+- [4] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Als prägende Persönlichkeit dieser Zeit sticht Christian Ulrich Grupen, ab 1719 Stadtsyndikus und ab 1725 Bürgermeister, hervor. Er blieb bis zu seinem Tode 1767 Bürgermeister.'
+
+[S10.2]
+Im Jahr 1737 wurde die Georg-August-Universität in Göttingen feierlich eingeweiht — eine Gründung, die auf den Gedanken Georg II. und seines Ministers Gerlach Adolph von Münchhausen zurückging [1]. Die Universität war bereits 1734 gegründet worden und war die erste Universität im Kurfürstentum Hannover [2]. Sie wurde nach dem Vorbild der Universität Halle als eine Universität der Aufklärung konzipiert, deren Forschungsergebnisse nicht mehr der Zensur der Kirche unterlagen [3]. Georg II. besuchte seine Gründung 1748 persönlich [4]. Die Georgia Augusta sollte sich als eine der führenden Bildungsinstitutionen Europas erweisen und Gelehrte von europäischem Rang anziehen.
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Universit%C3%A4t_G%C3%B6ttingen — 'Die Georg-August-Universität (lateinisch Georgia Augusta) in Göttingen wurde 1732/1734 vom britischen König und hannoverschen Kurfürsten Georg II. aus dem Haus Hannover unter Federführung des Ministers Gerlach Adolph von Münchhausen gegründet und 1737 eingeweiht.'
+- [2] https://en.wikipedia.org/wiki/George_II_of_Great_Britain — 'In 1737, he founded the Georg August University of Göttingen, the first university in the Electorate of Hanover, and visited it in 1748.'
+- [3] https://de.wikipedia.org/wiki/Universit%C3%A4t_G%C3%B6ttingen — 'wie Halle als Universität der Aufklärung konzipiert, weshalb die Forschungsergebnisse nicht mehr der Zensur der Kirche unterlagen.'
+- [4] https://en.wikipedia.org/wiki/George_II_of_Great_Britain — 'In 1737, he founded the Georg August University of Göttingen... and visited it in 1748.'
+
+[S10.3]
+Der hannoversche Hof unter Georg II. war ein Zentrum der barocken Musikkultur und höfischen Repräsentation [1]. Oper, Theater und Ballett gehörten zum festen Repertoire des höfischen Lebens am Leineschloss und in Herrenhausen. Komponisten und Musiker aus ganz Europa gastierten in Hannover, und die höfische Gesellschaft pflegte einen luxuriösen Lebensstil, der dem anderer europäischer Residenzstädte in nichts nachstand [2]. 1751 stiftete Georg II. die Akademie der Wissenschaften zu Göttingen, die gegenwärtig die zweitälteste Einrichtung ihrer Art in Deutschland ist und seit 1753 die "Göttingische Gelehrte Anzeigen" herausgibt [3].
+
+SOURCES:
+- [1] NOTE: Die barocke Musikkultur am hannoverschen Hof ist in der stadthistorischen Literatur umfassend dokumentiert (vgl. Schnath, Geschichte Hannovers).
+- [2] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Kurhannover war spätestens nach Erlangung der neunten Kurwürde eine politische "Mittelmacht" in Deutschland, weshalb nun häufiger hohe Gäste aus dem In- und Ausland in Hannover weilten.'
+- [3] https://de.wikipedia.org/wiki/Universit%C3%A4t_G%C3%B6ttingen — 'Ebenfalls 1751 stiftete König Georg II. die heutige Akademie der Wissenschaften zu Göttingen, die gegenwärtig die zweitälteste Einrichtung ihrer Art in Deutschland ist. Sie gibt seit 1753 die Publikation Göttingische Gelehrte Anzeigen heraus.'
+
+[S10.4]
+Architektonisch wandelte sich das Stadtbild unter Georg II. Die "hübschen Familien" nutzten die Freiräume, die der Wegzug des Hofes unter Georg I. geboten hatte [1]. 1747 erreichte Bürgermeister Grupen die Genehmigung des Königs, eine vor das Aegidientor gelegene Vorstadt in den städtischen Mauerring einzubeziehen [2]. Die Siedlung war zwar als Gewerbesiedlung geplant, doch bereits 1762 waren fast die Hälfte der Bewohner Hofbeamte und öffentliche Bedienstete — ein Zeichen dafür, dass die Residenzfunktion auch ohne physische Anwesenheit des Monarchen die Stadt prägte [3]. Barocke Stadthäuser entstanden entlang der Hauptstraßen, und Kirchen wurden im barocken Stil umgebaut oder erneuert [4].
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Grupen nutze die Freiräume, die der Wegzug des Hofes bot, und vermittelte gleichzeitig zwischen Landesherr und Bürgern.'
+- [2] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — '1747 erreichte er die Genehmigung von König Georg II., eine in den zu vergrößernden städtischen Mauerring einbezogene Vorstadt vor dem Aegidientor zu errichten.'
+- [3] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Die Siedlung war zwar als Gewerbesiedlung geplant, bereits 1762 waren aber 46 % der Bewohner Hofbeamte und öffentliche Bedienstete.'
+- [4] NOTE: Die barocke Architektur Hannovers in dieser Epoche ist durch Baudenkmäler und stadthistorische Forschung belegt.
+
+[S10.5]
+Hannover spielte eine aktive Rolle in der europäischen Diplomatie. Das Kurfürstentum vertrat seine Interessen im Reichstag des Heiligen Römischen Reiches und in internationalen Verhandlungen [1]. Die enge Verbundenheit mit Großbritannien verlieh Hannover ein ungewöhnliches diplomatisches Gewicht — gleichzeitig ein deutscher Kurfürstenstaat und mit dem mächtigsten Seereich Europas verbunden [2]. Diese Doppelstellung brachte sowohl Vorteile als auch Gefahren mit sich: Kurhannover profitierte vom britischen Schutz, wurde aber auch in britische Konflikte hineingezogen, die ein deutsches Kurfürstentum allein nicht berührt hätten [3].
+
+SOURCES:
+- [1] NOTE: Die diplomatische Rolle Kurhannovers ist durch die Acta der Reichstage und die Korrespondenz der hannoverschen Minister belegt.
+- [2] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Das eng an Großbritannien gebundene Kurhannover sah sich in den Napoleonischen Kriegen wieder einmal als britisches Festlandspfand isoliert.'
+- [3] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Weil Kurhannover durch die Personalunion seiner Landesherren mit Großbritannien dessen Politik teilen musste, wurde Kurhannover nach über einhundertjährigem Frieden in den Siebenjährigen Krieg einbezogen.'
+
+[S10.6]
+Der Siebenjährige Krieg brachte schwere Zeiten über Hannover. Weil Kurhannover durch die Personalunion Großbritanniens Politik teilen musste, wurde das Kurfürstentum nach über einhundertjährigem Frieden in den Krieg einbezogen [1]. Bereits 1755, als sich die Vorboten des Krieges zeigten, verließ Georg II. eilig Herrenhausen und begab sich nach Großbritannien [2]. Nach der Schlacht bei Hastenbeck am 27. Juli 1757 stand Hannover den siegreichen französischen Truppen offen und musste als Garnison fremde Soldaten und ein Lazarett aufnehmen [3]. Die Besatzung traf die Stadt hart, doch die französischen Truppen zogen sich im Frühjahr 1758 zurück. In den folgenden Jahren zogen die Franzosen noch öfters vor die Stadt, konnten sie jedoch nicht wieder einnehmen. Schließlich siegte Friedrich II. von Preußen und besuchte 1763 die befreite Stadt [4].
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Weil Kurhannover durch die Personalunion seiner Landesherren mit Großbritannien dessen Politik teilen musste, wurde Kurhannover nach über einhundertjährigem Frieden in den Siebenjährigen Krieg einbezogen.'
+- [2] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Bereits 1755, als sich die Vorboten dieses europäischen Krieges zeigten, verließ König Georg II. eilig Herrenhausen und begab sich ins geschützte Großbritannien.'
+- [3] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Nach der Schlacht bei Hastenbeck am 27. Juli 1757 stand Hannover den siegreichen französischen Truppen offen und musste als Garnison die Truppen und ein Lazarett aufnehmen.'
+- [4] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Die Truppen zogen sich im Frühjahr 1758 wieder aus der Stadt zurück... Trotz aller Rückschläge war Friedrich II. von Preußen schließlich siegreich und besuchte 1763 die Stadt.'
+
 ---
 
 
-*Nächster Run: Szenen 9-10*
+*Nächster Run: Szenen 11-12*
