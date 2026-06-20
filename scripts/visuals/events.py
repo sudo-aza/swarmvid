@@ -182,10 +182,37 @@ class EventTimeline:
 
 # ── Position Helpers ───────────────────────────────────────────────────────
 
+# Narration text safe zones per treatment name.
+# Format: (x1, y1, x2, y2) — rectangle to avoid when placing events.
+# Events that overlap get pushed to the nearest safe region.
+TEXT_SAFE_ZONES = {
+    "default":  (525, 100, 1250, 380),
+    "title_card": (60, 80, 1220, 390),
+    "map_focus": (630, 370, 1250, 670),
+    "fullscreen_text": (100, 120, 1180, 510),
+    "stark": (90, 100, 1190, 460),
+}
+
+
 def _position_rect(w: int, h: int, position: str,
                    content_w: int, content_h: int,
-                   margin: int = 30) -> tuple[int, int]:
-    """Calculate top-left (x, y) for content at given position."""
+                   margin: int = 30,
+                   safe_zone: tuple | None = None) -> tuple[int, int]:
+    """Calculate top-left (x, y) for content at given position.
+    If safe_zone is provided and the positioned rect overlaps it,
+    shift the event to the nearest non-overlapping position."""
+    x, y = _raw_position(w, h, position, content_w, content_h, margin)
+
+    if safe_zone:
+        x, y = _avoid_overlap(x, y, content_w, content_h, safe_zone, w, h, margin)
+
+    return x, y
+
+
+def _raw_position(w: int, h: int, position: str,
+                  content_w: int, content_h: int,
+                  margin: int = 30) -> tuple[int, int]:
+    """Raw position without overlap avoidance."""
     if position == "left":
         return margin, (h - content_h) // 2
     elif position == "right":
@@ -208,6 +235,49 @@ def _position_rect(w: int, h: int, position: str,
         return (w - content_w) // 2, (h - content_h) // 2
 
 
+def _avoid_overlap(x: int, y: int, cw: int, ch: int,
+                  safe_zone: tuple, w: int, h: int,
+                  margin: int = 30) -> tuple[int, int]:
+    """If the content rect (x, y, x+cw, y+ch) overlaps safe_zone, shift it.
+
+    Strategy: try placing in the safe area with most space:
+    1. Left of safe zone (full height)
+    2. Right of safe zone (full height)
+    3. Above safe zone (full width, top strip)
+    4. Below safe zone (full width, bottom strip)
+    5. If nothing fits, keep original position
+    """
+    zx1, zy1, zx2, zy2 = safe_zone
+
+    # Check if overlap exists
+    if x + cw <= zx1 or x >= zx2 or y + ch <= zy1 or y >= zy2:
+        return x, y  # no overlap
+
+    # Try left of safe zone
+    if zx1 - margin - cw >= margin:
+        return margin, (h - ch) // 2
+
+    # Try right of safe zone
+    if zx2 + margin + cw <= w - margin:
+        return zx2 + margin, (h - ch) // 2
+
+    # Try above safe zone (top strip: y 40 to zy1-10)
+    strip_h = zy1 - 50
+    if ch <= strip_h and cw <= w - 2 * margin:
+        return (w - cw) // 2, 40
+
+    # Try below safe zone (bottom strip: zy2+10 to h-60)
+    strip_h = h - 60 - zy2 - 10
+    if ch <= strip_h and cw <= w - 2 * margin:
+        return (w - cw) // 2, zy2 + 10
+
+    # Fallback: try to fit left-of-zone with reduced x
+    if zx1 > cw + 10:
+        return zx1 - cw - 10, max(40, min(y, h - ch - 60))
+
+    return x, y  # last resort: keep original
+
+
 # ── Style Palettes ────────────────────────────────────────────────────────
 
 STYLE_COLORS = {
@@ -226,7 +296,7 @@ STYLE_COLORS = {
 
 def render_event(od: ImageDraw.ImageDraw, event: VisualEvent,
                  t: float, w: int, h: int, accent: tuple,
-                 fonts: dict) -> None:
+                 fonts: dict, safe_zone: tuple | None = None) -> None:
     """Render a single visual event onto an RGBA overlay's ImageDraw."""
 
     ep = event.entrance_progress(t)
@@ -243,13 +313,13 @@ def render_event(od: ImageDraw.ImageDraw, event: VisualEvent,
     style = STYLE_COLORS.get(event.style, STYLE_COLORS["default"])
 
     if event.type == "callout":
-        _render_callout(od, event, eased, alpha_mult, style, w, h, fonts)
+        _render_callout(od, event, eased, alpha_mult, style, w, h, fonts, safe_zone)
     elif event.type == "image":
-        _render_image_event(od, event, eased, alpha_mult, style, w, h, accent, fonts)
+        _render_image_event(od, event, eased, alpha_mult, style, w, h, accent, fonts, safe_zone)
     elif event.type == "card":
-        _render_card(od, event, eased, alpha_mult, style, w, h, fonts)
+        _render_card(od, event, eased, alpha_mult, style, w, h, fonts, safe_zone)
     elif event.type == "diagram":
-        _render_diagram(od, event, eased, alpha_mult, style, w, h, accent, fonts)
+        _render_diagram(od, event, eased, alpha_mult, style, w, h, accent, fonts, safe_zone)
 
 
 def _apply_alpha(color: tuple, alpha_mult: float) -> tuple:
@@ -261,7 +331,8 @@ def _apply_alpha(color: tuple, alpha_mult: float) -> tuple:
 
 def _render_callout(od: ImageDraw.ImageDraw, event: VisualEvent,
                     eased: float, alpha_mult: float, style: dict,
-                    w: int, h: int, fonts: dict) -> None:
+                    w: int, h: int, fonts: dict,
+                    safe_zone: tuple | None = None) -> None:
     """Render a text callout (highlighted date, name, or fact)."""
     text = event.text or event.caption
     subtext = event.subtext
@@ -281,7 +352,8 @@ def _render_callout(od: ImageDraw.ImageDraw, event: VisualEvent,
         total_w = max(total_w, sbbox[2] - sbbox[0] + 40)
         total_h += sbbox[3] - sbbox[1] + 6
 
-    x, y = _position_rect(w, h, event.position, total_w, total_h, margin=50)
+    x, y = _position_rect(w, h, event.position, total_w, total_h, margin=50,
+                            safe_zone=safe_zone)
 
     # Animation offset
     if event.anim in ("slide_left", "slide_up"):
@@ -317,11 +389,12 @@ def _render_callout(od: ImageDraw.ImageDraw, event: VisualEvent,
 
 def _render_image_event(od: ImageDraw.ImageDraw, event: VisualEvent,
                        eased: float, alpha_mult: float, style: dict,
-                       w: int, h: int, accent: tuple, fonts: dict) -> None:
+                       w: int, h: int, accent: tuple, fonts: dict,
+                       safe_zone: tuple | None = None) -> None:
     """Render an image event with optional caption."""
     if event._image is None:
         # No image loaded — render a placeholder
-        _render_placeholder(od, event, eased, alpha_mult, accent, w, h, fonts)
+        _render_placeholder(od, event, eased, alpha_mult, accent, w, h, fonts, safe_zone)
         return
 
     img = event._image
@@ -344,7 +417,8 @@ def _render_image_event(od: ImageDraw.ImageDraw, event: VisualEvent,
     total_w = new_w
     total_h = new_h + caption_h
 
-    x, y = _position_rect(w, h, event.position, total_w, total_h, margin=40)
+    x, y = _position_rect(w, h, event.position, total_w, total_h, margin=40,
+                            safe_zone=safe_zone)
 
     # Animation
     if event.anim == "slide_left":
@@ -385,10 +459,12 @@ def _render_image_event(od: ImageDraw.ImageDraw, event: VisualEvent,
 
 def _render_placeholder(od: ImageDraw.ImageDraw, event: VisualEvent,
                         eased: float, alpha_mult: float, accent: tuple,
-                        w: int, h: int, fonts: dict) -> None:
+                        w: int, h: int, fonts: dict,
+                        safe_zone: tuple | None = None) -> None:
     """Render a placeholder box when image is missing."""
     ph_w, ph_h = 320, 200
-    x, y = _position_rect(w, h, event.position, ph_w, ph_h, margin=40)
+    x, y = _position_rect(w, h, event.position, ph_w, ph_h, margin=40,
+                            safe_zone=safe_zone)
 
     if event.anim == "slide_left":
         x += int((1.0 - eased) * -400)
@@ -419,7 +495,8 @@ def _render_placeholder(od: ImageDraw.ImageDraw, event: VisualEvent,
 
 def _render_card(od: ImageDraw.ImageDraw, event: VisualEvent,
                  eased: float, alpha_mult: float, style: dict,
-                 w: int, h: int, fonts: dict) -> None:
+                 w: int, h: int, fonts: dict,
+                 safe_zone: tuple | None = None) -> None:
     """Render an info card with title + body text."""
     title = event.title or event.caption
     body = event.body or event.text
@@ -451,7 +528,8 @@ def _render_card(od: ImageDraw.ImageDraw, event: VisualEvent,
             lines.append(line)
 
     card_h = 50 + len(lines) * 22
-    x, y = _position_rect(w, h, event.position, card_w, card_h, margin=50)
+    x, y = _position_rect(w, h, event.position, card_w, card_h, margin=50,
+                            safe_zone=safe_zone)
 
     # Animation
     if event.anim == "slide_left":
@@ -476,7 +554,8 @@ def _render_card(od: ImageDraw.ImageDraw, event: VisualEvent,
 
 def _render_diagram(od: ImageDraw.ImageDraw, event: VisualEvent,
                     eased: float, alpha_mult: float, style: dict,
-                    w: int, h: int, accent: tuple, fonts: dict) -> None:
+                    w: int, h: int, accent: tuple, fonts: dict,
+                    safe_zone: tuple | None = None) -> None:
     """Render a diagram/infographic card (procedural placeholder)."""
     # For now, diagrams render as styled text blocks with accent decorations
     # Real diagrams will be loaded as images or drawn per-scene
@@ -484,7 +563,8 @@ def _render_diagram(od: ImageDraw.ImageDraw, event: VisualEvent,
     body = event.body or event.subtext
 
     diag_w, diag_h = 400, 250
-    x, y = _position_rect(w, h, event.position, diag_w, diag_h, margin=50)
+    x, y = _position_rect(w, h, event.position, diag_w, diag_h, margin=50,
+                            safe_zone=safe_zone)
 
     bg_c = _apply_alpha(style["bg"], alpha_mult)
     border_c = _apply_alpha((*accent, 200), alpha_mult)
@@ -525,14 +605,20 @@ def _render_diagram(od: ImageDraw.ImageDraw, event: VisualEvent,
 
 def render_visual_events(timeline: EventTimeline, t: float,
                           w: int, h: int, accent: tuple,
-                          fonts: dict) -> Image.Image:
+                          fonts: dict,
+                          treatment_name: str = "") -> Image.Image:
     """Render all active visual events at time t onto an RGBA overlay.
-    Returns an RGBA PIL Image ready for alpha_composite."""
+    Returns an RGBA PIL Image ready for alpha_composite.
+
+    treatment_name is used to look up the text safe zone so events
+    don't overlap the narration text area."""
+
+    safe_zone = TEXT_SAFE_ZONES.get(treatment_name)
 
     overlay = Image.new("RGBA", (w, h), (0, 0, 0, 0))
     od = ImageDraw.Draw(overlay)
 
     for event in timeline.get_active_events(t):
-        render_event(od, event, t, w, h, accent, fonts)
+        render_event(od, event, t, w, h, accent, fonts, safe_zone=safe_zone)
 
     return overlay

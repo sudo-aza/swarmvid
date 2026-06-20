@@ -143,7 +143,8 @@ def render_scene(scene_path: str, audio_path: str, output_path: str, fps: int = 
         if event_timeline.events:
             img_rgba = img.convert("RGBA")
             events_overlay = render_visual_events(
-                event_timeline, t_sec, W, H, accent_rgb, fonts)
+                event_timeline, t_sec, W, H, accent_rgb, fonts,
+                treatment_name=treatment_name)
             img_rgba = Image.alpha_composite(img_rgba, events_overlay)
             img = img_rgba.convert("RGB")
 
