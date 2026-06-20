@@ -156,7 +156,7 @@ def draw_map_panel(draw: ImageDraw.ImageDraw, od: ImageDraw.ImageDraw,
                for lon, lat in river_path]
         if len(rpx) > 1:
             for i in range(len(rpx) - 1):
-                od.line([rpx[i], rpx[i + 1]], fill=(40, 80, 130, 70), width=2)
+                od.line([rpx[i], rpx[i + 1]], fill=(40, 80, 130, 130), width=2)
 
     # Roads
     for city_a, city_b in ROAD_CONNECTIONS:
@@ -168,7 +168,7 @@ def draw_map_panel(draw: ImageDraw.ImageDraw, od: ImageDraw.ImageDraw,
                                HANNOVER_LOCATIONS[city_b]["lat"],
                                panel_x, panel_y, panel_w, panel_h)
             od.line([(ax, ay), (bx, by)],
-                    fill=alpha_color((80, 80, 90), 50), width=1)
+                    fill=alpha_color((80, 80, 90), 90), width=1)
 
     # Location markers
     highlight_names = SCENE_LOCATIONS.get(scene_num, ["Hannover"])
