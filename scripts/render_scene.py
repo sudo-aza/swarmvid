@@ -6,12 +6,12 @@ Renders Pillow frames piped to ffmpeg for H.264 MP4 output at 1280x720.
 
 Visual design:
   - Full-screen dark vignette with gradient backgrounds
-  - Geometric accent animations (animated lines, circles, grid)
-  - Split layout: left visual panel + right narration panel
-  - Word-by-word text reveal animation
+  - Procedural map of Hannover region with location markers (left panel)
   - Cinematic title sequences with animated decorative elements
-  - Floating light particles (warm glow, not cold dots)
+  - Word-by-word text reveal animation on right narration panel
+  - Floating light particles (warm glow)
   - Horizontal progress timeline at bottom
+  - Lower-third era/scene labels
 
 Usage:
     python3 render_scene.py --scene-json scene.json --audio audio.wav --output scene_N.mp4
@@ -33,27 +33,108 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 W, H = 1280, 720
 FPS = 24
 
-# Layout
-VISUAL_PANEL_W = 480      # left visual panel width
-TEXT_PANEL_LEFT = 500     # left edge of text panel
-TEXT_PANEL_RIGHT = 1240   # right edge of text panel
+# Layout: split view — map panel (left) + narration panel (right)
+MAP_PANEL_W = 520
+MAP_PANEL_X = 0
+MAP_PANEL_Y = 0
+
+TEXT_PANEL_LEFT = 540
+TEXT_PANEL_RIGHT = 1250
 TEXT_PANEL_W = TEXT_PANEL_RIGHT - TEXT_PANEL_LEFT
 
 # Title card
-TITLE_CARD_DURATION = 3.5  # seconds for title card
+TITLE_CARD_DURATION = 3.5
 
 # Particles
 PARTICLE_COUNT = 30
 
 # Typography
-BODY_FONT_SIZE = 24
-BODY_LINE_HEIGHT = 34
-MAX_VISIBLE_LINES = 6
-TEXT_TOP_MARGIN = 180
+BODY_FONT_SIZE = 22
+BODY_LINE_HEIGHT = 32
+MAX_VISIBLE_LINES = 7
+TEXT_TOP_MARGIN = 130
 
 # Animation speeds
-WORD_REVEAL_SPEED = 0.03   # fraction of segment duration per word
-SEGMENT_CROSS_FADE = 0.08  # fraction of segment for cross-fade
+WORD_REVEAL_SPEED = 0.03
+SEGMENT_CROSS_FADE = 0.08
+
+# ── Hannover Region Map Data ───────────────────────────────────────────────────
+# Geographic coordinates for key locations (lon, lat)
+# Map covers roughly 9.0-11.0 E, 51.8-53.0 N
+MAP_LON_MIN, MAP_LON_MAX = 8.9, 11.0
+MAP_LAT_MIN, MAP_LAT_MAX = 51.8, 53.2
+
+HANNOVER_LOCATIONS = {
+    "Hannover":        {"lon": 9.736, "lat": 52.370, "type": "capital"},
+    "Hildesheim":      {"lon": 9.947, "lat": 52.151, "type": "city"},
+    "Braunschweig":    {"lon": 10.526, "lat": 52.262, "type": "city"},
+    "Gottingen":       {"lon": 9.936, "lat": 51.532, "type": "city"},
+    "Hameln":          {"lon": 9.327, "lat": 52.105, "type": "city"},
+    "Celle":           {"lon": 9.608, "lat": 52.617, "type": "city"},
+    "Lehrte":          {"lon": 9.973, "lat": 52.370, "type": "town"},
+    "Petershagen":     {"lon": 9.018, "lat": 52.382, "type": "town"},
+    "Neustadt":        {"lon": 9.724, "lat": 52.529, "type": "town"},
+    "Langenhagen":     {"lon": 9.743, "lat": 52.447, "type": "town"},
+    "Garbsen":         {"lon": 9.596, "lat": 52.421, "type": "town"},
+    "Wunstorf":        {"lon": 9.427, "lat": 52.425, "type": "town"},
+    "Springe":         {"lon": 9.838, "lat": 52.214, "type": "town"},
+    "Laatzen":         {"lon": 9.731, "lat": 52.318, "type": "town"},
+    "Nienburg":        {"lon": 9.142, "lat": 52.642, "type": "city"},
+    "Stade":           {"lon": 9.475, "lat": 53.597, "type": "city"},
+    "Luneburg":        {"lon": 10.410, "lat": 53.245, "type": "city"},
+    "Peine":           {"lon": 10.232, "lat": 52.326, "type": "town"},
+    "Wolfsburg":       {"lon": 10.790, "lat": 52.425, "type": "city"},
+    "Hildesheim (Bf)": {"lon": 9.950, "lat": 52.148, "type": "town"},
+}
+
+# River Leine path — simplified polyline (lon, lat)
+LEINE_RIVER = [
+    (9.75, 52.6), (9.70, 52.5), (9.72, 52.4), (9.74, 52.37),
+    (9.73, 52.35), (9.73, 52.3), (9.74, 52.2), (9.75, 52.15),
+    (9.80, 52.0), (9.85, 51.8),
+]
+
+# Approximate border of Lower Saxony (simplified polygon)
+LOWER_SAXONY_BORDER = [
+    (8.9, 53.1), (9.0, 52.9), (8.9, 52.7), (8.9, 52.5), (8.9, 52.3),
+    (9.0, 52.1), (9.1, 52.0), (9.3, 51.9), (9.5, 51.85), (9.8, 51.8),
+    (10.1, 51.8), (10.4, 51.85), (10.6, 51.9), (10.8, 52.0), (11.0, 52.1),
+    (11.0, 52.3), (10.9, 52.5), (10.8, 52.7), (10.7, 52.9), (10.5, 53.1),
+    (10.3, 53.2), (10.0, 53.2), (9.7, 53.2), (9.4, 53.2), (9.2, 53.2),
+    (9.0, 53.15), (8.9, 53.1),
+]
+
+# Scene-specific location highlights: which locations matter per scene era
+SCENE_LOCATIONS = {
+    1: ["Hannover"],
+    2: ["Hannover", "Hildesheim"],
+    3: ["Hannover", "Hildesheim", "Braunschweig"],
+    4: ["Hannover"],
+    5: ["Hannover", "Celle"],
+    6: ["Hannover", "Hildesheim", "Braunschweig"],
+    7: ["Hannover", "Lehrte", "Langenhagen"],
+    8: ["Hannover"],
+    9: ["Hannover", "Hildesheim"],
+    10: ["Hannover", "Laatzen", "Springe"],
+    11: ["Hannover"],
+    12: ["Hannover"],
+    13: ["Hannover", "Lehrte"],
+    14: ["Hannover"],
+    15: ["Hannover", "Langenhagen", "Garbsen"],
+    16: ["Hannover", "Braunschweig", "Wolfsburg"],
+    17: ["Hannover"],
+    18: ["Hannover"],
+    19: ["Hannover", "Hildesheim"],
+    20: ["Hannover", "Laatzen"],
+    21: ["Hannover"],
+    22: ["Hannover", "Celle", "Nienburg"],
+    23: ["Hannover"],
+    24: ["Hannover"],
+    25: ["Hannover"],
+    26: ["Hannover", "Braunschweig"],
+    27: ["Hannover"],
+    28: ["Hannover"],
+}
 
 
 # ── Font Loading ──────────────────────────────────────────────────────────────
@@ -84,6 +165,9 @@ def get_fonts():
         "small":    _font(sans, 18),
         "tiny":     _font(sans, 14),
         "era":      _font(serif, 22),
+        "map_label": _font(sans, 13),
+        "map_label_b": _font(sans_b, 14),
+        "map_region": _font(serif, 16),
     }
 
 
@@ -106,15 +190,12 @@ def make_gradient(w, h, colors):
     img = Image.new("RGB", (w, h))
     px = img.load()
     cx, cy = w // 2, h // 2
-    max_dist = math.sqrt(cx*cx + cy*cy)
     for y in range(h):
         for x in range(w):
-            # Distance from center, normalized
             dx = (x - cx) / cx
             dy = (y - cy) / cy
-            d = math.sqrt(dx*dx + dy*dy) / 1.414  # 0..1
+            d = math.sqrt(dx*dx + dy*dy) / 1.414
             d = min(d, 1.0)
-            # Map to color stops
             t = d * (n - 1)
             idx = min(int(t), n - 2)
             frac = t - idx
@@ -124,7 +205,7 @@ def make_gradient(w, h, colors):
 
 
 def make_vignette(w, h, strength=0.6):
-    """Dark vignette overlay — edges darker than center."""
+    """Dark vignette overlay."""
     img = Image.new("L", (w, h))
     px = img.load()
     cx, cy = w // 2, h // 2
@@ -177,33 +258,158 @@ def prewrap_text(segments, font, max_width):
     return result
 
 
+# ── Map Drawing ───────────────────────────────────────────────────────────────
+def geo_to_map(lon, lat, panel_x, panel_y, panel_w, panel_h, padding=30):
+    """Convert geographic coordinates to pixel position within the map panel."""
+    t = (lon - MAP_LON_MIN) / (MAP_LON_MAX - MAP_LON_MIN)
+    u = 1.0 - (lat - MAP_LAT_MIN) / (MAP_LAT_MAX - MAP_LAT_MIN)
+    x = panel_x + padding + t * (panel_w - 2 * padding)
+    y = panel_y + padding + u * (panel_h - 2 * padding)
+    return int(x), int(y)
+
+
+def draw_map_panel(draw, od, panel_x, panel_y, panel_w, panel_h,
+                   accent, frame_idx, scene_num, fonts):
+    """Draw a documentary-style map of the Hannover/Lower Saxony region."""
+
+    # Dark panel background with subtle gradient
+    for y_row in range(panel_h):
+        t = y_row / panel_h
+        darkness = int(18 + 8 * t)  # slightly lighter at bottom
+        draw.line([(panel_x, panel_y + y_row), (panel_x + panel_w - 1, panel_y + y_row)],
+                 fill=(darkness, darkness, darkness + 5))
+
+    # Draw border
+    od.rectangle(
+        [(panel_x + 1, panel_y + 1), (panel_x + panel_w - 2, panel_y + panel_h - 2)],
+        outline=alpha_color(accent, 50), width=1
+    )
+
+    # Draw Lower Saxony border (subtle)
+    border_px = [geo_to_map(lon, lat, panel_x, panel_y, panel_w, panel_h)
+                 for lon, lat in LOWER_SAXONY_BORDER]
+    if len(border_px) > 2:
+        od.polygon(border_px, outline=alpha_color(accent, 35), fill=None)
+
+    # Draw River Leine (animated flow)
+    river_px = [geo_to_map(lon, lat, panel_x, panel_y, panel_w, panel_h)
+                for lon, lat in LEINE_RIVER]
+    if len(river_px) > 1:
+        # Main river line
+        river_color = (40, 80, 130, 90)
+        for i in range(len(river_px) - 1):
+            # Animated dash effect
+            dash_phase = (frame_idx * 0.02 + i * 0.15) % 1.0
+            if dash_phase < 0.7:
+                od.line([river_px[i], river_px[i+1]], fill=river_color, width=3)
+        # River glow
+        river_glow = (50, 100, 160, 40)
+        for i in range(len(river_px) - 1):
+            od.line([river_px[i], river_px[i+1]], fill=river_glow, width=7)
+
+    # Determine which locations to highlight for this scene
+    highlight_names = SCENE_LOCATIONS.get(scene_num, ["Hannover"])
+
+    # Draw all locations
+    for name, loc in HANNOVER_LOCATIONS.items():
+        px, py = geo_to_map(loc["lon"], loc["lat"],
+                             panel_x, panel_y, panel_w, panel_h)
+        is_highlight = name in highlight_names
+        loc_type = loc["type"]
+
+        if is_highlight:
+            # Pulsing glow for highlighted location
+            pulse = 0.5 + 0.5 * math.sin(frame_idx * 0.05)
+            glow_r = int(12 + 6 * pulse)
+
+            # Outer glow
+            od.ellipse([px - glow_r, py - glow_r, px + glow_r, py + glow_r],
+                      fill=alpha_color(accent, int(30 + 20 * pulse)))
+
+            # Inner dot
+            dot_r = 6 if loc_type == "capital" else 4
+            od.ellipse([px - dot_r, py - dot_r, px + dot_r, py + dot_r],
+                      fill=alpha_color(accent, 220))
+
+            # White center
+            od.ellipse([px - 2, py - 2, px + 2, py + 2],
+                      fill=(255, 255, 255, 230))
+
+            # Label
+            label = name
+            if len(label) > 12:
+                label = label[:11] + "."
+            bbox = od.textbbox((0, 0), label, font=fonts["map_label_b"])
+            tw = bbox[2] - bbox[0]
+            label_x = px - tw // 2
+            label_y = py - dot_r - 18
+
+            # Label background
+            od.rectangle([(label_x - 3, label_y - 1),
+                          (label_x + tw + 3, label_y + 15)],
+                         fill=(15, 15, 20, 180))
+            od.text((label_x, label_y), label,
+                    fill=alpha_color((240, 240, 240), 220),
+                    font=fonts["map_label_b"])
+
+        elif loc_type in ("city",):
+            # Smaller dim dots for other cities
+            od.ellipse([px - 2, py - 2, px + 2, py + 2],
+                      fill=(100, 110, 120, 80))
+
+    # "NIEDERSACHSEN" region label at top of map
+    region_label = "NIEDERSACHSEN"
+    bbox = od.textbbox((0, 0), region_label, font=fonts["map_region"])
+    tw = bbox[2] - bbox[0]
+    od.text((panel_x + panel_w // 2 - tw // 2, panel_y + 12),
+            text=region_label,
+            fill=alpha_color((140, 140, 150), 100),
+            font=fonts["map_region"])
+
+    # Compass rose (top-left corner of map)
+    cx, cy = panel_x + 50, panel_y + 55
+    # N arrow
+    od.polygon([(cx, cy - 18), (cx - 5, cy), (cx + 5, cy)],
+               fill=alpha_color((200, 60, 60), 120))
+    od.polygon([(cx, cy + 18), (cx - 5, cy), (cx + 5, cy)],
+               fill=alpha_color((120, 120, 130), 80))
+    od.text((cx - 4, cy - 30), text="N",
+            fill=alpha_color((180, 180, 180), 120), font=fonts["map_label"])
+
+    # Scale bar (bottom of map)
+    sb_x = panel_x + 30
+    sb_y = panel_y + panel_h - 35
+    # ~50km roughly = (MAP_LON_MAX - MAP_LON_MIN) * 0.5
+    scale_len = int((panel_w - 60) * 0.2)
+    od.line([(sb_x, sb_y), (sb_x + scale_len, sb_y)],
+            fill=alpha_color((150, 150, 160), 80), width=1)
+    od.line([(sb_x, sb_y - 3), (sb_x, sb_y + 3)],
+            fill=alpha_color((150, 150, 160), 80), width=1)
+    od.line([(sb_x + scale_len, sb_y - 3), (sb_x + scale_len, sb_y + 3)],
+            fill=alpha_color((150, 150, 160), 80), width=1)
+    od.text((sb_x + scale_len // 2 - 12, sb_y + 4), text="~50 km",
+            fill=alpha_color((120, 120, 130), 80), font=fonts["map_label"])
+
+    # Latitude/longitude grid lines (very subtle)
+    for lon_deg in [9, 10, 11]:
+        lon_frac = (lon_deg - MAP_LON_MIN) / (MAP_LON_MAX - MAP_LON_MIN)
+        gx = panel_x + 30 + int(lon_frac * (panel_w - 60))
+        od.line([(gx, panel_y + 40), (gx, panel_y + panel_h - 45)],
+                fill=alpha_color((60, 60, 70), 20), width=1)
+    for lat_deg in [52, 53]:
+        lat_frac = 1.0 - (lat_deg - MAP_LAT_MIN) / (MAP_LAT_MAX - MAP_LAT_MIN)
+        gy = panel_y + 40 + int(lat_frac * (panel_h - 85))
+        od.line([(panel_x + 30, gy), (panel_x + panel_w - 30, gy)],
+                fill=alpha_color((60, 60, 70), 20), width=1)
+
+
 # ── Drawing Helpers ───────────────────────────────────────────────────────────
 def draw_accent_line(draw, x1, y1, x2, y2, color, width=2, progress=1.0):
-    """Draw a line that animates from left to right."""
     if progress <= 0:
         return
     px = int(x1 + (x2 - x1) * min(progress, 1.0))
     py = int(y1 + (y2 - y1) * min(progress, 1.0))
     draw.line([(x1, y1), (px, py)], fill=color, width=width)
-
-
-def draw_circle_outline(draw, cx, cy, r, color, width=2, progress=1.0):
-    """Draw a circle outline that animates around."""
-    if progress <= 0:
-        return
-    # Draw arc from 0 to progress * 360
-    bbox = [cx - r, cy - r, cx + r, cy + r]
-    start = 0
-    end = progress * 360
-    draw.arc(bbox, start, end, fill=color, width=width)
-
-
-def draw_horizontal_grid(draw, x, y, w, h, color, spacing=40, scroll_offset=0):
-    """Draw faint horizontal grid lines (animated scroll)."""
-    for gy in range(0, h, spacing):
-        ly = y + gy + (scroll_offset % spacing)
-        if y <= ly <= y + h:
-            draw.line([(x, ly), (x + w, ly)], fill=color, width=1)
 
 
 # ── Render Frame ─────────────────────────────────────────────────────────────
@@ -226,30 +432,30 @@ def render_frame(frame_idx, total_frames, scene, seg_idx, seg_progress,
 
     # ── Background: cached gradient + vignette ──
     img = bg_base.copy()
-    img.paste(Image.new("L", (W, H), int(255 * 0.85)), mask=vignette.point(lambda p: int(p * 0.85)))
+    img.paste(Image.new("L", (W, H), int(255 * 0.85)),
+              mask=vignette.point(lambda p: int(p * 0.85)))
 
     # ── Floating warm particles ──
     overlay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     od = ImageDraw.Draw(overlay)
     for p in particles:
-        py = (p["y_base"] - frame_idx * p["speed"]) % H
+        py_pos = (p["y_base"] - frame_idx * p["speed"]) % H
         pulse = 0.5 + 0.5 * math.sin(frame_idx * 0.03 + p["phase"])
         a = int(p["brightness"] * pulse)
         s = int(p["size"] * (0.8 + 0.2 * pulse))
-        # Warm glow particle
-        od.ellipse([p["x"]-s, py-s, p["x"]+s, py+s],
+        od.ellipse([p["x"]-s, py_pos-s, p["x"]+s, py_pos+s],
                    fill=(255, 220, 180, min(255, a)))
     img = Image.alpha_composite(img.convert("RGBA"), overlay).convert("RGB")
     img_rgba = img.convert("RGBA")
 
     # ── Determine if we're in title card phase ──
     first_seg_dur = segments[0].get("duration_s", 5.0)
-    title_card_time = TITLE_CARD_DURATION / first_seg_dur  # as fraction
+    title_card_time = TITLE_CARD_DURATION / first_seg_dur
     in_title = (seg_idx == 0 and seg_progress < title_card_time)
 
     if in_title:
         # ═══ TITLE CARD ═══
-        tp = seg_progress / title_card_time  # 0..1 through title card
+        tp = seg_progress / title_card_time
         overlay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         od = ImageDraw.Draw(overlay)
 
@@ -257,10 +463,8 @@ def render_frame(frame_idx, total_frames, scene, seg_idx, seg_progress,
         dark_a = int(200 * min(1.0, tp * 4))
         od.rectangle([(0, 0), (W, H)], fill=(0, 0, 0, dark_a))
 
-        # Animated decorative elements
         deco_a = max(0, min(255, int(255 * min(1.0, (tp - 0.1) * 5))))
 
-        # Horizontal accent lines that grow from center
         title = scene.get("title", "")
         title_bbox = od.textbbox((0, 0), title, font=fonts["title"])
         title_w = title_bbox[2] - title_bbox[0]
@@ -309,14 +513,12 @@ def render_frame(frame_idx, total_frames, scene, seg_idx, seg_progress,
             bracket_len = int(60 * min(1.0, (tp - 0.15) * 2))
             bc = alpha_color(accent, bracket_a)
             margin = 60
-            # Top-left bracket
             od.line([(margin, margin), (margin + bracket_len, margin)], fill=bc, width=2)
             od.line([(margin, margin), (margin, margin + bracket_len)], fill=bc, width=2)
-            # Bottom-right bracket
             od.line([(W - margin, H - margin), (W - margin - bracket_len, H - margin)], fill=bc, width=2)
             od.line([(W - margin, H - margin), (W - margin, H - margin - bracket_len)], fill=bc, width=2)
 
-        # Scene number indicator (bottom-right)
+        # Scene number indicator
         if tp > 0.4:
             num_a = min(180, int(180 * min(1.0, (tp - 0.4) * 3)))
             num_text = f"{scene_num} / {total_scenes}"
@@ -327,73 +529,59 @@ def render_frame(frame_idx, total_frames, scene, seg_idx, seg_progress,
         img_rgba = Image.alpha_composite(img_rgba, overlay)
 
     else:
-        # ═══ NARRATION MODE ═══
+        # ═══ NARRATION MODE — SPLIT LAYOUT ═══
+        # ── LEFT PANEL: Procedural Map ──
+        map_overlay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        map_draw = ImageDraw.Draw(map_overlay)
+        map_rgba = Image.new("RGBA", (MAP_PANEL_W, H), (0, 0, 0, 0))
+        map_od = ImageDraw.Draw(map_rgba)
+
+        draw_map_panel(
+            map_draw, map_od,
+            MAP_PANEL_X, MAP_PANEL_Y, MAP_PANEL_W, H,
+            accent, frame_idx, scene_num, fonts
+        )
+
+        # Vertical divider between map and text
+        divider_x = MAP_PANEL_W
+        # Thin accent line
+        map_od.line([(divider_x - 2, 0), (divider_x - 2, H)],
+                    fill=alpha_color(accent, 40), width=2)
+        # Soft gradient fade on divider (drawn on the main overlay)
+        for fade_x in range(MAP_PANEL_W, MAP_PANEL_W + 20):
+            fade_a = int(60 * (1.0 - (fade_x - MAP_PANEL_W) / 20))
+            map_draw.line([(fade_x, 0), (fade_x, H)],
+                          fill=alpha_color((15, 15, 20), fade_a))
+
+        img_rgba = Image.alpha_composite(img_rgba, map_overlay)
+
+        # ── RIGHT PANEL: Narration text ──
         overlay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         od = ImageDraw.Draw(overlay)
 
-        # ── Left visual panel: decorative geometric area ──
-        # Dark panel with accent border
-        od.rounded_rectangle(
-            [(30, 80), (VISUAL_PANEL_W + 30, H - 80)],
-            radius=8, fill=(0, 0, 0, 100), outline=alpha_color(accent, 60), width=1
-        )
-
-        # Animated grid inside visual panel
-        grid_scroll = frame_idx * 0.5
-        draw_horizontal_grid(od, 45, 90, VISUAL_PANEL_W, H - 170,
-                              alpha_color(accent, 25), spacing=50, scroll_offset=grid_scroll)
-
-        # Animated accent circle in visual panel
-        circle_y = 200 + int(30 * math.sin(frame_idx * 0.02))
-        circle_r = 60 + int(10 * math.sin(frame_idx * 0.015))
-        draw_circle_outline(od, 30 + VISUAL_PANEL_W // 2, circle_y,
-                           circle_r, alpha_color(accent, 80), width=2,
-                           progress=min(1.0, seg_progress * 3))
-
-        # Animated horizontal lines in visual panel
-        if seg_progress > 0.1:
-            line_prog = min(1.0, (seg_progress - 0.1) * 2)
-            draw_accent_line(od, 50, 320, 50 + int(380 * line_prog), 320,
-                              alpha_color(accent, 60), width=1)
-        if seg_progress > 0.2:
-            line_prog2 = min(1.0, (seg_progress - 0.2) * 2)
-            draw_accent_line(od, 50, 380, 50 + int(300 * line_prog2), 380,
-                              alpha_color(accent, 40), width=1)
-
-        # Small decorative dots in visual panel
-        dot_y = 440
-        for dx in range(0, VISUAL_PANEL_W - 40, 30):
-            dot_x = 50 + dx
-            dot_pulse = 0.3 + 0.7 * abs(math.sin(frame_idx * 0.02 + dx * 0.05))
-            od.ellipse([dot_x - 2, dot_y - 2, dot_x + 2, dot_y + 2],
-                       fill=alpha_color(accent, int(60 * dot_pulse)))
-
-        # ── Right narration panel ──
         seg_data = wrapped[seg_idx]
         words = seg_data["words"]
-        lines = seg_data["lines"]
 
-        # Dark backdrop for text area
+        # Subtle backdrop for text area
         od.rounded_rectangle(
-            [(TEXT_PANEL_LEFT - 20, TEXT_TOP_MARGIN - 20),
-             (TEXT_PANEL_RIGHT + 20, TEXT_TOP_MARGIN + MAX_VISIBLE_LINES * BODY_LINE_HEIGHT + 30)],
-            radius=8, fill=(0, 0, 0, 100)
+            [(TEXT_PANEL_LEFT - 15, TEXT_TOP_MARGIN - 20),
+             (TEXT_PANEL_RIGHT + 15, TEXT_TOP_MARGIN + MAX_VISIBLE_LINES * BODY_LINE_HEIGHT + 30)],
+            radius=6, fill=(0, 0, 0, 80)
         )
 
-        # Accent left border
+        # Accent left border on text panel
         od.rectangle(
-            [(TEXT_PANEL_LEFT - 20, TEXT_TOP_MARGIN - 10),
-             (TEXT_PANEL_LEFT - 17, TEXT_TOP_MARGIN + MAX_VISIBLE_LINES * BODY_LINE_HEIGHT + 20)],
-            fill=alpha_color(accent, 180)
+            [(TEXT_PANEL_LEFT - 15, TEXT_TOP_MARGIN - 10),
+             (TEXT_PANEL_LEFT - 12, TEXT_TOP_MARGIN + MAX_VISIBLE_LINES * BODY_LINE_HEIGHT + 20)],
+            fill=alpha_color(accent, 160)
         )
 
         # Word-by-word reveal
         total_words = len(words)
-        words_to_show = int(seg_progress * total_words * 1.5)  # speed factor
+        words_to_show = int(seg_progress * total_words * 1.5)
         words_to_show = max(1, min(total_words, words_to_show))
 
-        # Build revealed text and figure out which lines to show
-        revealed = " ".join(words[:words_to_show])
+        # Build revealed lines
         revealed_lines = []
         dummy = ImageDraw.Draw(Image.new("L", (1, 1)))
         current = ""
@@ -423,7 +611,7 @@ def render_frame(frame_idx, total_frames, scene, seg_idx, seg_progress,
             od.text((TEXT_PANEL_LEFT, y), line,
                     fill=(240, 240, 240, text_a), font=fonts["body"])
 
-        # Cursor blink on last word
+        # Cursor blink
         if words_to_show < total_words:
             cursor_visible = int(frame_idx * 0.1) % 2 == 0
             if cursor_visible and visible:
@@ -431,10 +619,11 @@ def render_frame(frame_idx, total_frames, scene, seg_idx, seg_progress,
                 bbox = dummy.textbbox((0, 0), last_line, font=fonts["body"])
                 cursor_x = TEXT_PANEL_LEFT + (bbox[2] - bbox[0]) + 4
                 cursor_y = TEXT_TOP_MARGIN + (len(visible) - 1) * BODY_LINE_HEIGHT
-                od.rectangle([(cursor_x, cursor_y + 2), (cursor_x + 2, cursor_y + BODY_FONT_SIZE)],
-                              fill=alpha_color(accent, 200))
+                od.rectangle([(cursor_x, cursor_y + 2),
+                              (cursor_x + 2, cursor_y + BODY_FONT_SIZE)],
+                             fill=alpha_color(accent, 200))
 
-        # ── Bottom: segment progress indicator ──
+        # ── Bottom: segment progress bar ──
         bar_y = H - 50
         bar_h = 3
         od.rectangle([(TEXT_PANEL_LEFT, bar_y), (TEXT_PANEL_RIGHT, bar_y + bar_h)],
@@ -455,11 +644,15 @@ def render_frame(frame_idx, total_frames, scene, seg_idx, seg_progress,
         od.text((W - 40, 20), num_text,
                 fill=(100, 100, 100, 120), font=fonts["tiny"], anchor="rt")
 
-        # ── Top-left: era ──
+        # ── Top of text panel: era + title ──
         era = scene.get("era", "")
         if era:
-            od.text((50, 20), era,
-                    fill=(140, 140, 140, 140), font=fonts["small"])
+            od.text((TEXT_PANEL_LEFT, 20), era,
+                    fill=alpha_color(accent, 140), font=fonts["small"])
+        title = scene.get("title", "")
+        if title:
+            od.text((TEXT_PANEL_LEFT, 45), title,
+                    fill=alpha_color((200, 200, 200), 160), font=fonts["subtitle"])
 
         img_rgba = Image.alpha_composite(img_rgba, overlay)
 
@@ -468,7 +661,8 @@ def render_frame(frame_idx, total_frames, scene, seg_idx, seg_progress,
     bar_overlay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     bd = ImageDraw.Draw(bar_overlay)
     bd.rectangle([(0, H - 3), (W, H)], fill=(30, 30, 30, 150))
-    bd.rectangle([(0, H - 3), (int(W * progress), H)], fill=alpha_color(accent, 200))
+    bd.rectangle([(0, H - 3), (int(W * progress), H)],
+                  fill=alpha_color(accent, 200))
     img_rgba = Image.alpha_composite(img_rgba, bar_overlay)
 
     return img_rgba.convert("RGB")
@@ -484,7 +678,8 @@ def render_scene(scene_path, audio_path, output_path, fps=FPS):
 
     total_frames = int(audio_duration * fps)
     accent_rgb = hex_rgb(scene.get("accent", "#e94560"))
-    gradient_colors = [hex_rgb(c) for c in scene.get("gradient", ["#1a1a2e", "#16213e", "#0f3460"])]
+    gradient_colors = [hex_rgb(c) for c in scene.get("gradient",
+                         ["#1a1a2e", "#16213e", "#0f3460"])]
 
     segments = scene.get("segments", [])
     seg_starts = []
@@ -502,7 +697,8 @@ def render_scene(scene_path, audio_path, output_path, fps=FPS):
     t0 = time.time()
     bg_rgb = make_gradient(W, H, gradient_colors)
     vignette = make_vignette(W, H, strength=0.5)
-    particles = precompute_particles(PARTICLE_COUNT, W, H, seed=scene.get("scene_num", 0) * 137)
+    particles = precompute_particles(PARTICLE_COUNT, W, H,
+                                       seed=scene.get("scene_num", 0) * 137)
     wrapped = prewrap_text(segments, fonts["body"], TEXT_PANEL_W)
     scene_num = scene.get("scene_num", 1)
     total_scenes = scene.get("total_scenes", 28)
