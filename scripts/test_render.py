@@ -9,9 +9,9 @@ import wave
 
 sys.path.insert(0, "/home/z/my-project/swarmvid/scripts")
 from render_scene import (
-    W, H, FPS, render_frame, hex_rgb, make_gradient, make_vignette,
-    precompute_particles, prewrap_text, get_fonts, TEXT_TOP_MARGIN,
-    TEXT_PANEL_W
+    W, H, FPS, render_frame, hex_rgb, make_bg_composited, make_map_bg,
+    make_divider_gradient, precompute_particles, prewrap_text, get_fonts,
+    TEXT_TOP_MARGIN, TEXT_PANEL_W, MAP_PANEL_W
 )
 
 scene = {
@@ -46,10 +46,15 @@ gradient_colors = [hex_rgb(c) for c in scene["gradient"]]
 fonts = get_fonts()
 print("Pre-computing...", flush=True)
 t0 = time.time()
-bg_rgb = make_gradient(W, H, gradient_colors)
-vignette = make_vignette(W, H, strength=0.5)
+bg_composited = make_bg_composited(W, H, gradient_colors)
+bg_rgba = bg_composited.convert("RGBA")
+map_bg = make_map_bg(MAP_PANEL_W, H)
+divider_overlay = make_divider_gradient(W, H, MAP_PANEL_W, fade_width=20)
 particles = precompute_particles(30, W, H, seed=scene["scene_num"] * 137)
 wrapped = prewrap_text(scene["segments"], fonts["body"], TEXT_PANEL_W)
+_dummy_draw = __import__("PIL.ImageDraw", fromlist=["ImageDraw"]).Draw(
+    __import__("PIL.Image", fromlist=["Image"]).new("L", (1, 1))
+)
 print(f"Pre-compute: {time.time() - t0:.1f}s")
 
 # Render a narration frame (frame 120 = 5s into 20s audio)
@@ -66,9 +71,10 @@ print(f"Rendering frame {frame_idx} (seg_progress={seg_progress:.2f})...")
 img = render_frame(
     frame_idx, total_frames, scene,
     seg_idx, seg_progress,
-    fonts, accent_rgb, gradient_colors,
-    bg_rgb, vignette, particles, wrapped,
-    scene["scene_num"], scene["total_scenes"]
+    fonts, accent_rgb,
+    bg_composited, bg_rgba, map_bg, divider_overlay,
+    particles, wrapped,
+    scene["scene_num"], scene["total_scenes"], _dummy_draw,
 )
 
 out_path = "/home/z/my-project/download/test_frame_map_fix.png"
@@ -77,7 +83,6 @@ img.save(out_path)
 print(f"Saved: {out_path}")
 
 # Check that left panel is NOT all-black (map should be visible)
-# Sample some pixels in the left 520px
 import numpy as np
 arr = np.array(img)
 left_panel = arr[:, :520, :]
