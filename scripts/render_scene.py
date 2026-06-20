@@ -542,14 +542,16 @@ def render_frame(frame_idx, total_frames, scene, seg_idx, seg_progress,
             accent, frame_idx, scene_num, fonts
         )
 
+        # Composite map_rgba onto map_overlay so map content is visible
+        map_overlay.paste(map_rgba, (MAP_PANEL_X, MAP_PANEL_Y), map_rgba)
+
         # Vertical divider between map and text
         divider_x = MAP_PANEL_W
-        # Thin accent line
-        map_od.line([(divider_x - 2, 0), (divider_x - 2, H)],
-                    fill=alpha_color(accent, 40), width=2)
-        # Soft gradient fade on divider (drawn on the main overlay)
-        for fade_x in range(MAP_PANEL_W, MAP_PANEL_W + 20):
-            fade_a = int(60 * (1.0 - (fade_x - MAP_PANEL_W) / 20))
+        map_draw.line([(divider_x, 0), (divider_x, H)],
+                       fill=alpha_color(accent, 60), width=2)
+        # Soft gradient fade on divider
+        for fade_x in range(divider_x, divider_x + 20):
+            fade_a = int(60 * (1.0 - (fade_x - divider_x) / 20))
             map_draw.line([(fade_x, 0), (fade_x, H)],
                           fill=alpha_color((15, 15, 20), fade_a))
 
