@@ -86,7 +86,8 @@ def render_scene(scene_path: str, audio_path: str, output_path: str, fps: int = 
     print(f"{time.time() - t0:.1f}s")
 
     # Build visual events timeline (per-scene programming)
-    media_base = os.path.join(os.path.dirname(scene_path), "media")
+    # media/ lives at output/media/, sibling of output/scenes/
+    media_base = os.path.join(os.path.dirname(os.path.dirname(scene_path)), "media")
     event_timeline = EventTimeline.from_scene(scene, media_base)
     if event_timeline.events:
         print(f"  Visual events: {len(event_timeline.events)} events loaded")

@@ -439,8 +439,9 @@ def _render_image_event(od: ImageDraw.ImageDraw, event: VisualEvent,
     if img_alpha < 255:
         img.putalpha(img.split()[-1].point(lambda p: int(p * alpha_mult)))
 
-    # Draw image
-    od.bitmap([(x, y), (x + img.size[0], y + img.size[1])], img)
+    # Draw image (paste via parent overlay instead of bitmap API)
+    overlay = od._image  # ImageDraw stores ref to underlying Image
+    overlay.paste(img, (x, y), img)
 
     # Caption bar
     if event.caption and caption_h > 0:
