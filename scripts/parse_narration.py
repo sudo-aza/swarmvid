@@ -126,11 +126,12 @@ def parse_blackboard(blackboard_path):
 
         section = narration[start:end]
 
-        # Extract segments: [SN.M] followed by text until next [SN.M] or blank+header
+        # Extract segments: [SN.M] followed by text until next [SN.M] or SOURCES:
         segment_re = re.compile(r"\[S" + str(scene_num) + r"\.\d+\]")
         seg_markers = list(segment_re.finditer(section))
 
         segments = []
+        sources = []
         for seg_idx, seg_match in enumerate(seg_markers):
             seg_start = seg_match.end()
             if seg_idx + 1 < len(seg_markers):
@@ -139,10 +140,31 @@ def parse_blackboard(blackboard_path):
                 seg_end = len(section)
 
             text = section[seg_start:seg_end].strip()
+
+            # Strip SOURCES: section and extract source lines
+            sources_match = re.search(r"\nSOURCES:\s*\n", text)
+            if sources_match:
+                sources_block = text[sources_match.end():]
+                text = text[:sources_match.start()]
+                # Extract source lines (URLs, book citations)
+                for src_line in sources_block.strip().split("\n"):
+                    src_line = src_line.strip().lstrip("- ")
+                    if src_line:
+                        # Remove leading citation markers like "[1] "
+                        src_line = re.sub(r"^\[\d+\]\s*", "", src_line)
+                        if src_line:
+                            sources.append(src_line)
+
+            # Remove inline citation markers [1], [2], etc.
+            text = re.sub(r"\[\d+\]", "", text)
+
             # Remove leading/trailing whitespace and collapse internal newlines
-            text = re.sub(r"\s+", " ", text)
+            text = re.sub(r"\s+", " ", text).strip()
             if text:
                 segments.append({"text": text})
+
+        # Deduplicate sources
+        sources = list(dict.fromkeys(sources))
 
         if segments:
             scenes.append({
@@ -150,6 +172,7 @@ def parse_blackboard(blackboard_path):
                 "title": title,
                 "subtitle": subtitle,
                 "segments": segments,
+                "sources": sources,
             })
 
     return scenes
@@ -170,13 +193,16 @@ def build_scene_json(scene, default_duration=12.0):
             "duration_s": default_duration,
         })
 
+    # Use sources from parsed narration (or empty if none)
+    sources = scene.get("sources", [])
+
     return {
         "scene_num": scene_num,
         "title": scene["title"],
         "subtitle": scene["subtitle"],
         "era": era,
         "segments": segments,
-        "sources": [],
+        "sources": sources,
         "gradient": GRADIENTS[grad_idx],
         "accent": ACCENTS[acc_idx],
     }
