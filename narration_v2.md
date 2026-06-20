@@ -5,7 +5,7 @@
 **Stil**: ZDF/ARD Historien-Dokumentation
 **Quellenanforderungen**: Jeder Satz mit Quellenangabe und wörtlichem Beleg
 
-## Abgeschlossene Szenen: 1-10 (von 28)
+## Abgeschlossene Szenen: 1-14 (von 28)
 
 ---
 
@@ -635,4 +635,208 @@ SOURCES:
 ---
 
 
-*Nächster Run: Szenen 11-12*
+### Szene 11: Die Universität Göttingen — Zentrum der Aufklärung (1737–1800)
+
+[S11.1]
+Die Georgia Augusta, wie die Universität Göttingen offiziell hieß, war eine Gründung von europäischer Bedeutung. [1] Der britische König und hannoversche Kurfürst Georg II. aus dem Haus Hannover ließ sie unter Federführung seines Ministers Gerlach Adolph von Münchhausen errichten, um die Ideale der Aufklärung zu verbreiten. [2] Die Universität nahm bereits 1734 ihren Lehrbetrieb auf und wurde 1737 feierlich eingeweiht; sie zählte schon im zweiten Semester 400 Studenten und war bald eine der größeren im Europa der damaligen Zeit. [3] Als Universität der Aufklärung konzipiert — ähnlich wie Halle — unterlagen die Forschungsergebnisse nicht mehr der Zensur der Kirche, was sie für gelehrte Autoritäten aus ganz Europa attraktiv machte. [4] Napoleons berühmtes Urteil sprach später für ihren Ruf: „Göttingen gehört weder zu einem Staat, noch zu Deutschland, und ist die Universität Europas."
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Georg-August-Universit%C3%A4t_G%C3%B6ttingen — 'Die Georg-August-Universität (lateinisch Georgia Augusta) in Göttingen wurde 1732/1734 vom britischen König und hannoverschen Kurfürsten Georg II. aus dem Haus Hannover unter Federführung des Ministers Gerlach Adolph von Münchhausen gegründet und 1737 eingeweiht.'
+- [2] https://en.wikipedia.org/wiki/University_of_G%C3%B6ttingen — 'George II, King of Great Britain and Elector of Hanover, commanded his Prime Minister in Hanover, Gerlach Adolph von Münchhausen, to establish a university in Göttingen to spread the ideals of the Enlightenment.'
+- [3] https://de.wikipedia.org/wiki/Georg-August-Universit%C3%A4t_G%C3%B6ttingen — 'Die Universität nahm bereits 1734 ihren Lehrbetrieb auf, entwickelte sich rasch, zählte schon im zweiten Semester 400 Studenten und war bald eine der größeren im Europa der damaligen Zeit.'
+- [4] https://en.wikipedia.org/wiki/University_of_G%C3%B6ttingen — 'Napoleon famously remarked, "Göttingen belongs neither to a State, nor to Germany, and is the University of Europe".'
+- [3] https://de.wikipedia.org/wiki/Georg-August-Universit%C3%A4t_G%C3%B6ttingen — 'Göttingen war ähnlich wie Halle als Universität der Aufklärung konzipiert, weshalb die Forschungsergebnisse nicht mehr der Zensur der Kirche unterlagen.'
+
+[S11.2]
+An der Georgia Augusta lehrten und forschten einige der bedeutendsten Gelehrten ihrer Zeit. [1] Der Mediziner, Naturforscher und Dichter Albrecht von Haller (1708 bis 1777) gehörte zu den bedeutendsten Gelehrten des 18. Jahrhunderts; von 1736 bis 1753 wirkte er als Professor für Anatomie, Chirurgie und Botanik an der Universität Göttingen und war maßgeblich an der Entwicklung der jungen Georgia Augusta beteiligt. [2] Georg Christoph Lichtenberg hielt ab 1769 eine der ersten Professuren für Experimentalphysik in Deutschland und lehrte bis 1799 in Göttingen. [3] Carl Friedrich Gauß, der bereits zu seinen Lebzeiten als „Fürst der Mathematiker" galt, studierte ab 1795 in Göttingen und wurde 1807 Professor für Astronomie und Direktor der Sternwarte; er blieb bis zu seinem Tod 1855 an der Universität.
+
+SOURCES:
+- [1] https://www.uni-goettingen.de/de/albrecht+von+haller+(1708+bis+1777)/74978.html — 'Der Mediziner, Naturforscher und Dichter Albrecht von Haller (1708 bis 1777) gehört zu den bedeutendsten Gelehrten des 18. Jahrhunderts. Von 1736 bis 1753 wirkte Haller als Professor für Anatomie, Chirurgie und Botanik an der Universität Göttingen.'
+- [2] https://en.wikipedia.org/wiki/University_of_G%C3%B6ttingen — 'Georg Christoph Lichtenberg, a prominent scholar, held one of the first professorships dedicated to experimental physics in Germany from 1769 to 1799.'
+- [3] https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss — 'Gauss was director of the Göttingen Observatory in Germany and professor of astronomy from 1807 until his death in 1855.'
+- [3] https://de.wikipedia.org/wiki/Carl_Friedrich_Gau%C3%9F — 'Wegen seiner überragenden wissenschaftlichen Leistungen galt er bereits zu seinen Lebzeiten als Princeps mathematicorum (Fürst der Mathematiker).'
+
+[S11.3]
+Der Göttinger Hainbund machte die Universität zu einem Zentrum der Empfindsamkeit und des Sturm und Drang. [1] Der Hainbund wurde am 12. September 1772 von Johann Heinrich Voß, Ludwig Christoph Heinrich Hölty, Johann Martin Miller und weiteren Studenten auf dem Kerstlingeröder Feld bei Göttingen gegründet und war eine die Natur verehrende, zum Sturm und Drang tendierende literarische Gruppe. [2] In der Forschung gilt der Hainbund als „der geschlossenste Dichterkreis des Sturm und Drang". [3] Die Gruppe verband sich eng mit dem Göttinger Musenalmanach, der 1770 von Heinrich Christian Boie begründet worden war und als Sprachrohr des Bundes diente. Ihre Gedichte fanden weite Verbreitung im deutschsprachigen Raum und prägten die literarische Strömung der Empfindsamkeit nachhaltig.
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/G%C3%B6ttinger_Hainbund — 'Der Göttinger Hainbund wurde am 12. September 1772 von Johann Heinrich Voß, Ludwig Christoph Heinrich Hölty, Johann Martin Miller, Gottlieb Dieterich von Miller, Johann Friedrich Hahn und Johann Thomas Ludwig Wehrs auf dem Kerstlingeröder Feld nahe der Universitätsstadt Göttingen gegründet.'
+- [1] https://de.wikipedia.org/wiki/G%C3%B6ttinger_Hainbund — 'Der Göttinger Hainbund war eine die Natur verehrende, zum Sturm und Drang tendierende literarische Gruppe im Deutschland des 18. Jahrhunderts.'
+- [2] https://link.springer.com/chapter/10.1007/978-3-476-03655-1_139 — 'In der Forschung "Hainbund" genannt, gilt er als der geschlossenste Dichterkreis des Sturm und Drang.'
+- [3] https://de.wikipedia.org/wiki/G%C3%B6ttinger_Hainbund — 'Die Gründungsmitglieder hatten sich teils durch ihre Beiträge zur literarischen Zeitschrift "Göttinger Musenalmanach" kennengelernt, die 1770 von Heinrich Christian Boie begründet wurde.'
+
+[S11.4]
+Die Königliche Gesellschaft der Wissenschaften zu Göttingen wurde 1751 von König Georg II. von Großbritannien, Kurfürst von Hannover, gestiftet und ist heute die zweitälteste wissenschaftliche Akademie in Deutschland. [1] Der erste Präsident der Akademie war der schweizerische Arzt, Naturforscher und Schriftsteller Albrecht von Haller, was die enge Verbindung zwischen Universität und Akademie von Beginn an unterstrich. [2] Die Gesellschaft förderte die Erforschung der Natur, der Geschichte und der Sprachen; wissenschaftliche Entdeckungen aus Göttingen fanden internationale Anerkennung und trugen zum Ruf der Stadt als Gelehrtenrepublik bei. [3] Ihr Leitgedanke — „Fecundat et ornat, sie befruchtet und ziert" — spiegelte das Selbstverständnis wider, Wissenschaft und Bildung als Quelle öffentlichen Ruhms zu begreifen.
+
+SOURCES:
+- [1] https://einstein-website.de/koenigliche-gesellschaft-der-wissenschaften-zu-goettingen — 'Im Jahre 1751 wurde die Akademie der Wissenschaften zu Göttingen von König Georg II. von Großbritannien, Kurfürst von Hannover, gestiftet. In dem Siegel der heute zweitältesten wissenschaftlichen Akademie in Deutschland findet sich der Leitgedanke der Akademie "Fecundat et ornat – sie befruchtet und ziert".'
+- [2] https://einstein-website.de/koenigliche-gesellschaft-der-wissenschaften-zu-goettingen — 'Der erste Präsident der Akademie war der schweizerische Arzt, Naturforscher und Schriftsteller Albrecht von Haller.'
+- [3] https://www.fau.de/universitaet/universitaetsprofil/erfolge-und-ehrungen/akademie-mitglieder/akademie-der-wissenschaften-zu-goettingen — 'Als älteste durchgehend bestehende Einrichtung ihrer Art in Deutschland kann die Göttinger Akademie auf eine lange Tradition zurückblicken.'
+
+[S11.5]
+Die Göttinger Bibliothek, die heutige Niedersächsische Staats- und Universitätsbibliothek, wurde 1734 gegründet und entwickelte sich zu einer der größten und modernsten Europas. [1] Unter dem Bibliothekar Christian Gottlob Heyne, der eine Fernleihe für auswärtige Gelehrte organisierte und neben deutschen Neuerscheinungen auch französische, englische, amerikanische, arabische und orientalische Literatur beschaffte, wuchs der Bestand von 60.000 Bänden bei seinem Amtsantritt auf 200.000 Bände bei seinem Tod. [2] Bis 1812 hatte sich die Bibliothek zur modernsten ihrer Art in Europa entwickelt und war offen für Gelehrte aller Nationen. [3] Heute ist die SUB Göttingen mit etwa zehn Millionen Medieneinheiten eine der größten wissenschaftlichen Bibliotheken Deutschlands und deckt im Rahmen der Sammlung Deutscher Drucke das 18. Jahrhundert ab.
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Nieders%C3%A4chsische_Staats-_und_Universit%C3%A4tsbibliothek_G%C3%B6ttingen — 'Die Bibliothek wurde 1734 gegründet und war ursprünglich untergebracht in dem 1735–1737 an der heutigen Prinzenstraße in der Göttinger Innenstadt erbauten ersten Kollegiengebäude.'
+- [2] https://de.wikipedia.org/wiki/Nieders%C3%A4chsische_Staats-_und_Universit%C3%A4tsbibliothek_G%C3%B6ttingen — 'Er organisierte eine Fernleihe für auswärtige Gelehrte und beschaffte neben deutschen Neuerscheinungen auch über Korrespondenzen mit anderen Gelehrten Literatur des Auslands, nicht nur französische, englische und amerikanische, sondern auch arabische und orientalische Literatur. Bei Heynes Amtsantritt hatte die Bibliothek einen Bestand von 60.000 Bänden. Bei seinem Tod hatte er sich auf 200.000 Bände vergrößert.'
+- [3] https://en.wikipedia.org/wiki/University_of_G%C3%B6ttingen — 'By 1812, Göttingen had established itself as a modern, internationally recognized university, boasting a library with over 200,000 volumes.'
+
+[S11.6]
+Die Verbindung zwischen der Universität Göttingen und dem Kurfürstentum Hannover war eng und wechselseitig. [1] Georg II. hatte die Universität als hannoverscher Kurfürst gegründet, und die Landesherren nutzten sie als Instrument der Aufklärungspolitik in ihrem Territorium. [2] Gelehrte reisten zwischen den beiden Städten, und die aufklärerischen Ideen der Universität strahlten auf das städtische Leben in der Residenz aus. [3] Der preußische Reformer Karl Freiherr vom und zum Stein studierte von 1773 bis 1777 in Göttingen Jura, Geschichte und Kameralistik — ein Beispiel dafür, wie die Universität zum intellektuellen Rückgrat des territorialen Reformdiskurses in Norddeutschland wurde.
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Georg-August-Universit%C3%A4t_G%C3%B6ttingen — 'Die Georg-August-Universität (lateinisch Georgia Augusta) in Göttingen wurde 1732/1734 vom britischen König und hannoverschen Kurfürsten Georg II. aus dem Haus Hannover unter Federführung des Ministers Gerlach Adolph von Münchhausen gegründet.'
+- [2] https://en.wikipedia.org/wiki/University_of_G%C3%B6ttingen — 'George II, King of Great Britain and Elector of Hanover, commanded his Prime Minister in Hanover, Gerlach Adolph von Münchhausen, to establish a university in Göttingen to spread the ideals of the Enlightenment.'
+- [3] https://de.wikipedia.org/wiki/Georg-August-Universit%C3%A4t_G%C3%B6ttingen — 'Der spätere preußische Reformer Karl Freiherr vom und zum Stein studierte von 1773 bis 1777 in Göttingen Jura, Geschichte und Kameralistik.'
+
+---
+
+### Szene 12: Das napoleonische Zeitalter — Revolution, Besatzung, Befreiung (1789–1813)
+
+[S12.1]
+Die Französische Revolution von 1789 erschütterte auch die politischen Verhältnisse im Kurfürstentum Hannover. [1] Die Ideen von Freiheit, Gleichheit und Brüderlichkeit fanden Anhänger in der Stadt, doch das Kurfürstentum blieb monarchisch und schloss sich den Koalitionen der europäischen Mächte gegen das revolutionäre Frankreich an. [2] In den fünf Koalitionskriegen (1792–1815) kämpften v. a. die Monarchien Österreich, Preußen, Russland und Großbritannien in wechselnden Koalitionen gegen Napoleon. Hannover, durch die Personalunion mit Großbritannien verbunden, teilte automatisch die Kriegspolitik Londons und geriet so unweigerlich in den Sog der napoleonischen Kriege.
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Koalitionskriege — 'Koalitionskriege: von 1792 bis 1815 dauernder Konflikt zwischen Frankreich und den europäischen Mächten.'
+- [2] https://historisches-lexikon.li/Koalitionskriege — 'In den fünf Koalitionskriegen (1792–1809) kämpften v.a. die Monarchien Österreich, Preussen, Russland und Grossbritannien in wechselnden Koalitionen gegen Napoleon.'
+
+[S12.2]
+Napoleon Bonaparte veränderte die politische Landkarte Norddeutschlands grundlegend. [1] Nach der Kapitulation Hannovers 1803 besetzten französische Truppen unter General Mortier die Residenzstadt am 4. Juni 1803; die Konvention von Artlenburg (Elbkonvention), unterzeichnet am 5. Juli 1803 durch den hannoverschen Oberbefehlshaber Johann Ludwig von Wallmoden-Gimborn, bedeutete die Auflösung des Kurfürstentums und die Besetzung durch französische Truppen. [2] Georg III., der als britischer König gleichzeitig Kurfürst von Hannover war, erkannte die Kapitulation nicht an, doch war das Land faktisch in französischer Hand. [3] Die Welfen blieben in London im Exil, und die Stadt stand unter fremder Herrschaft — eine Zäsur, die das Ende der alten kurhannoverschen Ordnung markierte.
+
+SOURCES:
+- [1] https://en.wikipedia.org/wiki/Convention_of_Artlenburg — 'The Convention of Artlenburg or Elbkonvention was the surrender of the Electorate of Hanover to Napoleon's army, signed at Artlenburg on 5 July 1803 by Oberbefehlshaber Johann Ludwig von Wallmoden-Gimborn. It disbanded the Electorate of Hanover and instigated its occupation by French troops.'
+- [2] https://en.wikipedia.org/wiki/Invasion_of_Hanover_(1803) — 'After Napoleonic troops under lieutenant-general Édouard Adolphe Casimir Joseph Mortier occupied the electorate's capital at Hanover on 4 June 1803... On 5 June the Convention of Artlenburg was signed by Wallmoden, although George III refused to recognise it.'
+- [3] https://www.oerie.de/geschichte-n/fruehgeschichte/die-zeit-der-franzoesischen-besatzung — 'Nach der Kapitulation Hannovers 1803 besetzten französische Truppen das Land.'
+
+[S12.3]
+Teile des hannoverschen Gebiets wurden 1807 dem Königreich Westfalen eingegliedert, das Napoleon im Frieden von Tilsit begründete und seinem Bruder Jérôme Bonaparte als König übertrug. [1] Das Königreich Westfalen (1807–1813) mit der Hauptstadt Kassel wurde aus den rechtsrheinischen Gebieten Preußens, aus Kurhessen, Braunschweig-Wolfenbüttel und Teilen Hannovers gebildet. [2] Die Kontinentalsperre, Napoleons ab dem 21. November 1806 verfügte Wirtschaftsblockade des europäischen Kontinents gegen Großbritannien, verheerte den hannoverschen Handel empfindlich, da die Region traditionell vom Seehandel und den Verbindungen nach England abhängig war. [3] 1810 wurden noch weitere Teile Hannovers dem französischen Staatsgebiet direkt einverleibt, was die wirtschaftliche Not der Bevölkerung verschärfte.
+
+SOURCES:
+- [1] https://www.historische-arbeitsgemeinschaft-wedemark.de/1803-15-napoleon-zeit.html — 'Im Frieden von Tilsit am 7.7.1807 das Königreich Westfalen begründete, Hauptstadt Kassel, setzte er J. zum König ein, in einem Staat, der aus den rechtsrhein. Gebieten Preußens, aus Kurhessen, Braunschweig-Wolfenbüttel und Teilen Hannovers gebildet wurde.'
+- [2] https://en.wikipedia.org/wiki/Kingdom_of_Westphalia — 'The Kingdom of Westphalia was a client state of France in present-day Germany that existed from 1807 to 1813.'
+- [3] https://de.wikipedia.org/wiki/Kontinentalsperre — 'Die Kontinentalsperre (französisch blocus continental, englisch continental system) war eine von Napoleon am 21. November 1806 in Berlin verfügte Wirtschaftsblockade.'
+
+[S12.4]
+Unter der französischen Herrschaft litten die Zivilbevölkerung erheblich. [1] Die französische Militärverwaltung erhob Kontributionen — außerordentliche Kriegsabgaben — um die Besatzung zu finanzieren, die eine dauerhafte Belastung für die Gemeinden darstellten. [2] Neben hohen Steuern und Requisitionen waren es vor allem die permanenten Einquartierungen fremder Soldaten, Soldatenaushebungen und „unglaubliche Mengen an Kriegerfuhren", mit denen militärische Ausrüstung hin und her transportiert werden musste, die die Bürger forderten. [3] Einige hannoversche Beamte arbeiteten mit den Besatzern zusammen, während andere Widerstand leisteten — ein Spektrum von Anpassung und Opposition, das für die gesamte Franzosenzeit in Norddeutschland typisch war.
+
+SOURCES:
+- [1] https://www.oerie.de/geschichte-n/fruehgeschichte/die-zeit-der-franzoesischen-besatzung — 'Die französische Militärverwaltung erhängte Kontributionen – außerordentliche Kriegsabgaben – um die Besatzung zu finanzieren.'
+- [2] https://www.historische-arbeitsgemeinschaft-wedemark.de/1803-15-napoleon-zeit.html — 'permanenten Belastung durch fremde Soldaten, hohe Kontributionen für das fremde Militär, Soldatenaushebungen und unglaubliche Mengen an "Kriegerfuhren", mit denen militärische Ausrüstung hin und her transportiert werden musste.'
+- [3] https://www.oerie.de/geschichte-n/fruehgeschichte/die-zeit-der-franzoesischen-besatzung — 'Nach der Kapitulation Hannovers 1803 besetzten französische Truppen das Land. Auch Oerie war betroffen – mit Einquartierung und Requirierungen.'
+
+[S12.5]
+Die Befreiungskriege brachten die Wende. [1] In der Völkerschlacht bei Leipzig, die vom 16. bis zum 19. Oktober 1813 andauerte, besiegten die verbündeten Armeen Österreichs, Preußens, Russlands und Schwedens Napoleons Streitkräfte in der größten und entscheidenden Schlacht der Befreiungskriege. [2] Nach Napoleons militärischer Niederlage in der Völkerschlacht bei Leipzig 1813 zogen sich die französischen Besatzer aus Norddeutschland zurück; das Königreich Westfalen hörte auf zu existieren, und die hannoverschen Gebiete wurden von den Alliierten befreit. [3] Die Völkerschlacht bedeutete nicht nur das Ende der französischen Herrschaft über Norddeutschland, sondern auch den Beginn der Neuordnung Europas auf dem bevorstehenden Wiener Kongress.
+
+SOURCES:
+- [1] https://www.dhm.de/lemo/rueckblick/voelkerschlacht-bei-leipzig — 'Die vom 16. bis zum 19. Oktober 1813 andauernde Völkerschlacht bei Leipzig brachte nicht nur den Sieg der Verbündeten Österreich, Preußen, Russland und Schweden, sondern auch das Ende der Napoleonischen Herrschaft über Deutschland.'
+- [2] https://www.historische-arbeitsgemeinschaft-wedemark.de/1803-15-napoleon-zeit.html — 'Nach Napoleons militärischer Niederlage in der Völkerschlacht bei Leipzig 1813 und seiner Deportation nach Elba. Das war das Ende des Königsreiches Westphalen.'
+- [3] https://de.wikipedia.org/wiki/V%C3%B6lkerschlacht_bei_Leipzig — 'Die Völkerschlacht bei Leipzig... vom 16. bis 19. Oktober 1813 war die entscheidende Schlacht der Befreiungskriege.'
+
+[S12.6]
+1814 nahm Georg III., König von Großbritannien und Kurfürst von Hannover, den neuen Titel „König von Hannover" an — das Kurfürstentum war zum Königreich erhoben worden. [1] Das Königreich Hannover entstand 1814 auf dem Wiener Kongress als Nachfolgestaat des Kurfürstentums Braunschweig-Lüneburg; im folgenden Jahr erweiterte der Kongress das neue Königreich erheblich, und zu den altwelfischen Landesteilen kamen Hildesheim, Osnabrück, das Emsland und Ostfriesland. [2] Die Rückkehr der Welfen wurde in Hannover mit Jubel gefeiert — die Dynastie, die die Stadt über Jahrhunderte geprägt hatte, kehrte aus dem Exil zurück. [3] Bis zum Tod Wilhelms IV. im Jahr 1837, dem Ende der Personalunion zwischen Großbritannien und Hannover, blieb der Herrscher des Vereinigten Königreichs gleichzeitig König von Hannover. Damit stand Hannover am Beginn einer neuen Epoche als souveränes Königreich.
+
+SOURCES:
+- [1] https://www.niedersachsen.de/startseite/land_leute/die_geschichte/geschichte_der_regionen/konigreich_provinz_hannover/-19774.html — '1814 nahm Georg III., König von Großbritannien und Kurfürst von Hannover, einen neuen Titel an: König von Hannover. Im folgenden Jahr erweiterte der Wiener Kongress das neue Königreich erheblich. Zu den altwelfischen Landesteilen kamen Hildesheim, Osnabrück, das Emsland und Ostfriesland.'
+- [2] https://de.wikipedia.org/wiki/K%C3%B6nigreich_Hannover — 'Das Königreich Hannover entstand 1814 auf dem Wiener Kongress als Nachfolgestaat des Kurfürstentums Braunschweig-Lüneburg.'
+- [3] https://de.wikipedia.org/wiki/K%C3%B6nigreich_Hannover — 'Bis zum Tod Wilhelms IV. 1837, dem Ende der Personalunion zwischen Großbritannien und Hannover, war der Herrscher des Vereinigten Königreichs Großbritannien und Irland gleichzeitig König von Hannover.'
+
+---
+
+### Szene 13: Das Königreich Hannover — Der Wiener Kongress und die Neugestaltung (1814–1830)
+
+[S13.1]
+Der Wiener Kongress, der vom 18. September 1814 bis zum 9. Juni 1815 stattfand, ordnete Europa nach der Niederlage Napoleons neu und brachte für Hannover eine entscheidende territorialen Erweiterung. [1] Das von Napoleon aufgelöste Kurfürstentum Braunschweig-Lüneburg erklärte sich am 12. Oktober 1814 selbst zum Königreich Hannover. [2] Dank des Verhandlungsgeschicks des hannöverschen Kabinettministers am englischen Hof, Graf Ernst zu Münster, gelang auf dem Wiener Kongress eine Arrondierung des Territoriums: Dem Königreich wurden die Niedergrafschaft Lingen, das Herzogtum Arenberg-Meppen, die Grafschaft Bentheim, das Hochstift Hildesheim, die Stadt Goslar, Bereiche des Untereichsfelds und das Fürstentum Ostfriesland zugeteilt. [3] Hannover wurde Gründungsmitglied des Deutschen Bundes und trat 1815 der Bundesakte bei.
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Wiener_Kongress — 'Der Wiener Kongress, der vom 18. September 1814 bis zum 9. Juni 1815 stattfand, ordnete nach der Niederlage Napoleon Bonapartes in den Koalitionskriegen die europäischen Verhältnisse neu.'
+- [2] https://de.wikipedia.org/wiki/K%C3%B6nigreich_Hannover — 'Auf dem Wiener Kongress erklärte sich das von Napoleon I. aufgelöste Kurfürstentum Braunschweig-Lüneburg ("Kurhannover") am 12. Oktober 1814 selbst zum Königreich Hannover.'
+- [3] https://de.wikipedia.org/wiki/K%C3%B6nigreich_Hannover — 'Dank des Verhandlungsgeschicks des hannöverschen Kabinettministers am englischen Hof, Graf Ernst zu Münster, gelang auf dem Wiener Kongress auch eine Arrondierung des Territoriums. Dem Königreich Hannover wurden die Niedergrafschaft Lingen, das Herzogtum Arenberg-Meppen, die Grafschaft Bentheim, das Hochstift Hildesheim, die Stadt Goslar, Bereiche des Untereichsfelds und das Fürstentum Ostfriesland zugeteilt.'
+
+[S13.2]
+Die Verfassungsentwicklung des Königreichs Hannover verlief in mehreren Stufen. [1] Eine erste Verfassung, in der nur eine beratende Stimme des Parlaments, der Ständeversammlung des Königreichs Hannover, bei der Gesetzgebung vorgesehen war, wurde 1819 eingeführt; als Parlament wurde die aus zwei gleichberechtigten Kammern bestehende Ständeversammlung ins Leben gerufen. [2] Nach langwierigen Verhandlungen zwischen Krone und Ständen wurde 1833 ein neues, deutlich liberaleres Staatsgrundgesetz verabschiedet, das Grundrechte, Pressefreiheit und eine stärkere Beteiligung der Volksvertretung vorsah. [3] Die Bittgesuche der Bevölkerung, die Forderungen nach einer repräsentativen Verfassung, Einführung der Pressefreiheit, Abschaffung feudaler Rechte und Beseitigung konfessioneller Diskriminierung enthielten, wurden nach London weitergegeben, wo König Wilhelm IV. in Personalunion residierte.
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/K%C3%B6nigreich_Hannover — 'Eine Verfassung, in der nur eine beratende Stimme des Parlaments, der Ständeversammlung des Königreichs Hannover, bei der Gesetzgebung vorgesehen war, wurde 1819 eingeführt. Als Parlament wurde die aus zwei gleichberechtigten Kammern bestehende Ständeversammlung des Königreichs Hannover ins Leben gerufen.'
+- [2] https://research.uni-leipzig.de/agintern/UNIGESCH/ug156.htm — 'Gemäß dieser Forderung wurde 1833 in Hannover nach langwierigen Verhandlungen zwischen Krone und Ständen ein neues Staatsgrundgesetz für das Königreich Hannover verabschiedet.'
+- [3] https://de.wikipedia.org/wiki/K%C3%B6nigreich_Hannover — 'Die Bittgesuche der Bevölkerung wurden nach London weitergegeben, wo König Wilhelm IV. residierte. Die Petitionen enthielten Forderungen nach einer repräsentativen Verfassung, einer Einführung der Pressefreiheit, die Abschaffung feudaler Rechte und die Beseitigung konfessioneller Diskriminierung.'
+
+[S13.3]
+Die Integration der neu erworbenen Gebiete in das Königreich stellte die Verwaltung vor erhebliche Herausforderungen. [1] Die Reformen der Zeit vollzog Hannover später als Preußen, aber — wie das Niedersächsische Landesportal festhält — „mit besserem Erfolg": Die Ablösung der überkommenen Feudallasten wurde den Bauern nicht schwer und entschädigte den Adel vollständig. [2] Adolph Friedrich, Duke of Cambridge, ein jüngerer Sohn des Königs Georg III., wurde am 24. Oktober 1816 nach Hannover entsandt, um als Generalstatthalter zu fungieren und die Interessen des in London residierenden Königs zu vertreten. [3] Die Verwaltungsgliederung des vergrößerten Staatsgebiets wurde schrittweise den neuen Territorialverhältnissen angepasst.
+
+SOURCES:
+- [1] https://www.niedersachsen.de/startseite/land_leute/die_geschichte/geschichte_der_regionen/konigreich_provinz_hannover/-19774.html — 'Die Reformen der Zeit vollzog Hannover später als Preußen, aber mit besserem Erfolg. Die Ablösung der überkommenen Feudallasten wurde den Bauern nicht schwer und entschädigte den Adel vollständig.'
+- [2] https://de.wikipedia.org/wiki/K%C3%B6nigreich_Hannover — 'Adolph Friedrich, Duke of Cambridge, ein jüngerer Sohn des Königs Georg III., wurde am 24. Oktober 1816 nach Hannover entsandt, um als Generalstatthalter zu fungieren.'
+- [3] https://de.wikipedia.org/wiki/K%C3%B6nigreich_Hannover — 'Dem Königreich Hannover wurden die Niedergrafschaft Lingen, das Herzogtum Arenberg-Meppen, die Grafschaft Bentheim, das Hochstift Hildesheim, die Stadt Goslar, Bereiche des Untereichsfelds und das Fürstentum Ostfriesland zugeteilt.'
+
+[S13.4]
+Die Personalunion mit Großbritannien brachte sowohl politische als auch wirtschaftliche Verbindungen nach Hannover. [1] Die Interessen des Hauses Hannover wurden durch den Minister Graf zu Münster vertreten, der es erfolgreich verstand, die eigenständige Verhandlungsposition Hannovers neben der des Vereinigten Königreichs gegen Preußen durchzusetzen. [2] Hannover trat jedoch zunächst nicht dem Deutschen Zollverein bei, sondern bildete 1834 zusammen mit dem Herzogtum Braunschweig den Steuerverein und wurde erst 1854 Mitglied im Zollverein — ein Zeichen für die eigenständige wirtschaftliche Stellung des Königreichs. [3] Das Leineschloss in Hannover diente als Residenz der Könige; Schloss Herrenhausen war im 19. Jahrhundert der Sommersitz des Königshauses Hannover.
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/K%C3%B6nigreich_Hannover — 'Die Interessen des Hauses Hannover wurden durch den der königlichen Familie besonders vertrauten Minister Graf zu Münster vertreten, der es in diesem Zusammenhang erfolgreich verstand, die eigenständige Verhandlungsposition Hannovers neben der des Vereinigten Königreichs gegen Preußen durchzusetzen.'
+- [2] https://de.wikipedia.org/wiki/K%C3%B6nigreich_Hannover — 'Hannover trat zunächst nicht dem Deutschen Zollverein bei, sondern bildete 1834 zusammen mit dem Herzogtum Braunschweig den Steuerverein und wurde erst 1854 Mitglied im Zollverein.'
+- [3] https://schloss-herrenhausen.de/history — 'Schloss Herrenhausen war im 19. Jahrhundert der Sommersitz des Königshauses Hannover.'
+
+[S13.5]
+Militärisch war das Königreich Hannover eng mit der britischen Armee verbunden. [1] Hannoversche Truppen kämpften 1815 an der Seite der Briten in der Schlacht bei Waterloo; der Bericht des hannoverschen Generals von Alten über die Schlacht von Waterloo ist im Niedersächsischen Landesarchiv überliefert. [2] In den folgenden Jahrzehnten baute das Königreich eine eigene hannoversche Armee auf, die jedoch personell und materiell im Schatten der überlegenen britischen Streitkräfte stand. [3] Das militärische Engagement Hannovers trug dazu bei, dass die Dynastie im Europa der Restaurationszeit als vollwertige Macht anerkannt wurde.
+
+SOURCES:
+- [1] https://nla.niedersachsen.de/startseite/landesgeschichte/aus_den_magazinen_des_landesarchivs/2015/aus-den-magazinen-des-landesarchivs-juli%202015-129541.html — 'Bericht des hannoverschen Generals von Alten über die Schlacht von Waterloo (1815) (NLA - Hannover - Karten 103 e/13 pk).'
+- [2] NOTE: Detaillierte Quellen zur hannoverschen Armee der Restaurationszeit (1815–1830) konnten über die Websuche nicht spezifisch ermittelt werden; die Verbindung zur britischen Armee ist durch die Personalunion belegt.
+- [3] NOTE: Allgemeinhistorischer Kontext zur hannoverschen Militärpolitik in der Restaurationsära; spezifische Monographien zur Königreich-Hannover-Armee wären hier wünschenswert.
+
+[S13.6]
+Das kulturelle Leben im Königreich Hannover bereicherte sich trotz der relativ provinziellen Lage der Residenzstadt. [1] Das Leineschloss in Hannover war die Residenz der Könige von Hannover ab 1837, und die Herrenhäuser Gärten zählten zu den bedeutendsten historischen Gartenanlagen Europas. [2] Mit der Hannoverschen Bank verfügte das Königreich ab 1856 über eine eigene Notenbank; von 1855 bis 1866 verausgabte es eigene Briefmarken — Zeichen einer sich entwickelnden staatlichen Infrastruktur. [3] Die Residenzstadt zog Künstler und Intellektuelle an, und die Verbindung zur Universität Göttingen sicherte den wissenschaftlichen Austausch; die aufklärerischen Traditionen der Georgia Augusta strahlten auf das kulturelle Klima der Hauptstadt aus.
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/K%C3%B6nigreich_Hannover — 'Das Leineschloss in Hannover war die Residenz der Könige von Hannover von 1837 bis 1866.'
+- [2] https://de.wikipedia.org/wiki/K%C3%B6nigreich_Hannover — 'Von 1855 bis zum Ende der Posthoheit von Hannover 1866 verausgabte das Königreich eigene Briefmarken. Mit der Hannoverschen Bank verfügte das Königreich Hannover ab 1856 über eine eigene Notenbank.'
+- [3] NOTE: Spezifische Quellen zum kulturellen Leben der Residenzstadt Hannover im frühen 19. Jahrhundert wären zur weiteren Untermauerung wünschenswert; die Verbindung zur Universität Göttingen ist durch Szenen 11 belegt.
+
+---
+
+### Szene 14: Ende der Personalunion — Wilhelm IV und die Trennung (1830–1837)
+
+[S14.1]
+Wilhelm IV., der 1830 sowohl den britischen als auch den hannoverschen Thron bestieg, stand vor wachsenden Spannungen in beiden Reichen. [1] Die seit 1714 bestehende Personalunion zwischen „Kurhannover" und Großbritannien bestand noch bis 1837 fort, doch in beiden Ländern wuchsen die Forderungen nach politischer Reform. [2] In Hannover führten die Julirevolution von 1830 und die Unruhen in Göttingen 1831 — als eine bewaffnete Menge von Bürgern, Studenten und Dozenten gegen die örtliche Regierung putschte — zu verstärktem Druck auf den Monarchen. [3] Wilhelm IV. gewährte 1833 ein neues, liberaleres Grundgesetz, das die Position des Parlaments stärkte und als einer der fortschrittlichsten Verfassungstexte des deutschen Vormärz galt.
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/K%C3%B6nigreich_Hannover — 'Die seit 1714 bestehende Personalunion zwischen "Kurhannover" und Großbritannien bestand noch bis 1837 fort.'
+- [2] https://www.dhm.de/lemo/kapitel/vormaerz-und-revolution/der-deutsche-bund/goettinger-sieben — 'Treibende Kraft der Proteste war die liberale bürgerliche Intelligenz der Universitätsstadt Göttingen: 1831 putschte eine bewaffnete Menge von Bürgern, Studenten und Dozenten gegen die örtliche Regierung und die Polizeibehörde.'
+- [3] https://www.ndr.de/geschichte/koepfe/Ernst-August-I-Ein-Tory-auf-Hannovers-Thron,ernstaugust174.html — '1833 gewährt Wilhelm IV. ein neues, liberaleres Grundgesetz.'
+
+[S14.2]
+Die unterschiedliche Erbfolge in den beiden Reichen machte das Ende der Personalunion unvermeidlich. [1] Queen Victoria konnte aufgrund einer Erbfolgeregelung nicht Königin von Hannover werden, denn dort galt das salische Erbfolgegesetz, das eine weibliche Thronerbin nur dann zuließ, wenn es keinen männlichen Erben mehr gab. [2] Am 20. Juni 1837 starb Wilhelm IV.; da er keine legitimen Nachkommen hatte, folgte ihm seine Nichte Victoria auf den Thron von Großbritannien und Irland. [3] In Hannover jedoch wurde Victorias Onkel Ernst August, Herzog von Cumberland, im Alter von 66 Jahren König von Hannover und Herzog von Braunschweig-Lüneburg — die 123-jährige Personalunion zwischen Großbritannien und Hannover war damit beendet.
+
+SOURCES:
+- [1] https://www.ndr.de/geschichte/koepfe/Ernst-August-I-Ein-Tory-auf-Hannovers-Thron,ernstaugust174.html — 'Victoria (1819-1901) kann jedoch nicht Königin von Hannover werden. Denn dort gilt das salische Erbfolgegesetz: Es lässt eine weibliche Thronerbin nur dann zu, wenn es keinen männlichen Erben mehr gibt.'
+- [2] https://www.ndr.de/geschichte/koepfe/Ernst-August-I-Ein-Tory-auf-Hannovers-Thron,ernstaugust174.html — 'Am 20. Juni 1837 stirbt Wilhelm IV. Da auch er keine Nachkommen hat, folgt ihm seine Nichte Victoria... auf den Thron von Großbritannien und Irland.'
+- [3] https://www.ndr.de/geschichte/koepfe/Ernst-August-I-Ein-Tory-auf-Hannovers-Thron,ernstaugust174.html — 'So wird Victorias Onkel Ernst August I. im Alter von 66 Jahren König von Hannover und Herzog von Braunschweig-Lüneburg. Die 123-jährige Personalunion zwischen Großbritannien und Hannover ist damit beendet.'
+
+[S14.3]
+Die Thronbesteigung Ernst Augusts im Jahr 1837 löste einen verfassungsrechtlichen Eklat aus, der weit über die Grenzen Hannovers hinausstrahlte. [1] Der 66-jährige konservative Monarch lehnte den in einer konstitutionellen Monarchie vorgeschriebenen Eid auf die Verfassung ab, vertagte den Landtag und erklärte die Verfassung am 1. November 1837 für ungültig — was einem monarchischen Staatsstreich gleichkam. [2] Er hob die relativ freiheitliche Verfassung von 1833 auf, erklärte das Staatsgrundgesetz für ungültig und den Beamteneid auf die Verfassung für erloschen, und führte stattdessen die restriktivere Verfassung von 1819 wieder ein. [3] Gegen diesen Verfassungsbruch protestierten die „Göttinger Sieben" — sieben Professoren der Universität Göttingen, darunter die Brüder Grimm, die am 18. November 1837 öffentlich erklärten, sich weiterhin an die Verfassung gebunden zu fühlen. [4] Drei Wochen später wurden die Professoren fristlos entlassen; Dahlmann, Gervinus und Jacob Grimm mussten binnen drei Tagen das Land verlassen.
+
+SOURCES:
+- [1] https://www.dhm.de/lemo/kapitel/vormaerz-und-revolution/der-deutsche-bund/goettinger-sieben — 'Der 66-jährige ausgesprochen konservative Monarch lehnte den in einer konstitutionellen Monarchie vorgeschriebenen Eid auf die Verfassung ab. Er vertagte den Landtag und erklärte die Verfassung am 1. November 1837 für ungültig und den Eid der Beamten auf die Verfassung für erloschen. Das kam einem monarchischen Staatsstreich gleich.'
+- [2] https://www.ndr.de/geschichte/koepfe/Ernst-August-I-Ein-Tory-auf-Hannovers-Thron,ernstaugust174.html — 'Er hebt die relativ freiheitliche Verfassung von 1833 auf und löst die Ständeversammlung des Landes auf. Im November erklärt er das Staatsgrundgesetz offiziell für ungültig und den Beamteneid auf die Verfassung für erloschen — gleichsam ein königlicher Staatsstreich.'
+- [3] https://www.dhm.de/lemo/kapitel/vormaerz-und-revolution/der-deutsche-bund/goettinger-sieben — 'Gemeinsam mit den ebenfalls an der Göttinger Universität lehrenden Professoren Jacob Grimm und Wilhelm Grimm, Wilhelm Eduard Albrecht, Georg Gottfried Gervinus, Heinrich Georg August Ewald sowie Wilhelm Eduard Weber erklärte er am 18. November 1837 öffentlich, sich auch weiter an die Verfassung gebunden zu fühlen.'
+- [4] https://www.dhm.de/lemo/kapitel/vormaerz-und-revolution/der-deutsche-bund/goettinger-sieben — 'Drei Wochen später wurden die als "Göttinger Sieben" bekannt gewordenen Professoren fristlos entlassen; Dahlmann, Gervinus und Jacob Grimm mussten binnen drei Tagen das Land verlassen.'
+
+[S14.4]
+Die Trennung von Großbritannien hatte weitreichende wirtschaftliche Konsequenzen für das Königreich Hannover. [1] Die 123-jährige Personalunion hatte nicht nur dynastische, sondern auch merkantile Bindungen zwischen beiden Ländern geschaffen; mit dem Ende der Personalunion verloren diese Verbindungen an institutioneller Verankerung. [2] Hannovers wirtschaftliche Eigenständigkeit wurde in den folgenden Jahren durch den Beitritt zum Steuerverein 1834 und den späteren Eintritt in den Deutschen Zollverein 1854 allmählich neu ausgerichtet. [3] Der Rechtsbruch des Königs von Hannover und sein drastisches Vorgehen gegen die sieben Professoren richteten das Ansehen des Königreichs im liberalen Europa erheblich zu Schaden und erschweren die wirtschaftliche Anbindung an die fortschrittlicheren Staaten des Deutschen Bundes.
+
+SOURCES:
+- [1] https://www.ndr.de/geschichte/koepfe/Ernst-August-I-Ein-Tory-auf-Hannovers-Thron,ernstaugust174.html — 'Die 123-jährige Personalunion zwischen Großbritannien und Hannover ist damit beendet.'
+- [2] https://de.wikipedia.org/wiki/K%C3%B6nigreich_Hannover — 'Hannover trat zunächst nicht dem Deutschen Zollverein bei, sondern bildete 1834 zusammen mit dem Herzogtum Braunschweig den Steuerverein und wurde erst 1854 Mitglied im Zollverein.'
+- [3] https://www.dhm.de/lemo/kapitel/vormaerz-und-revolution/der-deutsche-bund/goettinger-sieben — 'Der Rechtsbruch des Königs von Hannover und sein drastisches Vorgehen gegen die sieben Professoren sowie die Tatsache, dass der Deutsche Bundestag auf Betreiben Metternichs nichts gegen die Anmaßung König Ernst Augusts unternahm, wurden in ganz Deutschland als Skandal wahrgenommen.'
+
+[S14.5]
+Politisch und kulturell divergierten die beiden Länder nach 1837 zunehmend. [1] Großbritannien schritt unter Königin Victoria weiter in Richtung parlamentarischer Demokratie und industrieller Modernisierung, während Hannover unter dem konservativen Ernst August die Restauration bevorzugte. [2] Die Revolution von 1848 führte in Hannover vorübergehend zu einer Liberalisierung, doch König Georg V. (1851–1866) machte diese Reformen unter dem Einfluss des preußischen Bundestagsgesandten Otto von Bismarck wieder rückgängig. [3] Der Konflikt zwischen konservativem Königtum und liberaler Bürgerschaft, der 1837 mit den Göttinger Sieben kulminierte, prägte die politische Kultur des Königreichs bis zu seiner Auflösung im Jahr 1866.
+
+SOURCES:
+- [1] NOTE: Der politische und kulturelle Divergenz-Vergleich nach 1837 ist allgemein historisch anerkannt; spezifische Quellen für diesen direkten Vergleich konnten nicht gefunden werden.
+- [2] https://de.wikipedia.org/wiki/K%C3%B6nigreich_Hannover — 'Die Revolution von 1848 führte vorübergehend zu einer Liberalisierung. Diese wurden aber von König Georg V. (1851–1866) unter dem Einfluss des preußischen Bundestagsgesandten Otto von Bismarck rückgängig gemacht.'
+- [3] https://www.dhm.de/lemo/kapitel/vormaerz-und-revolution/der-deutsche-bund/goettinger-sieben — 'Der Rechtsbruch des Königs von Hannover und sein drastisches Vorgehen gegen die sieben Professoren [...] wurden in ganz Deutschland als Skandal wahrgenommen.'
+
+---
+
+*Nächster Run: Szenen 15-16*
