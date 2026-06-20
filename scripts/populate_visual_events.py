@@ -12,7 +12,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-OUTPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'output')
+OUTPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'output', 'scenes')
 
 
 def seg_time(scene, seg_idx, offset=0.0):
@@ -477,14 +477,16 @@ def main():
         with open(path) as f:
             scene = json.load(f)
 
-        events = POPULATORS[num](scene)
-        scene["visual_events"] = events
+        new_events = POPULATORS[num](scene)
+        # Merge: keep existing events (e.g. image-type), add new text events
+        existing = scene.get("visual_events", [])
+        scene["visual_events"] = existing + new_events
 
         with open(path, 'w') as f:
             json.dump(scene, f, indent=2, ensure_ascii=False)
 
-        total_events += len(events)
-        print(f"  Scene {num} ({scene.get('title', '?')}): {len(events)} events added")
+        total_events += len(new_events)
+        print(f"  Scene {num} ({scene.get('title', '?')}): {len(new_events)} text events added, {len(scene['visual_events'])} total")
 
     print(f"\nTotal: {total_events} visual events across {len(POPULATORS)} scenes")
 
