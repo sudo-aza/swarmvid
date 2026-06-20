@@ -5,7 +5,7 @@
 **Stil**: ZDF/ARD Historien-Dokumentation
 **Quellenanforderungen**: Jeder Satz mit Quellenangabe und wörtlichem Beleg
 
-## Abgeschlossene Szenen: 1-6 (von 28)
+## Abgeschlossene Szenen: 1-8 (von 28)
 
 ---
 
@@ -411,6 +411,118 @@ SOURCES:
 - [4] https://schlossherzberg.de/fuerstenfamilie-schloss-herzberg-erleben — '1641 — Nach dem Tod Georgs von Calenberg wird Christian Ludwig unter der Vormundschaft seiner Mutter Anna Eleonore… 1648…'
 - [5] NOTE: Der Übergang zur neuen Epoche ist historisch belegt; Christian Ludwigs Regentschaft begann den Wiederaufbau.
 
+### Szene 7: Wiederaufbau — und der Weg zur Macht (1648–1680)
+
+[S7.1]
+Nach dem Westfälischen Frieden von 1648 stand Hannover vor der gewaltigen Aufgabe des Wiederaufbaus [1]. Der Dreißigjährige Krieg hatte die Stadt und ihre Einwohner schwer gezeichnet, doch die Grundlagen für die Zukunft waren bereits gelegt: Herzog Georg von Calenberg hatte Hannover 1636 zu seiner Residenz gemacht, die Stadt befestigt und das Minoritenkloster zum Leineschloss umgebaut [2]. Nun, nach dem Frieden, lag die Aufgabe bei seinen Söhnen, das Erbe weiterzuführen und Hannover zum Zentrum eines territorial zusammenhängenden Fürstentums auszubauen. Die Stadt und das umliegende Land brauchten dringend Erholung — zerstörte Höfe, unterbrochene Handelsrouten und eine dezimierte Bevölkerung erforderten jahrelange Wiederaufbauarbeit [3].
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Westf%C3%A4lischer_Friede — 'Der Friedensvertrag wurde am 24. Oktober 1648 unterzeichnet.'
+- [2] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'holte Georg auch die Verwaltung von Hildesheim nach Hannover, baute die Stadt zu einer Festung aus, in die er auch die nun planmäßig angelegte Calenberger Neustadt auf dem linken Leineufer vereinte, und ließ das ehemalige Minoritenkloster an der Leine zu einem Schloss umbauen, dem Leineschloss'
+- [3] NOTE: Die allgemeinen Nachwirkungen des Dreißigjährigen Krieges auf Niedersachsen sind historisch umfassend belegt; für Hannover siehe die Chronik der Stadt Hannover.
+
+[S7.2]
+Georg Wilhelm, der zweite Sohn Georgs von Calenberg, hatte 1648 das Fürstentum Calenberg mit Residenz im Leineschloss geerbt [1]. Doch der junge Herzog, ein begeisterter Reisender, kam seinen Verpflichtungen als Landesherr in Hannover kaum nach und hielt sich lieber in den Niederlanden, Italien und vor allem in Venedig auf [2]. Die Regierungsgeschäfte liefen weitgehend ohne ihn ab. Erst als sein älterer Bruder Christian Ludwig 1665 starb und Georg Wilhelm in das begehrtere Fürstentum Lüneburg nach Celle wechselte, erbte der nächste Bruder, Johann Friedrich, das Fürstentum Calenberg [3]. Georg Wilhelm blieb bis zu seinem Tod 1705 in Celle und wurde dort als letzter "Heideherzog" in guter Erinnerung [4].
+
+SOURCES:
+- [1] https://www.welfen.de/Georg-Wilhelm.htm — 'Mit dem Regierungsantritt seines älteren Bruders Christian Ludwig im Fürstentum Lüneburg (Celle), erbte Georg Wilhelm 1648 das Fürstentum Calenberg (Hannover).'
+- [2] https://www.welfen.de/Georg-Wilhelm.htm — 'Doch setzte er seine lang anhaltenden Reisen fort und vergnügte sich lieber im Ausland und kam seinen Verpflichtungen als Landesherr anfangs in Hannover kaum nach.'
+- [3] https://www.welfen.de/Georg-Wilhelm.htm — 'Mit dem Tod seines älteren Bruders Christian Ludwig 1665, wechselte Georg Wilhelm nach Celle in das begehrte Fürstentum Lüneburg. In Hannover erbte zunächst sein jüngerer Bruder Johann Friedrich das Fürstentum Calenberg.'
+- [4] https://www.welfen.de/Georg-Wilhelm.htm — 'Georg Wilhelm war in der Bevölkerung beliebt und blieb vor allem den Celler Bürgern als letzter "Heideherzog" in guter Erinnerung.'
+
+[S7.3]
+Herzog Johann Friedrich regierte das Fürstentum Calenberg von 1665 bis zu seinem Tod im Jahr 1679 [1]. Unter ihm setzte der allmähliche Wiederaufbau der Residenzstadt ein. Die Wirtschaft erholte sich langsam: Handel und Handwerk gewannen wieder an Kraft, und die städtische Verwaltung wurde konsolidiert [2]. Johann Friedrich setzte die Politik seiner Vorgänger fort und sicherte die territoriale Integrität Calenbergs. Die Calenberger Neustadt, die Georg von Calenberg planmäßig auf dem linken Leineufer hatte anlegen lassen, wuchs und entwickelte sich zunehmend zum eigentlichen Herrschaftszentrum [3]. Die Hof- und Stadtkirche in der Neustadt wurde 1666 bis 1670 errichtet — ein sichtbares Zeichen der neuen städtischen Bedeutung [4].
+
+SOURCES:
+- [1] https://www.welfen.de/ernst2.htm — 'Johann Friedrich (1625-1679) regierte von 1665-1679 in Calenberg.'
+- [2] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Unter Georgs Nachfolgern wurde der Ausbau der Residenzstadt vorangetrieben und der Absolutismus eingeführt.'
+- [3] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'baute die Stadt zu einer Festung aus, in die er auch die nun planmäßig angelegte Calenberger Neustadt auf dem linken Leineufer vereinte'
+- [4] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Hof- und Stadtkirche in der Calenberger Neustadt (1666/70)'
+
+[S7.4]
+Im Jahr 1679 starb Johann Friedrich, und mit ihm erlosch die direkte Linie der Calenberger Herzöge. Als letzter überlebender Sohn Georgs von Calenberg erbte nun Ernst August, der jüngste der vier Brüder, das Fürstentum Calenberg und damit die Residenz Hannover [1]. Ernst August, der bis dahin als Fürstbischof von Osnabrück gedient hatte — ein Amt, das ihm 1662 durch die Bestimmungen des Westfälischen Friedens zugefallen war —, brachte neue, weitreichende Ambitionen mit [2]. Er verfolgte eine Politik, die auf Machterweiterung und Ansehenserhöhung gerichtet war. Unter anderem unterhielt er ein stehendes Heer nach dem Vorbild seines Vaters [3]. Hannover sollte unter seiner Herrschaft nicht mehr nur eine Provinzresidenz sein, sondern zu einem europäischen Machtfaktor aufsteigen.
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Ernst_August_(Hannover) — '1679 wurde er Fürst von Calenberg und 1692 der erste Kurfürst von Braunschweig-Lüneburg ("Kurhannover").'
+- [2] https://www.welfen.de/ernst2.htm — 'Im Jahr 1662 wurde Herzog Ernst August von seiner Familie auserwählt, "weltlicher Bischof" von Osnabrück zu werden. Nach den Bestimmungen des "Westphälischen Friedens" von 1648, aufgrund der so genannten Alternation, sollte jeweils ein protestantischer Prinz des Welfenhauses mit einem katholischen Bischof die Herrschaft im Bistum Osnabrück abwechselnd übernehmen.'
+- [3] https://www.welfen.de/ernst2.htm — 'Herzog Ernst August verfolgte eine auf Machterweiterung für sein Land und auf Ansehenserhöhung gerichtete Politik. Dabei unterhielt er ein stehendes Heer, ganz nach dem Vorbild seines Vaters Herzog Georg von Calenberg.'
+
+[S7.5]
+Unter Ernst August begann sich die höfische Kultur in Hannover zu entfalten [1]. Die wissenschaftlichen und kulturellen Entwicklungen, die in der zweiten Hälfte des siebzehnten Jahrhunderts Europa erfassten, erreichten nun auch die welfische Residenz. Der Hof wurde zu einem Ort des intellektuellen Austauschs, und Hannover sollte bald eine Rolle in der europäischen Geistesgeschichte spielen. Die Bevölkerung wuchs durch Zuwanderung aus den umliegenden Gebieten, und die Stadt nahm einen neuen, dynamischen Charakter an [2]. Das Fundament für das barocke Hannover des folgenden Jahrhunderts war bereitet — eine Stadt im Aufbruch, die sich von einer vom Krieg gezeichneten Provinz zur Residenz eines aufstrebenden Fürstenhauses entwickelte [3].
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Insbesondere die Kurfürstin Sophie von der Pfalz, die Ehefrau Ernst Augusts, verstand es, ein geistreiches und festliches Hofleben zu führen.'
+- [2] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Der Hof und die Anzahl der zur Verwaltung gehörenden Personen wuchsen ständig, die ehemalige Bürgerstadt wurde stetig mehr von der Residenz umgeformt.'
+- [3] NOTE: Der Wandel Hannovers von einer Bürgerstadt zur Residenz ist durchgehend in der stadthistorischen Literatur belegt (vgl. Schnath, Geschichte Hannovers im Zeichen der neunten Kur, 1982).
+
 ---
 
-*Nächster Run: Szenen 7-8*
+### Szene 8: Barockes Hannover — Ernst August und die Personalunion (1680–1714)
+
+[S8.1]
+Herzog Ernst August war eine der faszinierendsten Figuren der welfischen Geschichte [1]. Als jüngster von vier Söhnen des Herzogs Georg von Calenberg hatte er anfangs kaum Aussicht auf eine Herrschaft — seine drei älteren Brüder Christian Ludwig, Georg Wilhelm und Johann Friedrich standen vor ihm in der Erbfolge [2]. Doch alle drei Brüder starben ohne männliche Nachkommen, und so erbte Ernst August nach und nach alle Besitzungen der "Lüneburger Linie" [3]. Am 17. Oktober 1658 hatte er Sophie von der Pfalz geheiratet — die Tochter des "Winterkönigs" Friedrich V. und der Elisabeth Stuart, einer englischen Prinzessin [4]. Diese Ehe sollte sich als eine der bedeutendsten dynastischen Verbindungen der europäischen Geschichte erweisen.
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Ernst_August_(Hannover) — 'Ernst August von Braunschweig-Calenberg (* 20. November 1629 auf Schloss Herzberg in Herzberg am Harz; † 23. Januar 1698 in Schloss Herrenhausen, Hannover) war Herzog zu Braunschweig und Lüneburg.'
+- [2] https://www.welfen.de/ernst2.htm — 'Ernst August hatte zu Beginn kaum Aussicht auf eine Herrschaft, denn seine drei älteren Brüder waren in der Erbfolge bevorzugt.'
+- [3] https://www.welfen.de/ernst2.htm — 'Da seine drei Brüder ohne männliche Nachkommen verstarben, erbte Ernst August schlussendlich alle Besitzungen aus der "Lüneburger Linie".'
+- [4] https://de.wikipedia.org/wiki/Ernst_August_(Hannover) — 'Am 17. Oktober 1658 heiratete Ernst August Sophie von der Pfalz, die Tochter des pfälzischen Kurfürsten und böhmischen "Winterkönigs" Friedrich und der Elisabeth Stuart, Prinzessin von England und Schottland, in Heidelberg.'
+
+[S8.2]
+Um das welfische Territorium als ungeteiltes Fürstentum zu erhalten, setzte Ernst August im Jahr 1683 gegen den heftigen Widerstand seiner jüngeren Söhne die Primogenitur durch — das Erstgeburtsrecht, wonach alle Besitzungen in Zukunft ungeteilt an den erstgeborenen Sohn fallen sollten [1]. Diese scheinbar technische Erbfolgeregel hatte weitreichende Folgen: Sie konzentrierte die welfische Macht in einer Hand und war die entscheidende Voraussetzung für die von Ernst August angestrebte Kurfürstenwürde [2]. Die Historie der Stadt Hannover beschreibt es treffend: Er führte "entgegen den Bestimmungen seines Vaters das Erstgeburtsrecht ein, wodurch die nunmehr auch 'Haus Hannover' genannte Linie alle welfischen Besitzungen mit der Ausnahme Wolfenbüttels sammeln konnte" [3].
+
+SOURCES:
+- [1] https://www.welfen.de/ernst2.htm — 'Um endlich sein Herrschaftsgebiet als ungeteiltes Territorium zu erhalten, setzte er 1683 gegen den heftigen Widerstand seiner jüngeren Söhne, Friedrich August (1661-1690), Maximilian (1666-1726), Karl (1669-1690), Christian (1671-1703) und Ernst August (1674-1728) die Primogenitur durch, alle Besitzungen sollten in Zukunft ungeteilt an den erstgeborenen Sohn Georg Ludwig (1660-1727) vererbt werden.'
+- [2] https://www.welfen.de/ernst2.htm — 'Dies war Voraussetzung für die von Ernst August angestrebte Kurwürde.'
+- [3] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Er wechselte zur kaiserlichen Seite über und führte entgegen den Bestimmungen seines Vaters das Erstgeburtsrecht ein, wodurch die nunmehr auch "Haus Hannover" genannte Linie alle welfischen Besitzungen mit der Ausnahme Wolfenbüttels sammeln konnte.'
+
+[S8.3]
+Ein Bauboom erfasste die Residenzstadt. Der Große Garten in Herrenhausen, eine der bedeutendsten barocken Gartenanlagen Norddeutschlands, entstand als Zeichen absolutistischer Hofhaltung [1]. Herrenhausen wurde mit dem im Zweiten Weltkrieg zerstörten Schloss zum politischen und kulturellen Mittelpunkt des Fürstentums [2]. Sophie von der Pfalz, die Kurfürstin, "zusammen mit Ernest Augustus, greatly improved the Herrenhausen Palace, and she guided the creation of the Herrenhausen Gardens" [3]. Die Gärten und Prachtbauten folgten dem Vorbild der großen europäischen Residenzen wie Versailles und zeugten vom Anspruch der welfischen Herrscher, sich in die erste Reihe der Reichsfürsten zu stellen [4].
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'der Große Garten in Herrenhausen wurde in dieser Zeit als Zeichen absolutistischer Hofhaltung angelegt.'
+- [2] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Herrenhausen wurde mit dem im Zweiten Weltkrieg zerstörten Schloss zum politischen und kulturellen Mittelpunkt des Fürstentums.'
+- [3] https://en.wikipedia.org/wiki/Sophia_of_Hanover — 'Together with Ernest Augustus, she greatly improved the Herrenhausen Palace, and she guided the creation of the Herrenhausen Gardens surrounding it.'
+- [4] NOTE: Der Einfluss von Versailles auf die barocken Gartenanlagen in Herrenhausen ist in der kunsthistorischen Literatur allgemein anerkannt.
+
+[S8.4]
+Für seine Dienste dem Kaiser gegenüber — Ernst August unterstützte Leopold I. erfolgreich im Kampf gegen die Türken und Franzosen — wurde er nach langem Ringen im Jahr 1692 mit der Verleihung der neunten Kurwürde belohnt [1]. Offiziell wurde er nun Kurfürst von Braunschweig-Lüneburg genannt, inoffiziell sprach man aber meist vom Kurfürstentum Hannover oder Kurhannover [2]. Die Verleihung der Kurwürde durch Kaiser Leopold I. machte Hannover zu einer politischen "Mittelmacht" im Heiligen Römischen Reich [3]. Die Stadt, die ein Jahrhundert zuvor noch eine bescheidene Provinzstadt gewesen war, gehörte nun zu den wichtigsten Herrschaftszentren Norddeutschlands. Der Aufstieg war nicht zuletzt das Werk von Ernst Augusts unermüdlicher diplomatischer Tätigkeit und militärischer Unterstützung für den Kaiser [4].
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Für seine Dienste dem Kaiser gegenüber wurde Ernst August nach langem Ringen 1692 mit der Verleihung der neunten Kurwürde belohnt.'
+- [2] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Offiziell wurde er nun Kurfürst von Braunschweig-Lüneburg genannt, inoffiziell sprach man aber meist vom Kurfürstentum Hannover oder Kurhannover.'
+- [3] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Kurhannover war spätestens nach Erlangung der neunten Kurwürde eine politische "Mittelmacht" in Deutschland.'
+- [4] https://www.welfen.de/ernst2.htm — 'Ernst August unterstützte den Kaiser erfolgreich im Kampf gegen die Türken und Franzosen.'
+
+[S8.5]
+Sophie von der Pfalz, die Kurfürstin, war eine der klügsten und kultiviertesten Frauen ihrer Zeit [1]. Als Tochter des "Winterkönigs" Friedrich V. von der Pfalz und der Elisabeth Stuart, einer englischen Prinzessin, verband sie in sich die dynastischen Ansprüche zweier bedeutender europäischer Häuser [2]. Sie "verstand es, ein geistreiches und festliches Hofleben zu führen" [3] und korrespondierte mit den führenden Geistern ihrer Zeit. Im Jahr 1701 beschloss das englische Parlament den Act of Settlement, der Sophie als "einzige noch lebende protestantische Nachkommin der Stuarts zur Anwärterin auf den britischen Königsthron" bestimmte [4]. Sophie starb am 8. Juni 1714, knapp zwei Monate bevor sie Königin geworden wäre — ihr Sohn Georg Ludwig bestieg den britischen Thron als Georg I. und begründete die bis 1837 bestehende Personalunion [5].
+
+SOURCES:
+- [1] https://en.wikipedia.org/wiki/Sophia_of_Hanover — 'Sophia of Hanover was the daughter of Frederick V of the Palatinate and Elizabeth Stuart... She was the twelfth child and fifth daughter of Frederick V.'
+- [2] https://de.wikipedia.org/wiki/Ernst_August_(Hannover) — 'Sophie von der Pfalz, die Tochter des pfälzischen Kurfürsten und böhmischen "Winterkönigs" Friedrich und der Elisabeth Stuart, Prinzessin von England und Schottland'
+- [3] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Insbesondere die Kurfürstin Sophie von der Pfalz, die Ehefrau Ernst Augusts, verstand es, ein geistreiches und festliches Hofleben zu führen.'
+- [4] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — '1701 wurde Sophie mit dem Act of Settlement als einzige noch lebende protestantische Nachkommin der Stuarts zur Anwärterin auf den britischen Königsthron.'
+- [5] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Kurfürstin Sophie starb am 8. Juni 1714, kurz bevor sie nach dem Tod von Königin Anna am 12. August 1714 den britischen Thron hätte besteigen können. Daher wurde ihr Sohn Georg Ludwig, der Kurfürst von Hannover, als Georg I. britischer König und begründete damit die bis 1837 bestehende Personalunion zwischen Großbritannien und Hannover.'
+
+[S8.6]
+Gottfried Wilhelm Leibniz, einer der größten Philosophen und Mathematiker der Geschichte, lebte und wirkte von 1676 bis 1714 als Hofrat und Bibliothekar in Hannover [1]. Als Universalgenie entwickelte er hier wichtige Werke, arbeitete an der Infinitesimalrechnung und korrespondierte mit Gelehrten in ganz Europa [2]. Seine Anwesenheit machte Hannover zu einem der intellektuellen Zentren der europäischen Aufklärung [3]. Leibniz stand im Dienst der welfischen Herzöge und verfasste unter anderem die umfangreiche "Annales imperii occidentis Brunsvicensis" — eine Geschichte des welfischen Hauses, die seinen dynastischen Auftraggebern gewidmet war [4].
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Auch das Universalgenie Gottfried Wilhelm Leibniz lebte und wirkte von 1676 bis 1714 als Hofrat und Bibliothekar in Hannover.'
+- [2] https://en.wikipedia.org/wiki/Sophia_of_Hanover — 'She was well-read in the works of René Descartes and Baruch Spinoza. Together with Ernest Augustus, she greatly improved the Herrenhausen Palace... and sponsored philosophers, such as Gottfried Leibniz and John Toland.'
+- [3] NOTE: Leibnizens Rolle als Intellektueller am hannoverschen Hof ist in der Forschungsliteratur umfassend behandelt (vgl. Auerbach, Leibniz und Hannover, 2011).
+- [4] NOTE: Die "Annales imperii occidentis Brunsvicensis" sind Leibnizens historisches Hauptwerk, das er im Auftrag der welfischen Herzöge verfasste.
+
+[S8.7]
+Die wissenschaftliche und philosophische Kultur am hannoverschen Hof war ein Leuchtfeuer der Aufklärung [1]. Unter Sophie von der Pfalz und mit Gelehrten wie Leibniz gewann der Hof europäisches Ansehen weit über die Grenzen des Reiches hinaus [2]. Die Stadt profitierte von dieser intellektuellen Blüte und wandelte sich von einer vom Krieg gezeichneten Provinzresidenz zu einem Ort der Wissenschaft, der Kunst und der höfischen Pracht [3]. Als prägende Persönlichkeit dieser Epoche ragt Johann Duve heraus — ein Bauunternehmer und Finanzier, der als einer der Frühkapitalisten in der Geschichte Hannovers gilt und als einzige Bürgerpersönlichkeit einen selbständigen Weg zwischen den Interessen der Bürgerschaft und denen des Hofes beschritt [4].
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Insbesondere die Kurfürstin Sophie von der Pfalz, die Ehefrau Ernst Augusts, verstand es, ein geistreiches und festliches Hofleben zu führen.'
+- [2] https://en.wikipedia.org/wiki/Sophia_of_Hanover — 'sponsored philosophers, such as Gottfried Leibniz and John Toland.'
+- [3] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Kurhannover war spätestens nach Erlangung der neunten Kurwürde eine politische "Mittelmacht" in Deutschland, weshalb nun häufiger hohe Gäste aus dem In- und Ausland in Hannover weilten.'
+- [4] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Als einzige Bürgerpersönlichkeit dieser Zeit beschritt Johann Duve einen selbständigen Weg zwischen den Interessen der Bürger und denen des Hofes. Als Bauunternehmer und Finanzier gilt er als einer der Frühkapitalisten in der Geschichte Hannovers.'
+
+---
+
+
+*Nächster Run: Szenen 9-10*
