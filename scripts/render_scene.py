@@ -27,6 +27,8 @@ import sys
 import time
 import wave
 
+import numpy as np
+
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 # ── Constants ──────────────────────────────────────────────────────────────────
@@ -185,38 +187,76 @@ def alpha_color(rgb, a):
 
 # ── Gradient ──────────────────────────────────────────────────────────────────
 def make_gradient(w, h, colors):
-    """Radial-ish gradient: darker edges, lighter center."""
+    """Radial-ish gradient: darker edges, lighter center (numpy)."""
     n = len(colors)
-    img = Image.new("RGB", (w, h))
-    px = img.load()
-    cx, cy = w // 2, h // 2
-    for y in range(h):
-        for x in range(w):
-            dx = (x - cx) / cx
-            dy = (y - cy) / cy
-            d = math.sqrt(dx*dx + dy*dy) / 1.414
-            d = min(d, 1.0)
-            t = d * (n - 1)
-            idx = min(int(t), n - 2)
-            frac = t - idx
-            c = lerp(colors[idx], colors[idx+1], frac)
-            px[x, y] = c
-    return img
+    cx, cy = w / 2.0, h / 2.0
+    y_coords, x_coords = np.mgrid[0:h, 0:w]
+    dx = (x_coords - cx) / cx
+    dy = (y_coords - cy) / cy
+    d = np.sqrt(dx*dx + dy*dy) / 1.414
+    d = np.clip(d, 0, 1.0)
+    t = d * (n - 1)
+    colors_arr = np.array(colors, dtype=np.float64)
+    idx = np.clip(t.astype(int), 0, n - 2)
+    frac = (t - idx)[..., np.newaxis]
+    result = colors_arr[idx] * (1 - frac) + colors_arr[idx + 1] * frac
+    return Image.fromarray(result.astype(np.uint8), "RGB")
 
 
 def make_vignette(w, h, strength=0.6):
-    """Dark vignette overlay."""
-    img = Image.new("L", (w, h))
-    px = img.load()
-    cx, cy = w // 2, h // 2
-    for y in range(h):
-        for x in range(w):
-            dx = (x - cx) / cx
-            dy = (y - cy) / cy
-            d = math.sqrt(dx*dx + dy*dy)
-            brightness = int(255 * max(0, 1.0 - d * strength))
-            px[x, y] = brightness
-    return img
+    """Dark vignette overlay (numpy)."""
+    cx, cy = w / 2.0, h / 2.0
+    y_coords, x_coords = np.mgrid[0:h, 0:w]
+    dx = (x_coords - cx) / cx
+    dy = (y_coords - cy) / cy
+    d = np.sqrt(dx*dx + dy*dy)
+    brightness = (255 * np.clip(1.0 - d * strength, 0, 1)).astype(np.uint8)
+    return Image.fromarray(brightness, "L")
+
+
+def make_bg_composited(w, h, colors, vignette_strength=0.5, dark_factor=0.85):
+    """Pre-compute background: gradient with vignette darkening baked in.
+    Eliminates the per-frame vignette.point(lambda) call."""
+    n = len(colors)
+    cx, cy = w / 2.0, h / 2.0
+    y_coords, x_coords = np.mgrid[0:h, 0:w]
+    dx = (x_coords - cx) / cx
+    dy = (y_coords - cy) / cy
+    d = np.sqrt(dx*dx + dy*dy) / 1.414
+    d = np.clip(d, 0, 1.0)
+    t = d * (n - 1)
+    colors_arr = np.array(colors, dtype=np.float64)
+    idx = np.clip(t.astype(int), 0, n - 2)
+    frac = (t - idx)[..., np.newaxis]
+    gradient = colors_arr[idx] * (1 - frac) + colors_arr[idx + 1] * frac
+    # Vignette darkening
+    vig = np.clip(1.0 - d * vignette_strength, 0, 1)
+    blend = np.where(vig >= dark_factor, 1.0, vig / dark_factor)
+    result = gradient * blend[..., np.newaxis]
+    return Image.fromarray(result.astype(np.uint8), "RGB")
+
+
+def make_map_bg(panel_w, panel_h):
+    """Pre-compute the map panel dark background gradient."""
+    bg = Image.new("RGBA", (panel_w, panel_h), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(bg)
+    for y_row in range(panel_h):
+        t = y_row / panel_h
+        darkness = int(18 + 8 * t)
+        draw.line([(0, y_row), (panel_w - 1, y_row)],
+                  fill=(darkness, darkness, darkness + 5, 255))
+    return bg
+
+
+def make_divider_gradient(w, h, divider_x, fade_width=20):
+    """Pre-compute the divider + fade gradient as a reusable RGBA overlay."""
+    overlay = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(overlay)
+    for fade_x in range(divider_x, divider_x + fade_width):
+        fade_a = int(60 * (1.0 - (fade_x - divider_x) / fade_width))
+        draw.line([(fade_x, 0), (fade_x, h)],
+                  fill=(15, 15, 20, fade_a))
+    return overlay
 
 
 # ── Pre-computation ──────────────────────────────────────────────────────────
@@ -414,8 +454,9 @@ def draw_accent_line(draw, x1, y1, x2, y2, color, width=2, progress=1.0):
 
 # ── Render Frame ─────────────────────────────────────────────────────────────
 def render_frame(frame_idx, total_frames, scene, seg_idx, seg_progress,
-                 fonts, accent_rgb, gradient_colors, bg_base, vignette,
-                 particles, wrapped, scene_num, total_scenes):
+                 fonts, accent_rgb,
+                 bg_composited, bg_rgba, map_bg, divider_overlay,
+                 particles, wrapped, scene_num, total_scenes, _dummy_draw):
     """Render one frame. Returns RGB PIL Image."""
     segments = scene.get("segments", [])
     num_segs = len(segments)
@@ -430,10 +471,8 @@ def render_frame(frame_idx, total_frames, scene, seg_idx, seg_progress,
         cross_fade = 1.0
     cross_fade = max(0.0, min(1.0, cross_fade))
 
-    # ── Background: cached gradient + vignette ──
-    img = bg_base.copy()
-    img.paste(Image.new("L", (W, H), int(255 * 0.85)),
-              mask=vignette.point(lambda p: int(p * 0.85)))
+    # ── Background: pre-composited gradient+vignette (no per-frame lambda) ──
+    img = bg_composited.copy()
 
     # ── Floating warm particles ──
     overlay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
@@ -445,8 +484,7 @@ def render_frame(frame_idx, total_frames, scene, seg_idx, seg_progress,
         s = int(p["size"] * (0.8 + 0.2 * pulse))
         od.ellipse([p["x"]-s, py_pos-s, p["x"]+s, py_pos+s],
                    fill=(255, 220, 180, min(255, a)))
-    img = Image.alpha_composite(img.convert("RGBA"), overlay).convert("RGB")
-    img_rgba = img.convert("RGBA")
+    img_rgba = Image.alpha_composite(bg_rgba, overlay)
 
     # ── Determine if we're in title card phase ──
     first_seg_dur = segments[0].get("duration_s", 5.0)
@@ -533,7 +571,7 @@ def render_frame(frame_idx, total_frames, scene, seg_idx, seg_progress,
         # ── LEFT PANEL: Procedural Map ──
         map_overlay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         map_draw = ImageDraw.Draw(map_overlay)
-        map_rgba = Image.new("RGBA", (MAP_PANEL_W, H), (0, 0, 0, 0))
+        map_rgba = map_bg.copy()
         map_od = ImageDraw.Draw(map_rgba)
 
         draw_map_panel(
@@ -545,15 +583,10 @@ def render_frame(frame_idx, total_frames, scene, seg_idx, seg_progress,
         # Composite map_rgba onto map_overlay so map content is visible
         map_overlay.paste(map_rgba, (MAP_PANEL_X, MAP_PANEL_Y), map_rgba)
 
-        # Vertical divider between map and text
-        divider_x = MAP_PANEL_W
-        map_draw.line([(divider_x, 0), (divider_x, H)],
+        # Vertical divider between map and text (pre-computed + accent line)
+        map_draw.line([(MAP_PANEL_W, 0), (MAP_PANEL_W, H)],
                        fill=alpha_color(accent, 60), width=2)
-        # Soft gradient fade on divider
-        for fade_x in range(divider_x, divider_x + 20):
-            fade_a = int(60 * (1.0 - (fade_x - divider_x) / 20))
-            map_draw.line([(fade_x, 0), (fade_x, H)],
-                          fill=alpha_color((15, 15, 20), fade_a))
+        map_overlay = Image.alpha_composite(map_overlay, divider_overlay)
 
         img_rgba = Image.alpha_composite(img_rgba, map_overlay)
 
@@ -618,7 +651,7 @@ def render_frame(frame_idx, total_frames, scene, seg_idx, seg_progress,
             cursor_visible = int(frame_idx * 0.1) % 2 == 0
             if cursor_visible and visible:
                 last_line = visible[-1]
-                bbox = dummy.textbbox((0, 0), last_line, font=fonts["body"])
+                bbox = _dummy_draw.textbbox((0, 0), last_line, font=fonts["body"])
                 cursor_x = TEXT_PANEL_LEFT + (bbox[2] - bbox[0]) + 4
                 cursor_y = TEXT_TOP_MARGIN + (len(visible) - 1) * BODY_LINE_HEIGHT
                 od.rectangle([(cursor_x, cursor_y + 2),
@@ -697,13 +730,17 @@ def render_scene(scene_path, audio_path, output_path, fps=FPS):
     # Pre-compute
     print("  Pre-computing assets...", end=" ", flush=True)
     t0 = time.time()
-    bg_rgb = make_gradient(W, H, gradient_colors)
-    vignette = make_vignette(W, H, strength=0.5)
+    bg_composited = make_bg_composited(W, H, gradient_colors, vignette_strength=0.5, dark_factor=0.85)
+    bg_rgba = bg_composited.convert("RGBA")
+    map_bg = make_map_bg(MAP_PANEL_W, H)
+    divider_overlay = make_divider_gradient(W, H, MAP_PANEL_W, fade_width=20)
     particles = precompute_particles(PARTICLE_COUNT, W, H,
                                        seed=scene.get("scene_num", 0) * 137)
     wrapped = prewrap_text(segments, fonts["body"], TEXT_PANEL_W)
     scene_num = scene.get("scene_num", 1)
     total_scenes = scene.get("total_scenes", 28)
+    # Reusable 1x1 ImageDraw for text measurement
+    _dummy_draw = ImageDraw.Draw(Image.new("L", (1, 1)))
     print(f"{time.time() - t0:.1f}s")
 
     cmd = [
@@ -738,9 +775,10 @@ def render_scene(scene_path, audio_path, output_path, fps=FPS):
         img = render_frame(
             frame_idx, total_frames, scene,
             seg_idx, seg_progress,
-            fonts, accent_rgb, gradient_colors,
-            bg_rgb, vignette, particles, wrapped,
-            scene_num, total_scenes,
+            fonts, accent_rgb,
+            bg_composited, bg_rgba, map_bg, divider_overlay,
+            particles, wrapped,
+            scene_num, total_scenes, _dummy_draw,
         )
         proc.stdin.write(img.tobytes())
 
