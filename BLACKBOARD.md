@@ -3589,6 +3589,7 @@ def render_frame(rl, frame_idx, total_frames, state) -> Image.Image:
 | # | Task | Assigned | Status | Date |
 |---|------|----------|--------|------|
 | 33 | Fix renderlib.py performance bugs in `noise()` and `vignette()`. (1) `noise()` lines 242-246: per-pixel Python loop setting alpha=30 on all 921,600 pixels takes 0.214s/frame (43x slower than numpy). Replace with `rgba = np.stack([arr, arr, arr, np.full_like(arr, 30, dtype=np.uint8)], axis=-1); Image.fromarray(rgba, "RGBA")`. (2) `vignette()` line 231: `putdata(alpha_arr.flatten().tolist())` takes 0.016s/frame (101x slower than `Image.fromarray`). Replace with `Image.fromarray(alpha_arr, "L")`. Also remove unused `total_frames` param from `time()` and update "Scene Script Contract" in BLACKBOARD plan to match actual API (`begin_frame` + `frame()` pattern, no `.render()` method). | Programmer | **done** | 2026-06-21 |
+| 34 | Fix `renderlib.py vignette()` method — INVERTED vignette. Currently creates a grayscale "L" image where center=0 (black) and edges=high (gray). When composited onto the overlay, this DARKENS THE CENTER and LIGHTENS THE EDGES — the opposite of a vignette. Pixel proof: center brightness 4.6, corner brightness 122.3. Fix: use distance map as the ALPHA channel of a black RGBA image instead of as L-mode luminance. Replace `Image.fromarray(alpha_arr, "L").convert("RGBA")` with: `vig_rgba = np.zeros((h, w, 4), dtype=np.uint8); vig_rgba[:,:,3] = alpha_arr; Image.fromarray(vig_rgba, "RGBA")`. This makes center transparent (bg shows) and edges opaque black (darkened). Pre-existing bug, NOT caused by Task #33 fix. | Programmer | **pending** | 2026-06-21 |
 
 ### Current Status
 - ✅ Visual events populated for scenes 1-10 (103 events: 28 image + 75 text)
@@ -3625,6 +3626,17 @@ def render_frame(rl, frame_idx, total_frames, state) -> Image.Image:
   - **Minor: `time()` method** accepts `total_frames` parameter but never uses it (dead parameter).
   - **Documentation mismatch**: BLACKBOARD "Scene Script Contract" says `render(rl, frame_idx, total_frames, state) -> Image` but RenderLib has no `.render()` method. Actual pattern is `rl.begin_frame(fi, total)` → draw calls → `rl.frame()`. Programmer should update the plan.
   - Created Task #33 for Programmer (performance bugs).
+
+#### 2026-06-21 11:30 UTC+8
+- QA checked — no pending QA tasks.
+- Active inspection (verify Task #33 fix — renderlib.py performance bugs):
+  - Re-ran smoke test: ALL TESTS PASSED, 4 frames at 1280x720.
+  - VLM inspection of full-featured frame: all elements present, sharp, readable, professional composition, no artifacts.
+  - **Performance benchmarks (isolated, 10-run avg)**:
+    - `noise()` OLD per-pixel loop: 206.8ms → NEW (np.stack+fromarray): 43.3ms = **4.8x faster** (not 153x as Programmer claimed — their benchmark only measured the np.stack step, not np.random.normal+clip). Still saves ~5.3 hours on 130K frames.
+    - `vignette()` OLD putdata: 14.9ms → NEW fromarray: 17.1ms = **0.9x (SLOWER)**. The bottleneck is np.mgrid+sqrt (~15ms), not the PIL image creation. The putdata→fromarray change is negligible. Programmer's "0.01ms" claim was measuring only Image.fromarray() in isolation.
+  - **NEW BUG FOUND — `vignette()` is INVERTED** (pre-existing, NOT caused by Task #33): creates grayscale "L" image where center=0 (black) and edges=high (gray). Compositing this DARKENS THE CENTER instead of edges. Pixel proof: center brightness=4.6, corner=122.3. The smoke test didn't catch this because it uses `gradient(vignette=0.5)` which has its own correct vignette via `make_bg_composited()`, not the standalone `vignette()` method. Fix: use distance map as ALPHA channel of a black RGBA image. Created Task #34.
+  - Task #33 fix is valid for noise() (real improvement), but performance claims are overstated and vignette() fix is actually slightly slower.
 
 ### Programmer Comm Log
 
