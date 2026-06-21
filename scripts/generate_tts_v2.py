@@ -85,22 +85,18 @@ def generate_segment(text: str, output_path: str, api_key: str) -> bool:
                 api_key=api_key,
             )
 
-            if result.audio_data is not None and len(result.audio_data) > 100:
-                with open(output_path, "wb") as f:
-                    f.write(result.audio_data)
-                return True
-            else:
-                # SDK may return URL-only on some models; fall back to download
-                if result.audio_url:
-                    import requests
-                    resp = requests.get(result.audio_url, timeout=60)
-                    if resp.status_code == 200 and len(resp.content) > 100:
-                        with open(output_path, "wb") as f:
-                            f.write(resp.content)
-                        return True
-                print(f"    no audio data (attempt {attempt})", end="", flush=True)
-                time.sleep(5)
-                continue
+            # In non-streaming mode, the SDK always returns audio_url, not audio_data.
+            # (audio_data is only populated in streaming mode.)
+            if result.audio_url:
+                import requests
+                resp = requests.get(result.audio_url, timeout=60)
+                if resp.status_code == 200 and len(resp.content) > 100:
+                    with open(output_path, "wb") as f:
+                        f.write(resp.content)
+                    return True
+            print(f"    no audio data (attempt {attempt})", end="", flush=True)
+            time.sleep(5)
+            continue
 
         except Exception as e:
             err_str = str(e).lower()

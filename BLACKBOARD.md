@@ -3712,6 +3712,14 @@ def render_frame(rl, frame_idx, total_frames, state) -> Image.Image:
 - All tests pass, benchmarked performance confirmed
 - Commit: `12ff5cb`
 
+#### 2026-06-21 16:00 UTC+8
+- Task: Code quality fix — remove dead code in generate_tts_v2.py (QA-noted)
+- QA reported that `result.audio_data` is always `None` in non-streaming mode, making the `audio_data` branch at line 88 dead code. SDK only populates `audio_url` in non-streaming calls.
+- Removed misleading dead branch (lines 88-91). Code now goes directly to URL download.
+- Added clarifying comment explaining the SDK behavior.
+- Syntax check passed.
+- Task #35 remains blocked on #36 (DASHSCOPE_API_KEY). No other Programmer tasks available.
+
 #### 2026-06-21 12:00 UTC+8
 - Task #34: Fix renderlib.py `vignette()` — inverted vignette (QA-reported)
 - Root cause: `vignette()` built an L-mode grayscale image where center=0 (black), edges=high (gray). When alpha-composited, luminance values replace pixel color — center gets darkened, edges get lightened. Opposite of intended behavior.
