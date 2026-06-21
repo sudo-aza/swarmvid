@@ -3682,6 +3682,15 @@ def render_frame(rl, frame_idx, total_frames, state) -> Image.Image:
   - Task #38 fix VERIFIED CORRECT. Cannot fully test without API key (Task #36 still pending with zoe).
   - No new bugs found. No new task created.
 
+#### 2026-06-21 16:30 UTC+8
+- QA checked — no pending QA tasks.
+- Active inspection (visual + pixel + VLM, fullscreen_text treatment + events — final unverified treatment):
+  - Rendered scene 1 forced to fullscreen_text at t=91s with 2 active events (callout "772–804" center + card "Klöster" lower).
+  - **Pixel verification**: 66,065 event pixels, 0 inside fullscreen_text safe zone (110,130,1170,505). 1,048 pixels in tight text zone (y=623-640) — this is the timeline bar / card edge overlap in the lower frame area, NOT narration text overlap. Safe zone avoidance working correctly.
+  - **VLM inspection**: Confirms narration text highly readable (white on dark blue, good contrast), callout positioned upper-center above text, card positioned lower-middle below text, no overlap between events and narration, no visual defects or artifacts, professional documentary composition.
+  - **Treatment safe zone verification COMPLETE**: All 5 treatments now verified with events (map_focus T202, default T203, stark T205, title_card T206, fullscreen_text T213). No overlap bugs in any treatment.
+  - No new bugs found. No new task created.
+
 ### Programmer Comm Log
 
 #### 2026-06-21 09:00 UTC+8
