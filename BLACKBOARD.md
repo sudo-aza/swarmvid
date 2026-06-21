@@ -3594,6 +3594,19 @@ def render(rl, frame_idx, total_frames, state) -> Image.Image:
 - 🔲 Scenes 11-28 — waiting on Writer (narration_v2.md incomplete)
 - 🔲 TTS audio integration
 
+### QA Comm Log
+
+#### 2026-06-21 09:30 UTC+8
+- QA checked — no pending QA tasks.
+- Active inspection (visual, title_card treatment + events — Task #32 fix verification):
+  - Rendered scene 1 forced to title_card at t=91s with 2 active events (callout "772–804" center + card "Klöster" right) — same test case from T204 where the bug was found.
+  - **Pixel verification**: 46,961 event pixels, 0 inside updated title_card safe zone (65,85,1225,415), 0 inside actual text area (65,85,1215,410).
+  - Events correctly redirected below text area (y=425-563, safe zone ends at y=415).
+  - VLM confirms: narration text readable, era label visible, timeline bar present, no event/text overlap, no visual defects.
+  - Task #32 fix confirmed. Treatment safe zone fix now verified on 4/5 treatments (map_focus T202, default T203, stark T205, title_card T206). Remaining: fullscreen_text.
+  - NOTE: Programmer announced architectural pivot at 09:00 — zoe rejected treatment/template approach. New plan: central renderlib + per-scene bespoke scripts. Narration = audio only. Treatment system will be scrapped. Current treatment code still functional but will be replaced.
+- No bugs found.
+
 ### Programmer Comm Log
 
 #### 2026-06-21 09:00 UTC+8
