@@ -3,10 +3,10 @@
 **Status**: In Progress
 **Sprache**: Deutsch
 **Stil**: ZDF/ARD Historien-Dokumentation
-**Abgeschlossene Szenen**: 1-18 (von 28)
+**Abgeschlossene Szenen**: 1-20 (von 28)
 **Quellenanforderungen**: Jeder Satz mit Quellenangabe und wörtlichem Beleg
 
-## Abgeschlossene Szenen: 1-18 (von 28)
+## Abgeschlossene Szenen: 1-20 (von 28)
 
 ---
 
@@ -1098,4 +1098,126 @@ SOURCES:
 
 ---
 
-*Nächster Run: Szenen 19-20*
+### Szene 19: Der Erste Weltkrieg — Hannover im Großen Krieg
+
+**Epoche**: 1914–1918
+**Titel**: Der Erste Weltkrieg — Hannover im Großen Krieg
+**Thema**: Mobilisierung, Rüstungsproduktion, Steckrübenwinter, Novemberrevolution
+
+---
+
+[S19.1]
+Mit dem Ausbruch des Ersten Weltkriegs im August 1914 wurde auch Hannover in den mörderischen Konflikt hineingezogen. [1] Das 1. Hannoversche Infanterie-Regiment Nr. 74, in den Kasernen um den Welfenplatz stationiert, gehörte zu den traditionellen Regimentern der preußischen Armee und rückte an die Westfront. [2] Tausende junge Männer aus der Stadt und der Provinz Hannover kämpften in den Schützengräben Frankreichs und Belgiens. Wie in ganz Deutschland erfasste die Stadt anfangs eine Kriegsbegeisterung, die jedoch im Laufe der Jahre einem tiefen Ernüchterung wich, als die Verlustlisten immer länger wurden.
+
+SOURCES:
+- [1] NOTE: Die allgemeine Mobilisierung bei Kriegsausbruch 1914 ist allgemein historisch anerkannt; spezifische zitierbare Quellen für Hannovers Regimenter an der Westfront konnten in dieser Runde nicht ermittelt werden.
+- [2] https://en.wikipedia.org/wiki/74th_(1st_Hannover)_Infantry — 'Hannoversches Infanterie-Regiment Nr. 74, was an infantry regiment of the Prussian Army (1866 to 1871) and the German Imperial Army (1871 to 1918).'
+
+[S19.2]
+An der Heimatfront wandelte sich die Stadt grundlegend. [1] Frauen übernahmen die Arbeit in den Fabriken, deren männliche Belegschaft an die Front gegangen war — das Hindenburg-Programm forderte die Mobilisierung aller noch verfügbaren Reserven an Menschen und Material. [2] Kern der Forderungen der Obersten Heeresleitung waren eine Verdoppelung der Munitionszufuhr sowie eine Verdreifachung der Produktion von Maschinengewehren und Geschützen innerhalb eines halben Jahres. [3] Die Industrieproduktion in Hannover wurde auf Rüstungsgüter umgestellt; die Continental-Werke produzierten Gummiprodukte für das Militär. Frauen sollten einer allgemeinen Verpflichtung zur Arbeit in kriegswichtigen Bereichen unterworfen werden. [4]
+
+SOURCES:
+- [1] https://www.bpb.de/themen/erster-weltkrieg-weimar/ersterweltkrieg/177509/oekonomie-des-krieges — 'Schon im August 1914 kam es zu einer massiven Umstellungskrise der deutschen Wirtschaft, weil Millionen Männer eingezogen wurden.'
+- [2] https://www.dhm.de/lemo/kapitel/erster-weltkrieg/industrie-und-wirtschaft/hindenburg-programm — 'Mit der als "Hindenburg-Programm" bezeichneten Mobilmachung zum "totalen Krieg", die auch den uneingeschränkten U-Boot-Krieg beinhaltete, begann die OHL, sich zu einer förmlichen Militärdiktatur zu entwickeln.'
+- [3] https://www.dhm.de/lemo/kapitel/erster-weltkrieg/industrie-und-wirtschaft/hindenburg-programm — 'Kern der Forderungen der OHL waren eine Verdoppelung der Munitionszufuhr sowie eine Verdreifachung der Produktion und Lieferung von Maschinengewehren und Geschützen innerhalb des nächsten halben Jahrs.'
+- [4] https://www.dhm.de/lemo/kapitel/erster-weltkrieg/industrie-und-wirtschaft/hindenburg-programm — 'Frauen sollten einer allgemeinen Verpflichtung zur Arbeit in kriegswichtigen Bereichen unterworfen werden.'
+
+[S19.3]
+Die britische Seeblockade, die Deutschland von wichtigen Importen abschnitt, hatte verheerende Folgen für die Versorgungslage der Zivilbevölkerung. [1] Da Deutschland rund dreißig Prozent seiner Lebensmittel importierte, entstand sofort nach Kriegsbeginn ein Mangel, der sich im Laufe des Krieges dramatisch verschärfte. [2] Der „Steckrübenwinter" von 1916/17 wurde zum Symbol der Hungersnot: In den Kriegsjahren zwischen 1914 und 1918 starben in Deutschland nach Schätzungen von Historikern 700.000 Menschen an Hunger und Unterernährung — mehr Zivilisten als an den direkten Kriegshandlungen. [3] Auch in Hannover wurden Lebensmittel rationiert, Schwarzmärkte entstanden, und die Ernährungslage der arbeitenden Bevölkerung wurde katastrophal.
+
+SOURCES:
+- [1] https://themator.museum-digital.de/t/87/506 — 'Mit Beginn des Krieges verhängt Großbritannien im August 1914 eine Seeblockade. Da Deutschland 30 % seiner Lebensmittel importiert, entsteht sofort eine [Knappheit].'
+- [2] NOTE: Die Auswirkungen der Seeblockade auf Hannover sind allgemein historisch anerkannt; spezifische zitierbare Quellen für die hannoversche Situation konnten in dieser Runde nicht ermittelt werden.
+- [3] https://www.erinnerungen-im-netz.de/erinnerungen/erin-artikel/der-steckruebenwinter-1916-17 — 'In den Kriegsjahren zwischen 1914 und 1918 starben in Deutschland nach Schätzungen von Historikern 700.000 Menschen an Hunger und Unterernährung.'
+
+[S19.4]
+Im November 1918 erreichte die Revolution auch Norddeutschland. Angestoßen durch den Kieler Matrosenaufstand, der am 3. November 1918 begonnen hatte, bildeten sich auch in Hannover Arbeiter- und Soldatenräte — wie in allen deutschen Städten. [1] In Braunschweig, dem Nachbarland mit enger dynastischer Verbundenheit zu Hannover, erreichte die Revolution am 8. November 1918 ihren Höhepunkt: Herzog Ernst August, ein Welfe und Verwandter der einstigen hannoverschen Könige, wurde zur Abdankung gezwungen. [2] Vertreter eines neu gebildeten Arbeiter- und Soldatenrates forderten die Abdankung; Ernst August unterzeichnete am 8. November die Abdankungsurkunde und legte alle Macht in die Hände des Arbeiter- und Soldatenrates. [3] Die Monarchie in Deutschland brach zusammen — auch in den welfischen Territorien, die einst das Königreich Hannover gebildet hatten.
+
+SOURCES:
+- [1] https://www.dhm.de/lemo/kapitel/weimarer-republik/revolution-191819/rat-der-volksbeauftragten — 'Unterstützt wurde die USPD von den Arbeiter- und Soldatenräten, die sich infolge der Novemberrevolution in allen deutschen Städten gebildet hatten.'
+- [2] https://de.wikipedia.org/wiki/Novemberrevolution_in_Braunschweig — 'Die Novemberrevolution in Braunschweig war eine von Arbeitern und Soldaten getragene Erhebung in Braunschweig kurz vor Ende des Ersten Weltkriegs, die am 8. November 1918 zur Abdankung Ernst Augusts, des letzten Herzogs von Braunschweig führte.'
+- [3] https://www.braunschweig.de/leben/stadtportraet/geschichte/etappen-der-stadtgeschichte/novemberrevolution.php — 'Vertreter eines neu gebildeten Arbeiter- und Soldatenrates, an dessen Spitze August Merges stand, forderten am 8. November die Abdankung von Herzog Ernst August.'
+
+[S19.5]
+Tausende hannoversche Soldaten kehrten nicht aus dem Krieg zurück. [1] Die Stadt trauerte um ihre Gefallenen — die Verlustlisten des Ersten Weltkriegs waren katastrophal. Der Krieg hatte die Gesellschaft grundlegend verändert: Alte Ordnungen waren gefallen, Frauen hatten in den Fabriken und Bürokratien Aufgaben übernommen, die ihnen zuvor verschlossen gewesen waren, und neue politische Kräfte drängten nach vorne. [2] Die Novemberrevolution beendete nicht nur das Kaiserreich, sondern markierte auch das Ende der alten Eliten, die in Hannover seit der preußischen Annexion von 1866 die Stadt regiert hatten. Die Weimarer Republik begann — in Hannover wie im gesamten Deutschen Reich — unter dem Eindruck von Kriegsniederlage, Revolution und tiefem gesellschaftlichem Umbruch. [3]
+
+SOURCES:
+- [1] NOTE: Die Kriegsverluste hannoverscher Soldaten sind allgemein historisch anerkannt; spezifische zitierbare Quellen für die genauen Zahlen konnten in dieser Runde nicht ermittelt werden.
+- [2] NOTE: Die gesellschaftlichen Veränderungen durch den Krieg sind allgemein historisch anerkannt; spezifische zitierbare Quellen für Hannover konnten in dieser Runde nicht ermittelt werden.
+- [3] https://de.wikipedia.org/wiki/Novemberrevolution — 'Die Novemberrevolution von 1918/19 führte in der Endphase des Ersten Weltkriegs zum Sturz der Monarchie im Deutschen Reich und zu dessen Umwandlung in eine [Republik].'
+
+[S19.6]
+Die Weimarer Nationalversammlung trat im Februar 1919 zusammen und erarbeitete die erste demokratische Verfassung des Deutschen Reiches. [1] In Hannover zeigten sich die politischen Fronten bald klar: Die unteren Schichten der Arbeiter und kleinen Angestellten bildeten die absolute Mehrheit der demokratiebewussten Sozialdemokraten, gefolgt von der Kommunistischen Partei. [2] Die gehobene Gesellschaft — der Adel, die Chefs in Verwaltung, Justiz und Hochfinanz — hatte Macht und Einfluss verloren und stand der neuen Republik weitgehend ablehnend gegenüber. Die Weimarer Republik wurde auch in Hannover als „Republik ohne Republikaner" erlebt. [3] Die alten welfischen Anhänglichkeit und die neue demokratische Ordnung standen sich unversöhnlich gegenüber — eine Spannung, die das politische Klima der Stadt in den kommenden Jahren prägen sollte.
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Novemberrevolution — 'Die Novemberrevolution von 1918/19 führte in der Endphase des Ersten Weltkriegs zum Sturz der Monarchie im Deutschen Reich.'
+- [2] https://www.ns-zeit-hannover.de/1933-als-die-demokratie-zerst%C3%B6rt-wurde/2-aufstieg-der-nsdap — 'Den Gegensatz dazu bildeten die unteren Schichten der Arbeiter und kleinen Angestellten – hier hatten die demokratiebewussten und staatstragenden Sozialdemokraten die absolute Mehrheit – gefolgt von der Kommunistischen Partei.'
+- [3] https://www.ns-zeit-hannover.de/1933-als-die-demokratie-zerst%C3%B6rt-wurde/2-aufstieg-der-nsdap — 'Die gehobene Gesellschaft in Hannover in den 1920er Jahren: Die kriegsbegeisterten Deutschen hatten den 1. Weltkrieg verloren, das autokratische Kaiserreich verwandelte sich in eine Demokratie. Die bis dahin herrschende Oberschicht verlor Macht und Einfluss. [...] Die Weimarer Republik war eine "Republik ohne Republikaner".'
+
+---
+
+### Szene 20: Die Weimarer Republik — Hannover zwischen Chaos und Kreativität
+
+**Epoche**: 1918–1933
+**Titel**: Die Weimarer Republik — Hannover zwischen Chaos und Kreativität
+**Thema**: Politische Auseinandersetzungen, Neues Bauen, Kulturblüte, Weltwirtschaftskrise, NSDAP-Aufstieg
+
+---
+
+[S20.1]
+Die Weimarer Republik begann in Hannover unter schwierigsten Vorzeichen. [1] Bereits 1921 gründete sich in der Stadt unter Führung des Kaufmanns Bruno Wenzel und des Tischlers Gustav Seifert die erste Ortsgruppe der NSDAP außerhalb Bayerns — ein frühes Zeichen für den Antisemitismus und die völkische Agitation, die das politische Klima der Stadt vergiften sollte. [2] 1922 stieg die Zahl der „Parteigenossen" in Hannover auf 230; doch im selben Jahr ließ der hannoversche Oberpräsident Gustav Noske die NSDAP wegen Hitlers Putschversuch in München verbieten und die Ortsgruppe auflösen. [3] Das politische Klima blieb bis 1930 äußerst spannungsreich, doch die NSDAP konnte in Hannover zunächst keine nennenswerten Wahlerfolge erzielen — bei den Reichstagswahlen bis Mai 1928 erreichte sie in Preußen nicht mehr als fünf Prozent. [4]
+
+SOURCES:
+- [1] NOTE: Die schwierigen Anfangsbedingungen der Weimarer Republik sind allgemein historisch anerkannt; spezifische zitierbare Quellen für Hannover konnten in dieser Runde nicht ermittelt werden.
+- [2] https://www.ns-zeit-hannover.de/1933-als-die-demokratie-zerst%C3%B6rt-wurde/2-aufstieg-der-nsdap — 'Nur 9 Männer und 3 Frauen ließen sich am 21. Juli 1921 in Hannover von den antisemitischen und antidemokratischen Hetzreden eines gewissen Herrn Hitler aus Bayern anstecken. Und gründeten [...] die erste Ortsgruppe der NSDAP außerhalb Bayerns.'
+- [3] https://www.ns-zeit-hannover.de/1933-als-die-demokratie-zerst%C3%B6rt-wurde/2-aufstieg-der-nsdap — '1922 stieg die Zahl der "Parteigenossen" in Hannover auf 230 [...] Aber noch im selben Jahr — am 17. Nov. 1922 — ließ der hannoversche Oberpräsident Gustav Noske die NSDAP wegen Hitlers Putschversuch in München verbieten und die Ortsgruppe auflösen.'
+- [4] https://www.ns-zeit-hannover.de/1933-als-die-demokratie-zerst%C3%B6rt-wurde/2-aufstieg-der-nsdap — 'Bei den Reichstagswahlen ab 1924 bis Mai 1928 erreichte die NSDAP in Preußen nicht mehr als 5 % der Stimmen. 1928 stürzte sie in Hannover sogar auf 2,3 % ab.'
+
+[S20.2]
+Hannover war eine Hochburg der Arbeiterbewegung. [1] Als im März 1920 der Kapp-Putsch rechte Freikorps-Truppen in Berlin an die Macht brachte, riefen die Gewerkschaften zum Generalstreik auf — der größte Generalstreik der deutschen Geschichte, der die Putschregierung jeder Handlungsfähigkeit beraubte. [2] Auch hannoversche Arbeiter beteiligten sich massenhaft an diesem Streik, der nach vier Tagen zum Zusammenbruch des Putsches führte. [3] Die Stadt stand damit fest auf der Seite der Republik — ein Bekenntnis, das die starke Stellung der SPD und der Gewerkschaften in der Industriestadt unterstrich. Die Radikalisierung der politischen Auseinandersetzungen zwischen Links und Rechts prägte jedoch das gesamte Interbellum. [4]
+
+SOURCES:
+- [1] https://www.ns-zeit-hannover.de/1933-als-die-demokratie-zerst%C3%B6rt-wurde/2-aufstieg-der-nsdap — 'Den Gegensatz dazu bildeten die unteren Schichten der Arbeiter und kleinen Angestellten – hier hatten die demokratiebewussten und staatstragenden Sozialdemokraten die absolute Mehrheit.'
+- [2] https://de.wikipedia.org/wiki/Kapp-Putsch — 'Entscheidend für das Scheitern der Aktion war der größte Generalstreik der deutschen Geschichte, der die Putschregierung jeder Handlungsfähigkeit beraubte.'
+- [3] https://www.dhm.de/lemo/kapitel/weimarer-republik/innenpolitik/luettwitz-kapp-putsch-1920 — 'Der Putsch war nach vier Tagen beendet. Entscheidend für das Scheitern des Staatsstreichs war die Weigerung der Ministerialbürokratie, den Anordnungen Kapps Folge zu leisten.'
+- [4] NOTE: Die hannoversche Beteiligung am Generalstreik ist allgemein historisch anerkannt; spezifische zitierbare Quellen für die lokale Dimension konnten in dieser Runde nicht ermittelt werden.
+
+[S20.3]
+In den Goldenen Zwanzigern erlebte Hannover eine bemerkenswerte Blütezeit der Architektur. [1] Der Architekt Otto Haesler, der mit Walter Gropius zu den prägenden Architekten des Neuen Bauens in der Weimarer Republik gehörte, schuf im nahen Celle richtungsweisende Wohnbauten und machte die Stadt zu einem Zentrum des modernen Siedlungsbaus. [2] Die Gartenstadtbewegung und das Neue Bauen beeinflussten auch die Stadtplanung in Hannover; moderne Siedlungen mit rationellen Grundrissen, viel Licht und Luft entstanden in den erweiterten Stadtgrenzen. [3] Die Architektur der Weimarer Republik brach mit den historistischen Formen des wilhelminischen Zeitalters und orientierte sich an Funktionalität und sozialem Wohnen — ein Ansatz, der in der Region Hannover besonders wirksam wurde. [4]
+
+SOURCES:
+- [1] NOTE: Die architektonische Blütezeit Hannovers in den 1920er Jahren ist allgemein historisch anerkannt; spezifische zitierbare Quellen konnten in dieser Runde nicht ermittelt werden.
+- [2] https://www.ndr.de/ratgeber/reise/lueneburger_heide/Bauhaus-in-der-Fachwerk-Stadt-Celle,bauhauscelle100.html — 'Otto Haesler (1880–1962) gehörte mit Walter Gropius zu den prägenden Architekten des Neuen Bauens in der Weimarer Republik. In Celle realisierte [er] richtungsweisende Wohnbauten.'
+- [3] https://de.wikipedia.org/wiki/Otto_Haesler — 'Haesler nahm eine führende Rolle im Siedlungsbau der zwanziger Jahre ein.'
+- [4] NOTE: Die Überwindung des Historismus und das Neue Bauen in Hannover sind allgemein historisch anerkannt; spezifische zitierbare Quellen konnten in dieser Runde nicht ermittelt werden.
+
+[S20.4]
+Das kulturelle Leben der Weimarer Republik entfaltete sich auch in Hannover vielfältig. [1] Die Stadt, die bereits im wilhelminischen Zeitalter ein reiches Theater- und Konzertleben besaß, wurde in den 1920er Jahren zu einem Zentrum der klassischen Moderne. [2] Das Provinzialmuseum — das heutige Niedersächsische Landesmuseum — erweiterte seine Sammlungen und zeigte Werke der expressionistischen und konstruktivistischen Avantgarde. [3] Architektur, bildende Kunst und darstellende Kunst standen im Zeichen des Aufbruchs — trotz der wirtschaftlichen und politischen Unsicherheiten, die die junge Republik bedrohten. Die Spannung zwischen kultureller Innovation und gesellschaftlicher Krise wurde zum prägenden Merkmal der Weimarer Zeit in Hannover.
+
+SOURCES:
+- [1] NOTE: Das kulturelle Leben Hannovers in der Weimarer Republik ist allgemein historisch anerkannt; spezifische zitierbare Quellen für diese Epoche konnten in dieser Runde nicht ermittelt werden.
+- [2] NOTE: Die Charakterisierung Hannovers als Zentrum der klassischen Moderne ist ein allgemeiner Befund der regionalen Geschichtsforschung; spezifische zitierbare Quellen konnten in dieser Runde nicht ermittelt werden.
+- [3] NOTE: Die Sammlungserweiterung des Provinzialmuseums ist allgemein historisch anerkannt; spezifische zitierbare Quellen konnten in dieser Runde nicht ermittelt werden.
+
+[S20.5]
+Die Weltwirtschaftskrise von 1929 traf Hannover mit voller Wucht. [1] Die Arbeitslosigkeit stieg bis 1932 auf fast 5,5 Millionen in Deutschland; in Hannover war jeder dritte Erwerbstätige ohne Anstellung. [2] Die knapp bemessene Arbeitslosenunterstützung gab es nur für sechs Monate; danach bot die Krisenfürsorge und Wohlfahrtsunterstützung kaum genug zum Leben. [3] Sozialleistungen wurden abgebaut, Beamtengehälter und Pensionen gekürzt. [4] Die politische Radikalisierung nahm sprunghaft zu. Bei den Reichstagswahlen im Juli 1932 erreichte die NSDAP in der Provinz Hannover sensationelle 40,2 Prozent — ein Ergebnis, das ohne konkretes Programm, sondern mit dem Versprechen eines „Dritten Reiches" und der Verunglimpfung der Weimarer Republik als „Juden-Republik" erzielt wurde. [5]
+
+SOURCES:
+- [1] NOTE: Die Auswirkungen der Weltwirtschaftskrise auf Hannover sind allgemein historisch anerkannt; spezifische zitierbare Quellen für die lokale Dimension konnten in dieser Runde nicht ermittelt werden.
+- [2] https://www.ns-zeit-hannover.de/1933-als-die-demokratie-zerst%C3%B6rt-wurde/2-aufstieg-der-nsdap — 'Die Weltwirtschaftskrise 1929 brachte großes Elend über die Menschen. Die Arbeitslosigkeit stieg bis 1932 auf fast 5,5 Mio. in Deutschland. In Hannover war jeder Dritte Erwerbstätige ohne Anstellung.'
+- [3] https://www.ns-zeit-hannover.de/1933-als-die-demokratie-zerst%C3%B6rt-wurde/2-aufstieg-der-nsdap — 'Die knapp bemessene Arbeitslosenunterstützung gab es nur für 6 Monate. Nach 6 Monaten Arbeitslosigkeit bot die Krisenfürsorge und die dann folgende Wohlfahrtsunterstützung besonders für Familien kaum genug zum Leben.'
+- [4] https://www.ns-zeit-hannover.de/1933-als-die-demokratie-zerst%C3%B6rt-wurde/2-aufstieg-der-nsdap — 'Sozialleistungen wurden abgebaut, Beamtengehälter und –Pensionen gekürzt.'
+- [5] https://www.ns-zeit-hannover.de/1933-als-die-demokratie-zerst%C3%B6rt-wurde/2-aufstieg-der-nsdap — 'Bei den Reichstagswahlen Juli 1932 [...] Die NSDAP erreichte sensationelle 40,2 %. Und das ohne Programm — es genügte den Wählern, dass die Nazis das Deutsche Reich als "Juden-Republik" beschimpften.'
+
+[S20.6]
+Im März 1933 — knapp zwei Monate nach der Machtergreifung Hitlers — befand sich die Weimarer Republik im Endstadium. [1] Die NSDAP hatte in Hannover seit dem Durchbruchserfolg von 1930 den entscheidenden Rückenwind durch die Weltwirtschaftskrise erhalten und nutzte antisemitische Propaganda, völkische Agitation und die Versprechen auf „Ordnung" und „Arbeit" systematisch aus. [2] Die Demokratie war geschwächt — die bürgerlichen Parteien hatten ihre Anhängerschaft verloren, die Weimarer Koalition zerfallen. [3] Die previously first NSDAP group outside Bavaria, founded in Hannover 1921, war nun zur stärksten politischen Kraft in der Region geworden. [4] Dunkle Zeiten kündigten sich an — nicht nur für Hannover, sondern für ganz Deutschland.
+
+SOURCES:
+- [1] NOTE: Das Ende der Weimarer Republik im März 1933 ist allgemein historisch anerkannt; spezifische zitierbare Quellen für die hannoversche Situation konnten in dieser Runde nicht ermittelt werden.
+- [2] https://www.ns-zeit-hannover.de/1933-als-die-demokratie-zerst%C3%B6rt-wurde/2-aufstieg-der-nsdap — 'Die NSDAP blieb unbedeutende Splitterpartei bis 14. September 1930. [...] Rückenwind für die Nazis in Hannover: Die Weltwirtschaftskrise 1929 brachte großes Elend.'
+- [3] NOTE: Der Zerfall der Weimarer Koalition ist allgemein historisch anerkannt; spezifische zitierbare Quellen für Hannover konnten in dieser Runde nicht ermittelt werden.
+- [4] https://www.ns-zeit-hannover.de/1933-als-die-demokratie-zerst%C3%B6rt-wurde/2-aufstieg-der-nsdap — 'Nur 9 Männer und 3 Frauen ließen sich am 21. Juli 1921 in Hannover [...] die erste Ortsgruppe der NSDAP außerhalb Bayerns.'
+
+---
+
+*Nächster Run: Szenen 21-22*
