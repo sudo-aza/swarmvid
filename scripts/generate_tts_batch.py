@@ -219,6 +219,9 @@ def generate_one_chunk(text: str, output_path: str, speaker: str) -> tuple[float
     gc.collect()
 
     if result.returncode != 0:
+        # Even if return code is non-zero, audio may have been generated
+        if os.path.isfile(output_path) and os.path.getsize(output_path) > 100:
+            return get_duration(output_path), cpu_time
         raise RuntimeError(result.stderr[-500:] if result.stderr else "unknown error")
 
     # Parse JSON output from child

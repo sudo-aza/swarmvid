@@ -3973,4 +3973,13 @@ def render_frame(rl, frame_idx, total_frames, state) -> Image.Image:
 - **Scene 1 seg 0 completed**: All 9 chunks generated and concatenated into `seg_00.wav` (2.3MB, 49.28s). JSON updated: `duration_s: 12.0 → 49.28`. Verified via ffprobe.
 - **Background process limitation**: nohup/setsid background processes die after 1-2 segments due to container process lifecycle. Cannot run full 175-segment batch in single tool call (tool timeout ~2min, batch needs ~14 hours).
 - **Cron job created** (ID: 222859, hourly) to run batch with `--resume` flag — each hourly turn will pick up where the last one left off.
+- Commit: b9c2732 (swarmvid), ed6e80af (parent)
+
+#### 2026-06-22 02:00 UTC+8
+- Task: SV-03 continued — Scene 1 TTS complete (8/8 segments, 377.4s total)
+- **Created `run_tts_scene.py`**: per-segment TTS helper with absolute path support. Handles chunking, subprocess TTS, concat, and JSON duration update. Designed for tool-call-by-tool-call generation since background processes are unreliable in this container.
+- **Fixed error handling**: Both `generate_tts_batch.py` and `run_tts_scene.py` now check if audio file exists even when subprocess returns non-zero exit code. Prevents false "FAILED" when model actually generated audio but exited with warnings.
+- **Scene 1 generation details**: 8 segments, ~50 chunks total, 377.4s (6.3 min) of German narration. Each chunk ~30-50s CPU time (~6-8x realtime with cached model). Memory guard confirmed working — system recovers to ~7.5GB after each chunk.
+- **Key finding**: Running two chunk generations in a single command (`&&`) causes OOM kill on second chunk. Model memory (4.2GB) isn't freed fast enough between sequential subprocess calls. Must run ONE chunk per tool call with memory recovery time between.
+- **Cleaned up log files**: Removed stale tts_*.log files.
 - Commit: pending
