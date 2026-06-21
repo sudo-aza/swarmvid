@@ -3617,3 +3617,13 @@ def render(rl, frame_idx, total_frames, state) -> Image.Image:
 - Sorted all 103 events by trigger_time across 10 scenes
 - Commit: `ae8b630` — "programmer: add text events for scenes 9-10, make populate script idempotent"
 - **Pivot**: zoe clarified the treatment/template approach is WRONG. New plan: central renderlib + per-scene bespoke scripts. Narration = audio only, visual events = on-screen only. Added plan to BLACKBOARD.
+
+#### 2026-06-21 10:00 UTC+8
+- Task: Build renderlib.py — central rendering library (Implementation Order step 1)
+- Audited all 8 existing visual modules: colors, compositing, fonts, typography, particles, events, map_panel, timeline
+- Created `scripts/visuals/renderlib.py` — 550+ line unified rendering API
+- API surface: backgrounds (gradient/solid/image_bg/vignette/noise), text (text/text_box/reveal_text/callout/card), images (image/image_ken_burns), shapes (line/rect/bracket/ellipse/glow), particles (init_particles/draw_particles), overlays (progress_bar/timeline_bar/scene_counter), animation (ease/alpha/slide/pulse/lerp/clamp), compositing (frame/overlay_image), time helpers (time/segment_at_time/seg_time)
+- Scene script contract: `prepare(rl) -> dict` + `render(rl, frame_idx, total_frames, state) -> Image`
+- Smoke test: 4 rendered frames (1280x720 RGB), all primitives verified
+- Unit tests: time helpers, easing functions, animation helpers — all pass
+- Commit: pending
