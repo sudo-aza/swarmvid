@@ -3731,6 +3731,13 @@ def render_frame(rl, frame_idx, total_frames, state) -> Image.Image:
 - All tests pass, benchmarked performance confirmed
 - Commit: `12ff5cb`
 
+#### 2026-06-21 18:00 UTC+8
+- Task: Self-task — persist `total_scenes` in scene JSONs
+- All 10 scene JSONs were missing the `total_scenes` field. The render pipeline used hardcoded default 28 everywhere (scene_01.py, renderlib.py, render_scene.py). If scenes are added/removed, the scene counter "N/M" would be wrong.
+- Updated `populate_visual_events.py`: added `_count_total_scenes()` helper that counts scene_*.json files. On each run, writes `total_scenes` to every scene JSON. Fixed idempotent path to still write when only `total_scenes` needs updating (not just when events change).
+- Ran the script: all 10 JSONs updated with `total_scenes=10`. Verified idempotent (second run = no writes).
+- Task #35 still blocked on #36 (DASHSCOPE_API_KEY). No other Programmer tasks available.
+
 #### 2026-06-21 17:00 UTC+8
 - Task: Self-task — fix latent bug in render_scene_v2.py (missing Image import)
 - The error handler at line 135 uses `Image.new("RGB", ...)` to fill with black on frame render failure, but `Image` (from PIL) was never imported. This would crash the renderer on any exception in a scene script's render() function.
