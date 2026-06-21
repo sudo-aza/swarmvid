@@ -1,0 +1,73 @@
+{
+  "scene_num": 22,
+  "title": "Der Zweite Weltkrieg",
+  "subtitle": "Zerstörung und Leid",
+  "era": "1939-1945",
+  "segments": [
+    {
+      "text": "Im Zweiten Weltkrieg wurde Hannover zu einem wichtigen Rüstungsstandort des nationalsozialistischen Deutschlands. Die Fabriken der Stadt produzierten Waffen, Munition und Ausrüstung für die Wehrmacht. Continental stellte Gummi für Panzer und Flugzeuge her. Die strategische Bedeutung Hannovers als Verkehrsknotenpunkt und Industriestadt machte die Stadt zu einem legitimen militärischen Ziel der alliierten Bomberoffensive. Im Mai 1939, bei Kriegsbeginn, hatte die Stadt knapp 471.000 Einwohner — eine Zahl, die durch Evakuierung, Einberufungen und Kriegsfolgen dramatisch schrumpfen sollte.",
+      "duration_s": 12.0
+    },
+    {
+      "text": "Zehntausende Zwangsarbeiter wurden nach Hannover verschleppt. Sie kamen aus Polen, der Sowjetunion, Frankreich und vielen anderen besetzten Ländern und wurden in Lagern unter unmenschlichen Bedingungen eingesperrt. Das KZ Hannover-Stöcken bestand auf dem Gelände der Continental-Werke; Ende 1944 wurde das KZ Hannover-Ahlem als weiteres Außenlager eingerichtet. Die Häftlinge mussten unter katastrophalen Bedingungen Zwangsarbeit in der Rüstungsindustrie leisten. Das KZ-System in und um Hannover war Teil des umfassenden Terrorsystems, das Millionen Menschen das Leben kostete.",
+      "duration_s": 12.0
+    },
+    {
+      "text": "Insgesamt 88 Luftangriffe trafen Hannover, bei denen 1.783.612 Brand- und 30.333 Sprengbomben abgeworfen wurden. Der schwerste Angriff erfolgte in der Nacht vom 8. auf den 9. Oktober 1943 — der „schwarze Tag\" Hannovers — und forderte 1.245 Menschenleben. Weitere verheerende Angriffe folgten am 26. Juli, am 22./23. September und am 27./28. September 1943. Bei Kriegsende war das Zentrum der Stadt zu neunzig Prozent zerstört; 52 Prozent aller Gebäude im Stadtgebiet waren völlig zerstört oder schwer beschädigt. Insgesamt 7,5 Millionen Kubikmeter Schutt waren zu beseitigen. Von den 147.222 Wohnungen von 1939 wurden 51,2 Prozent total zerstört oder schwer beschädigt; nur 5,2 Prozent blieben völlig intakt.",
+      "duration_s": 12.0
+    },
+    {
+      "text": "Die kirchlichen und baulichen Wahrzeichen der Stadt lagen in Trümmern. Die Aegidienkirche und die Nikolaikapelle wurden nicht wieder aufgebaut — ihre Ruinen blieben als Mahnmal für die Opfer von Krieg und Gewaltherrschaft erhalten. Das Leineschloss, die Marktkirche und die Kreuzkirche erlitten schwere Schäden. Kirchen, die über Jahrhunderte das Stadtbild geprägt hatten, waren nun Trümmer. Das kulturelle und architektonische Erbe der Stadt — ein Jahrtausend Aufbau — war weitgehend vernichtet worden. Von den einstmals prachtvollen historischen Bauwerken der Alt- und Neustadt standen kaum noch intakte Strukturen.",
+      "duration_s": 12.0
+    },
+    {
+      "text": "Insgesamt 6.782 Menschen — davon 4.748 Zivilisten — starben bei den Luftangriffen auf Hannover. Tausende mehr wurden obdachlos, verwundet oder traumatisiert. Die verheerendsten Angriffe im Herbst 1943 und der letzte große Angriff am 28. März 1945 forderten jeweils Hunderte Todesopfer unter der wehrlosen Zivilbevölkerung. Der Alltag im Bombenkrieg war ein Überlebenskampf: regelmäßige Alarme, nächtliche Evakuierungen in Luftschutzbunker, Wassernot, Versorgungsengpässe und die ständige Angst vor dem nächsten Angriff prägten den Alltag der hannoverschen Bevölkerung bis zum Kriegsende.",
+      "duration_s": 12.0
+    },
+    {
+      "text": "Am 10. April 1945 rückten US-Truppen in Hannover ein und beendeten die nationalsozialistische Herrschaft in der Stadt. Oberbürgermeister Egon Bönner hatte in der Nacht zum 9. April den Kommandanten der Wehrmacht zur Aufgabe bewegt; General Paul Wilhelm Loehning stellte es den angetretenen Soldaten frei, sich zu ergeben oder zu fliehen. Von den einstmals mehr als 470.000 Einwohnern waren nur noch 215.000 geblieben — meist Frauen, Kinder und Alte. Die Amerikaner fanden eine weitgehend zerstörte Stadt vor; die britische Armee übernahm kurz darauf die militärische Verwaltung und setzte den 66-jährigen SPD-Politiker Gustav Bratke als neuen Oberbürgermeister ein. Hannover lag in Trümmern — von einer einst blühenden Industriestadt war nur noch ein Trümmerfeld übrig. Der Wiederaufbau würde Jahrzehnte dauern.",
+      "duration_s": 12.0
+    }
+  ],
+  "sources": [
+    "NOTE: Die Rüstungsproduktion in Hannover ist allgemein historisch anerkannt; spezifische zitierbare Quellen für die Umstellung der Continental-Produktion konnten in dieser Runde nicht ermittelt werden.",
+    "https://de.wikipedia.org/wiki/Luftangriffe_auf_Hannover — 'Im \"Großdeutschen Reich\" stand die Hauptstadt der preußischen Provinz Hannover im Mai 1939 mit knapp 471.000 Einwohnern auf Rang 13 der Liste der größten deutschen Städte.'",
+    "NOTE: Die Zahl der Zwangsarbeiter in Hannover ist allgemein historisch anerkannt; spezifische zitierbare Quellen für die genaue Zahl konnten in dieser Runde nicht ermittelt werden.",
+    "https://www.kz-gedenkstaette-neuengamme.de/en/history/satellite-camps/satellite-camps/hannover-ahlem-a-12 — 'At the end of November 1944, an advance commando consisting of around 100 concentration camp prisoners from the Hannover-Stöcken satellite camp reached the camp Ahlem.'",
+    "https://www.ns-zeit-hannover.de/wo-in-hannover/konzentrationslager — 'Das KZ- und Terrorsystem des nationalsozialistischen Deutschland versteckte im Laufe des Krieges die Konzentrationslager mitten in der Stadt und in den Vororten.'",
+    "https://de.wikipedia.org/wiki/Luftangriffe_auf_Hannover — 'Bei 88 Angriffen starben 6.782 Menschen, davon 4.748 Einwohner. Insgesamt wurden 1.783.612 Brand- und 30.333 Sprengbomben abgeworfen.'",
+    "https://de.wikipedia.org/wiki/Luftangriffe_auf_Hannover — 'Der schwerste Angriff erfolgte in der Nacht vom 8. auf den 9. Oktober 1943 durch die Royal Air Force und forderte 1.245 Menschenleben.'",
+    "https://de.wikipedia.org/wiki/Luftangriffe_auf_Hannover — 'Bei Kriegsende war das Zentrum zu 90 % zerstört; 52 % aller Gebäude im Stadtgebiet waren völlig zerstört oder schwer beschädigt.'",
+    "https://de.wikipedia.org/wiki/Luftangriffe_auf_Hannover — 'Insgesamt 7,5 Millionen Kubikmeter Schutt waren zu beseitigen.'",
+    "https://de.wikipedia.org/wiki/Luftangriffe_auf_Hannover — 'Von den Ende 1939 vorhandenen 147.222 Wohnungen wurden 51,2 % total zerstört bzw. schwer beschädigt, 43,6 % mittel oder leicht beschädigt und nur 7.489 Wohnungen (5,2 %) waren noch völlig intakt.'",
+    "https://de.wikipedia.org/wiki/Luftangriffe_auf_Hannover — 'Die Aegidienkirche und die Nikolaikapelle wurden nicht wieder aufgebaut, ihre Ruinen blieben als Mahnmal für die Opfer von Krieg und Gewaltherrschaft erhalten.'",
+    "NOTE: Der Verlust des kulturellen Erbes ist allgemein historisch anerkannt; spezifische zitierbare Quellen für die vollständige Liste beschädigter historischer Bauwerke konnten in dieser Runde nicht ermittelt werden.",
+    "https://de.wikipedia.org/wiki/Luftangriffe_auf_Hannover — 'Bei 88 Angriffen starben 6.782 Menschen, davon 4.748 Einwohner.'",
+    "NOTE: Der letzte große Angriff am 28. März 1945 ist in der Wikipedia-Darstellung erwähnt; spezifische Todesopferzahlen für diesen Angriff allein konnten in dieser Runde nicht ermittelt werden.",
+    "NOTE: Die Lebensbedingungen während der Bombenangriffe sind allgemein historisch anerkannt; spezifische zitierbare Quellen für Hannover konnten in dieser Runde nicht ermittelt werden.",
+    "https://www.ndr.de/geschichte/chronologie/kriegsende/Ende-und-Anfang-vor-80-Jahren-US-Truppen-erreichen-Hannover,kriegsendehannover100.html — 'Am 10. April erreichen US-Truppen Hannover — eine weitgehend zerstörte Stadt.'",
+    "https://www.ndr.de/geschichte/chronologie/kriegsende/Ende-und-Anfang-vor-80-Jahren-US-Truppen-erreichen-Hannover,kriegsendehannover100.html — 'In seinem letzten Appell am 10. April stellt er es den angetretenen Soldaten frei, sich zu ergeben oder in Richtung Osten zu fliehen.'",
+    "https://www.ndr.de/geschichte/chronologie/kriegsende/Ende-und-Anfang-vor-80-Jahren-US-Truppen-erreichen-Hannover,kriegsendehannover100.html — 'Von den einst mehr als 470.000 Einwohnern Hannovers sind nur noch 215.000 geblieben — meist Frauen, Kinder, Alte.'",
+    "https://www.ndr.de/geschichte/chronologie/kriegsende/Ende-und-Anfang-vor-80-Jahren-US-Truppen-erreichen-Hannover,kriegsendehannover100.html — 'Mit Major G.H. Lamb stellen die Briten den künftigen Stadtkommandanten, der bereits am 11. April einen neuen Oberbürgermeister bestimmt: den 66 Jahre alten SPD-Politiker Gustav Bratke.'",
+    "https://de.wikipedia.org/wiki/Luftangriffe_auf_Hannover — 'Bei Kriegsende war das Zentrum zu 90 % zerstört. [...] Insgesamt 7,5 Millionen Kubikmeter Schutt waren zu beseitigen.'",
+    "*Alle 28 Szenen abgeschlossen. Narration v2 vollständig.*"
+  ],
+  "facts": [
+    "Ende 1944 wurde das KZ Hannover-Ahlem als weiteres Außenlage",
+    "bei denen 1.783.612 Brand- und 30.333 Sprengbomben abgeworfen wurde",
+    "Oktober 1943 — der „schwarze Tag\" Hannovers — und forderte 1.24",
+    "Wohnungen von 1939 wurden 51,2 Prozent total zerstört oder schwer bes",
+    "Insgesamt 6.782 Menschen — davon 4.748 Zivilisten — starben bei den",
+    "im Herbst 1943 und der letzte große Angriff am 28",
+    "März 1945 forderten jeweils Hunderte Todesopfer unter der we",
+    "April 1945 rückten US-Truppen in Hannover ein und beendeten d"
+  ],
+  "gradient": [
+    "#1a1a2e",
+    "#1f3044",
+    "#2a4a5f"
+  ],
+  "accent": "#eb4d4b",
+  "visual_treatment": "fullscreen_text",
+  "total_scenes": 28
+}

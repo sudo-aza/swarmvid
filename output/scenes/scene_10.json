@@ -50,8 +50,7 @@
     "https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Weil Kurhannover durch die Personalunion seiner Landesherren mit Großbritannien dessen Politik teilen musste, wurde Kurhannover nach über einhundertjährigem Frieden in den Siebenjährigen Krieg einbezogen.'",
     "https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Bereits 1755, als sich die Vorboten dieses europäischen Krieges zeigten, verließ König Georg II. eilig Herrenhausen und begab sich ins geschützte Großbritannien.'",
     "https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Nach der Schlacht bei Hastenbeck am 27. Juli 1757 stand Hannover den siegreichen französischen Truppen offen und musste als Garnison die Truppen und ein Lazarett aufnehmen.'",
-    "https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Die Truppen zogen sich im Frühjahr 1758 wieder aus der Stadt zurück... Trotz aller Rückschläge war Friedrich II. von Preußen schließlich siegreich und besuchte 1763 die Stadt.'",
-    "*Nächster Run: Szenen 11-12*"
+    "https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Die Truppen zogen sich im Frühjahr 1758 wieder aus der Stadt zurück... Trotz aller Rückschläge war Friedrich II. von Preußen schließlich siegreich und besuchte 1763 die Stadt.'"
   ],
   "facts": [
     "bestieg 1727 sowohl den britischen Thron als auch den hannovers",
@@ -70,6 +69,7 @@
   ],
   "accent": "#ff6b6b",
   "visual_treatment": "stark",
+  "total_scenes": 28,
   "visual_events": [
     {
       "type": "callout",
@@ -91,16 +91,6 @@
       "position": "right",
       "anim": "slide_left",
       "anim_duration": 0.5
-    },
-    {
-      "type": "image",
-      "trigger_time": 8.0,
-      "duration": 12.0,
-      "src": "scene_10_0.jpg",
-      "caption": "Barockarchitektur Hannover",
-      "position": "bottom",
-      "anim": "fade_in",
-      "anim_duration": 0.6
     },
     {
       "type": "callout",
@@ -135,16 +125,6 @@
       "anim_duration": 0.5
     },
     {
-      "type": "image",
-      "trigger_time": 28.0,
-      "duration": 10.0,
-      "src": "scene_10_1.jpg",
-      "caption": "Königlicher Hof Hannover",
-      "position": "top",
-      "anim": "fade_in",
-      "anim_duration": 0.6
-    },
-    {
       "type": "callout",
       "trigger_time": 39.0,
       "duration": 6.0,
@@ -177,6 +157,5 @@
       "style": "warning",
       "anim_duration": 0.5
     }
-  ],
-  "total_scenes": 28
+  ]
 }

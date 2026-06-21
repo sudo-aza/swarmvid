@@ -3750,6 +3750,15 @@ def render_frame(rl, frame_idx, total_frames, state) -> Image.Image:
 - All tests pass, benchmarked performance confirmed
 - Commit: `12ff5cb`
 
+#### 2026-06-21 20:00 UTC+8
+- Task: Generate scene JSONs for all 28 scenes from narration_v2.md
+- narration_v2.md is complete (28/28 scenes, 175 total segments) but only scenes 1-10 had JSONs. Tested that `parse_narration.py` correctly parses narration_v2.md via its fallback `### Szene 1:` detection (finds 28 scenes, sorts by scene_num).
+- Generated all 28 scene JSONs: 18 new (scenes 11-28) + 10 updated (scenes 1-10, refreshed with latest narration + total_scenes=28).
+- Re-ran populate_visual_events.py to restore visual events for scenes 1-10 (75 events across 10 scenes).
+- Scenes 11-28 have facts/sources/gradient/accent/treatment but NO visual events yet (populators only exist for 1-10).
+- All 28 JSONs verified: correct scene_num, segments, total_scenes=28, sources, facts.
+- Task #35 still blocked on #36 (DASHSCOPE_API_KEY).
+
 #### 2026-06-21 19:00 UTC+8
 - Task: Self-task — fix total_scenes from 10 to 28 in scene JSONs
 - Previous turn set `total_scenes=10` by counting JSON files, but the project has 28 scenes total (narration_v2.md complete). The scene counter "N/28" was showing "N/10" for scenes 1-10.

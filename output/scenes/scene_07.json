@@ -61,6 +61,7 @@
   ],
   "accent": "#f0932b",
   "visual_treatment": "map_focus",
+  "total_scenes": 28,
   "visual_events": [
     {
       "type": "callout",
@@ -72,16 +73,6 @@
       "anim": "pop",
       "style": "highlight",
       "anim_duration": 0.5
-    },
-    {
-      "type": "image",
-      "trigger_time": 8.0,
-      "duration": 12.0,
-      "src": "scene_07_0.jpg",
-      "caption": "Herzog Georg Wilhelm von Calenberg",
-      "position": "left",
-      "anim": "fade_in",
-      "anim_duration": 0.6
     },
     {
       "type": "card",
@@ -103,16 +94,6 @@
       "anim": "pop",
       "style": "highlight",
       "anim_duration": 0.4
-    },
-    {
-      "type": "image",
-      "trigger_time": 30.0,
-      "duration": 10.0,
-      "src": "scene_07_1.jpg",
-      "caption": "Leineschloss Hannover",
-      "position": "right",
-      "anim": "fade_in",
-      "anim_duration": 0.6
     },
     {
       "type": "callout",
@@ -145,17 +126,6 @@
       "position": "right",
       "anim": "slide_left",
       "anim_duration": 0.4
-    },
-    {
-      "type": "image",
-      "trigger_time": 50.0,
-      "duration": 8.0,
-      "src": "scene_07_2.jpg",
-      "caption": "Barockgarten Herrenhausen",
-      "position": "bottom-right",
-      "anim": "fade_in",
-      "anim_duration": 0.6
     }
-  ],
-  "total_scenes": 28
+  ]
 }

@@ -1,0 +1,69 @@
+{
+  "scene_num": 19,
+  "title": "Der Erste Weltkrieg",
+  "subtitle": "Hannover im Großen Krieg",
+  "era": "1914-1918",
+  "segments": [
+    {
+      "text": "Mit dem Ausbruch des Ersten Weltkriegs im August 1914 wurde auch Hannover in den mörderischen Konflikt hineingezogen. Das 1. Hannoversche Infanterie-Regiment Nr. 74, in den Kasernen um den Welfenplatz stationiert, gehörte zu den traditionellen Regimentern der preußischen Armee und rückte an die Westfront. Tausende junge Männer aus der Stadt und der Provinz Hannover kämpften in den Schützengräben Frankreichs und Belgiens. Wie in ganz Deutschland erfasste die Stadt anfangs eine Kriegsbegeisterung, die jedoch im Laufe der Jahre einem tiefen Ernüchterung wich, als die Verlustlisten immer länger wurden.",
+      "duration_s": 12.0
+    },
+    {
+      "text": "An der Heimatfront wandelte sich die Stadt grundlegend. Frauen übernahmen die Arbeit in den Fabriken, deren männliche Belegschaft an die Front gegangen war — das Hindenburg-Programm forderte die Mobilisierung aller noch verfügbaren Reserven an Menschen und Material. Kern der Forderungen der Obersten Heeresleitung waren eine Verdoppelung der Munitionszufuhr sowie eine Verdreifachung der Produktion von Maschinengewehren und Geschützen innerhalb eines halben Jahres. Die Industrieproduktion in Hannover wurde auf Rüstungsgüter umgestellt; die Continental-Werke produzierten Gummiprodukte für das Militär. Frauen sollten einer allgemeinen Verpflichtung zur Arbeit in kriegswichtigen Bereichen unterworfen werden.",
+      "duration_s": 12.0
+    },
+    {
+      "text": "Die britische Seeblockade, die Deutschland von wichtigen Importen abschnitt, hatte verheerende Folgen für die Versorgungslage der Zivilbevölkerung. Da Deutschland rund dreißig Prozent seiner Lebensmittel importierte, entstand sofort nach Kriegsbeginn ein Mangel, der sich im Laufe des Krieges dramatisch verschärfte. Der „Steckrübenwinter\" von 1916/17 wurde zum Symbol der Hungersnot: In den Kriegsjahren zwischen 1914 und 1918 starben in Deutschland nach Schätzungen von Historikern 700.000 Menschen an Hunger und Unterernährung — mehr Zivilisten als an den direkten Kriegshandlungen. Auch in Hannover wurden Lebensmittel rationiert, Schwarzmärkte entstanden, und die Ernährungslage der arbeitenden Bevölkerung wurde katastrophal.",
+      "duration_s": 12.0
+    },
+    {
+      "text": "Im November 1918 erreichte die Revolution auch Norddeutschland. Angestoßen durch den Kieler Matrosenaufstand, der am 3. November 1918 begonnen hatte, bildeten sich auch in Hannover Arbeiter- und Soldatenräte — wie in allen deutschen Städten. In Braunschweig, dem Nachbarland mit enger dynastischer Verbundenheit zu Hannover, erreichte die Revolution am 8. November 1918 ihren Höhepunkt: Herzog Ernst August, ein Welfe und Verwandter der einstigen hannoverschen Könige, wurde zur Abdankung gezwungen. Vertreter eines neu gebildeten Arbeiter- und Soldatenrates forderten die Abdankung; Ernst August unterzeichnete am 8. November die Abdankungsurkunde und legte alle Macht in die Hände des Arbeiter- und Soldatenrates. Die Monarchie in Deutschland brach zusammen — auch in den welfischen Territorien, die einst das Königreich Hannover gebildet hatten.",
+      "duration_s": 12.0
+    },
+    {
+      "text": "Tausende hannoversche Soldaten kehrten nicht aus dem Krieg zurück. Die Stadt trauerte um ihre Gefallenen — die Verlustlisten des Ersten Weltkriegs waren katastrophal. Der Krieg hatte die Gesellschaft grundlegend verändert: Alte Ordnungen waren gefallen, Frauen hatten in den Fabriken und Bürokratien Aufgaben übernommen, die ihnen zuvor verschlossen gewesen waren, und neue politische Kräfte drängten nach vorne. Die Novemberrevolution beendete nicht nur das Kaiserreich, sondern markierte auch das Ende der alten Eliten, die in Hannover seit der preußischen Annexion von 1866 die Stadt regiert hatten. Die Weimarer Republik begann — in Hannover wie im gesamten Deutschen Reich — unter dem Eindruck von Kriegsniederlage, Revolution und tiefem gesellschaftlichem Umbruch.",
+      "duration_s": 12.0
+    },
+    {
+      "text": "Die Weimarer Nationalversammlung trat im Februar 1919 zusammen und erarbeitete die erste demokratische Verfassung des Deutschen Reiches. In Hannover zeigten sich die politischen Fronten bald klar: Die unteren Schichten der Arbeiter und kleinen Angestellten bildeten die absolute Mehrheit der demokratiebewussten Sozialdemokraten, gefolgt von der Kommunistischen Partei. Die gehobene Gesellschaft — der Adel, die Chefs in Verwaltung, Justiz und Hochfinanz — hatte Macht und Einfluss verloren und stand der neuen Republik weitgehend ablehnend gegenüber. Die Weimarer Republik wurde auch in Hannover als „Republik ohne Republikaner\" erlebt. Die alten welfischen Anhänglichkeit und die neue demokratische Ordnung standen sich unversöhnlich gegenüber — eine Spannung, die das politische Klima der Stadt in den kommenden Jahren prägen sollte.",
+      "duration_s": 12.0
+    }
+  ],
+  "sources": [
+    "NOTE: Die allgemeine Mobilisierung bei Kriegsausbruch 1914 ist allgemein historisch anerkannt; spezifische zitierbare Quellen für Hannovers Regimenter an der Westfront konnten in dieser Runde nicht ermittelt werden.",
+    "https://en.wikipedia.org/wiki/74th_(1st_Hannover)_Infantry — 'Hannoversches Infanterie-Regiment Nr. 74, was an infantry regiment of the Prussian Army (1866 to 1871) and the German Imperial Army (1871 to 1918).'",
+    "https://www.bpb.de/themen/erster-weltkrieg-weimar/ersterweltkrieg/177509/oekonomie-des-krieges — 'Schon im August 1914 kam es zu einer massiven Umstellungskrise der deutschen Wirtschaft, weil Millionen Männer eingezogen wurden.'",
+    "https://www.dhm.de/lemo/kapitel/erster-weltkrieg/industrie-und-wirtschaft/hindenburg-programm — 'Mit der als \"Hindenburg-Programm\" bezeichneten Mobilmachung zum \"totalen Krieg\", die auch den uneingeschränkten U-Boot-Krieg beinhaltete, begann die OHL, sich zu einer förmlichen Militärdiktatur zu entwickeln.'",
+    "https://www.dhm.de/lemo/kapitel/erster-weltkrieg/industrie-und-wirtschaft/hindenburg-programm — 'Kern der Forderungen der OHL waren eine Verdoppelung der Munitionszufuhr sowie eine Verdreifachung der Produktion und Lieferung von Maschinengewehren und Geschützen innerhalb des nächsten halben Jahrs.'",
+    "https://www.dhm.de/lemo/kapitel/erster-weltkrieg/industrie-und-wirtschaft/hindenburg-programm — 'Frauen sollten einer allgemeinen Verpflichtung zur Arbeit in kriegswichtigen Bereichen unterworfen werden.'",
+    "https://themator.museum-digital.de/t/87/506 — 'Mit Beginn des Krieges verhängt Großbritannien im August 1914 eine Seeblockade. Da Deutschland 30 % seiner Lebensmittel importiert, entsteht sofort eine [Knappheit].'",
+    "NOTE: Die Auswirkungen der Seeblockade auf Hannover sind allgemein historisch anerkannt; spezifische zitierbare Quellen für die hannoversche Situation konnten in dieser Runde nicht ermittelt werden.",
+    "https://www.erinnerungen-im-netz.de/erinnerungen/erin-artikel/der-steckruebenwinter-1916-17 — 'In den Kriegsjahren zwischen 1914 und 1918 starben in Deutschland nach Schätzungen von Historikern 700.000 Menschen an Hunger und Unterernährung.'",
+    "https://www.dhm.de/lemo/kapitel/weimarer-republik/revolution-191819/rat-der-volksbeauftragten — 'Unterstützt wurde die USPD von den Arbeiter- und Soldatenräten, die sich infolge der Novemberrevolution in allen deutschen Städten gebildet hatten.'",
+    "https://de.wikipedia.org/wiki/Novemberrevolution_in_Braunschweig — 'Die Novemberrevolution in Braunschweig war eine von Arbeitern und Soldaten getragene Erhebung in Braunschweig kurz vor Ende des Ersten Weltkriegs, die am 8. November 1918 zur Abdankung Ernst Augusts, des letzten Herzogs von Braunschweig führte.'",
+    "https://www.braunschweig.de/leben/stadtportraet/geschichte/etappen-der-stadtgeschichte/novemberrevolution.php — 'Vertreter eines neu gebildeten Arbeiter- und Soldatenrates, an dessen Spitze August Merges stand, forderten am 8. November die Abdankung von Herzog Ernst August.'",
+    "NOTE: Die Kriegsverluste hannoverscher Soldaten sind allgemein historisch anerkannt; spezifische zitierbare Quellen für die genauen Zahlen konnten in dieser Runde nicht ermittelt werden.",
+    "NOTE: Die gesellschaftlichen Veränderungen durch den Krieg sind allgemein historisch anerkannt; spezifische zitierbare Quellen für Hannover konnten in dieser Runde nicht ermittelt werden.",
+    "https://de.wikipedia.org/wiki/Novemberrevolution — 'Die Novemberrevolution von 1918/19 führte in der Endphase des Ersten Weltkriegs zum Sturz der Monarchie im Deutschen Reich und zu dessen Umwandlung in eine [Republik].'",
+    "https://de.wikipedia.org/wiki/Novemberrevolution — 'Die Novemberrevolution von 1918/19 führte in der Endphase des Ersten Weltkriegs zum Sturz der Monarchie im Deutschen Reich.'",
+    "https://www.ns-zeit-hannover.de/1933-als-die-demokratie-zerst%C3%B6rt-wurde/2-aufstieg-der-nsdap — 'Den Gegensatz dazu bildeten die unteren Schichten der Arbeiter und kleinen Angestellten – hier hatten die demokratiebewussten und staatstragenden Sozialdemokraten die absolute Mehrheit – gefolgt von der Kommunistischen Partei.'",
+    "https://www.ns-zeit-hannover.de/1933-als-die-demokratie-zerst%C3%B6rt-wurde/2-aufstieg-der-nsdap — 'Die gehobene Gesellschaft in Hannover in den 1920er Jahren: Die kriegsbegeisterten Deutschen hatten den 1. Weltkrieg verloren, das autokratische Kaiserreich verwandelte sich in eine Demokratie. Die bis dahin herrschende Oberschicht verlor Macht und Einfluss. [...] Die Weimarer Republik war eine \"Republik ohne Republikaner\".'"
+  ],
+  "facts": [
+    "im August 1914 wurde auch Hannover in den mörderischen Konflikt h",
+    "1914–1918: starben in Deutschland nach Schätzungen von Historikern 700.0...",
+    "Im November 1918 erreichte die Revolution auch Norddeutschland",
+    "November 1918 begonnen hatte",
+    "November 1918 ihren Höhepunkt: Herzog Ernst August",
+    "Annexion von 1866 die Stadt regiert hatten",
+    "im Februar 1919 zusammen und erarbeitete die erste demokratische V"
+  ],
+  "gradient": [
+    "#1b1b2f",
+    "#162447",
+    "#1f4068"
+  ],
+  "accent": "#f39c12",
+  "visual_treatment": "default",
+  "total_scenes": 28
+}

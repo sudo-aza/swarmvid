@@ -82,6 +82,7 @@
   ],
   "accent": "#ff7979",
   "visual_treatment": "default",
+  "total_scenes": 28,
   "visual_events": [
     {
       "type": "callout",
@@ -93,16 +94,6 @@
       "anim": "pop",
       "style": "warning",
       "anim_duration": 0.4
-    },
-    {
-      "type": "image",
-      "trigger_time": 8.0,
-      "duration": 12.0,
-      "src": "scene_05_0.jpg",
-      "caption": "Martin Luther — 1517 Reformation",
-      "position": "left",
-      "anim": "fade_in",
-      "anim_duration": 0.6
     },
     {
       "type": "callout",
@@ -136,26 +127,6 @@
       "anim": "pop",
       "style": "highlight",
       "anim_duration": 0.4
-    },
-    {
-      "type": "image",
-      "trigger_time": 30.0,
-      "duration": 10.0,
-      "src": "scene_05_1.jpg",
-      "caption": "Hannover im 16. Jahrhundert",
-      "position": "right",
-      "anim": "fade_in",
-      "anim_duration": 0.6
-    },
-    {
-      "type": "image",
-      "trigger_time": 50.0,
-      "duration": 8.0,
-      "src": "scene_05_2.jpg",
-      "caption": "Wappen der Welfen",
-      "position": "bottom-left",
-      "anim": "fade_in",
-      "anim_duration": 0.6
     },
     {
       "type": "callout",
@@ -201,6 +172,5 @@
       "style": "info",
       "anim_duration": 0.4
     }
-  ],
-  "total_scenes": 28
+  ]
 }

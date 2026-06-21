@@ -1,0 +1,73 @@
+{
+  "scene_num": 11,
+  "title": "Die Universität Göttingen",
+  "subtitle": "Zentrum der Aufklärung (1737–1800)",
+  "era": "1737-1800",
+  "segments": [
+    {
+      "text": "Die Georgia Augusta, wie die Universität Göttingen offiziell hieß, war eine Gründung von europäischer Bedeutung. Der britische König und hannoversche Kurfürst Georg II. aus dem Haus Hannover ließ sie unter Federführung seines Ministers Gerlach Adolph von Münchhausen errichten, um die Ideale der Aufklärung zu verbreiten. Die Universität nahm bereits 1734 ihren Lehrbetrieb auf und wurde 1737 feierlich eingeweiht; sie zählte schon im zweiten Semester 400 Studenten und war bald eine der größeren im Europa der damaligen Zeit. Als Universität der Aufklärung konzipiert — ähnlich wie Halle — unterlagen die Forschungsergebnisse nicht mehr der Zensur der Kirche, was sie für gelehrte Autoritäten aus ganz Europa attraktiv machte. Napoleons berühmtes Urteil sprach später für ihren Ruf: „Göttingen gehört weder zu einem Staat, noch zu Deutschland, und ist die Universität Europas.\"",
+      "duration_s": 12.0
+    },
+    {
+      "text": "An der Georgia Augusta lehrten und forschten einige der bedeutendsten Gelehrten ihrer Zeit. Der Mediziner, Naturforscher und Dichter Albrecht von Haller (1708 bis 1777) gehörte zu den bedeutendsten Gelehrten des 18. Jahrhunderts; von 1736 bis 1753 wirkte er als Professor für Anatomie, Chirurgie und Botanik an der Universität Göttingen und war maßgeblich an der Entwicklung der jungen Georgia Augusta beteiligt. Georg Christoph Lichtenberg hielt ab 1769 eine der ersten Professuren für Experimentalphysik in Deutschland und lehrte bis 1799 in Göttingen. Carl Friedrich Gauß, der bereits zu seinen Lebzeiten als „Fürst der Mathematiker\" galt, studierte ab 1795 in Göttingen und wurde 1807 Professor für Astronomie und Direktor der Sternwarte; er blieb bis zu seinem Tod 1855 an der Universität.",
+      "duration_s": 12.0
+    },
+    {
+      "text": "Der Göttinger Hainbund machte die Universität zu einem Zentrum der Empfindsamkeit und des Sturm und Drang. Der Hainbund wurde am 12. September 1772 von Johann Heinrich Voß, Ludwig Christoph Heinrich Hölty, Johann Martin Miller und weiteren Studenten auf dem Kerstlingeröder Feld bei Göttingen gegründet und war eine die Natur verehrende, zum Sturm und Drang tendierende literarische Gruppe. In der Forschung gilt der Hainbund als „der geschlossenste Dichterkreis des Sturm und Drang\". Die Gruppe verband sich eng mit dem Göttinger Musenalmanach, der 1770 von Heinrich Christian Boie begründet worden war und als Sprachrohr des Bundes diente. Ihre Gedichte fanden weite Verbreitung im deutschsprachigen Raum und prägten die literarische Strömung der Empfindsamkeit nachhaltig.",
+      "duration_s": 12.0
+    },
+    {
+      "text": "Die Königliche Gesellschaft der Wissenschaften zu Göttingen wurde 1751 von König Georg II. von Großbritannien, Kurfürst von Hannover, gestiftet und ist heute die zweitälteste wissenschaftliche Akademie in Deutschland. Der erste Präsident der Akademie war der schweizerische Arzt, Naturforscher und Schriftsteller Albrecht von Haller, was die enge Verbindung zwischen Universität und Akademie von Beginn an unterstrich. Die Gesellschaft förderte die Erforschung der Natur, der Geschichte und der Sprachen; wissenschaftliche Entdeckungen aus Göttingen fanden internationale Anerkennung und trugen zum Ruf der Stadt als Gelehrtenrepublik bei. Ihr Leitgedanke — „Fecundat et ornat, sie befruchtet und ziert\" — spiegelte das Selbstverständnis wider, Wissenschaft und Bildung als Quelle öffentlichen Ruhms zu begreifen.",
+      "duration_s": 12.0
+    },
+    {
+      "text": "Die Göttinger Bibliothek, die heutige Niedersächsische Staats- und Universitätsbibliothek, wurde 1734 gegründet und entwickelte sich zu einer der größten und modernsten Europas. Unter dem Bibliothekar Christian Gottlob Heyne, der eine Fernleihe für auswärtige Gelehrte organisierte und neben deutschen Neuerscheinungen auch französische, englische, amerikanische, arabische und orientalische Literatur beschaffte, wuchs der Bestand von 60.000 Bänden bei seinem Amtsantritt auf 200.000 Bände bei seinem Tod. Bis 1812 hatte sich die Bibliothek zur modernsten ihrer Art in Europa entwickelt und war offen für Gelehrte aller Nationen. Heute ist die SUB Göttingen mit etwa zehn Millionen Medieneinheiten eine der größten wissenschaftlichen Bibliotheken Deutschlands und deckt im Rahmen der Sammlung Deutscher Drucke das 18. Jahrhundert ab.",
+      "duration_s": 12.0
+    },
+    {
+      "text": "Die Verbindung zwischen der Universität Göttingen und dem Kurfürstentum Hannover war eng und wechselseitig. Georg II. hatte die Universität als hannoverscher Kurfürst gegründet, und die Landesherren nutzten sie als Instrument der Aufklärungspolitik in ihrem Territorium. Gelehrte reisten zwischen den beiden Städten, und die aufklärerischen Ideen der Universität strahlten auf das städtische Leben in der Residenz aus. Der preußische Reformer Karl Freiherr vom und zum Stein studierte von 1773 bis 1777 in Göttingen Jura, Geschichte und Kameralistik — ein Beispiel dafür, wie die Universität zum intellektuellen Rückgrat des territorialen Reformdiskurses in Norddeutschland wurde.",
+      "duration_s": 12.0
+    }
+  ],
+  "sources": [
+    "https://de.wikipedia.org/wiki/Georg-August-Universit%C3%A4t_G%C3%B6ttingen — 'Die Georg-August-Universität (lateinisch Georgia Augusta) in Göttingen wurde 1732/1734 vom britischen König und hannoverschen Kurfürsten Georg II. aus dem Haus Hannover unter Federführung des Ministers Gerlach Adolph von Münchhausen gegründet und 1737 eingeweiht.'",
+    "https://en.wikipedia.org/wiki/University_of_G%C3%B6ttingen — 'George II, King of Great Britain and Elector of Hanover, commanded his Prime Minister in Hanover, Gerlach Adolph von Münchhausen, to establish a university in Göttingen to spread the ideals of the Enlightenment.'",
+    "https://de.wikipedia.org/wiki/Georg-August-Universit%C3%A4t_G%C3%B6ttingen — 'Die Universität nahm bereits 1734 ihren Lehrbetrieb auf, entwickelte sich rasch, zählte schon im zweiten Semester 400 Studenten und war bald eine der größeren im Europa der damaligen Zeit.'",
+    "https://en.wikipedia.org/wiki/University_of_G%C3%B6ttingen — 'Napoleon famously remarked, \"Göttingen belongs neither to a State, nor to Germany, and is the University of Europe\".'",
+    "https://de.wikipedia.org/wiki/Georg-August-Universit%C3%A4t_G%C3%B6ttingen — 'Göttingen war ähnlich wie Halle als Universität der Aufklärung konzipiert, weshalb die Forschungsergebnisse nicht mehr der Zensur der Kirche unterlagen.'",
+    "https://www.uni-goettingen.de/de/albrecht+von+haller+(1708+bis+1777)/74978.html — 'Der Mediziner, Naturforscher und Dichter Albrecht von Haller (1708 bis 1777) gehört zu den bedeutendsten Gelehrten des 18. Jahrhunderts. Von 1736 bis 1753 wirkte Haller als Professor für Anatomie, Chirurgie und Botanik an der Universität Göttingen.'",
+    "https://en.wikipedia.org/wiki/University_of_G%C3%B6ttingen — 'Georg Christoph Lichtenberg, a prominent scholar, held one of the first professorships dedicated to experimental physics in Germany from 1769 to 1799.'",
+    "https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss — 'Gauss was director of the Göttingen Observatory in Germany and professor of astronomy from 1807 until his death in 1855.'",
+    "https://de.wikipedia.org/wiki/Carl_Friedrich_Gau%C3%9F — 'Wegen seiner überragenden wissenschaftlichen Leistungen galt er bereits zu seinen Lebzeiten als Princeps mathematicorum (Fürst der Mathematiker).'",
+    "https://de.wikipedia.org/wiki/G%C3%B6ttinger_Hainbund — 'Der Göttinger Hainbund wurde am 12. September 1772 von Johann Heinrich Voß, Ludwig Christoph Heinrich Hölty, Johann Martin Miller, Gottlieb Dieterich von Miller, Johann Friedrich Hahn und Johann Thomas Ludwig Wehrs auf dem Kerstlingeröder Feld nahe der Universitätsstadt Göttingen gegründet.'",
+    "https://de.wikipedia.org/wiki/G%C3%B6ttinger_Hainbund — 'Der Göttinger Hainbund war eine die Natur verehrende, zum Sturm und Drang tendierende literarische Gruppe im Deutschland des 18. Jahrhunderts.'",
+    "https://link.springer.com/chapter/10.1007/978-3-476-03655-1_139 — 'In der Forschung \"Hainbund\" genannt, gilt er als der geschlossenste Dichterkreis des Sturm und Drang.'",
+    "https://de.wikipedia.org/wiki/G%C3%B6ttinger_Hainbund — 'Die Gründungsmitglieder hatten sich teils durch ihre Beiträge zur literarischen Zeitschrift \"Göttinger Musenalmanach\" kennengelernt, die 1770 von Heinrich Christian Boie begründet wurde.'",
+    "https://einstein-website.de/koenigliche-gesellschaft-der-wissenschaften-zu-goettingen — 'Im Jahre 1751 wurde die Akademie der Wissenschaften zu Göttingen von König Georg II. von Großbritannien, Kurfürst von Hannover, gestiftet. In dem Siegel der heute zweitältesten wissenschaftlichen Akademie in Deutschland findet sich der Leitgedanke der Akademie \"Fecundat et ornat – sie befruchtet und ziert\".'",
+    "https://einstein-website.de/koenigliche-gesellschaft-der-wissenschaften-zu-goettingen — 'Der erste Präsident der Akademie war der schweizerische Arzt, Naturforscher und Schriftsteller Albrecht von Haller.'",
+    "https://www.fau.de/universitaet/universitaetsprofil/erfolge-und-ehrungen/akademie-mitglieder/akademie-der-wissenschaften-zu-goettingen — 'Als älteste durchgehend bestehende Einrichtung ihrer Art in Deutschland kann die Göttinger Akademie auf eine lange Tradition zurückblicken.'",
+    "https://de.wikipedia.org/wiki/Nieders%C3%A4chsische_Staats-_und_Universit%C3%A4tsbibliothek_G%C3%B6ttingen — 'Die Bibliothek wurde 1734 gegründet und war ursprünglich untergebracht in dem 1735–1737 an der heutigen Prinzenstraße in der Göttinger Innenstadt erbauten ersten Kollegiengebäude.'",
+    "https://de.wikipedia.org/wiki/Nieders%C3%A4chsische_Staats-_und_Universit%C3%A4tsbibliothek_G%C3%B6ttingen — 'Er organisierte eine Fernleihe für auswärtige Gelehrte und beschaffte neben deutschen Neuerscheinungen auch über Korrespondenzen mit anderen Gelehrten Literatur des Auslands, nicht nur französische, englische und amerikanische, sondern auch arabische und orientalische Literatur. Bei Heynes Amtsantritt hatte die Bibliothek einen Bestand von 60.000 Bänden. Bei seinem Tod hatte er sich auf 200.000 Bände vergrößert.'",
+    "https://en.wikipedia.org/wiki/University_of_G%C3%B6ttingen — 'By 1812, Göttingen had established itself as a modern, internationally recognized university, boasting a library with over 200,000 volumes.'",
+    "https://de.wikipedia.org/wiki/Georg-August-Universit%C3%A4t_G%C3%B6ttingen — 'Die Georg-August-Universität (lateinisch Georgia Augusta) in Göttingen wurde 1732/1734 vom britischen König und hannoverschen Kurfürsten Georg II. aus dem Haus Hannover unter Federführung des Ministers Gerlach Adolph von Münchhausen gegründet.'",
+    "https://de.wikipedia.org/wiki/Georg-August-Universit%C3%A4t_G%C3%B6ttingen — 'Der spätere preußische Reformer Karl Freiherr vom und zum Stein studierte von 1773 bis 1777 in Göttingen Jura, Geschichte und Kameralistik.'"
+  ],
+  "facts": [
+    "nahm bereits 1734 ihren Lehrbetrieb auf und wurde 1737 feierlich ein",
+    "von Haller (1708 bis 1777) gehörte zu den bedeutendsten Gelehrten d",
+    "1736–1753: wirkte er als Professor für Anatomie",
+    "hielt ab 1769 eine der ersten Professuren für Experimentalphysik",
+    "studierte ab 1795 in Göttingen und wurde 1807 Professor für Astronom",
+    "September 1772 von Johann Heinrich Voß",
+    "der 1770 von Heinrich Christian Boie begründet worden war u",
+    "wurde 1751 von König Georg II"
+  ],
+  "gradient": [
+    "#1b1b2f",
+    "#162447",
+    "#1f4068"
+  ],
+  "accent": "#f39c12",
+  "visual_treatment": "fullscreen_text",
+  "total_scenes": 28
+}

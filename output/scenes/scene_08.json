@@ -77,6 +77,7 @@
   ],
   "accent": "#e55039",
   "visual_treatment": "title_card",
+  "total_scenes": 28,
   "visual_events": [
     {
       "type": "callout",
@@ -98,16 +99,6 @@
       "position": "right",
       "anim": "slide_left",
       "anim_duration": 0.5
-    },
-    {
-      "type": "image",
-      "trigger_time": 10.0,
-      "duration": 12.0,
-      "src": "scene_08_0.jpg",
-      "caption": "Kurfürst Ernst August",
-      "position": "left",
-      "anim": "fade_in",
-      "anim_duration": 0.6
     },
     {
       "type": "callout",
@@ -132,16 +123,6 @@
       "anim_duration": 0.6
     },
     {
-      "type": "image",
-      "trigger_time": 30.0,
-      "duration": 12.0,
-      "src": "scene_08_1.jpg",
-      "caption": "Großer Garten Herrenhausen",
-      "position": "right",
-      "anim": "fade_in",
-      "anim_duration": 0.6
-    },
-    {
       "type": "callout",
       "trigger_time": 39.0,
       "duration": 6.0,
@@ -151,16 +132,6 @@
       "anim": "pop",
       "style": "highlight",
       "anim_duration": 0.5
-    },
-    {
-      "type": "image",
-      "trigger_time": 50.0,
-      "duration": 10.0,
-      "src": "scene_08_2.jpg",
-      "caption": "Gottfried Wilhelm Leibniz",
-      "position": "bottom-left",
-      "anim": "fade_in",
-      "anim_duration": 0.6
     },
     {
       "type": "callout",
@@ -205,6 +176,5 @@
       "anim": "slide_left",
       "anim_duration": 0.4
     }
-  ],
-  "total_scenes": 28
+  ]
 }

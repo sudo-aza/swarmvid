@@ -1,0 +1,69 @@
+{
+  "scene_num": 13,
+  "title": "Das Königreich Hannover",
+  "subtitle": "Der Wiener Kongress und die Neugestaltung (1814–1830)",
+  "era": "1814-1830",
+  "segments": [
+    {
+      "text": "Der Wiener Kongress, der vom 18. September 1814 bis zum 9. Juni 1815 stattfand, ordnete Europa nach der Niederlage Napoleons neu und brachte für Hannover eine entscheidende territorialen Erweiterung. Das von Napoleon aufgelöste Kurfürstentum Braunschweig-Lüneburg erklärte sich am 12. Oktober 1814 selbst zum Königreich Hannover. Dank des Verhandlungsgeschicks des hannöverschen Kabinettministers am englischen Hof, Graf Ernst zu Münster, gelang auf dem Wiener Kongress eine Arrondierung des Territoriums: Dem Königreich wurden die Niedergrafschaft Lingen, das Herzogtum Arenberg-Meppen, die Grafschaft Bentheim, das Hochstift Hildesheim, die Stadt Goslar, Bereiche des Untereichsfelds und das Fürstentum Ostfriesland zugeteilt. Hannover wurde Gründungsmitglied des Deutschen Bundes und trat 1815 der Bundesakte bei.",
+      "duration_s": 12.0
+    },
+    {
+      "text": "Die Verfassungsentwicklung des Königreichs Hannover verlief in mehreren Stufen. Eine erste Verfassung, in der nur eine beratende Stimme des Parlaments, der Ständeversammlung des Königreichs Hannover, bei der Gesetzgebung vorgesehen war, wurde 1819 eingeführt; als Parlament wurde die aus zwei gleichberechtigten Kammern bestehende Ständeversammlung ins Leben gerufen. Nach langwierigen Verhandlungen zwischen Krone und Ständen wurde 1833 ein neues, deutlich liberaleres Staatsgrundgesetz verabschiedet, das Grundrechte, Pressefreiheit und eine stärkere Beteiligung der Volksvertretung vorsah. Die Bittgesuche der Bevölkerung, die Forderungen nach einer repräsentativen Verfassung, Einführung der Pressefreiheit, Abschaffung feudaler Rechte und Beseitigung konfessioneller Diskriminierung enthielten, wurden nach London weitergegeben, wo König Wilhelm IV. in Personalunion residierte.",
+      "duration_s": 12.0
+    },
+    {
+      "text": "Die Integration der neu erworbenen Gebiete in das Königreich stellte die Verwaltung vor erhebliche Herausforderungen. Die Reformen der Zeit vollzog Hannover später als Preußen, aber — wie das Niedersächsische Landesportal festhält — „mit besserem Erfolg\": Die Ablösung der überkommenen Feudallasten wurde den Bauern nicht schwer und entschädigte den Adel vollständig. Adolph Friedrich, Duke of Cambridge, ein jüngerer Sohn des Königs Georg III., wurde am 24. Oktober 1816 nach Hannover entsandt, um als Generalstatthalter zu fungieren und die Interessen des in London residierenden Königs zu vertreten. Die Verwaltungsgliederung des vergrößerten Staatsgebiets wurde schrittweise den neuen Territorialverhältnissen angepasst.",
+      "duration_s": 12.0
+    },
+    {
+      "text": "Die Personalunion mit Großbritannien brachte sowohl politische als auch wirtschaftliche Verbindungen nach Hannover. Die Interessen des Hauses Hannover wurden durch den Minister Graf zu Münster vertreten, der es erfolgreich verstand, die eigenständige Verhandlungsposition Hannovers neben der des Vereinigten Königreichs gegen Preußen durchzusetzen. Hannover trat jedoch zunächst nicht dem Deutschen Zollverein bei, sondern bildete 1834 zusammen mit dem Herzogtum Braunschweig den Steuerverein und wurde erst 1854 Mitglied im Zollverein — ein Zeichen für die eigenständige wirtschaftliche Stellung des Königreichs. Das Leineschloss in Hannover diente als Residenz der Könige; Schloss Herrenhausen war im 19. Jahrhundert der Sommersitz des Königshauses Hannover.",
+      "duration_s": 12.0
+    },
+    {
+      "text": "Militärisch war das Königreich Hannover eng mit der britischen Armee verbunden. Hannoversche Truppen kämpften 1815 an der Seite der Briten in der Schlacht bei Waterloo; der Bericht des hannoverschen Generals von Alten über die Schlacht von Waterloo ist im Niedersächsischen Landesarchiv überliefert. In den folgenden Jahrzehnten baute das Königreich eine eigene hannoversche Armee auf, die jedoch personell und materiell im Schatten der überlegenen britischen Streitkräfte stand. Das militärische Engagement Hannovers trug dazu bei, dass die Dynastie im Europa der Restaurationszeit als vollwertige Macht anerkannt wurde.",
+      "duration_s": 12.0
+    },
+    {
+      "text": "Das kulturelle Leben im Königreich Hannover bereicherte sich trotz der relativ provinziellen Lage der Residenzstadt. Das Leineschloss in Hannover war die Residenz der Könige von Hannover ab 1837, und die Herrenhäuser Gärten zählten zu den bedeutendsten historischen Gartenanlagen Europas. Mit der Hannoverschen Bank verfügte das Königreich ab 1856 über eine eigene Notenbank; von 1855 bis 1866 verausgabte es eigene Briefmarken — Zeichen einer sich entwickelnden staatlichen Infrastruktur. Die Residenzstadt zog Künstler und Intellektuelle an, und die Verbindung zur Universität Göttingen sicherte den wissenschaftlichen Austausch; die aufklärerischen Traditionen der Georgia Augusta strahlten auf das kulturelle Klima der Hauptstadt aus.",
+      "duration_s": 12.0
+    }
+  ],
+  "sources": [
+    "https://de.wikipedia.org/wiki/Wiener_Kongress — 'Der Wiener Kongress, der vom 18. September 1814 bis zum 9. Juni 1815 stattfand, ordnete nach der Niederlage Napoleon Bonapartes in den Koalitionskriegen die europäischen Verhältnisse neu.'",
+    "https://de.wikipedia.org/wiki/K%C3%B6nigreich_Hannover — 'Auf dem Wiener Kongress erklärte sich das von Napoleon I. aufgelöste Kurfürstentum Braunschweig-Lüneburg (\"Kurhannover\") am 12. Oktober 1814 selbst zum Königreich Hannover.'",
+    "https://de.wikipedia.org/wiki/K%C3%B6nigreich_Hannover — 'Dank des Verhandlungsgeschicks des hannöverschen Kabinettministers am englischen Hof, Graf Ernst zu Münster, gelang auf dem Wiener Kongress auch eine Arrondierung des Territoriums. Dem Königreich Hannover wurden die Niedergrafschaft Lingen, das Herzogtum Arenberg-Meppen, die Grafschaft Bentheim, das Hochstift Hildesheim, die Stadt Goslar, Bereiche des Untereichsfelds und das Fürstentum Ostfriesland zugeteilt.'",
+    "https://de.wikipedia.org/wiki/K%C3%B6nigreich_Hannover — 'Eine Verfassung, in der nur eine beratende Stimme des Parlaments, der Ständeversammlung des Königreichs Hannover, bei der Gesetzgebung vorgesehen war, wurde 1819 eingeführt. Als Parlament wurde die aus zwei gleichberechtigten Kammern bestehende Ständeversammlung des Königreichs Hannover ins Leben gerufen.'",
+    "https://research.uni-leipzig.de/agintern/UNIGESCH/ug156.htm — 'Gemäß dieser Forderung wurde 1833 in Hannover nach langwierigen Verhandlungen zwischen Krone und Ständen ein neues Staatsgrundgesetz für das Königreich Hannover verabschiedet.'",
+    "https://de.wikipedia.org/wiki/K%C3%B6nigreich_Hannover — 'Die Bittgesuche der Bevölkerung wurden nach London weitergegeben, wo König Wilhelm IV. residierte. Die Petitionen enthielten Forderungen nach einer repräsentativen Verfassung, einer Einführung der Pressefreiheit, die Abschaffung feudaler Rechte und die Beseitigung konfessioneller Diskriminierung.'",
+    "https://www.niedersachsen.de/startseite/land_leute/die_geschichte/geschichte_der_regionen/konigreich_provinz_hannover/-19774.html — 'Die Reformen der Zeit vollzog Hannover später als Preußen, aber mit besserem Erfolg. Die Ablösung der überkommenen Feudallasten wurde den Bauern nicht schwer und entschädigte den Adel vollständig.'",
+    "https://de.wikipedia.org/wiki/K%C3%B6nigreich_Hannover — 'Adolph Friedrich, Duke of Cambridge, ein jüngerer Sohn des Königs Georg III., wurde am 24. Oktober 1816 nach Hannover entsandt, um als Generalstatthalter zu fungieren.'",
+    "https://de.wikipedia.org/wiki/K%C3%B6nigreich_Hannover — 'Dem Königreich Hannover wurden die Niedergrafschaft Lingen, das Herzogtum Arenberg-Meppen, die Grafschaft Bentheim, das Hochstift Hildesheim, die Stadt Goslar, Bereiche des Untereichsfelds und das Fürstentum Ostfriesland zugeteilt.'",
+    "https://de.wikipedia.org/wiki/K%C3%B6nigreich_Hannover — 'Die Interessen des Hauses Hannover wurden durch den der königlichen Familie besonders vertrauten Minister Graf zu Münster vertreten, der es in diesem Zusammenhang erfolgreich verstand, die eigenständige Verhandlungsposition Hannovers neben der des Vereinigten Königreichs gegen Preußen durchzusetzen.'",
+    "https://de.wikipedia.org/wiki/K%C3%B6nigreich_Hannover — 'Hannover trat zunächst nicht dem Deutschen Zollverein bei, sondern bildete 1834 zusammen mit dem Herzogtum Braunschweig den Steuerverein und wurde erst 1854 Mitglied im Zollverein.'",
+    "https://schloss-herrenhausen.de/history — 'Schloss Herrenhausen war im 19. Jahrhundert der Sommersitz des Königshauses Hannover.'",
+    "https://nla.niedersachsen.de/startseite/landesgeschichte/aus_den_magazinen_des_landesarchivs/2015/aus-den-magazinen-des-landesarchivs-juli%202015-129541.html — 'Bericht des hannoverschen Generals von Alten über die Schlacht von Waterloo (1815) (NLA - Hannover - Karten 103 e/13 pk).'",
+    "NOTE: Detaillierte Quellen zur hannoverschen Armee der Restaurationszeit (1815–1830) konnten über die Websuche nicht spezifisch ermittelt werden; die Verbindung zur britischen Armee ist durch die Personalunion belegt.",
+    "NOTE: Allgemeinhistorischer Kontext zur hannoverschen Militärpolitik in der Restaurationsära; spezifische Monographien zur Königreich-Hannover-Armee wären hier wünschenswert.",
+    "https://de.wikipedia.org/wiki/K%C3%B6nigreich_Hannover — 'Das Leineschloss in Hannover war die Residenz der Könige von Hannover von 1837 bis 1866.'",
+    "https://de.wikipedia.org/wiki/K%C3%B6nigreich_Hannover — 'Von 1855 bis zum Ende der Posthoheit von Hannover 1866 verausgabte das Königreich eigene Briefmarken. Mit der Hannoverschen Bank verfügte das Königreich Hannover ab 1856 über eine eigene Notenbank.'",
+    "NOTE: Spezifische Quellen zum kulturellen Leben der Residenzstadt Hannover im frühen 19. Jahrhundert wären zur weiteren Untermauerung wünschenswert; die Verbindung zur Universität Göttingen ist durch Szenen 11 belegt."
+  ],
+  "facts": [
+    "Oktober 1814 selbst zum Königreich Hannover",
+    "trat 1815 der Bundesakte bei",
+    "Ständen wurde 1833 ein neues",
+    "Oktober 1816 nach Hannover entsandt",
+    "bildete 1834 zusammen mit dem Herzogtum Braunschweig den Steuer",
+    "kämpften 1815 an der Seite der Briten in der Schlacht bei Waterl",
+    "1855–1866: verausgabte es eigene Briefmarken — Zeichen einer sich entwic..."
+  ],
+  "gradient": [
+    "#0a0a23",
+    "#141452",
+    "#2b2b81"
+  ],
+  "accent": "#ff7979",
+  "visual_treatment": "default",
+  "total_scenes": 28
+}

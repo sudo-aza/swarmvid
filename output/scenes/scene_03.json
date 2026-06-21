@@ -88,6 +88,7 @@
   ],
   "accent": "#f39c12",
   "visual_treatment": "map_focus",
+  "total_scenes": 28,
   "visual_events": [
     {
       "type": "callout",
@@ -111,16 +112,6 @@
       "anim_duration": 0.5
     },
     {
-      "type": "image",
-      "trigger_time": 10.0,
-      "duration": 12.0,
-      "src": "scene_03_0.jpg",
-      "caption": "Der Schwarze Tod 1347",
-      "position": "left",
-      "anim": "fade_in",
-      "anim_duration": 0.6
-    },
-    {
       "type": "callout",
       "trigger_time": 15.0,
       "duration": 6.0,
@@ -130,16 +121,6 @@
       "anim": "pop",
       "style": "highlight",
       "anim_duration": 0.5
-    },
-    {
-      "type": "image",
-      "trigger_time": 30.0,
-      "duration": 10.0,
-      "src": "scene_03_1.jpg",
-      "caption": "Marktkirche Hannover — 97m Turm",
-      "position": "right",
-      "anim": "fade_in",
-      "anim_duration": 0.6
     },
     {
       "type": "card",
@@ -163,16 +144,6 @@
       "anim_duration": 0.4
     },
     {
-      "type": "image",
-      "trigger_time": 55.0,
-      "duration": 8.0,
-      "src": "scene_03_2.jpg",
-      "caption": "Gildehaus — Mittelalterliches Hannover",
-      "position": "bottom-left",
-      "anim": "fade_in",
-      "anim_duration": 0.6
-    },
-    {
       "type": "callout",
       "trigger_time": 74.0,
       "duration": 7.0,
@@ -193,6 +164,5 @@
       "anim": "slide_left",
       "anim_duration": 0.5
     }
-  ],
-  "total_scenes": 28
+  ]
 }

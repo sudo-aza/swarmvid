@@ -86,6 +86,7 @@
   ],
   "accent": "#eb4d4b",
   "visual_treatment": "default",
+  "total_scenes": 28,
   "visual_events": [
     {
       "type": "callout",
@@ -97,16 +98,6 @@
       "anim": "pop",
       "style": "warning",
       "anim_duration": 0.5
-    },
-    {
-      "type": "image",
-      "trigger_time": 8.0,
-      "duration": 12.0,
-      "src": "scene_06_0.jpg",
-      "caption": "Dreißigjähriger Krieg — Schlacht",
-      "position": "left",
-      "anim": "fade_in",
-      "anim_duration": 0.6
     },
     {
       "type": "callout",
@@ -131,16 +122,6 @@
       "anim_duration": 0.5
     },
     {
-      "type": "image",
-      "trigger_time": 28.0,
-      "duration": 10.0,
-      "src": "scene_06_1.jpg",
-      "caption": "General Tilly",
-      "position": "right",
-      "anim": "fade_in",
-      "anim_duration": 0.6
-    },
-    {
       "type": "callout",
       "trigger_time": 29.0,
       "duration": 5.0,
@@ -161,16 +142,6 @@
       "anim": "pop",
       "style": "warning",
       "anim_duration": 0.4
-    },
-    {
-      "type": "image",
-      "trigger_time": 50.0,
-      "duration": 8.0,
-      "src": "scene_06_2.jpg",
-      "caption": "Zerstörte deutsche Stadt im Krieg",
-      "position": "bottom-left",
-      "anim": "fade_in",
-      "anim_duration": 0.6
     },
     {
       "type": "diagram",
@@ -215,6 +186,5 @@
       "style": "highlight",
       "anim_duration": 0.5
     }
-  ],
-  "total_scenes": 28
+  ]
 }

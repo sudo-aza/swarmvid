@@ -64,6 +64,7 @@
   ],
   "accent": "#e94560",
   "visual_treatment": "stark",
+  "total_scenes": 28,
   "visual_events": [
     {
       "type": "callout",
@@ -85,16 +86,6 @@
       "position": "right",
       "anim": "slide_left",
       "anim_duration": 0.5
-    },
-    {
-      "type": "image",
-      "trigger_time": 8.0,
-      "duration": 12.0,
-      "src": "scene_09_0.jpg",
-      "caption": "König Georg I. — Krönung",
-      "position": "bottom",
-      "anim": "fade_in",
-      "anim_duration": 0.6
     },
     {
       "type": "callout",
@@ -130,16 +121,6 @@
       "anim_duration": 0.5
     },
     {
-      "type": "image",
-      "trigger_time": 30.0,
-      "duration": 10.0,
-      "src": "scene_09_1.jpg",
-      "caption": "Hannoversche Thronfolge",
-      "position": "top",
-      "anim": "fade_in",
-      "anim_duration": 0.6
-    },
-    {
       "type": "diagram",
       "trigger_time": 38.0,
       "duration": 7.0,
@@ -170,6 +151,5 @@
       "anim": "slide_left",
       "anim_duration": 0.4
     }
-  ],
-  "total_scenes": 28
+  ]
 }

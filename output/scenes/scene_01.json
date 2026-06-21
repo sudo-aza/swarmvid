@@ -64,17 +64,8 @@
   ],
   "accent": "#e94560",
   "visual_treatment": "title_card",
+  "total_scenes": 28,
   "visual_events": [
-    {
-      "type": "image",
-      "trigger_time": 8.0,
-      "duration": 12.0,
-      "src": "scene_01_0.jpg",
-      "caption": "Varusschlacht 9 n. Chr.",
-      "position": "left",
-      "anim": "fade_in",
-      "anim_duration": 0.6
-    },
     {
       "type": "callout",
       "trigger_time": 15.0,
@@ -87,16 +78,6 @@
       "anim_duration": 0.4
     },
     {
-      "type": "image",
-      "trigger_time": 25.0,
-      "duration": 10.0,
-      "src": "scene_01_1.jpg",
-      "caption": "Germanien — Karte der germanischen Stämme",
-      "position": "right",
-      "anim": "fade_in",
-      "anim_duration": 0.6
-    },
-    {
       "type": "callout",
       "trigger_time": 26.0,
       "duration": 7.0,
@@ -106,16 +87,6 @@
       "anim": "pop",
       "style": "warning",
       "anim_duration": 0.5
-    },
-    {
-      "type": "image",
-      "trigger_time": 45.0,
-      "duration": 8.0,
-      "src": "scene_01_2.jpg",
-      "caption": "Urnengrabfunde in Niedersachsen",
-      "position": "bottom-left",
-      "anim": "fade_in",
-      "anim_duration": 0.6
     },
     {
       "type": "card",
@@ -168,6 +139,5 @@
       "anim": "slide_left",
       "anim_duration": 0.4
     }
-  ],
-  "total_scenes": 28
+  ]
 }
