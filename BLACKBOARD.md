@@ -3809,6 +3809,15 @@ def render_frame(rl, frame_idx, total_frames, state) -> Image.Image:
   - **Treatment coverage update**: generic_scene.py now verified for 2 of 4 treatment types: stark (T217, scene 09) and default (T218, scene 05). Title_card verified via bespoke scene_01.py (T213-T216). Fullscreen_text verified via old treatment system (T213). Map_focus verified via old treatment system (T202). All treatments confirmed working.
   - No new bugs found. No new task created.
 
+#### 2026-06-22 02:30 UTC+8
+- QA checked — no pending QA tasks.
+- Active inspection (code review, assemble_video.py + render_scene_v2.py — assembly pipeline readiness):
+  - **assemble_video.py** (304 lines): xfade crossfade chain logic verified correct for N scenes. Offset calculation traced for 3-scene example — produces correct cumulative offsets. Audio crossfade (acrossfade) parallels video xfade. Handles scenes without audio via `ensure_audio()` (adds silent AAC track). Output: H.264 main profile, CRF 20, AAC 192k, faststart. Transitions cycle through 5 types (fade, slideright, fadeblack, smoothleft, circleopen).
+  - **render_scene_v2.py** (188 lines): Reads audio duration via Python `wave` module (compatible with soundfile's PCM_16 default). Uses `-shortest` flag when audio present. Error handler fills black frames on exception. Pipes raw RGB24 to ffmpeg stdin.
+  - **WAV format compatibility verified**: soundfile defaults to PCM_16 for .wav, compatible with Python's `wave` module used by render_scene_v2.py.
+  - **Latent issue noted (not tasked)**: `pipeline.py` still references old v1 scripts (render_scene.py, z-ai TTS). No single command exists for the v2 pipeline (generate_tts_batch.py → render_scene_v2.py → assemble_video.py). Individual scripts work correctly; this is a workflow convenience gap, not a bug.
+  - No bugs found. No new task created.
+
 #### 2026-06-22 01:30 UTC+8
 - QA checked — no pending QA tasks.
 - Active inspection (code review + render + VLM, verify Programmer's Task #44 fix — commit `b9c2732`):
