@@ -1,20 +1,20 @@
 #!/usr/bin/env python3
 """
-generate_tts_v2.py — Generate TTS audio using real Qwen3 TTS via DashScope API.
+generate_tts_v2.py — Generate TTS audio using Qwen3-TTS (local, open weights).
 
 Architecture: Duration follows content. Generate at natural speed, let audio
 length drive video duration. NO ffmpeg atempo, NO duration squeezing.
 
-Uses DashScope Python SDK (dashscope.audio.http_tts.HttpSpeechSynthesizer)
-which handles authentication, request formatting, JSON response parsing,
-and audio URL download automatically.
+Uses Qwen3-TTS-12Hz-0.6B-CustomVoice (open weights from Alibaba/Qwen).
+Runs locally on CPU — no API key, no cloud service, no network required
+after initial model download.
 
 Requirements:
-  - DASHSCOPE_API_KEY environment variable (Alibaba Cloud DashScope)
-  - pip install dashscope
+  pip install qwen-tts torch torchaudio soundfile
 
 Usage:
-  DASHSCOPE_API_KEY=sk-xxx python generate_tts_v2.py output/scenes/scene_01.json
+  python generate_tts_v2.py output/scenes/scene_01.json
+  python generate_tts_v2.py output/scenes/scene_01.json --speaker ryan
 """
 
 import json
@@ -23,99 +23,79 @@ import subprocess
 import sys
 import time
 
-try:
-    from dashscope.audio.http_tts import HttpSpeechSynthesizer
-except ImportError:
-    subprocess.run(
-        [sys.executable, "-m", "pip", "install", "dashscope"],
-        check=True,
-        capture_output=True,
-    )
-    from dashscope.audio.http_tts import HttpSpeechSynthesizer
+# ── Config ────────────────────────────────────────────────────────────────────
 
 SCENE_JSON = sys.argv[1] if len(sys.argv) > 1 else "output/scenes/scene_01.json"
 OUTPUT_DIR = "output/audio"
 
-# DashScope API config
-# Model options: "cosyvoice-v2", "cosyvoice-v1", "cosyvoice-v3-flash", "cosyvoice-v3-plus"
-# Voice options for cosyvoice-v2 (documented): longxiaochun_v2
-# For cosyvoice-v1: longxiaochun, longlaotie, longshu, longjing, longmiao, longsui, longfei, longbella, longshuo
-MODEL = "cosyvoice-v2"
-VOICE = "longxiaochun_v2"  # Documented in DashScope voice list for cosyvoice-v2
-FORMAT = "wav"
-SAMPLE_RATE = 24000
-
-# Retry config
-MAX_RETRIES = 5
-BASE_DELAY = 10  # seconds
-RETRYABLE_STATUS_CODES = {429, 500, 502, 503}
+# Qwen3-TTS model config
+MODEL_ID = "Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice"
+LANGUAGE = "German"
+SPEAKER = "ryan"  # English native speaker, speaks German well
+# Other speakers: aiden, dylan, eric, ono_anna, serena, sohee, uncle_fu, vivian
 
 
-def get_api_key():
-    key = os.environ.get("DASHSCOPE_API_KEY")
-    if not key:
-        print("ERROR: DASHSCOPE_API_KEY environment variable not set.")
-        print("Get your key from: https://model-studio.console.aliyun.com/")
-        sys.exit(1)
-    return key
+# ── Model loading ─────────────────────────────────────────────────────────────
+
+_model = None
 
 
-def generate_segment(text: str, output_path: str, api_key: str) -> bool:
-    """Generate TTS for a single text segment via DashScope SDK.
+def load_model(speaker=None):
+    """Load Qwen3-TTS model (cached after first call)."""
+    global _model
+    if _model is not None:
+        return _model
 
-    Uses HttpSpeechSynthesizer.call() which handles:
-    - Authentication (Bearer token)
-    - Correct endpoint: /services/audio/tts/SpeechSynthesizer
-    - Correct request body format (input dict with voice/format/sample_rate inside)
-    - Response parsing (JSON with audio URL → download audio data)
-    """
-    for attempt in range(MAX_RETRIES):
-        if attempt > 0:
-            delay = BASE_DELAY * (2 ** min(attempt - 1, 4))
-            print(f"    retry {attempt} in {delay}s...", flush=True)
-            time.sleep(delay)
+    import torch
+    from qwen_tts import Qwen3TTSModel
 
-        try:
-            result = HttpSpeechSynthesizer.call(
-                model=MODEL,
-                text=text,
-                voice=VOICE,
-                audio_format=FORMAT,
-                sample_rate=SAMPLE_RATE,
-                api_key=api_key,
-            )
+    print(f"Loading Qwen3-TTS: {MODEL_ID} ...", flush=True)
+    t0 = time.time()
+    _model = Qwen3TTSModel.from_pretrained(
+        MODEL_ID,
+        device_map=None,  # CPU
+        dtype=torch.float32,
+        attn_implementation=None,  # No flash attention on CPU
+    )
+    print(f"Model loaded in {time.time() - t0:.1f}s", flush=True)
+    print(f"Languages: {sorted(_model.get_supported_languages())}")
+    print(f"Speakers: {sorted(_model.get_supported_speakers())}")
+    return _model
 
-            # In non-streaming mode, the SDK always returns audio_url, not audio_data.
-            # (audio_data is only populated in streaming mode.)
-            if result.audio_url:
-                import requests
-                resp = requests.get(result.audio_url, timeout=60)
-                if resp.status_code == 200 and len(resp.content) > 100:
-                    with open(output_path, "wb") as f:
-                        f.write(resp.content)
-                    return True
-            print(f"    no audio data (attempt {attempt})", end="", flush=True)
-            time.sleep(5)
-            continue
 
-        except Exception as e:
-            err_str = str(e).lower()
-            # Check for retryable conditions
-            is_retryable = any(code in err_str for code in ["429", "500", "502", "503"])
-            if is_retryable and attempt < MAX_RETRIES - 1:
-                print(f"    server error, will retry", end="", flush=True)
-                continue
-            print(f"    ERROR: {e}")
-            if attempt == MAX_RETRIES - 1:
-                return False
-            continue
+# ── TTS generation ─────────────────────────────────────────────────────────────
 
-    print("    FAILED after max retries")
-    return False
+def generate_segment(text: str, output_path: str, speaker: str) -> bool:
+    """Generate TTS for a single text segment using local Qwen3-TTS."""
+    import soundfile as sf
 
+    model = load_model()
+
+    try:
+        wavs, sr = model.generate_custom_voice(
+            text=text,
+            language=LANGUAGE,
+            speaker=speaker,
+            instruct="",
+        )
+
+        # wavs is a list of arrays; take the first
+        if wavs and len(wavs[0]) > 0:
+            sf.write(output_path, wavs[0], sr)
+            return True
+        else:
+            print("empty audio", end="", flush=True)
+            return False
+
+    except Exception as e:
+        print(f"ERROR: {e}", end="", flush=True)
+        return False
+
+
+# ── Audio utilities ───────────────────────────────────────────────────────────
 
 def get_duration(path: str) -> float:
-    """Get audio duration in seconds."""
+    """Get audio duration in seconds via ffprobe."""
     result = subprocess.run(
         ["ffprobe", "-v", "quiet", "-show_entries", "format=duration",
          "-of", "csv=p=0", path],
@@ -124,8 +104,14 @@ def get_duration(path: str) -> float:
     return float(result.stdout.strip())
 
 
+# ── Main ──────────────────────────────────────────────────────────────────────
+
 def main():
-    api_key = get_api_key()
+    # Parse optional speaker arg
+    speaker = SPEAKER
+    args = [a for a in sys.argv[2:] if not a.startswith("--")]
+    if args:
+        speaker = args[0].lower()
 
     with open(SCENE_JSON) as f:
         scene = json.load(f)
@@ -135,8 +121,13 @@ def main():
     seg_dir = os.path.join(OUTPUT_DIR, f"scene_{scene_num:02d}")
     os.makedirs(seg_dir, exist_ok=True)
 
-    print(f"Qwen3 TTS (DashScope SDK) — Scene {scene_num}: {len(segments)} segments")
-    print(f"Model: {MODEL}, Voice: {VOICE}, Speed: natural (1.0)")
+    print(f"Qwen3-TTS (local, CPU) — Scene {scene_num}: {len(segments)} segments")
+    print(f"Model: {MODEL_ID}, Speaker: {speaker}, Language: {LANGUAGE}")
+    print(f"Speed: natural (1.0) — duration follows content")
+
+    # Load model once
+    load_model()
+    print()
 
     seg_files = []
     total_dur = 0.0
@@ -145,30 +136,28 @@ def main():
     for i, seg in enumerate(segments):
         text = seg["text"]
         out_path = os.path.join(seg_dir, f"seg_{i:02d}.wav")
-        print(f"\n  Segment {i} ({len(text)} chars)...", end=" ", flush=True)
+        print(f"  Segment {i} ({len(text)} chars)...", end=" ", flush=True)
 
+        # Skip if already generated (resume support)
         if os.path.isfile(out_path) and os.path.getsize(out_path) > 1000:
             dur = get_duration(out_path)
             print(f"exists ({dur:.1f}s)")
             seg_files.append(out_path)
             total_dur += dur
             segment_durations.append(dur)
-            time.sleep(1)
             continue
 
-        if generate_segment(text, out_path, api_key):
+        t0 = time.time()
+        if generate_segment(text, out_path, speaker):
             dur = get_duration(out_path)
-            print(f"OK ({dur:.1f}s)")
+            elapsed = time.time() - t0
+            print(f"OK ({dur:.1f}s, {elapsed:.1f}s CPU)")
             seg_files.append(out_path)
             total_dur += dur
             segment_durations.append(dur)
         else:
             print("FAILED")
             segment_durations.append(None)
-
-        # Rate limit buffer
-        if i < len(segments) - 1:
-            time.sleep(2)
 
     # Concatenate all segments (NO atempo — natural speed only)
     if not seg_files:
@@ -211,7 +200,6 @@ def main():
     print(f"  Planned: {planned:.1f}s → Actual: {final_dur:.1f}s")
     print(f"  Duration follows content — NO atempo applied.")
 
-    # Save updated scene JSON
     with open(SCENE_JSON, "w") as f:
         json.dump(scene, f, ensure_ascii=False, indent=2)
     print(f"  Updated: {SCENE_JSON}")

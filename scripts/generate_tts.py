@@ -1,20 +1,28 @@
 #!/usr/bin/env python3
 """Generate TTS audio for narration segments.
 
-This is a wrapper that delegates to generate_tts_v2.py (DashScope Qwen3 TTS).
+Delegates to generate_tts_batch.py (local Qwen3-TTS, open weights).
 
 Usage:
-  DASHSCOPE_API_KEY=sk-xxx python generate_tts.py output/scenes/scene_01.json
+  python generate_tts.py output/scenes/scene_01.json
+  python generate_tts.py --all    # Generate all scenes
 """
 
 import os
 import subprocess
 import sys
 
-# Delegate to v2 (real Qwen3 TTS via DashScope)
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-V2_SCRIPT = os.path.join(SCRIPT_DIR, "generate_tts_v2.py")
+BATCH_SCRIPT = os.path.join(SCRIPT_DIR, "generate_tts_batch.py")
 
-scene_json = sys.argv[1] if len(sys.argv) > 1 else "output/scenes/scene_01.json"
-result = subprocess.run([sys.executable, V2_SCRIPT, scene_json])
+if len(sys.argv) > 1 and sys.argv[1] == "--all":
+    result = subprocess.run([sys.executable, BATCH_SCRIPT, "--resume"])
+else:
+    scene_json = sys.argv[1] if len(sys.argv) > 1 else "output/scenes/scene_01.json"
+    scene_num = int(os.path.basename(scene_json).split("_")[1].split(".")[0])
+    result = subprocess.run([
+        sys.executable, BATCH_SCRIPT,
+        "--scene", str(scene_num), "--resume"
+    ])
+
 sys.exit(result.returncode)
