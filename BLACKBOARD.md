@@ -3583,6 +3583,12 @@ def render(rl, frame_idx, total_frames, state) -> Image.Image:
 5. **Delete treatments/** — remove template system once all scenes have scripts
 6. **Full render** — end-to-end with TTS audio
 
+### SWARMVID — TODO
+
+| # | Task | Assigned | Status | Date |
+|---|------|----------|--------|------|
+| 33 | Fix renderlib.py performance bugs in `noise()` and `vignette()`. (1) `noise()` lines 242-246: per-pixel Python loop setting alpha=30 on all 921,600 pixels takes 0.214s/frame (43x slower than numpy). Replace with `rgba = np.stack([arr, arr, arr, np.full_like(arr, 30, dtype=np.uint8)], axis=-1); Image.fromarray(rgba, "RGBA")`. (2) `vignette()` line 231: `putdata(alpha_arr.flatten().tolist())` takes 0.016s/frame (101x slower than `Image.fromarray`). Replace with `Image.fromarray(alpha_arr, "L")`. Also remove unused `total_frames` param from `time()` and update "Scene Script Contract" in BLACKBOARD plan to match actual API (`begin_frame` + `frame()` pattern, no `.render()` method). | Programmer | **pending** | 2026-06-21 |
+
 ### Current Status
 - ✅ Visual events populated for scenes 1-10 (103 events: 28 image + 75 text)
 - ✅ Image sourcing pipeline working (28 historical images)
@@ -3606,6 +3612,18 @@ def render(rl, frame_idx, total_frames, state) -> Image.Image:
   - Task #32 fix confirmed. Treatment safe zone fix now verified on 4/5 treatments (map_focus T202, default T203, stark T205, title_card T206). Remaining: fullscreen_text.
   - NOTE: Programmer announced architectural pivot at 09:00 — zoe rejected treatment/template approach. New plan: central renderlib + per-scene bespoke scripts. Narration = audio only. Treatment system will be scrapped. Current treatment code still functional but will be replaced.
 - No bugs found.
+
+#### 2026-06-21 10:30 UTC+8
+- QA checked — no pending QA tasks.
+- Active inspection (visual + pixel analysis, renderlib.py smoke test — new deliverable from Programmer):
+  - Ran `test_renderlib.py`: all 4 unit test suites pass, 4 smoke frames rendered at 1280x720.
+  - **Pixel verification**: frames animate correctly — 172K-207K pixels differ between adjacent frames, progress bar width scales 0→388→775→1280 across 4 frames, callout/card fade in at progress 0.3-0.4 and fade out at 0.8-1.0 (confirmed by frame 0 vs 119 having minimal differences — both have callout/card invisible).
+  - **VLM inspection**: frame at 61% progress confirmed all 11 expected elements present, correctly positioned, readable, no artifacts. Start vs end frame comparison confirmed animation behavior matches spec.
+  - **CRITICAL BUG FOUND — `noise()` per-pixel Python loop** (lines 242-246): iterates all 921,600 pixels with `pixels[x, y]` to set alpha=30. Takes **0.214s/frame**. Numpy equivalent: **0.005s/frame** (43x faster). For 130K+ frames in full video: **7.5 hours wasted**. Fix: replace loop with `np.stack([arr, arr, arr, np.full_like(arr, 30, dtype=np.uint8)], axis=-1)` then `Image.fromarray(rgba, "RGBA")`.
+  - **MINOR BUG — `vignette()` uses `putdata(alpha_arr.flatten().tolist())`** (line 231): converts 921,600-element array to Python list. Takes **0.016s/frame** vs **0.0002s** for `Image.fromarray(alpha_arr, "L")` (101x faster). For 130K frames: ~0.5 hours wasted. Fix: replace with `Image.fromarray(alpha_arr, "L")`.
+  - **Minor: `time()` method** accepts `total_frames` parameter but never uses it (dead parameter).
+  - **Documentation mismatch**: BLACKBOARD "Scene Script Contract" says `render(rl, frame_idx, total_frames, state) -> Image` but RenderLib has no `.render()` method. Actual pattern is `rl.begin_frame(fi, total)` → draw calls → `rl.frame()`. Programmer should update the plan.
+  - Created Task #33 for Programmer (performance bugs).
 
 ### Programmer Comm Log
 
