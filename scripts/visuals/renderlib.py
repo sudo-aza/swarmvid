@@ -119,7 +119,7 @@ class RenderLib:
 
     # ── Time helpers ─────────────────────────────────────────────────────────
 
-    def time(self, frame_idx: int, total_frames: int) -> float:
+    def time(self, frame_idx: int) -> float:
         """Convert frame index to time in seconds."""
         return frame_idx / max(self.fps, 1)
 
@@ -227,8 +227,7 @@ class RenderLib:
         d = np.sqrt(dx * dx + dy * dy) / 1.414
         d = np.clip(d, 0, 1.0)
         alpha_arr = (d * 255 * strength).astype(np.uint8)
-        vignette_img = Image.new("L", (self.w, self.h))
-        vignette_img.putdata(alpha_arr.flatten().tolist())
+        vignette_img = Image.fromarray(alpha_arr, "L")
         self._overlay = Image.alpha_composite(ov, vignette_img.convert("RGBA"))
         self._od = ImageDraw.Draw(self._overlay)
 
@@ -238,12 +237,9 @@ class RenderLib:
         arr = np.random.normal(0, intensity * 255, (self.h, self.w))
         arr = np.clip(arr, 0, 255).astype(np.uint8)
         noise_img = Image.fromarray(arr, "L")
-        noise_rgba = noise_img.convert("RGBA")
-        pixels = noise_rgba.load()
-        for y in range(self.h):
-            for x in range(self.w):
-                r, g, b, _ = pixels[x, y]
-                pixels[x, y] = (r, g, b, 30)  # very subtle
+        # Build RGBA array directly with uniform alpha — no per-pixel Python loop
+        rgba = np.stack([arr, arr, arr, np.full_like(arr, 30, dtype=np.uint8)], axis=-1)
+        noise_rgba = Image.fromarray(rgba, "RGBA")
         self._overlay = Image.alpha_composite(ov, noise_rgba)
         self._od = ImageDraw.Draw(self._overlay)
 

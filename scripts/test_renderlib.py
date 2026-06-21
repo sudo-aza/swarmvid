@@ -35,7 +35,7 @@ def test_smoke_frame():
 
     # Render a few frames at key moments
     for fi in [0, 36, 72, 119]:  # frame indices at 0s, 1.5s, 3s, 5s
-        t = rl.time(fi, total_frames)
+        t = rl.time(fi)
         progress = fi / max(total_frames - 1, 1)
 
         rl.begin_frame(fi, total_frames)
@@ -113,8 +113,8 @@ def test_time_helpers():
     })
 
     # Test time()
-    assert rl.time(0, 120) == 0.0, "time(0) should be 0"
-    assert rl.time(24, 120) == 1.0, "time(24) at 24fps should be 1.0"
+    assert rl.time(0) == 0.0, "time(0) should be 0"
+    assert rl.time(24) == 1.0, "time(24) at 24fps should be 1.0"
 
     # Test segment_at_time()
     seg, prog = rl.segment_at_time(0.0)
