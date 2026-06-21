@@ -177,14 +177,17 @@ def generate_scene_jsons():
         print("ERROR: No scenes parsed from narration")
         return []
 
+    # Enrich raw scenes with era, gradient, accent, visual_treatment
+    enriched = [pn.build_scene_json(s) for s in scenes]
+
     # Write scene JSONs
-    for scene in scenes:
+    for scene in enriched:
         path = os.path.join(SCENES_DIR, f"scene_{scene['scene_num']:02d}.json")
         with open(path, "w", encoding="utf-8") as f:
             json.dump(scene, f, ensure_ascii=False, indent=2)
 
-    print(f"Generated {len(scenes)} scene JSONs in {SCENES_DIR}/")
-    return scenes
+    print(f"Generated {len(enriched)} scene JSONs in {SCENES_DIR}/")
+    return enriched
 
 
 def load_scene_json(scene_num: int) -> dict | None:

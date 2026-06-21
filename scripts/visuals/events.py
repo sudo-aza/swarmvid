@@ -185,12 +185,18 @@ class EventTimeline:
 # Narration text safe zones per treatment name.
 # Format: (x1, y1, x2, y2) — rectangle to avoid when placing events.
 # Events that overlap get pushed to the nearest safe region.
+# Computed from each treatment's actual text rendering coordinates.
 TEXT_SAFE_ZONES = {
-    "default":  (525, 100, 1250, 380),
-    "title_card": (60, 80, 1220, 390),
-    "map_focus": (630, 370, 1250, 670),
-    "fullscreen_text": (100, 120, 1180, 510),
-    "stark": (90, 100, 1190, 460),
+    # default: right panel, TEXT_PANEL_LEFT=540, TOP_MARGIN=130, 7 lines × 32px + 30px padding
+    "default":  (525, 110, 1250, 390),
+    # title_card: centered, text_x=80, text_y=100, 9 lines × 32px + 20px padding = y up to 408
+    "title_card": (65, 85, 1225, 415),
+    # map_focus: floating card, card_x=640, card_y=440, card_h=240 (text starts at +65 inside)
+    "map_focus": (630, 435, 1250, 685),
+    # fullscreen_text: text_x=120, text_y=140, 10 lines × 36px = up to 500
+    "fullscreen_text": (110, 130, 1170, 505),
+    # stark: text_x=100, text_y=120, 8 lines × 40px = up to 440
+    "stark": (90, 110, 1190, 445),
 }
 
 
