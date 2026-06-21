@@ -3461,3 +3461,146 @@ Actions taken:
 
 ### QA — 2026-05-27 00:30 UTC+8
 > **Stand-down — Task #189 still blocked on #186.** No pending QA tasks actionable. Per Rule 3, verified all pending Programmer tasks have QA review tasks (satisfied). Per Rule 8, visual inspection of 6 previously uninspected pages (3, 11, 19, 27, 34, 43) using VLM (glm-4.6v) + PyMuPDF cross-validation. PyMuPDF: pages 3, 43 have figures with normal wrapping; pages 11, 19, 27, 34 have no figures, full-width text. Zero overlaps on all 6 pages. VLM false positive rate: 5/6 pages with figures (83%) — consistent with known unreliability. Cumulative inspection: 38/46 pages across 7 turns. Detection script: 18/50 (36.0%) FAIL — unchanged from v3.39 baseline. **Per Rule 10: Fixed detection script caption overlap blind spot.** `detect-layout-issues.py` classified caption overlaps as "ACCEPTABLE/KNOWN" (not counted in quality score). Since v3.44 fixed caption overlaps (was 50/50, now 0/50), future regressions would be silently missed. Moved `caption_overlap` from `acceptable` to `real_bugs` in quality report, removed "(expected)" from label. Verified: caption overlaps now appear under REAL BUGS with PASS/FAIL status. Step 4.5: detection script fix applied and reported here.
+
+---
+---
+
+# ═══════════════════════════════════════════════════════════════
+# SWARMVID PROJECT — Documentary Renderer
+# ═══════════════════════════════════════════════════════════════
+# (This section appended — LaTeX project content above is stale/archive)
+
+> **Project**: AI documentary video renderer — Python/Pillow + ffmpeg
+> **Repo**: `sudo-aza/swarmvid`
+> **Subject**: History of Hannover (German-language)
+> **Agents**: Writer, Programmer
+> **Last updated**: 2026-06-21
+
+---
+
+## SWARMVID — Programmer Plan (zoe-approved 2026-06-21)
+
+### Core Insight
+This is NOT a template system. Each scene gets its own Python script with bespoke visual composition. One shared rendering library provides primitives; per-scene scripts decide layout, animation, and spatial design. Think manim/After Effects, NOT PowerPoint.
+
+### Text Rules (IMPORTANT)
+- **Narration text** = AUDIO ONLY (TTS voice-over). Never displayed on screen as word-by-word text. This is a documentary, not a TikTok.
+- **Visual event text** = ON SCREEN. Dates, facts, callouts, diagram labels, image captions — these are the only text that appears visually.
+- The per-scene script choreographs when/where/how visual events appear.
+
+### Architecture
+
+```
+scripts/
+  visuals/
+    renderlib.py          # Central rendering library — THE shared API
+    colors.py             # Color helpers (existing, keep)
+    compositing.py        # Background compositing (existing, keep)
+    particles.py          # Particle systems (existing, keep)
+    events.py             # Visual event engine (existing, keep)
+    fonts.py              # Font loading + constants (existing, keep)
+    typography.py         # Text primitives (existing, refactor)
+    map_panel.py          # Map rendering (existing, keep)
+    timeline.py           # Timeline bar (existing, keep)
+    treatments/           # DELETE — template system being scrapped
+  scenes/
+    scene_01.py           # Bespoke visual script for scene 1
+    scene_02.py           # Bespoke visual script for scene 2
+    ...
+  render_scene.py         # Main renderer — calls scene scripts
+  populate_visual_events.py  # Populates visual events into scene JSONs
+  source_images.py        # Downloads historical images per scene
+```
+
+### renderlib.py API (planned)
+Central library that any scene script imports. Primitives only — no layout decisions.
+
+```python
+# Setup
+rl = renderlib.RenderLib(w=1280, h=720, fps=24, scene_data={...})
+
+# Backgrounds
+rl.gradient(colors, angle=180)         # Gradient background
+rl.solid(color)                       # Solid color background
+rl.vignette(strength=0.5)             # Dark edge vignette overlay
+rl.noise(intensity=0.03)              # Film grain overlay
+
+# Text
+rl.text(text, x, y, font, color, anchor="lt")           # Place text
+rl.text_box(text, x, y, w, font, color, max_lines=8)    # Word-wrapped text block
+rl.reveal_text(text, progress, x, y, w, font, ...)       # Progressive text reveal (by word/char)
+rl.callout(text, subtext, x, y, style="highlight", ...)   # Styled callout bubble
+
+# Images
+rl.image(path, x, y, w=None, h=None, fit="cover")         # Place image
+rl.image_ken_burns(path, x, y, w, h, progress, ...)         # Slow zoom/pan on image
+rl.image_reveal(path, progress, x, y, w, h, anim="fade")   # Animated image entrance
+
+# Shapes & Decorations
+rl.line(x1, y1, x2, y2, color, width=1)
+rl.rect(x, y, w, h, color, radius=0, fill=None)
+rl.bracket(x, y, size, color, corner="tl")                 # Decorative corner bracket
+
+# Animation helpers
+rl.ease_in_out(t)                  # Easing function (0-1 → 0-1)
+rl.ease_out(t)                     # Ease out
+rl.alpha(value, t)                  # Fade alpha based on progress
+rl.slide(x_from, x_to, t, easing)  # Slide position interpolation
+rl.pulse(base, amplitude, t)        # Pulsing value (for glows etc.)
+
+# Overlays (global)
+rl.progress_bar(progress, y, color)          # Thin progress indicator
+rl.timeline_bar(scene_num, total, color)     # Historical era timeline
+rl.scene_counter(scene_num, total, x, y)     # "3 / 28" counter
+
+# Compositing
+rl.frame() → Image.Image            # Return the composited RGB frame
+rl.overlay(image, x, y, mask=None)  # Composite an overlay with optional mask
+```
+
+### Scene Script Contract
+Each `scripts/scenes/scene_N.py` must implement:
+
+```python
+def prepare(rl) -> dict:
+    """Called once before rendering. Pre-compute assets, return state dict."""
+    ...
+
+def render(rl, frame_idx, total_frames, state) -> Image.Image:
+    """Called per frame. Return RGB PIL Image."""
+    # Read narration timing to know where we are
+    # Check visual_events for what should appear this frame
+    # Compose the frame using rl primitives
+    # Return the image
+    ...
+```
+
+### Implementation Order
+1. **renderlib.py** — audit existing code, build clean API surface, test with a smoke frame
+2. **Scene 1 script** — first bespoke scene, establishes the pattern
+3. **Remaining scenes** — one per turn (or batch similar ones)
+4. **Integration** — wire render_scene.py to call scene scripts instead of treatments
+5. **Delete treatments/** — remove template system once all scenes have scripts
+6. **Full render** — end-to-end with TTS audio
+
+### Current Status
+- ✅ Visual events populated for scenes 1-10 (103 events: 28 image + 75 text)
+- ✅ Image sourcing pipeline working (28 historical images)
+- ✅ Event engine working (per-frame dispatch, entrance/exit animations)
+- ✅ End-to-end render pipeline verified (Pillow → ffmpeg, H.264)
+- 🔲 renderlib.py — needs to be built from existing modules
+- 🔲 Per-scene scripts — none written yet
+- 🔲 Treatment system — needs to be scrapped after migration
+- 🔲 Scenes 11-28 — waiting on Writer (narration_v2.md incomplete)
+- 🔲 TTS audio integration
+
+### Programmer Comm Log
+
+#### 2026-06-21 09:00 UTC+8
+- Task: Add text events for scenes 9-10 (Task #30 step a)
+- Added `populate_scene_09()` and `populate_scene_10()` to populate_visual_events.py
+- 8 text events each: dates, cards, diagrams synced to narration beats
+- Made populate script idempotent (won't duplicate on re-run)
+- Sorted all 103 events by trigger_time across 10 scenes
+- Commit: `ae8b630` — "programmer: add text events for scenes 9-10, make populate script idempotent"
+- **Pivot**: zoe clarified the treatment/template approach is WRONG. New plan: central renderlib + per-scene bespoke scripts. Narration = audio only, visual events = on-screen only. Added plan to BLACKBOARD.
