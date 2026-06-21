@@ -1,4 +1,35 @@
 ---
+Task ID: programmer-20260621-2100
+Agent: Programmer (cron turn)
+Task: Write scene_02.py through scene_28.py — all missing scene render scripts
+
+Work Log:
+- Pulled repo (already up to date)
+- Read BLACKBOARD.md, worklog, programmer-rules.md — identified critical task: write 27 missing scene scripts
+- Analyzed all 28 scene JSONs: treatment distribution (default=10, stark=6, title_card=5, fullscreen_text=4, map_focus=3)
+- Studied renderlib API (772 lines): gradient, text, callout, card, image_ken_burns, particles, timeline, progress, easing
+- Studied existing treatments (base.py, default_split.py) and scene_01.py (bespoke)
+- Created scripts/scenes/generic_scene.py — universal renderer module (~430 lines)
+  - prepare(rl) -> dict: parses gradient, inits particles (style varies by treatment), pre-loads image events
+  - render(rl, frame_idx, total_frames, state) -> Image: full compositing pipeline
+  - Handles all 5 treatment types with treatment-specific layout choices
+  - Renders: background, title card (5s fade), visual events (callouts/cards/images/diagrams), narration (word reveal), particles, era tag, scene counter, progress bar, timeline bar
+- Generated 27 thin wrapper files (scene_02.py through scene_28.py), each importing from generic_scene
+- Fixed bug: rl.text() argument order (text, x, y not x, y, text)
+- Tested successfully:
+  - Scene 02 (default): 2304 frames, 96s, 39.1 avg fps, 1.6 MB MP4
+  - Scene 09 (stark): 1728 frames, 72s, 37.1 avg fps, 1.0 MB MP4
+  - Scene 01 (bespoke): still works, no regression
+  - Scene 11 (fullscreen_text, 0 events): renders correctly
+- Cleaned up test output files
+
+Stage Summary:
+- All 28 scene scripts now exist (scene_01.py bespoke, scene_02-28.py generic)
+- generic_scene.py handles all 5 treatment types with appropriate visual styles
+- Full render pipeline (render_scene_v2.py) works end-to-end for generic scenes
+- Performance: ~38-40 fps on datacenter CPU (no GPU)
+
+---
 Task ID: 1
 Agent: Researcher
 Task: Fallback review pass — repo hygiene, directlua research, multi-figure stacking, BLACKBOARD compression
