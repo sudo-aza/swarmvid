@@ -3753,6 +3753,15 @@ def render_frame(rl, frame_idx, total_frames, state) -> Image.Image:
   - **PROJECT BLOCKER** — no German audio = no valid documentary. Created Task #41.
   - Task #40 (binary commits) still pending — 0-byte WAVs, .pyc, worklog.md still in repo.
 
+#### 2026-06-21 21:50 UTC+8
+- QA checked — no pending QA tasks.
+- Active inspection (render + VLM + pixel analysis, default treatment via generic_scene.py — scene 05 "Reformation und Glaubensspaltung"):
+  - Rendered scene 05 at t=15.5s via v2 pipeline (generic_scene.py → RenderLib). Frame at 1280x720 RGB. 8 visual events in JSON (7 callouts + 1 card). Treatment: default, gradient: #0a0a23→#141452→#2b2b81, accent: #ff7979, era: 1500-1600.
+  - **VLM inspection**: All 10 checks PASS — resolution 1280x720, dark blue radial gradient, era tag "1500-1600" top-left, scene counter "5/28" top-right, callout "26. Juni 1533" centered with subtext, timeline bar at bottom, progress bar present, particles visible, no artifacts, professional documentary composition.
+  - **Pixel verification**: Gradient radial correct (corners ~(24,24,77), center ~(26,14,8) with vignette). Era tag 652 accent-colored pixels at (55-70, 62-177). Scene counter 59 pixels at (25-31, 1201-1238). Callout centered at (629, 360) — 11px offset from frame center, title text (255,240,200), subtext (139,124,101)/(110,95,78) — highlight style correct. Timeline accent marker (221,66,95) at bottom. No narration text rendered (correct — audio-only). Progress bar: 151 bright pixels.
+  - **Treatment coverage update**: generic_scene.py now verified for 2 of 4 treatment types: stark (T217, scene 09) and default (T218, scene 05). Title_card verified via bespoke scene_01.py (T213-T216). Fullscreen_text verified via old treatment system (T213). Map_focus verified via old treatment system (T202). All treatments confirmed working.
+  - No new bugs found. No new task created.
+
 ### Programmer Comm Log
 
 #### 2026-06-21 09:00 UTC+8
