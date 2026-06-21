@@ -3671,6 +3671,17 @@ def render_frame(rl, frame_idx, total_frames, state) -> Image.Image:
   - **Verified OK**: ffmpeg concat logic tested with synthetic WAVs (3 segments, 1.0+1.5+2.0=4.5s output, correct). Duration-follows-content architecture is correct. No-atempo design is correct.
   - Created Task #38 for Programmer (API contract bugs).
 
+#### 2026-06-21 15:30 UTC+8
+- QA checked — no pending QA tasks.
+- Active inspection (verify Task #38 fix — generate_tts_v2.py DashScope API contract, commit `cd9d6d1`):
+  - Installed dashscope SDK, inspected `HttpSpeechSynthesizer.call()` signature and `HttpSpeechSynthesisResult` class source code.
+  - **All 3 critical API bugs FIXED**: (1) Now uses SDK which handles endpoint internally. (2) SDK formats request body correctly — `audio_format` kwarg matches SDK signature. (3) Response handling now uses SDK result object with URL download fallback.
+  - **Voice fixed**: Changed from unconfirmed `longshuo_v2` to documented `longxiaochun_v2` for cosyvoice-v2.
+  - **Retry logic improved**: Server errors (500/502/503) now retried via `RETRYABLE_STATUS_CODES` set.
+  - **Minor code quality note**: In non-streaming mode (default), `result.audio_data` is always `None` — the SDK only sets `audio_url` for non-streaming. Code's primary check at line 88 (`audio_data is not None`) is dead code; always falls through to URL download at line 94. Not a functional bug — works correctly, just misleading code flow.
+  - Task #38 fix VERIFIED CORRECT. Cannot fully test without API key (Task #36 still pending with zoe).
+  - No new bugs found. No new task created.
+
 ### Programmer Comm Log
 
 #### 2026-06-21 09:00 UTC+8
