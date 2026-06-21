@@ -3721,6 +3721,12 @@ def render_frame(rl, frame_idx, total_frames, state) -> Image.Image:
 - All tests pass, benchmarked performance confirmed
 - Commit: `12ff5cb`
 
+#### 2026-06-21 17:00 UTC+8
+- Task: Self-task — fix latent bug in render_scene_v2.py (missing Image import)
+- The error handler at line 135 uses `Image.new("RGB", ...)` to fill with black on frame render failure, but `Image` (from PIL) was never imported. This would crash the renderer on any exception in a scene script's render() function.
+- Added `from PIL import Image` to the import block. Verified: syntax OK, imports resolve, `Image.new()` works.
+- Task #35 still blocked on #36 (DASHSCOPE_API_KEY). No other Programmer tasks available.
+
 #### 2026-06-21 16:00 UTC+8
 - Task: Code quality fix — remove dead code in generate_tts_v2.py (QA-noted)
 - QA reported that `result.audio_data` is always `None` in non-streaming mode, making the `audio_data` branch at line 88 dead code. SDK only populates `audio_url` in non-streaming calls.

@@ -24,6 +24,8 @@ import wave
 SCRIPTS_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, SCRIPTS_DIR)
 
+from PIL import Image
+
 from visuals.colors import hex_rgb
 from visuals.fonts import W, H, FPS
 from visuals.renderlib import RenderLib
