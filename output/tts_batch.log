@@ -1,0 +1,130 @@
+Qwen3-TTS batch generation (reload-per-chunk, speaker=ryan)
+Scenes: 2-28 (27 total)
+Max chunk size: 150 chars
+Memory guard: require 6200MB free before each chunk
+Available memory: 7487MB
+
+============================================================
+Scene 02 (Die erste Erwähnung und das Mittelalter): 8 segments [0.0min elapsed]
+  Seg 0: SKIP (exists, 53.1s)
+  Seg 1: SKIP (exists, 38.9s)
+  Seg 2 (584 chars -> 6 chunks)
+    c0 (126 chars)... OK 9.0s/43s
+    c1 (111 chars)... OK 6.6s/37s
+    c2 (76 chars)... OK 4.6s/29s
+    c3 (79 chars)... OK 6.4s/33s
+    c4 (99 chars)... OK 7.6s/36s
+    c5 (88 chars)... FAILED (/bin/sh: 1: sox: not found
+SoX could not be found!
+
+    If you do not have SoX, proceed here:
+     - - - http://sox.sourceforge.net/ - - -
+
+    If you do (or think that you should) have SoX, double-check your
+    path variables.
+    
+
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]
+Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 66841.50it/s]
+)
+  Seg 2 DONE: 34.1s total (JSON updated)
+  Seg 3 (577 chars -> 7 chunks)
+    c0 (132 chars)...     [MEM] Waiting for memory: 3702MB available, need 6200MB for chunk (132 chars)
+    [MEM] Memory OK: 7390MB available (waited 30s) for chunk (132 chars)
+FAILED (/bin/sh: 1: sox: not found
+SoX could not be found!
+
+    If you do not have SoX, proceed here:
+     - - - http://sox.sourceforge.net/ - - -
+
+    If you do (or think that you should) have SoX, double-check your
+    path variables.
+    
+)
+    c1 (36 chars)...     [MEM] Waiting for memory: 3696MB available, need 6200MB for chunk (36 chars)
+    [MEM] Memory OK: 7346MB available (waited 40s) for chunk (36 chars)
+FAILED (/bin/sh: 1: sox: not found
+SoX could not be found!
+
+    If you do not have SoX, proceed here:
+     - - - http://sox.sourceforge.net/ - - -
+
+    If you do (or think that you should) have SoX, double-check your
+    path variables.
+    
+)
+    c2 (94 chars)...     [MEM] Waiting for memory: 3695MB available, need 6200MB for chunk (94 chars)
+    [MEM] Memory OK: 7281MB available (waited 40s) for chunk (94 chars)
+OK 6.6s/34s
+    c3 (40 chars)... FAILED (/bin/sh: 1: sox: not found
+SoX could not be found!
+
+    If you do not have SoX, proceed here:
+     - - - http://sox.sourceforge.net/ - - -
+
+    If you do (or think that you should) have SoX, double-check your
+    path variables.
+    
+
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]
+Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 67108.86it/s]
+)
+    c4 (97 chars)...     [MEM] Waiting for memory: 3785MB available, need 6200MB for chunk (97 chars)
+    [MEM] Memory OK: 7519MB available (waited 20s) for chunk (97 chars)
+FAILED (/bin/sh: 1: sox: not found
+SoX could not be found!
+
+    If you do not have SoX, proceed here:
+     - - - http://sox.sourceforge.net/ - - -
+
+    If you do (or think that you should) have SoX, double-check your
+    path variables.
+    
+
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]
+Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 69615.00it/s]
+)
+    c5 (67 chars)...     [MEM] Waiting for memory: 3838MB available, need 6200MB for chunk (67 chars)
+    [MEM] Memory OK: 7376MB available (waited 20s) for chunk (67 chars)
+OK 7.9s/40s
+    c6 (105 chars)... FAILED (/bin/sh: 1: sox: not found
+SoX could not be found!
+
+    If you do not have SoX, proceed here:
+     - - - http://sox.sourceforge.net/ - - -
+
+    If you do (or think that you should) have SoX, double-check your
+    path variables.
+    
+)
+  Seg 3 DONE: 14.5s total (JSON updated)
+  Seg 4 (579 chars -> 9 chunks)
+    c0 (91 chars)...     [MEM] Waiting for memory: 3699MB available, need 6200MB for chunk (91 chars)
+    [MEM] Memory OK: 7293MB available (waited 30s) for chunk (91 chars)
+FAILED (/bin/sh: 1: sox: not found
+SoX could not be found!
+
+    If you do not have SoX, proceed here:
+     - - - http://sox.sourceforge.net/ - - -
+
+    If you do (or think that you should) have SoX, double-check your
+    path variables.
+    
+)
+    c1 (9 chars)...     [MEM] Waiting for memory: 3707MB available, need 6200MB for chunk (9 chars)
+    [MEM] Memory OK: 7306MB available (waited 30s) for chunk (9 chars)
+OK 2.7s/25s
+    c2 (9 chars)... FAILED (/bin/sh: 1: sox: not found
+SoX could not be found!
+
+    If you do not have SoX, proceed here:
+     - - - http://sox.sourceforge.net/ - - -
+
+    If you do (or think that you should) have SoX, double-check your
+    path variables.
+    
+
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]
+Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 59493.67it/s]
+)
+    c3 (7 chars)...     [MEM] Waiting for memory: 3822MB available, need 6200MB for chunk (7 chars)

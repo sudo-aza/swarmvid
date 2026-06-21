@@ -3993,3 +3993,11 @@ def render_frame(rl, frame_idx, total_frames, state) -> Image.Image:
 - **Key finding**: Running two chunk generations in a single command (`&&`) causes OOM kill on second chunk. Model memory (4.2GB) isn't freed fast enough between sequential subprocess calls. Must run ONE chunk per tool call with memory recovery time between.
 - **Cleaned up log files**: Removed stale tts_*.log files.
 - Commit: pending
+
+#### 2026-06-22 04:00 UTC+8
+- Task: SV-03 continued — TTS batch running via cron (job 223164, every 5 min)
+- **Progress**: 15/175 segments complete. Scene 1: 8/8 ✅. Scene 2: 7/8 (seg 07 chunks in progress).
+- **Audio now tracked in repo**: Removed `output/audio/` and `*.wav` from `.gitignore` per Zoe's request. All generated WAVs committed and pushed.
+- **Commits**: c8cb717 (initial audio + gitignore fix), 492ba8a (scene 2 segs 4-6 progress)
+- **Cron cadence**: Every 5 min, each run generates ~2-3 chunks before 2-min tool timeout. ~1 segment completed per 2-3 cron turns.
+- **Estimated completion**: ~160 segments remaining ÷ ~0.5 segments per 5 min = ~27 hours (very rough)
