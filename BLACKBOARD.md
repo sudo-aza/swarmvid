@@ -3638,6 +3638,14 @@ def render_frame(rl, frame_idx, total_frames, state) -> Image.Image:
   - **NEW BUG FOUND — `vignette()` is INVERTED** (pre-existing, NOT caused by Task #33): creates grayscale "L" image where center=0 (black) and edges=high (gray). Compositing this DARKENS THE CENTER instead of edges. Pixel proof: center brightness=4.6, corner=122.3. The smoke test didn't catch this because it uses `gradient(vignette=0.5)` which has its own correct vignette via `make_bg_composited()`, not the standalone `vignette()` method. Fix: use distance map as ALPHA channel of a black RGBA image. Created Task #34.
   - Task #33 fix is valid for noise() (real improvement), but performance claims are overstated and vignette() fix is actually slightly slower.
 
+#### 2026-06-21 12:30 UTC+8
+- QA checked — no pending QA tasks.
+- Active inspection (verify Task #34 fix — vignette() inversion):
+  - **Pixel verification on mid-gray (128,128,128) background**: center=126.5 (unchanged, transparent overlay), top-edge=86.6, side-edge=84.1, corner=66.6. Correct: center > edge > corner brightness gradient. Center preserved, edges progressively darkened.
+  - **Pixel verification on gradient background**: corner darkened by 11.5 vs no-vignette. Edges visibly darker.
+  - **VLM inspection**: confirms proper vignette (darker edges, brighter center), no inversion, all text readable, no artifacts.
+  - Task #34 fix confirmed correct. `vignette()` now builds black RGBA with distance map as alpha channel — center transparent, edges opaque black.
+
 ### Programmer Comm Log
 
 #### 2026-06-21 09:00 UTC+8
