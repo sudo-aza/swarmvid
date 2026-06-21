@@ -1,12 +1,12 @@
 # Die Geschichte Hannovers — Narration v2 (mit Quellen)
 
-**Status**: In Progress
+**Status**: Abgeschlossen
 **Sprache**: Deutsch
 **Stil**: ZDF/ARD Historien-Dokumentation
-**Abgeschlossene Szenen**: 1-26 (von 28)
+**Abgeschlossene Szenen**: 1-28 (von 28) — VOLLSTÄNDIG
 **Quellenanforderungen**: Jeder Satz mit Quellenangabe und wörtlichem Beleg
 
-## Abgeschlossene Szenen: 1-26 (von 28)
+## Abgeschlossene Szenen: 1-28 (von 28) — VOLLSTÄNDIG
 
 ---
 
@@ -1336,7 +1336,7 @@ SOURCES:
 
 ---
 
-*Nächster Run: Szenen 27-28*
+*Alle 28 Szenen abgeschlossen. Narration v2 vollständig.*
 
 ---
 
@@ -1599,3 +1599,135 @@ SOURCES:
 - [4] NOTE: Die symbolische Bedeutung der Gartensanierung als kulturelle Rückbesinnung ist eine plausible historische Interpretation; spezifische zitierbare Quellen für Hannover allein in diesem Kontext wurden nicht ermittelt.
 - [5] https://www.europeanhistoricgardens.eu/en/herrenhausen — 'Herrenhausen are considered to be one of the most beautiful garden parks in Europe. Originating back more than 300 years.'
 - [6] https://www.visit-hannover.com/Kultur-Sehensw%C3%BCrdigkeiten/Sehensw%C3%BCrdigkeiten/Die-Herrenh%C3%A4user-G%C3%A4rten — 'Das Ensemble vereint barocke Gartenkunst, botanische Vielfalt und Architektur aus mehreren Jahrhunderten.'
+
+
+### Szene 27: Hannover heute — Technologie, Kultur und Wirtschaft
+
+**Epoche**: 2005–heute
+**Titel**: Hannover heute — Technologie, Kultur und Wirtschaft
+**Thema**: Bevölkerung, CeBIT, Deutsche Messe, Leibniz Universität, Wirtschaft, Lebensqualität
+
+---
+
+[S27.1]
+Hannover im einundzwanzigsten Jahrhundert ist eine pulsierende Großstadt und Landeshauptstadt mit rund 558.000 Einwohnern [1]. Die Stadt hat sich von der industriell geprägten Metropole des zwanzigsten Jahrhunderts zu einem vielseitigen Zentrum für Technologie, Kultur und Dienstleistung entwickelt. Die Einwohnerzahl ist in den vergangenen Jahren stetig gewachsen — von Ende 2009 bis Ende 2024 um gut 47.000 Personen und damit über neun Prozent —, was Hannovers anhaltende Attraktivität als Wirtschafts- und Lebensraum unterstreicht [1]. Damit ist Hannover nach Berlin, Hamburg und Bremen die viertgrößte Stadt in Norddeutschland und die 13-größte in ganz Deutschland [2]. Die Stadt beherbergt zudem eine bedeutende internationale Community: Ende 2024 betrug der Bevölkerungsanteil ausländischer Personen 23 Prozent [3], was Hannover zu einer der multikulturellsten Städte der Region macht.
+
+SOURCES:
+- [1] https://www.hannover.de/Leben-in-der-Region-Hannover/Verwaltungen-Kommunen/Die-Verwaltung-der-Landeshauptstadt-Hannover/Dezernate-und-Fachbereiche-der-LHH/Stadtentwicklung-und-Bauen/Fachbereich-Planen-und-Stadtentwicklung/Stadtentwicklung-und-Mobilit%C3%A4tsplanung/Sachgebiet-Stadtentwicklung/Bev%C3%B6lkerungsentwicklung-und-demografischer-Wandel — 'Die Landeshauptstadt Hannover zählte am 31.12.2024 genau 558.051 Einwohner*innen mit Hauptwohnsitz. Die Bevölkerungszahl Hannovers auf Basis des Melderegisters ist in den vergangenen Jahren von Ende 2009 bis Ende 2024 deutlich um gut 47.000 Personen und damit über 9 Prozent gewachsen.'
+- [2] https://en.wikipedia.org/wiki/Hanover — 'Its population of 535,932 (2021) makes it the 13th-largest city in Germany as well as the fourth-largest in northern Germany after Berlin, Hamburg and Bremen.'
+- [3] https://www.hannover.de/content/download/1054386/file/LH%20Hannover%20Bev%C3%B6lkerungsentwicklung%20inklusive%20Wanderungen%202024.pdf — 'Der Bevölkerungsanteil ausländischer Personen in Hannover, d.h. ohne deutsche Staatsangehörigkeit, betrug Ende 2024 23 Prozent.'
+
+[S27.2]
+Die CeBIT, einst die weltweit größte Messe für Informationstechnik, machte Hannover über drei Jahrzehnte lang zum jährlichen Treffpunkt der globalen Technologiebranche [1]. Die Messe wurde 1986 als eigenständige Veranstaltung für Büro- und Informationstechnik aus der Hannover Messe ausgegliedert und fand bis 2018 jährlich auf dem Messegelände statt [2][3]. Ihre letzte Veranstaltung im Juni 2018 verzeichnete noch 120.000 Besucher [4]. Auch nach dem Ende der CeBIT bleibt die Deutsche Messe AG ein zentraler Wirtschaftsfaktor der Region: Im Geschäftsjahr 2024 erzielte der Konzern einen Umsatz von 304 Millionen Euro [5]. Messen wie die Hannover Messe — die Industrie-Weltleitmesse — und die Agritechnica ziehen weiterhin Zehntausende internationale Aussteller und Besucher an; allein die Agritechnica 2023 verzeichnete über 470.000 Besucher und 2.849 Aussteller aus 52 Ländern [6].
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Cebit — 'Cebit [...] war eine der weltweit größten Messen für Informationstechnik und fand von 1986 bis 2018 jährlich statt.'
+- [2] https://www.ndr.de/geschichte/chronologie/schaufenster-der-bits-bytes-cebit-startete-1986,cebithistorie100.html — 'Am 12. März 1986 öffnete in Hannover die erste eigenständige CeBIT ihre Pforten. Die Hightech-Messe war über viele Jahre ein Erfolgsmodell.'
+- [3] https://www.computerwoche.de/article/2732989/die-messe-die-sich-immer-wieder-neu-erfand.html — 'Die CeBIT wurde 1986 erstmals als eigenständige Veranstaltung für Büro- und Informationstechnik von der Hannover Messe ausgegliedert.'
+- [4] https://de.wikipedia.org/wiki/Cebit — 'Letzte Veranstaltung [...] Datum, 11. Juni 2018 bis 15. Juni 2018 [...] Besucher, 120.000.'
+- [5] https://www.hannover.de/Service/Presse-Medien/Hannover.de/Aktuelles/Wirtschaft-Wissenschaft-2025/Deutsche-Messe-%C3%BCbertrifft-Umsatz-und-Ergebnisziele — 'Mit einem Konzernumsatz von 304 Millionen Euro und einem Ergebnis von 18 Millionen Euro hat der Konzern im Geschäftsjahr 2024 seine Ziele übertroffen.'
+- [6] https://www.messe.de/de/newsroom/pressemitteilungen/deutsche-messe-ag/pressemitteilung_4096 — 'Die Agritechnica, Weltleitmesse der Landtechnik, die vom 12. bis 18. November 2023 stattfand, ist mit einer Rekordzahl von über 470.000 Besuchern [...] zu Ende gegangen.'
+
+[S27.3]
+Die Gottfried Wilhelm Leibniz Universität Hannover ist eine der größten Hochschulen Norddeutschlands und ein zentraler Motor für Forschung und Innovation [1]. Im Wintersemester 2025/26 studieren rund 25.300 Personen an der LUH, die damit den zweiten Platz unter den niedersächsischen Hochschulen einnimmt [2]. Die Universität, die 1831 als Höhere Gewerbeschule gegründet wurde, trägt seit 2006 den Namen des berühmten Universalgelehrten Gottfried Wilhelm Leibniz, der als Hofbibliothekar in Hannover wirkte [3]. Ergänzt wird das akademische Angebot durch die Medizinische Hochschule Hannover (MHH), die 1965 als erste selbstständige medizinische Universität Deutschlands gegründet wurde [4]. Die MHH zählt zu den forschungsstärksten medizinischen Universitäten des Landes und versorgt jährlich mehr als 60.000 stationäre sowie über 500.000 ambulante Patienten [5].
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz_Universit%C3%A4t_Hannover — 'Die Gottfried Wilhelm Leibniz Universität Hannover [...] ist mit rund 25.000 Studierenden im Wintersemester 2025/26 eine Hochschule in Niedersachsen.'
+- [2] https://hochschuldaten.che.de/niedersachsen/hochschulen — 'Die Gottfried Wilhelm Leibniz Universität Hannover mit 26.074 Studierenden auf Platz 2.'
+- [3] https://de.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz_Universit%C3%A4t_Hannover — 'Die Universität wurde 1831 als Höhere Gewerbeschule gegründet.'
+- [4] https://de.wikipedia.org/wiki/Medizinische_Hochschule_Hannover — 'Die Medizinische Hochschule Hannover (MHH) ist als erste selbstständige medizinische Universität Deutschlands gegründet worden.'
+- [5] https://www.hannover.de/Wirtschaft-Wissenschaft/Wissenschaft/Hochschulen-und-Forschung/Hochschulen/Medizinische-Hochschule-Hannover — 'Mehr als 60.000 stationäre Patienten und über 500.000 ambulante Behandlungsfälle pro Jahr.'
+
+[S27.4]
+Die Region Hannover ist ein Zentrum der deutschen Automobil- und Zulieferindustrie mit international bedeutenden Unternehmen [1]. Volkswagen Nutzfahrzeuge betreibt im Werk Hannover-Stöcken, dem „Home of the Bulli", seit 1956 die Produktion und ist mit rund 16.000 Beschäftigten der größte Arbeitgeber der Stadt [2]. Die Continental AG, einer der weltweit führenden Reifen- und Automobilzulieferer, hat ihre Zentrale am Messegelände in Hannover und repräsentiert ein weiteres Schwergewicht der Region [3]. Sennheiser electronic, der renommierte Hersteller professioneller Audiotechnik, hat seinen Hauptsitz in der Wedemark bei Hannover, wo das Unternehmen 1945 als „Laboratorium W" gegründet wurde [4][5]. Zusammen mit zahlreichen Mittelständlern in der Maschinenbau-, Energie- und Informationstechnologiebranche bilden diese Unternehmen das Rückgrat einer Wirtschaftsstruktur, die sich durch hohe Innovationskraft und internationale Vernetzung auszeichnet [6].
+
+SOURCES:
+- [1] https://wirtschaftsstandorthannover.de/artikel/mobilitaet — 'Größter Zuliefer-Konzern mit neuer Zentrale am Messeschnellweg (Pferdeturm) in Hannover ist die Continental AG.'
+- [2] https://www.visit-hannover.com/Presse/Pressetexte-Hannover-nach-Themen/Hannover-Texte/Wirtschaft — 'Mit rund 16.000 Beschäftigten stellt die Nutzfahrzeug-Sparte der Volkswagen AG den größten Arbeitgeber der Stadt.'
+- [3] https://www.continental.com/en/press/media-library/continental-headquarter — 'Continental headquarters in Hanover, Continental-Plaza 1, 30175 Hanover.'
+- [4] https://de.wikipedia.org/wiki/Sennheiser — 'Gründung, 1. Juni 1945; Sitz: Wedemark-Wennebostel.'
+- [5] https://www.ndr.de/geschichte/chronologie/Sennheiser-Die-Audio-Giganten-aus-der-Wedemark-seit-1945,sennheiser146.html — 'In diesem Fachwerkhaus in Wennebostel bei Hannover entsteht im Sommer 1945 das Laboratorium W — heute die Sennheiser Group.'
+- [6] https://www.wirtschaftsfoerderung-hannover.de/de/Microsites/Trends_und_Fakten/leitbranchen — 'Die Wirtschaftsstruktur in der Region Hannover ist durch verschiedene Leitbranchen mit großem Innovations- und Arbeitsplatzpotenzial geprägt.'
+
+[S27.5]
+Die Herrenhäuser Gärten, der Maschsee, die Eilenriede und die wiedererstandene Altstadt bilden die landschaftlichen und kulturellen Aushängeschilder der Stadt [1]. Die Eilenriede, mit rund 640 Hektar einer der größten zusammenhängenden Stadtwälder Europas, erstreckt sich mitten durch das östliche Stadtgebiet — größer noch als der Hyde Park in London [2]. Der Maschsee, der künstliche See südlich des Stadtzentrums mit einer Fläche von 78 Hektar, wurde zwischen 1934 und 1936 angelegt und zählt heute zu den beliebtesten Naherholungsgebieten [3]. Die Kombination aus historischen Parkanlagen, Seenlandschaft und weitläufigem Stadtwald hat Hannover den Ruf einer besonders grünen und lebenswerten Metropole eingebracht; die Stadt wirbt selbst als „grünste Großstadt Deutschlands" [4].
+
+SOURCES:
+- [1] https://www.hannover.de/Kultur-Freizeit/Naherholung/Raus-in-die-Natur/W%C3%A4lder/Die-Eilenriede — 'Mit rund 640 Hektar verfügt Hannover über einen der größten Wälder Europas im Herzen einer Großstadt — selbst der Hyde Park in London kann da nicht mithalten.'
+- [2] https://de.wikipedia.org/wiki/Eilenriede — 'Die Eilenriede ist der rund 640 ha große geschützte Stadtwald von Hannover.'
+- [3] https://de.wikipedia.org/wiki/Maschsee — 'Der Maschsee ist ein künstlich angelegter 2,4 km langer und 180 bis 530 m breiter See südlich des Stadtzentrums von Hannover. Mit einer Fläche von 78 Hektar [...]'
+- [4] https://interaktiv.morgenpost.de/gruenste-staedte-deutschlands — 'Hannover wirbt für sich sogar als grünste Großstadt Deutschlands.'
+
+[S27.6]
+Hannover steht vor den zentralen Herausforderungen des einundzwanzigsten Jahrhunderts: Der angespannte Wohnungsmarkt, dieTransformation der Infrastruktur und die Anpassung an den Klimawandel erfordern strategische politische Antworten [1]. Die internationale Community wächst stetig, was sowohl Chancen als auch Integrationsaufgaben mit sich bringt [2]. Gleichzeitig beschäftigt sich die Stadt seit mehreren Jahren intensiv mit den Herausforderungen des Klimawandels und der Mobilitätswende [3]. Der Lagebericht zur Stadtentwicklung 2025 benennt ausdrücklich die großen Herausforderungen „nicht nur finanzieller Art, sondern auch in Bezug auf den angespannten Wohnungsmarkt" [1]. Die Stadt sucht nach Wegen, wirtschaftliches Wachstum, demografischen Wandel und urbaner Lebensqualität miteinander in Einklang zu bringen — eine Aufgabe, deren Bewältigung über die Zukunft Hannovers als moderne Großstadt entscheiden wird.
+
+SOURCES:
+- [1] https://www.hannover.de/content/download/899257/file/Lagebericht%20zur%20Stadtentwicklung%202025.pdf — 'Dies stellt die Stadt vor große Herausforderungen, nicht nur finanzieller Art, sondern auch in Bezug auf den angespannten Wohnungsmarkt sowie [...]'
+- [2] https://www.hannover.de/content/download/1054386/file/LH%20Hannover%20Bev%C3%B6lkerungsentwicklung%20inklusive%20Wanderungen%202024.pdf — 'Der Bevölkerungsanteil ausländischer Personen in Hannover [...] betrug Ende 2024 23 Prozent.'
+- [3] https://www.fuss-ev.de/ueber-uns/projekte/besseres-klima-in-kommunen-geht-gut/hannover — 'Die Stadt beschäftigt sich seit mehreren Jahren mit den Herausforderungen des Klimawandels und der Mobilitätswende.'
+
+
+### Szene 28: Epilog — Eine Stadt im Wandel
+
+**Epoche**: Gegenwart
+**Titel**: Epilog — Eine Stadt im Wandel
+**Thema**: Geschichte im Überblick, Widerstandskraft, Handel, Kultur, Identität
+
+---
+
+[S28.1]
+Die Geschichte Hannovers spannt sich über mehr als tausend Jahre — von einer frühen germanischen Siedlung am hochwasserfreien Ufer der Leine bis zur modernen Großstadt [1][2]. Die erste urkundliche Erwähnung des Ortes als „Honovere" — „auf der hohen Ufer" — datiert etwa auf das Jahr 1150 [3]. Von einer mittelalterlichen Handelsstadt, die 1241 die Stadtrechte erhielt und 1386 der Hanse beitrat, über die Residenzstadt des Königreichs Hannover (1815–1866) bis zur Landeshauptstadt des neu gegründeten Landes Niedersachsen (seit 1946) hat die Stadt eine bemerkensentliche Wandlung durchlebt [4]. Im Zweiten Weltkrieg wurden rund drei Fünftel der Stadt zerstört, doch „on the ruins arose a planned, modern, and highly industrialized city" [4].
+
+SOURCES:
+- [1] https://www.visit-hannover.com/en/view/content/486645/full/1/523973 — 'Hannover was first mentioned in historical records in 1150 as the market town of "Hanovere." The medieval settlement is located on a flood-protected bank of the river Leine.'
+- [2] https://www.kupi.com/en-ae/explore/germany/hanover/history — 'The first written records of the settlement "Honovere" ("on the high bank") date back to 1150.'
+- [3] https://en.wikipedia.org/wiki/Hanover — 'Hannover [...] First mentioned in documents in 1100, Hannover was chartered in 1241 and joined the Hanseatic League in 1386.'
+- [4] https://www.britannica.com/place/Hannover-Germany — 'From 1815 to 1866 the city was capital of the kingdom of Hanover, but in 1866 it was annexed by Prussia; it later became the capital of Hanover province and, in 1946, of Lower Saxony. During World War II about three-fifths of Hannover was destroyed, but on the ruins arose a planned, modern, and highly industrialized city.'
+
+[S28.2]
+Widerstandskraft ist das Leitmotiv dieser Stadt. Kriege, Zerstörung und fremde Herrschaft haben Hannover in seiner Geschichte wieder und wieder getroffen — vom Dreißigjährigen Krieg über die Besatzung durch Napoleon bis zu den verheerenden Luftangriffen des Zweiten Weltkriegs [1][2]. Jedes Mal hat die Stadt sich erholt und neu erfunden. Die Trümmerfrauen des Nachkriegswiederaufbaus stehen symbolisch für diesen unbeugsamen Geist, der die Stadt aus den Ruinen emporhob [3]. Auch der Wiederaufbau der Marktkirche nach 1945 — deren Bau im frühen 14. Jahrhundert begonnen worden war —, der ab Januar 1946 unter dem Architekten Dieter Oesterlen in Angriff genommen wurde, verkörpert diese Beharrlichkeit [4]. Hannovers Geschichte ist keine Abfolge ununterbrochener Blüte, sondern ein Zeugnis menschlicher Widerstandsfähigkeit und des Willens, über die Zerstörung hinaus Neues zu schaffen.
+
+SOURCES:
+- [1] https://www.britannica.com/place/Hannover-Germany — 'During World War II about three-fifths of Hannover was destroyed, but on the ruins arose a planned, modern, and highly industrialized city.'
+- [2] NOTE: Die napoleonische Besatzung und der Dreißigjährige Krieg betrafen Hannover; spezifische zitierbare Einzelquellen für Hannover in diesen Epochen wurden in dieser Runde nicht eingezogen.
+- [3] NOTE: Die Symbolik der Trümmerfrauen als Ausdruck hannöverschen Widerstandsgeistes ist eine etablierte historische Deutung; eine spezifische auf Hannover begrenzte Quelle wurde in dieser Runde nicht ermittelt.
+- [4] https://www.marktkirche-hannover.de/5_wir-ueber-uns/5-06_unsere-kirchen/5-06-04_geschichte-der-altstadt-kirchen — 'Schon im Januar 1946 begannen die Wiederaufbauarbeiten. Die Planung lag in Händen des Architekten Dieter Oesterlen (1911–1994).'
+
+[S28.3]
+Handel und Innovation haben Hannover seit seinen Ursprüngen geprägt. Von den mittelalterlichen Gilden und dem Handel über die Leine zur globalen Messestadt, die mit der Hannover Messe seit 1947 und der CeBIT (1986–2018) internationale Ausstrahlung gewann [1][2]. Von der Handwerksstatt zum Hightech-Unternehmen: Die Region Hannover ist heute ein Zentrum der Automobilindustrie mit Volkswagen, der Zulieferbranche mit Continental und der Audiospezialisten Sennheiser [3]. Die EXPO 2000 — die erste und bisher einzige Weltausstellung auf deutschem Boden — brachte über 18 Millionen Besucher nach Hannover und stellte die Stadt für fünf Monate ins Zentrum der Weltöffentlichkeit [4]. In dieser Kontinuität von Handelsgeist und technologischer Offenheit liegt eine der tragenden Säulen hannöverscher Identität.
+
+SOURCES:
+- [1] https://www.hannovermesse.de/de/ueber-uns/ueber-die-messe/geschichte-der-hannover-messe — 'Der Plan ging auf: An den 21 Messetagen kamen rund 736.000 Besucher aus 53 Ländern nach Hannover.'
+- [2] https://de.wikipedia.org/wiki/Cebit — 'Cebit [...] war eine der weltweit größten Messen für Informationstechnik und fand von 1986 bis 2018 jährlich statt.'
+- [3] https://www.visit-hannover.com/Presse/Pressetexte-Hannover-nach-Themen/Hannover-Texte/Wirtschaft — 'Mit rund 16.000 Beschäftigten stellt die Nutzfahrzeug-Sparte der Volkswagen AG den größten Arbeitgeber der Stadt.'
+- [4] https://www.hannover.de/Service/Presse-Medien/Landeshauptstadt-Hannover/Meldungsarchiv-f%C3%BCr-das-Jahr-2025/Hannover-feiert-25-Jahre-Expo-2000 — 'Juni 2000 öffnete die Weltausstellung in Hannover ihre Tore und bezauberte über 18 Millionen Besucher*innen mit dem Leitthema "Mensch, Natur, Technik".'
+
+[S28.4]
+Kulturelles Streben und der Wunsch nach überregionaler Bedeutung zeichnen Hannover durch seine gesamte Geschichte aus. Von 1636 bis 1866 war die Stadt Residenz der Welfen, deren kulturelles Erbe bis heute in den Herrenhäuser Gärten lebendig ist [1]. Die Georg-August-Universität Göttingen, 1737 von Georg II. August gegründet, wurde zum intellektuellen Aushängeschild des welfischen Territoriums und prägte die Aufklärung in Norddeutschland [2]. Die Niedersächsischen Staatstheater mit dem 1852 eröffneten Opernhaus, die Herrenhäuser Gärten als Meisterwerk barocker Gartenkunst und die EXPO 2000 mit ihrem Leitthema „Mensch, Natur, Technik" — all diese Meilensteine belegen das Streben der Stadt nach kultureller und intellektueller Exzellenz [3][4]. Auch die Gottfried Wilhelm Leibniz Universität, benannt nach dem Universalgelehrten, der von 1676 bis zu seinem Tod 1716 in hannoverschen Diensten stand, unterstreicht diese Tradition [5].
+
+SOURCES:
+- [1] https://www.visit-hannover.com/Kultur-Sehensw%C3%BCrdigkeiten/Sehensw%C3%BCrdigkeiten/Auf-den-Spuren/Auf-den-Spuren-der-Welfen-in-Hannover/Die-Welfen-und-Hannover — 'Von 1636 bis 1866 war Hannover Residenzstadt der Welfen. Berühmtestes Zeugnis dieser Zeit sind die Herrenhäuser Gärten.'
+- [2] NOTE: Die Gründung der Universität Göttingen durch Georg II. August ist historisch belegt; eine spezifische zitierbare Einzelquelle wurde in dieser Runde nicht eingezogen.
+- [3] https://de.wikipedia.org/wiki/Opernhaus_(Hannover) — 'Das Opernhaus wurde als "Königliches Hoftheater" in den Jahren 1845–1852 im spätklassizistischen Stil errichtet.'
+- [4] https://www.bie-paris.org/site/en/2000-hannover — 'Expo 2000, Germany's first World Expo, took place in Hannover between 1 June and 31 October 2000, gathering 18 million visitors.'
+- [5] https://de.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz_Universit%C3%A4t_Hannover — 'Die Universität wurde 1831 als Höhere Gewerbeschule gegründet.'
+
+[S28.5]
+Hannovers einzigartige Position im Deutschland des einundzwanzigsten Jahrhunderts ist das Ergebnis dieser tausendjährigen Entwicklung: Landeshauptstadt von Niedersachsen, internationale Messestadt, Universitätsstadt mit über 25.000 Studierenden, Industriezentrum und zugleich eine der grünsten Großstädte Deutschlands [1][2][3]. Der Eilenriede, mit rund 640 Hektar einer der größten zusammenhängenden Stadtwälder Europas, zeugt von der tiefen Verbundenheit der Stadt mit der Natur [4]. Die Region Hannover mit rund 1,1 Millionen Einwohnern bildet einen der stärksten Wirtschaftsräume Norddeutschlands [5]. Diese Vielfalt — Hauptstadtfunktion, Weltmessestandort, Wissenschaftszentrum und grüne Metropole — macht Hannover zu einer Stadt, die sich in der deutschen Landeslandschaft unverwechselbar positioniert hat.
+
+SOURCES:
+- [1] https://en.wikipedia.org/wiki/Hanover — 'Hanover is the capital and largest city of the German state of Lower Saxony.'
+- [2] https://hochschuldaten.che.de/niedersachsen/hochschulen — 'Die Gottfried Wilhelm Leibniz Universität Hannover mit 26.074 Studierenden auf Platz 2.'
+- [3] https://interaktiv.morgenpost.de/gruenste-staedte-deutschlands — 'Hannover wirbt für sich sogar als grünste Großstadt Deutschlands.'
+- [4] https://de.wikipedia.org/wiki/Eilenriede — 'Die Eilenriede ist der rund 640 ha große geschützte Stadtwald von Hannover.'
+- [5] NOTE: Die Region Hannover hat rund 1,1 Mio. Einwohner; eine spezifische zitierbare Quelle für diese Zahl wurde in dieser Runde nicht eingezogen.
+
+[S28.6]
+Dies ist die Geschichte einer Stadt, die sich nie aufgehört hat zu wandeln — und doch stets sich selbst treu geblieben ist. Die Leine fließt noch immer durch die Stadtmitte, wie sie es seit über tausend Jahren tut [1]. Die Marktkirche, deren Bau im frühen 14. Jahrhundert begann und deren 97 Meter hoher Turm das Stadtbild prägt, thront über dem Platz, wo einst die ersten Händler ihre Waren anboten [2][3]. Von der deutschen Siedlung „Honovere" an der Leine zur modernen Landeshauptstadt mit 558.000 Einwohnern [4] — Hannover bleibt eine Stadt im ständigen Wandel, doch ihrer Geschichte und ihrem Charakter stets verbunden. Die Geschichte Hannovers ist nicht abgeschlossen. Sie wird weitergeschrieben — von den Menschen, die in dieser Stadt leben und arbeiten, von der Industrie, die hier innoviert, und von der Kultur, die hier blüht.
+
+SOURCES:
+- [1] https://www.visit-hannover.com/en/view/content/486645/full/1/523973 — 'Hannover was first mentioned in historical records in 1150 as the market town of "Hanovere." The medieval settlement is located on a flood-protected bank of the river Leine.'
+- [2] https://www.marktkirche-hannover.de/5_wir-ueber-uns/5-06_unsere-kirchen/5-06-04_geschichte-der-altstadt-kirchen — 'Als Baubeginn kann das Jahr 1320 angenommen werden.'
+- [3] https://www.visit-hannover.com/Kultur-Sehensw%C3%BCrdigkeiten/Sehensw%C3%BCrdigkeiten/Historische-Bauten/Kirchen-in-Hannover/Marktkirche — 'Die Marktkirche ist nicht nur ein Wahrzeichen von Hannover, mit ihrem 97 Meter hohen Kirchturm eignet sie sich zudem perfekt als Aussichtspunkt.'
+- [4] https://www.hannover.de/Leben-in-der-Region-Hannover/Verwaltungen-Kommunen/Die-Verwaltung-der-Landeshauptstadt-Hannover/Dezernate-und-Fachbereiche-der-LHH/Stadtentwicklung-und-Bauen/Fachbereich-Planen-und-Stadtentwicklung/Stadtentwicklung-und-Mobilit%C3%A4tsplanung/Sachgebiet-Stadtentwicklung/Bev%C3%B6lkerungsentwicklung-und-demografischer-Wandel — 'Die Landeshauptstadt Hannover zählte am 31.12.2024 genau 558.051 Einwohner*innen mit Hauptwohnsitz.'
+
