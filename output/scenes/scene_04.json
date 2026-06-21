@@ -128,6 +128,16 @@
       "anim_duration": 0.5
     },
     {
+      "type": "image",
+      "trigger_time": 25.5,
+      "duration": 10.0,
+      "src": "scene_04_0.jpg",
+      "position": "right",
+      "caption": "",
+      "anim": "fade_in",
+      "anim_duration": 0.6
+    },
+    {
       "type": "callout",
       "trigger_time": 26.0,
       "duration": 5.0,
@@ -148,6 +158,26 @@
       "anim": "pop",
       "style": "highlight",
       "anim_duration": 0.5
+    },
+    {
+      "type": "image",
+      "trigger_time": 44.0,
+      "duration": 10.0,
+      "src": "scene_04_1.jpg",
+      "position": "left",
+      "caption": "",
+      "anim": "fade_in",
+      "anim_duration": 0.6
+    },
+    {
+      "type": "image",
+      "trigger_time": 62.5,
+      "duration": 10.0,
+      "src": "scene_04_2.jpg",
+      "position": "left",
+      "caption": "",
+      "anim": "fade_in",
+      "anim_duration": 0.6
     }
   ]
 }

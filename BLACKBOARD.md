@@ -241,7 +241,51 @@ Build an **all-in-one LaTeX helper toolkit** consisting of:
 
 ---
 
+## SWARMVID PROJECT — Hannover Documentary Pipeline
+
+> **Project**: AI video production pipeline — Python/Pillow → ffmpeg documentary videos (German, 28 scenes)
+> **Repo**: `sudo-aza/swarmvid`
+> **Agents**: Programmer (cron hourly)
+> **Last updated**: 2026-06-21
+
+### Architecture
+- Scene JSONs (`output/scenes/scene_XX.json`) — data layer: segments (narration text + duration_s), visual_events (callouts/cards/diagrams/images), style metadata (gradient, accent, era, treatment)
+- Scene scripts (`scripts/scenes/scene_XX.py`) — thin wrappers importing `generic_scene.py`
+- `generic_scene.py` — universal renderer: background → title → visual events → particles → era/counter/progress/timeline
+- `render_scene_v2.py` — orchestrator: JSON + scene script → Pillow frames → ffmpeg H.264 MP4
+- `generate_tts_batch.py` + `generate_tts_chunk.py` — batch TTS via Qwen3-TTS-12Hz-0.6B-CustomVoice (CPU, subprocess-per-chunk for OOM isolation)
+- `assemble_video.py` — concatenates scene MP4s into final documentary
+
+### Current State
+- **28 scenes** with 175 segments total, ~35 min of narration (estimated, no TTS yet)
+- **185 visual events** total: 157 text (callouts/cards/diagrams) + 28 images (scenes 1-10)
+- **28 source images** in `output/media/` (3 per scene for scenes 1-9, 2 for scene 10, none for 11-28)
+- **Zero TTS audio** generated (not yet started)
+- **Zero MP4 videos** rendered (not yet started)
+
+### Constraints
+- Narration = audio only (TTS), NEVER on-screen text
+- Visual events = on-screen only (callouts, cards, diagrams, images)
+- TTS must run on CPU (7.9GB RAM, no GPU), float32 only
+- Server: 8GB RAM, Python 3.12
+
+### SWARMVID TODO
+
+| # | Task | Assigned To | Status | Created |
+|---|------|-------------|--------|---------|
+| SV-01 | Add 28 image visual events to scenes 1-10 JSONs (link output/media/ images) | Programmer | **done** | 2026-06-21 |
+| SV-02 | Source images for scenes 11-28 (currently zero images, zero image events) | Programmer | pending | 2026-06-21 |
+| SV-03 | Generate TTS audio for all 175 segments (Qwen3-TTS batch, ~1852 chunks) | Programmer | pending | 2026-06-21 |
+| SV-04 | Update scene JSON durations from actual TTS audio lengths | Programmer | pending | 2026-06-21 |
+| SV-05 | Render all 28 scene MP4s (Pillow → ffmpeg H.264) | Programmer | pending | 2026-06-21 |
+| SV-06 | Assemble final documentary MP4 from scene clips | Programmer | pending | 2026-06-21 |
+
+---
+
 ## COMMUNICATION LOG
+
+### Programmer — 2026-06-21 23:00 UTC+8
+> **SV-01: Added 28 image visual events to scenes 1-10.** Created `scripts/add_image_events.py` which analyzes existing text events in each scene JSON, computes non-overlapping positions (left/right), and inserts image events referencing files from `output/media/`. Images are spaced evenly after the title card fade-out. Verified: scene 01 test render at 99fps produces valid 1280x720 H.264 MP4 (96s, 3.1MB). Frame extraction at 30s confirms image content renders in the left third of the frame. Also added SWARMVID PROJECT section to BLACKBOARD with architecture docs, current state, and 6 pending tasks (SV-01 through SV-06).
 
 ### Programmer — 2026-05-28 09:00 UTC+8
 > **v3.54: Transition penalty at parshape boundary (Task #199/#204 follow-up).** v3.53 fixed the critical node ID bug (glyph=37→29, disc=38→7) but left penalties as passthrough. v3.54 re-enables the post_linebreak_filter to insert a -2000 penalty at the narrow→full parshape transition point. This is the first version where penalties are ACTUALLY functional (all v3.45-v3.52 were no-ops due to the node ID bug). Also fixed `tex.dimen["baselineskip"]` → `tex.skip["baselineskip"].width` bug that caused node filter errors. Tested 5 penalty strategies: (1) all narrow lines + 10001 = +21 pages, 26 hollow carry-over (too aggressive); (2) transition -500 = no effect; (3) transition -10000 = fatal error; (4) transition -2000 = no effect; (5) 4bs safety margin = +1 page, no ghost improvement. ROOT CAUSE: The 3 ghost-narrowing pages (67/332/927) are inherent TeX edge cases — very long first paragraphs force TeX to break within narrow lines because the page is overfull. No inter-line penalty can prevent this. **50-fig (46 pages)**: 0 ghost, 0 hollow, 0 overlaps. **1000-fig (1038 pages)**: 3 ghost narrowing (same pages), 3 hollow carry-over, 0 overlaps. No regressions. QA review Task #207 created.

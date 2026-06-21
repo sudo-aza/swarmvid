@@ -121,12 +121,32 @@
       "anim_duration": 0.5
     },
     {
+      "type": "image",
+      "trigger_time": 27.7,
+      "duration": 8.0,
+      "src": "scene_09_0.jpg",
+      "position": "left",
+      "caption": "",
+      "anim": "fade_in",
+      "anim_duration": 0.6
+    },
+    {
       "type": "diagram",
       "trigger_time": 38.0,
       "duration": 7.0,
       "title": "Neue Eliten",
       "body": "Handelsbourgeoisie übernimmt\n„Hübsche Familien“ formieren sich\nStädtische Selbstverwaltung stärkt sich",
       "position": "left",
+      "anim": "fade_in",
+      "anim_duration": 0.6
+    },
+    {
+      "type": "image",
+      "trigger_time": 48.3,
+      "duration": 8.0,
+      "src": "scene_09_1.jpg",
+      "position": "left",
+      "caption": "",
       "anim": "fade_in",
       "anim_duration": 0.6
     },

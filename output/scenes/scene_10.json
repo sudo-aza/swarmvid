@@ -125,6 +125,16 @@
       "anim_duration": 0.5
     },
     {
+      "type": "image",
+      "trigger_time": 27.7,
+      "duration": 8.0,
+      "src": "scene_10_0.jpg",
+      "position": "left",
+      "caption": "",
+      "anim": "fade_in",
+      "anim_duration": 0.6
+    },
+    {
       "type": "callout",
       "trigger_time": 39.0,
       "duration": 6.0,
@@ -134,6 +144,16 @@
       "anim": "pop",
       "style": "highlight",
       "anim_duration": 0.5
+    },
+    {
+      "type": "image",
+      "trigger_time": 48.3,
+      "duration": 8.0,
+      "src": "scene_10_1.jpg",
+      "position": "right",
+      "caption": "",
+      "anim": "fade_in",
+      "anim_duration": 0.6
     },
     {
       "type": "callout",

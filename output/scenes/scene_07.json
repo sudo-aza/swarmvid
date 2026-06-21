@@ -85,6 +85,16 @@
       "anim_duration": 0.5
     },
     {
+      "type": "image",
+      "trigger_time": 19.5,
+      "duration": 10.0,
+      "src": "scene_07_0.jpg",
+      "position": "left",
+      "caption": "",
+      "anim": "fade_in",
+      "anim_duration": 0.6
+    },
+    {
       "type": "callout",
       "trigger_time": 25.0,
       "duration": 5.0,
@@ -107,6 +117,16 @@
       "anim_duration": 0.5
     },
     {
+      "type": "image",
+      "trigger_time": 32.0,
+      "duration": 10.0,
+      "src": "scene_07_1.jpg",
+      "position": "right",
+      "caption": "",
+      "anim": "fade_in",
+      "anim_duration": 0.6
+    },
+    {
       "type": "callout",
       "trigger_time": 38.0,
       "duration": 6.0,
@@ -126,6 +146,16 @@
       "position": "right",
       "anim": "slide_left",
       "anim_duration": 0.4
+    },
+    {
+      "type": "image",
+      "trigger_time": 44.5,
+      "duration": 10.0,
+      "src": "scene_07_2.jpg",
+      "position": "left",
+      "caption": "",
+      "anim": "fade_in",
+      "anim_duration": 0.6
     }
   ]
 }

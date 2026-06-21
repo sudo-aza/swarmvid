@@ -89,6 +89,16 @@
       "anim_duration": 0.5
     },
     {
+      "type": "image",
+      "trigger_time": 28.5,
+      "duration": 10.0,
+      "src": "scene_01_0.jpg",
+      "position": "left",
+      "caption": "",
+      "anim": "fade_in",
+      "anim_duration": 0.6
+    },
+    {
       "type": "card",
       "trigger_time": 50.0,
       "duration": 7.0,
@@ -99,12 +109,32 @@
       "anim_duration": 0.5
     },
     {
+      "type": "image",
+      "trigger_time": 50.0,
+      "duration": 10.0,
+      "src": "scene_01_1.jpg",
+      "position": "left",
+      "caption": "",
+      "anim": "fade_in",
+      "anim_duration": 0.6
+    },
+    {
       "type": "diagram",
       "trigger_time": 61.0,
       "duration": 8.0,
       "title": "Geografie der Leinefurth",
       "body": "Leine (Solling → Schwarmstedt)\nIhme → Leine (Stadtgebiet)\nEilenriede — 645 ha Stadtwald",
       "position": "left",
+      "anim": "fade_in",
+      "anim_duration": 0.6
+    },
+    {
+      "type": "image",
+      "trigger_time": 71.5,
+      "duration": 10.0,
+      "src": "scene_01_2.jpg",
+      "position": "left",
+      "caption": "",
       "anim": "fade_in",
       "anim_duration": 0.6
     },
