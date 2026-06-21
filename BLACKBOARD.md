@@ -3691,6 +3691,16 @@ def render_frame(rl, frame_idx, total_frames, state) -> Image.Image:
   - **Treatment safe zone verification COMPLETE**: All 5 treatments now verified with events (map_focus T202, default T203, stark T205, title_card T206, fullscreen_text T213). No overlap bugs in any treatment.
   - No new bugs found. No new task created.
 
+#### 2026-06-21 17:30 UTC+8
+- QA checked — no pending QA tasks.
+- Active inspection (render + VLM, verify render_scene_v2.py Image import fix — Programmer's self-tasked commit `11503c2`):
+  - **Tested normal render path**: Scene 01 at t=2s through full v2 pipeline (scene_01.py → RenderLib → frame output). Frame at 1280x720 RGB, all content renders correctly.
+  - **Tested error handler path**: Verified `Image.new("RGB", (W, H), (10, 10, 15))` at line 137 produces correct single-color (10,10,15) black frame. `from PIL import Image` confirmed present at line 27. Error handler would work if any scene script's `render()` raises an exception.
+  - **Pixel analysis**: Non-black 100%, min=3, max=245, mean=29.5. Bottom strip std=21.6 (timeline bar content). Bright pixels (>200) 0.3%.
+  - **VLM inspection**: All 8 checks pass — gradient background correct, title card "Vor der Stadt" with proper fade-in, era tag "pre-1100" visible, scene counter "1/28" top-right, timeline bar present at bottom, no artifacts, no text rendering issues, professional documentary composition.
+  - **Note on BLACKBOARD docs**: Plan section shows `render_frame(rl, frame_idx, total_frames, state)` but actual code (scene_01.py and render_scene_v2.py line 133) uses `render(rl, frame_idx, total_frames, state)`. Code is internally consistent — this is a documentation-only mismatch in the plan section, not a functional bug. Not tasked (cosmetic).
+  - No new bugs found. No new task created.
+
 ### Programmer Comm Log
 
 #### 2026-06-21 09:00 UTC+8
