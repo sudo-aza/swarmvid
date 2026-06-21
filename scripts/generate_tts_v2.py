@@ -15,6 +15,8 @@ Requirements:
 Usage:
   python generate_tts_v2.py output/scenes/scene_01.json
   python generate_tts_v2.py output/scenes/scene_01.json --speaker ryan
+  python generate_tts_v2.py output/scenes/scene_01.json --single 0    # just segment 0
+  python generate_tts_v2.py output/scenes/scene_01.json --max-seg 2  # generate first 2 unseen segments
 """
 
 import json
@@ -107,11 +109,25 @@ def get_duration(path: str) -> float:
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
-    # Parse optional speaker arg
+    # Parse args
     speaker = SPEAKER
-    args = [a for a in sys.argv[2:] if not a.startswith("--")]
-    if args:
-        speaker = args[0].lower()
+    single_seg = None  # --single N: generate only segment N
+    max_new = None      # --max-seg N: stop after N newly generated segments
+
+    argv = sys.argv[2:]
+    i = 0
+    while i < len(argv):
+        if argv[i] == "--single" and i + 1 < len(argv):
+            single_seg = int(argv[i + 1])
+            i += 2
+        elif argv[i] == "--max-seg" and i + 1 < len(argv):
+            max_new = int(argv[i + 1])
+            i += 2
+        elif argv[i].startswith("--"):
+            i += 1  # skip unknown flags
+        else:
+            speaker = argv[i].lower()
+            i += 1
 
     with open(SCENE_JSON) as f:
         scene = json.load(f)
@@ -132,8 +148,22 @@ def main():
     seg_files = []
     total_dur = 0.0
     segment_durations = []
+    newly_generated = 0
 
     for i, seg in enumerate(segments):
+        # --single N: only process segment N
+        if single_seg is not None and i != single_seg:
+            # Still need duration for JSON update — check if file exists
+            out_path = os.path.join(seg_dir, f"seg_{i:02d}.wav")
+            if os.path.isfile(out_path) and os.path.getsize(out_path) > 1000:
+                dur = get_duration(out_path)
+                seg_files.append(out_path)
+                total_dur += dur
+                segment_durations.append(dur)
+            else:
+                segment_durations.append(None)
+            continue
+
         text = seg["text"]
         out_path = os.path.join(seg_dir, f"seg_{i:02d}.wav")
         print(f"  Segment {i} ({len(text)} chars)...", end=" ", flush=True)
@@ -147,6 +177,11 @@ def main():
             segment_durations.append(dur)
             continue
 
+        # --max-seg N: stop after N newly generated
+        if max_new is not None and newly_generated >= max_new:
+            print(f"max-seg reached ({max_new}), stopping")
+            break
+
         t0 = time.time()
         if generate_segment(text, out_path, speaker):
             dur = get_duration(out_path)
@@ -155,6 +190,7 @@ def main():
             seg_files.append(out_path)
             total_dur += dur
             segment_durations.append(dur)
+            newly_generated += 1
         else:
             print("FAILED")
             segment_durations.append(None)
