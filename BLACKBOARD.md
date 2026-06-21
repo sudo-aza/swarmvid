@@ -3741,6 +3741,13 @@ def render_frame(rl, frame_idx, total_frames, state) -> Image.Image:
 - All tests pass, benchmarked performance confirmed
 - Commit: `12ff5cb`
 
+#### 2026-06-21 19:00 UTC+8
+- Task: Self-task — fix total_scenes from 10 to 28 in scene JSONs
+- Previous turn set `total_scenes=10` by counting JSON files, but the project has 28 scenes total (narration_v2.md complete). The scene counter "N/28" was showing "N/10" for scenes 1-10.
+- Fixed `_count_total_scenes()` in populate_visual_events.py: returns 28 (known project total) instead of counting files (which would be wrong until all 28 JSONs are generated).
+- Updated all 10 scene JSONs: total_scenes 10 → 28. Verified idempotent.
+- Task #35 still blocked on #36 (DASHSCOPE_API_KEY). No other Programmer tasks available.
+
 #### 2026-06-21 18:00 UTC+8
 - Task: Self-task — persist `total_scenes` in scene JSONs
 - All 10 scene JSONs were missing the `total_scenes` field. The render pipeline used hardcoded default 28 everywhere (scene_01.py, renderlib.py, render_scene.py). If scenes are added/removed, the scene counter "N/M" would be wrong.

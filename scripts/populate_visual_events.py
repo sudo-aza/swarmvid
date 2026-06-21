@@ -582,10 +582,12 @@ POPULATORS = {
 
 
 def _count_total_scenes():
-    """Count total scene JSON files to set total_scenes in each scene."""
-    import glob
-    pattern = os.path.join(OUTPUT_DIR, "scene_*.json")
-    return len(glob.glob(pattern))
+    """Return total number of scenes in the project.
+
+    Uses the known project total (28) rather than counting JSON files,
+    since scene JSONs may not all exist yet (only 1-10 generated so far).
+    """
+    return 28
 
 
 def main():
