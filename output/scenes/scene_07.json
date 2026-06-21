@@ -1,0 +1,160 @@
+{
+  "scene_num": 7,
+  "title": "Wiederaufbau",
+  "subtitle": "und der Weg zur Macht (1648–1680)",
+  "era": "1648-1680",
+  "segments": [
+    {
+      "text": "Nach dem Westfälischen Frieden von 1648 stand Hannover vor der gewaltigen Aufgabe des Wiederaufbaus . Der Dreißigjährige Krieg hatte die Stadt und ihre Einwohner schwer gezeichnet, doch die Grundlagen für die Zukunft waren bereits gelegt: Herzog Georg von Calenberg hatte Hannover 1636 zu seiner Residenz gemacht, die Stadt befestigt und das Minoritenkloster zum Leineschloss umgebaut . Nun, nach dem Frieden, lag die Aufgabe bei seinen Söhnen, das Erbe weiterzuführen und Hannover zum Zentrum eines territorial zusammenhängenden Fürstentums auszubauen. Die Stadt und das umliegende Land brauchten dringend Erholung — zerstörte Höfe, unterbrochene Handelsrouten und eine dezimierte Bevölkerung erforderten jahrelange Wiederaufbauarbeit .",
+      "duration_s": 12.0
+    },
+    {
+      "text": "Georg Wilhelm, der zweite Sohn Georgs von Calenberg, hatte 1648 das Fürstentum Calenberg mit Residenz im Leineschloss geerbt . Doch der junge Herzog, ein begeisterter Reisender, kam seinen Verpflichtungen als Landesherr in Hannover kaum nach und hielt sich lieber in den Niederlanden, Italien und vor allem in Venedig auf . Die Regierungsgeschäfte liefen weitgehend ohne ihn ab. Erst als sein älterer Bruder Christian Ludwig 1665 starb und Georg Wilhelm in das begehrtere Fürstentum Lüneburg nach Celle wechselte, erbte der nächste Bruder, Johann Friedrich, das Fürstentum Calenberg . Georg Wilhelm blieb bis zu seinem Tod 1705 in Celle und wurde dort als letzter \"Heideherzog\" in guter Erinnerung .",
+      "duration_s": 12.0
+    },
+    {
+      "text": "Herzog Johann Friedrich regierte das Fürstentum Calenberg von 1665 bis zu seinem Tod im Jahr 1679 . Unter ihm setzte der allmähliche Wiederaufbau der Residenzstadt ein. Die Wirtschaft erholte sich langsam: Handel und Handwerk gewannen wieder an Kraft, und die städtische Verwaltung wurde konsolidiert . Johann Friedrich setzte die Politik seiner Vorgänger fort und sicherte die territoriale Integrität Calenbergs. Die Calenberger Neustadt, die Georg von Calenberg planmäßig auf dem linken Leineufer hatte anlegen lassen, wuchs und entwickelte sich zunehmend zum eigentlichen Herrschaftszentrum . Die Hof- und Stadtkirche in der Neustadt wurde 1666 bis 1670 errichtet — ein sichtbares Zeichen der neuen städtischen Bedeutung .",
+      "duration_s": 12.0
+    },
+    {
+      "text": "Im Jahr 1679 starb Johann Friedrich, und mit ihm erlosch die direkte Linie der Calenberger Herzöge. Als letzter überlebender Sohn Georgs von Calenberg erbte nun Ernst August, der jüngste der vier Brüder, das Fürstentum Calenberg und damit die Residenz Hannover . Ernst August, der bis dahin als Fürstbischof von Osnabrück gedient hatte — ein Amt, das ihm 1662 durch die Bestimmungen des Westfälischen Friedens zugefallen war —, brachte neue, weitreichende Ambitionen mit . Er verfolgte eine Politik, die auf Machterweiterung und Ansehenserhöhung gerichtet war. Unter anderem unterhielt er ein stehendes Heer nach dem Vorbild seines Vaters . Hannover sollte unter seiner Herrschaft nicht mehr nur eine Provinzresidenz sein, sondern zu einem europäischen Machtfaktor aufsteigen.",
+      "duration_s": 12.0
+    },
+    {
+      "text": "Unter Ernst August begann sich die höfische Kultur in Hannover zu entfalten . Die wissenschaftlichen und kulturellen Entwicklungen, die in der zweiten Hälfte des siebzehnten Jahrhunderts Europa erfassten, erreichten nun auch die welfische Residenz. Der Hof wurde zu einem Ort des intellektuellen Austauschs, und Hannover sollte bald eine Rolle in der europäischen Geistesgeschichte spielen. Die Bevölkerung wuchs durch Zuwanderung aus den umliegenden Gebieten, und die Stadt nahm einen neuen, dynamischen Charakter an . Das Fundament für das barocke Hannover des folgenden Jahrhunderts war bereitet — eine Stadt im Aufbruch, die sich von einer vom Krieg gezeichneten Provinz zur Residenz eines aufstrebenden Fürstenhauses entwickelte .",
+      "duration_s": 12.0
+    }
+  ],
+  "sources": [
+    "https://de.wikipedia.org/wiki/Westf%C3%A4lischer_Friede — 'Der Friedensvertrag wurde am 24. Oktober 1648 unterzeichnet.'",
+    "https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'holte Georg auch die Verwaltung von Hildesheim nach Hannover, baute die Stadt zu einer Festung aus, in die er auch die nun planmäßig angelegte Calenberger Neustadt auf dem linken Leineufer vereinte, und ließ das ehemalige Minoritenkloster an der Leine zu einem Schloss umbauen, dem Leineschloss'",
+    "NOTE: Die allgemeinen Nachwirkungen des Dreißigjährigen Krieges auf Niedersachsen sind historisch umfassend belegt; für Hannover siehe die Chronik der Stadt Hannover.",
+    "https://www.welfen.de/Georg-Wilhelm.htm — 'Mit dem Regierungsantritt seines älteren Bruders Christian Ludwig im Fürstentum Lüneburg (Celle), erbte Georg Wilhelm 1648 das Fürstentum Calenberg (Hannover).'",
+    "https://www.welfen.de/Georg-Wilhelm.htm — 'Doch setzte er seine lang anhaltenden Reisen fort und vergnügte sich lieber im Ausland und kam seinen Verpflichtungen als Landesherr anfangs in Hannover kaum nach.'",
+    "https://www.welfen.de/Georg-Wilhelm.htm — 'Mit dem Tod seines älteren Bruders Christian Ludwig 1665, wechselte Georg Wilhelm nach Celle in das begehrte Fürstentum Lüneburg. In Hannover erbte zunächst sein jüngerer Bruder Johann Friedrich das Fürstentum Calenberg.'",
+    "https://www.welfen.de/Georg-Wilhelm.htm — 'Georg Wilhelm war in der Bevölkerung beliebt und blieb vor allem den Celler Bürgern als letzter \"Heideherzog\" in guter Erinnerung.'",
+    "https://www.welfen.de/ernst2.htm — 'Johann Friedrich (1625-1679) regierte von 1665-1679 in Calenberg.'",
+    "https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Unter Georgs Nachfolgern wurde der Ausbau der Residenzstadt vorangetrieben und der Absolutismus eingeführt.'",
+    "https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'baute die Stadt zu einer Festung aus, in die er auch die nun planmäßig angelegte Calenberger Neustadt auf dem linken Leineufer vereinte'",
+    "https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Hof- und Stadtkirche in der Calenberger Neustadt (1666/70)'",
+    "https://de.wikipedia.org/wiki/Ernst_August_(Hannover) — '1679 wurde er Fürst von Calenberg und 1692 der erste Kurfürst von Braunschweig-Lüneburg (\"Kurhannover\").'",
+    "https://www.welfen.de/ernst2.htm — 'Im Jahr 1662 wurde Herzog Ernst August von seiner Familie auserwählt, \"weltlicher Bischof\" von Osnabrück zu werden. Nach den Bestimmungen des \"Westphälischen Friedens\" von 1648, aufgrund der so genannten Alternation, sollte jeweils ein protestantischer Prinz des Welfenhauses mit einem katholischen Bischof die Herrschaft im Bistum Osnabrück abwechselnd übernehmen.'",
+    "https://www.welfen.de/ernst2.htm — 'Herzog Ernst August verfolgte eine auf Machterweiterung für sein Land und auf Ansehenserhöhung gerichtete Politik. Dabei unterhielt er ein stehendes Heer, ganz nach dem Vorbild seines Vaters Herzog Georg von Calenberg.'",
+    "https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Insbesondere die Kurfürstin Sophie von der Pfalz, die Ehefrau Ernst Augusts, verstand es, ein geistreiches und festliches Hofleben zu führen.'",
+    "https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Der Hof und die Anzahl der zur Verwaltung gehörenden Personen wuchsen ständig, die ehemalige Bürgerstadt wurde stetig mehr von der Residenz umgeformt.'",
+    "NOTE: Der Wandel Hannovers von einer Bürgerstadt zur Residenz ist durchgehend in der stadthistorischen Literatur belegt (vgl. Schnath, Geschichte Hannovers im Zeichen der neunten Kur, 1982)."
+  ],
+  "facts": [
+    "Frieden von 1648 stand Hannover vor der gewaltigen Aufgabe des Wied",
+    "Hannover 1636 zu seiner Residenz gemacht",
+    "hatte 1648 das Fürstentum Calenberg mit Residenz im Leineschl",
+    "Ludwig 1665 starb und Georg Wilhelm in das begehrtere Fürstent",
+    "seinem Tod 1705 in Celle und wurde dort als letzter \"Heideherzog\"",
+    "Calenberg von 1665 bis zu seinem Tod im Jahr 1679",
+    "Neustadt wurde 1666 bis 1670 errichtet — ein sichtbares Zeichen der ne",
+    "1679: starb Johann Friedrich"
+  ],
+  "gradient": [
+    "#191919",
+    "#2d2d3f",
+    "#404060"
+  ],
+  "accent": "#f0932b",
+  "visual_treatment": "map_focus",
+  "visual_events": [
+    {
+      "type": "callout",
+      "trigger_time": 1.0,
+      "duration": 5.0,
+      "text": "1648",
+      "subtext": "Westfälischer Friede — Beginn des Wiederaufbaus",
+      "position": "center",
+      "anim": "pop",
+      "style": "highlight",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "image",
+      "trigger_time": 8.0,
+      "duration": 12.0,
+      "src": "scene_07_0.jpg",
+      "caption": "Herzog Georg Wilhelm von Calenberg",
+      "position": "left",
+      "anim": "fade_in",
+      "anim_duration": 0.6
+    },
+    {
+      "type": "card",
+      "trigger_time": 14.0,
+      "duration": 7.0,
+      "title": "Georg Wilhelm",
+      "body": "Zweiter Sohn Georgs von Calenberg\nReisender — hielt sich in Venedig auf\nRegierung ohne ihn\nLetzter \"Heideherzog\" in Celle (†1705)",
+      "position": "right",
+      "anim": "slide_left",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "callout",
+      "trigger_time": 25.0,
+      "duration": 5.0,
+      "text": "1665–1679",
+      "subtext": "Herzog Johann Friedrich regiert Calenberg",
+      "position": "center",
+      "anim": "pop",
+      "style": "highlight",
+      "anim_duration": 0.4
+    },
+    {
+      "type": "image",
+      "trigger_time": 30.0,
+      "duration": 10.0,
+      "src": "scene_07_1.jpg",
+      "caption": "Leineschloss Hannover",
+      "position": "right",
+      "anim": "fade_in",
+      "anim_duration": 0.6
+    },
+    {
+      "type": "callout",
+      "trigger_time": 30.0,
+      "duration": 4.0,
+      "text": "1666–1670",
+      "subtext": "Hof- und Stadtkirche in der Neustadt",
+      "position": "left",
+      "anim": "fade_in",
+      "style": "info",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "callout",
+      "trigger_time": 38.0,
+      "duration": 6.0,
+      "text": "1679",
+      "subtext": "Ernst August erbt Calenberg",
+      "position": "center",
+      "anim": "pop",
+      "style": "highlight",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "card",
+      "trigger_time": 42.0,
+      "duration": 4.0,
+      "title": "Ernst August",
+      "body": "Bis 1662: Fürstbischof von Osnabrück\nPolitik: Machterweiterung\nStehendes Heer nach franz. Vorbild",
+      "position": "right",
+      "anim": "slide_left",
+      "anim_duration": 0.4
+    },
+    {
+      "type": "image",
+      "trigger_time": 50.0,
+      "duration": 8.0,
+      "src": "scene_07_2.jpg",
+      "caption": "Barockgarten Herrenhausen",
+      "position": "bottom-right",
+      "anim": "fade_in",
+      "anim_duration": 0.6
+    }
+  ]
+}

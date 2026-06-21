@@ -3589,7 +3589,7 @@ def render_frame(rl, frame_idx, total_frames, state) -> Image.Image:
 | # | Task | Assigned | Status | Date |
 |---|------|----------|--------|------|
 | 33 | Fix renderlib.py performance bugs in `noise()` and `vignette()`. (1) `noise()` lines 242-246: per-pixel Python loop setting alpha=30 on all 921,600 pixels takes 0.214s/frame (43x slower than numpy). Replace with `rgba = np.stack([arr, arr, arr, np.full_like(arr, 30, dtype=np.uint8)], axis=-1); Image.fromarray(rgba, "RGBA")`. (2) `vignette()` line 231: `putdata(alpha_arr.flatten().tolist())` takes 0.016s/frame (101x slower than `Image.fromarray`). Replace with `Image.fromarray(alpha_arr, "L")`. Also remove unused `total_frames` param from `time()` and update "Scene Script Contract" in BLACKBOARD plan to match actual API (`begin_frame` + `frame()` pattern, no `.render()` method). | Programmer | **done** | 2026-06-21 |
-| 34 | Fix `renderlib.py vignette()` method — INVERTED vignette. Currently creates a grayscale "L" image where center=0 (black) and edges=high (gray). When composited onto the overlay, this DARKENS THE CENTER and LIGHTENS THE EDGES — the opposite of a vignette. Pixel proof: center brightness 4.6, corner brightness 122.3. Fix: use distance map as the ALPHA channel of a black RGBA image instead of as L-mode luminance. Replace `Image.fromarray(alpha_arr, "L").convert("RGBA")` with: `vig_rgba = np.zeros((h, w, 4), dtype=np.uint8); vig_rgba[:,:,3] = alpha_arr; Image.fromarray(vig_rgba, "RGBA")`. This makes center transparent (bg shows) and edges opaque black (darkened). Pre-existing bug, NOT caused by Task #33 fix. | Programmer | **pending** | 2026-06-21 |
+| 34 | Fix `renderlib.py vignette()` method — INVERTED vignette. Currently creates a grayscale "L" image where center=0 (black) and edges=high (gray). When composited onto the overlay, this DARKENS THE CENTER and LIGHTENS THE EDGES — the opposite of a vignette. Pixel proof: center brightness 4.6, corner brightness 122.3. Fix: use distance map as the ALPHA channel of a black RGBA image instead of as L-mode luminance. Replace `Image.fromarray(alpha_arr, "L").convert("RGBA")` with: `vig_rgba = np.zeros((h, w, 4), dtype=np.uint8); vig_rgba[:,:,3] = alpha_arr; Image.fromarray(vig_rgba, "RGBA")`. This makes center transparent (bg shows) and edges opaque black (darkened). Pre-existing bug, NOT caused by Task #33 fix. | Programmer | **done** | 2026-06-21 |
 
 ### Current Status
 - ✅ Visual events populated for scenes 1-10 (103 events: 28 image + 75 text)
@@ -3666,4 +3666,12 @@ def render_frame(rl, frame_idx, total_frames, state) -> Image.Image:
 - `time()`: removed unused `total_frames` parameter
 - Updated Scene Script Contract in BLACKBOARD to match actual API (`begin_frame` + `frame()` pattern)
 - All tests pass, benchmarked performance confirmed
+- Commit: `12ff5cb`
+
+#### 2026-06-21 12:00 UTC+8
+- Task #34: Fix renderlib.py `vignette()` — inverted vignette (QA-reported)
+- Root cause: `vignette()` built an L-mode grayscale image where center=0 (black), edges=high (gray). When alpha-composited, luminance values replace pixel color — center gets darkened, edges get lightened. Opposite of intended behavior.
+- Fix: build RGBA numpy array with black RGB channels (0,0,0) and distance map as alpha channel. Center: alpha=0 (transparent, background shows). Edges: alpha=high (opaque black, darkened). Removed `.convert("RGBA")` call.
+- Verified: mid-gray background (128,128,128) → center stays 128, corner darkens to 51, edge darkens to 74. Vignette is correctly oriented.
+- All 4 smoke test suites pass, no regressions.
 - Commit: pending

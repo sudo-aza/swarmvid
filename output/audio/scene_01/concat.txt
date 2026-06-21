@@ -1,0 +1,8 @@
+file '/home/z/my-project/swarmvid/output/audio/scene_01/seg_00.wav'
+file '/home/z/my-project/swarmvid/output/audio/scene_01/seg_01.wav'
+file '/home/z/my-project/swarmvid/output/audio/scene_01/seg_02.wav'
+file '/home/z/my-project/swarmvid/output/audio/scene_01/seg_03.wav'
+file '/home/z/my-project/swarmvid/output/audio/scene_01/seg_04.wav'
+file '/home/z/my-project/swarmvid/output/audio/scene_01/seg_05.wav'
+file '/home/z/my-project/swarmvid/output/audio/scene_01/seg_06.wav'
+file '/home/z/my-project/swarmvid/output/audio/scene_01/seg_07.wav'

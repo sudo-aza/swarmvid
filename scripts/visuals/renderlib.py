@@ -218,7 +218,8 @@ class RenderLib:
         self._bg_rgba = self._bg.convert("RGBA")
 
     def vignette(self, strength: float = 0.6) -> None:
-        """Add vignette darkening to the current overlay. Call after begin_frame()."""
+        """Add vignette darkening to the current overlay. Call after begin_frame().
+        Edges get darkened; center stays transparent (background shows through)."""
         ov, od = self._ensure_overlay()
         cx, cy = self.w / 2.0, self.h / 2.0
         y_coords, x_coords = np.mgrid[0:self.h, 0:self.w]
@@ -227,8 +228,12 @@ class RenderLib:
         d = np.sqrt(dx * dx + dy * dy) / 1.414
         d = np.clip(d, 0, 1.0)
         alpha_arr = (d * 255 * strength).astype(np.uint8)
-        vignette_img = Image.fromarray(alpha_arr, "L")
-        self._overlay = Image.alpha_composite(ov, vignette_img.convert("RGBA"))
+        # Build RGBA image: black RGB, distance map as alpha channel.
+        # Center: alpha=0 (transparent, bg shows). Edges: alpha=high (opaque black, darkened).
+        vig_rgba = np.zeros((self.h, self.w, 4), dtype=np.uint8)
+        vig_rgba[:, :, 3] = alpha_arr
+        vignette_img = Image.fromarray(vig_rgba, "RGBA")
+        self._overlay = Image.alpha_composite(ov, vignette_img)
         self._od = ImageDraw.Draw(self._overlay)
 
     def noise(self, intensity: float = 0.03) -> None:
