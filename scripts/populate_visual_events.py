@@ -454,6 +454,119 @@ def populate_scene_08(s):
     return events
 
 
+def populate_scene_09(s):
+    """König Georg I. — 1714-1727."""
+    events = []
+    # Seg 1 (12-24): Act of Settlement + Georg travels to London
+    events.append({
+        "type": "callout", "trigger_time": seg_time(s, 0, 2.0), "duration": 6.0,
+        "text": "22. Juni 1701", "subtext": "Act of Settlement — Sophie als Thronanwärterin",
+        "position": "center", "anim": "pop", "style": "highlight",
+        "anim_duration": 0.5,
+    })
+    events.append({
+        "type": "card", "trigger_time": seg_time(s, 0, 6.0), "duration": 5.0,
+        "title": "Personalunion", "body": "Hannover + Großbritannien\nEin Herrscher, zwei Reiche\nBis 1837 verbunden",
+        "position": "right", "anim": "slide_left", "anim_duration": 0.5,
+    })
+    # Seg 2 (24-36): Georg doesn't immediately travel, regents
+    events.append({
+        "type": "callout", "trigger_time": seg_time(s, 1, 2.0), "duration": 6.0,
+        "text": "18. Sept. 1714", "subtext": "Georg Ludwig besteigt den britischen Thron",
+        "position": "center", "anim": "pop", "style": "highlight",
+        "anim_duration": 0.5,
+    })
+    events.append({
+        "type": "callout", "trigger_time": seg_time(s, 1, 7.0), "duration": 4.0,
+        "text": "Deutsche Kanzlei", "subtext": "Regierung Hannovers aus London",
+        "position": "left", "anim": "fade_in", "style": "info",
+        "anim_duration": 0.5,
+    })
+    # Seg 3 (36-48): Impact on Hannover — loss of court
+    events.append({
+        "type": "card", "trigger_time": seg_time(s, 2, 2.0), "duration": 7.0,
+        "title": "Folgen für Hannover", "body": "Hof zieht nach London\nGrößter Arbeitgeber verschwindet\nStadt verliert politisches Zentrum",
+        "position": "right", "anim": "slide_left", "style": "warning",
+        "anim_duration": 0.5,
+    })
+    # Seg 4 (48-60): Economic impact — "hübsche Familien"
+    events.append({
+        "type": "diagram", "trigger_time": seg_time(s, 3, 2.0), "duration": 7.0,
+        "title": "Neue Eliten", "body": "Handelsbourgeoisie übernimmt\n\u201eHübsche Familien\u201c formieren sich\nStädtische Selbstverwaltung stärkt sich",
+        "position": "left", "anim": "fade_in", "anim_duration": 0.6,
+    })
+    # Seg 5 (60-72): Cultural exchange
+    events.append({
+        "type": "callout", "trigger_time": seg_time(s, 4, 2.0), "duration": 5.0,
+        "text": "Kultureller Austausch", "subtext": "Hannoversche Hofkultur → London",
+        "position": "center", "anim": "pop", "style": "highlight",
+        "anim_duration": 0.5,
+    })
+    events.append({
+        "type": "card", "trigger_time": seg_time(s, 4, 7.0), "duration": 4.0,
+        "title": "Britisch-Deutsche Verbindung", "body": "Architektur, Gartenkunst\nMilitärische Zusammenarbeit\nWirtschaftliche Integration",
+        "position": "right", "anim": "slide_left", "anim_duration": 0.4,
+    })
+    return events
+
+
+def populate_scene_10(s):
+    """Hannover als Residenz — 1727-1760."""
+    events = []
+    # Seg 1 (12-24): Georg II. ascends both thrones
+    events.append({
+        "type": "callout", "trigger_time": seg_time(s, 0, 1.0), "duration": 5.0,
+        "text": "1727", "subtext": "Georg II. — König & Kurfürst",
+        "position": "center", "anim": "pop", "style": "highlight",
+        "anim_duration": 0.5,
+    })
+    events.append({
+        "type": "card", "trigger_time": seg_time(s, 0, 5.0), "duration": 5.0,
+        "title": "Georg II.", "body": "Letzter britischer Monarch\nder personally im Heer anführte\nSchlacht bei Dettingen (1743)",
+        "position": "right", "anim": "slide_left", "anim_duration": 0.5,
+    })
+    # Seg 2 (24-36): Georgia Augusta Universität Göttingen 1737
+    events.append({
+        "type": "callout", "trigger_time": seg_time(s, 1, 2.0), "duration": 6.0,
+        "text": "1737", "subtext": "Georgia Augusta — Universität Göttingen gegründet",
+        "position": "center", "anim": "pop", "style": "highlight",
+        "anim_duration": 0.5,
+    })
+    events.append({
+        "type": "card", "trigger_time": seg_time(s, 1, 7.0), "duration": 4.0,
+        "title": "Universität Göttingen", "body": "Enlightenment ideals\nFirst university with no religious test\nBecame a European intellectual hub",
+        "position": "left", "anim": "slide_right", "style": "highlight",
+        "anim_duration": 0.4,
+    })
+    # Seg 3 (36-48): Baroque music culture
+    events.append({
+        "type": "card", "trigger_time": seg_time(s, 2, 2.0), "duration": 7.0,
+        "title": "Barocke Musikkultur", "body": "Oper, Theater, Ballett\nHöfische Repräsentation\nHannover als kulturelles Zentrum",
+        "position": "right", "anim": "slide_left", "anim_duration": 0.5,
+    })
+    # Seg 4 (48-60): Architecture and "hübsche Familien"
+    events.append({
+        "type": "callout", "trigger_time": seg_time(s, 3, 3.0), "duration": 6.0,
+        "text": "Hübsche Familien", "subtext": "Bauaufstieg des Bürgertums",
+        "position": "center", "anim": "pop", "style": "highlight",
+        "anim_duration": 0.5,
+    })
+    # Seg 5 (60-72): Diplomacy + Seven Years' War
+    events.append({
+        "type": "callout", "trigger_time": seg_time(s, 4, 2.0), "duration": 5.0,
+        "text": "Siebenjähriger Krieg", "subtext": "1756–1763 — Hannover in Gefahr",
+        "position": "center", "anim": "pop", "style": "warning",
+        "anim_duration": 0.5,
+    })
+    events.append({
+        "type": "card", "trigger_time": seg_time(s, 4, 6.0), "duration": 5.0,
+        "title": "Kriegsfolgen", "body": "Kurhannover besetzt (1757)\nConvention of Kloster Zeven\nSchlacht bei Minden (1759)",
+        "position": "left", "anim": "slide_right", "style": "warning",
+        "anim_duration": 0.5,
+    })
+    return events
+
+
 POPULATORS = {
     1: populate_scene_01,
     2: populate_scene_02,
@@ -463,6 +576,8 @@ POPULATORS = {
     6: populate_scene_06,
     7: populate_scene_07,
     8: populate_scene_08,
+    9: populate_scene_09,
+    10: populate_scene_10,
 }
 
 
@@ -480,6 +595,11 @@ def main():
         new_events = POPULATORS[num](scene)
         # Merge: keep existing events (e.g. image-type), add new text events
         existing = scene.get("visual_events", [])
+        # Skip if scene already has non-image events (idempotent)
+        existing_text = [e for e in existing if e.get("type") != "image"]
+        if existing_text:
+            print(f"  Scene {num} ({scene.get('title', '?')}): already has {len(existing_text)} text events, skipping")
+            continue
         scene["visual_events"] = existing + new_events
 
         with open(path, 'w') as f:

@@ -23,3 +23,26 @@ Stage Summary:
 - Repo hygiene audit: 631MB with ~83MB of tracked bloat identified
 - Multi-figure stacking: recommended Lua stack tracking approach for Task #178
 - Key pending task for Programmer: #182 (gitignore cleanup)
+
+---
+Task ID: 2
+Agent: Programmer
+Task: Task #30 step (a) — Add text visual events for scenes 9-10
+
+Work Log:
+- Pulled latest from origin/main (already up to date)
+- Read BLACKBOARD.md (from LaTeX project, stale for swarmvid)
+- Identified that populate_visual_events.py only had populators for scenes 1-8
+- Implemented populate_scene_09() — König Georg I. (1714-1727): 8 text events covering Act of Settlement, Personalunion, Deutsche Kanzlei, court departure impact, new elites, cultural exchange
+- Implemented populate_scene_10() — Hannover als Residenz (1727-1760): 8 text events covering Georg II., Universität Göttingen, baroque music, hübsche Familien, Seven Years' War
+- Added both to POPULATORS dict
+- Fixed German curly-quote syntax error (\u201e\u201c escaping)
+- Fixed duplicate-event bug: made populate script idempotent (skips scenes that already have non-image events)
+- Restored scenes 1-8 from accidental duplicate text events
+- Sorted all 103 events across 10 scenes by trigger_time
+- Verified: scene_09: 10 events (2 img + 8 txt), scene_10: 10 events (2 img + 8 txt)
+
+Stage Summary:
+- All 10 scenes now have text visual events (103 total: 28 image + 75 text)
+- populate_visual_events.py is now idempotent (safe to re-run)
+- Commit: programmer: add text events for scenes 9-10, make populate script idempotent
