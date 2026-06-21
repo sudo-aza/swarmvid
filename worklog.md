@@ -46,3 +46,42 @@ Stage Summary:
 - All 10 scenes now have text visual events (103 total: 28 image + 75 text)
 - populate_visual_events.py is now idempotent (safe to re-run)
 - Commit: programmer: add text events for scenes 9-10, make populate script idempotent
+
+---
+Task ID: 1
+Agent: zai-2 (researcher, interactive session)
+Task: Write sourced narration for Scenes 15-16 and push to GitHub
+
+Work Log:
+- Cloned/pulled swarmvid repo (commit 65c00f6)
+- Extracted Scene 15 (Ernst August, 1837-1851, 6 segments) and Scene 16 (Preußische Annexion, 1851-1866, 6 segments) from git history
+- Searched and read 8+ web sources: DHM (Göttinger Sieben, preußische Annexionen 1866), Niedersachsen portal, Welfen.de, Langensalza.de, Wikipedia (Georg V., Königreich Hannover), bavarikon4u (Welfenfonds), verfassungen.de
+- Wrote Scene 15: 6 segments covering Verfassungsbruch (1 Nov 1837), Göttinger Sieben protest (18 Nov 1837), international scandal, 1848 revolution/Stüve appointment, Paulskirche participation, Ernst August's paradoxical legacy
+- Wrote Scene 16: 6 segments covering Georg V's blindness and autocracy, preußisches Ultimatum and Einmarsch, Schlacht bei Langensalza (27 Jun 1866), Annexion and Welfenfonds, 70,277 Petition and welfische Bewegung, loss of Residenzstadt status
+- 2 NOTE tags where specific sources couldn't be found (S15.3, S15.5, S16.4)
+- Committed as e544deb, rebased on remote, pushed as c1c650d
+
+Stage Summary:
+- narration_v2.md: 976 lines, Scenes 1-16 complete (16/28 = 57%)
+- Key corrections to original: Scene 15 correctly dates Verfassungsbruch to 1 Nov 1837 (not generic), identifies all 7 Göttinger Sieben by name, includes Stüve appointment, notes 1840 Verfassung vs 1833 Staatsgrundgesetz distinction. Scene 16 includes specific casualty figures from Langensalza (573 dead, 1693 wounded), 70,277 Petition signatories, 16 million Vereinstaler Welfenfonds
+- Next: Scenes 17-18
+
+---
+Task ID: cron-217300-20260621
+Agent: zai-2 (researcher, cron #217300)
+Task: Continue narration_v2.md rewrite — Scenes 17-18
+
+Work Log:
+- Pulled repo (dab6e2a -> a87a004), saw stale BLACKBOARD.md from old swarm LaTeX project
+- Extracted Scene 17 (Preußische Provinz, 1866-1890, 6 segments) and Scene 18 (Wilhelminisches Hannover, 1890-1914, 6 segments)
+- Searched 10+ sources: Provinz Hannover Wikipedia, Geschichte der Stadt Hannover Wikipedia, Continental AG Wikipedia, NDR Continental article, Hannover Hauptbahnhof Wikipedia, Hannover Messe Wikipedia, Herrenhäuser Allee, Leibniz Uni Hannover, Zoo Hannover Wikipedia, FES Arbeiterbewegung PDF
+- Read key sources for verbatim quotes
+- Wrote Scene 17: 6 segments covering welfische resistance (1867 elections), Gründerzeit industrial boom, Continental founding (8 Oct 1871), population explosion (42.5K → 313.4K), Herrenhäuser Allee, Tramm era, cultural identity
+- Wrote Scene 18: 6 segments covering Continental growth to global player, Arbeiterbewegung/SPD, CORRECTED Hannover Messe error (founded 1947 not 19th century), Leibniz Uni history, Zoo (4 May 1865), social conditions
+- 7 NOTE tags where specific hannoversche sources couldn't be found
+- Pushed as 1f35913
+
+Stage Summary:
+- narration_v2.md: 1101 lines, Scenes 1-18 complete (18/28 = 64%)
+- Key correction: Original Scene 18 claimed Hannover Messe origins in wilhelminische Zeit — actually founded 1947. Flagged with NOTE.
+- Next: Scenes 19-20
