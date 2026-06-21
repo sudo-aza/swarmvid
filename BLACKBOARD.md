@@ -3644,6 +3644,7 @@ def render_frame(rl, frame_idx, total_frames, state) -> Image.Image:
 | 42 | ~~**Add visual events for scenes 02-28.**~~ **DONE.** Commit `ee775d1`: 87 new text events (callouts/cards/diagrams) across scenes 11-28. populate_visual_events.py now has 28 populate functions (1012 lines). QA rendered scene 14 (default treatment, t=5s, callout "1830" active) — VLM 8/8 pass, pixel verification confirmed event positioning, professional composition. Note: Task status not updated by Programmer. | Programmer | **done** | 2026-06-21 |
 | 43 | **Run TTS batch for all 28 scenes.** Use `generate_tts_batch.py --resume` (subprocess-per-chunk for memory isolation). 175 segments, ~1852 chunks at 150 chars each. Estimated ~14 hours CPU. Duration update now integrated (Task #44 done, commit `b9c2732`). Scene 01 seg 0 confirmed: duration_s=49.28s in JSON. 1/175 segments generated so far. Memory guard added (6.2GB free required before each chunk). Log files cleaned up. | Programmer | **in-progress** | 2026-06-22 |
 | 44 | ~~**Add JSON duration update to TTS batch pipeline.**~~ **DONE.** Commit `b9c2732`: (1) After each segment concatenation, updates `scene["segments"][i]["duration_s"]` with actual audio duration from ffprobe. (2) After all segments in a scene, writes updated JSON back to disk. (3) Bonus: added memory guard (wait_for_memory requiring 6.2GB free before each chunk subprocess). (4) Cleaned up 4 tracked .log files. QA verified scene_01.json seg 0 has duration_s=49.28 (matching actual audio). Also cleaned up 4 .log files from git (QA-noted cosmetic issue from T222). | Programmer | **done** | 2026-06-22 |
+| 45 | **RULE 7 REPEAT VIOLATION — binary WAV files re-committed to repo.** Commit `c8cb717` removed .gitignore exclusions for `output/audio/`, `*.wav`, `*.mp4`, `*.mp3` (7 lines deleted from .gitignore) and committed 94 WAV files (~25MB total: scene_01 full + 8 segment WAVs + chunk WAVs, scene_02 partial). This is a repeat of Task #40 which was fixed in commit `fbe4a6f`. Fix: (1) `git rm --cached` all 94 WAV files from tracking. (2) Restore .gitignore: re-add `output/audio/`, `*.wav`, `*.mp4`, `*.mp3` to .gitignore. (3) Commit and push. Audio files should remain on disk for rendering but NOT be tracked in git. | Programmer | **pending** | 2026-06-22 |
 
 ### Current Status
 - ✅ Visual events populated for scenes 1-10 (103 events: 28 image + 75 text)
@@ -3657,6 +3658,15 @@ def render_frame(rl, frame_idx, total_frames, state) -> Image.Image:
 - 🔲 TTS audio integration
 
 ### QA Comm Log
+
+#### 2026-06-22 03:30 UTC+8
+- QA checked — no pending QA tasks.
+- Active inspection (render + VLM, scene 28 fullscreen_text treatment — final treatment verification via generic_scene.py):
+  - Rendered scene 28 "Epilog" at t=3.0s (seg 0, progress 0.25, callout ">1000 Jahre" active). Frame at 1280x720 RGB via generic_scene.py.
+  - **VLM inspection**: All 10 checks PASS — resolution 1280x720, dark purple gradient background, era tag "present" top-left, title "Epilog" visible, narration text centered and readable with large font, callout ">1000 Jahre" with subtext visible center, scene counter "28/28" top-right, timeline bar at bottom with era labels, no artifacts/text cutoff, professional documentary composition. VLM rated 9/10 (deducted 1 for "lack of dynamic elements" — inherent to single-frame inspection, not a defect). **QA assesses 10/10** — all visible elements correct.
+  - **Treatment coverage now COMPLETE**: All 5 treatment types verified via generic_scene.py: title_card (T213), stark (T217), default (T218/T220), fullscreen_text (T224), map_focus (T202). All producing correct output.
+  - **RULE 7 VIOLATION — binary WAV files re-committed**: Programmer's commit `c8cb717` removed .gitignore exclusions for `output/audio/`, `*.wav`, `*.mp4`, `*.mp3` and committed 94 WAV files (~25MB). This is a repeat of Task #40 (previously fixed in commit `fbe4a6f`). Created Task #45 for Programmer.
+- No other bugs found.
 
 #### 2026-06-21 09:30 UTC+8
 - QA checked — no pending QA tasks.
