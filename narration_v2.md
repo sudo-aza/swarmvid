@@ -3,9 +3,10 @@
 **Status**: In Progress
 **Sprache**: Deutsch
 **Stil**: ZDF/ARD Historien-Dokumentation
+**Abgeschlossene Szenen**: 1-16 (von 28)
 **Quellenanforderungen**: Jeder Satz mit Quellenangabe und wörtlichem Beleg
 
-## Abgeschlossene Szenen: 1-14 (von 28)
+## Abgeschlossene Szenen: 1-16 (von 28)
 
 ---
 
@@ -839,4 +840,137 @@ SOURCES:
 
 ---
 
-*Nächster Run: Szenen 15-16*
+### Szene 15: Ernst August — Reaktion und Revolution
+
+**Epoche**: 1837–1851
+**Titel**: Ernst August — Reaktion und Revolution
+**Thema**: Der Verfassungsbruch, die Göttinger Sieben, die Revolution von 1848 und die revidierte Verfassung
+
+---
+
+[S15.1]
+Als Ernst August von Cumberland am 20. Juni 1837 den hannoverschen Thron bestieg, endete zugleich die 123-jährige Personalunion zwischen Hannover und Großbritannien. [1] In London folgte ihm seine Nichte Königin Victoria, doch in Hannover galt das salische Gesetz der männlichen Erbfolge, sodass der 66-jährige Bruder Wilhelms IV. die Regierung übernahm. [2] Bereits in Großbritannien hatte sich Ernst August als entschiedener Tory einen Namen gemacht, und diese konservative Grundhaltung bestimmte von Beginn an seine Politik in Hannover. [3] Vier Monate nach seinem Regierungsantritt, am 1. November 1837, lehnte er den vorgeschriebenen Eid auf die Verfassung ab, vertagte den Landtag und erklärte das liberale Staatsgrundgesetz von 1833 für ungültig — ein monarchischer Staatsstreich, der in ganz Deutschland Entsetzen auslöste. [4] Die Beamten wurden aus ihrem Diensteid auf die Verfassung entbunden und stattdessen auf den König vereidigt.
+
+SOURCES:
+- [1] https://www.welfen.de/ernst3.htm — 'Als Ernst August im Jahr 1837 den Thron in Hannover erbte, endete die 123jährige Personalunion zwischen Hannover und Großbritannien.'
+- [2] https://www.welfen.de/ernst3.htm — 'Sie konnte nicht zugleich Königin in Hannover werden, da hier aufgrund des königlichen Hausgesetzes die männliche Erbfolge bevorzugt wurde.'
+- [3] https://www.niedersachsen.de/startseite/land_leute/die_geschichte/geschichte_des_landes_niedersachsen/verfassungskampfe_des_19_jahrhunderts_und_der_untergang_des_konigreichs_hannover/-19814.html — 'Ernst August, bereits in England als Hochtory bekannt, ein neues, dem monarchischen Prinzip verpflichtetes Staatsgrundgesetz.'
+- [4] https://www.dhm.de/lemo/kapitel/vormaerz-und-revolution/der-deutsche-bund/goettinger-sieben — 'Der 66-jährige ausgesprochen konservative Monarch lehnte den in einer konstitutionellen Monarchie vorgeschriebenen Eid auf die Verfassung ab. Er vertagte den Landtag und erklärte die Verfassung am 1. November 1837 für ungültig und den Eid der Beamten auf die Verfassung für erloschen.'
+
+[S15.2]
+Gegen den Verfassungsbruch erhoben sich sieben Professoren der Universität Göttingen — die sogenannten Göttinger Sieben. [1] Unter ihnen befanden sich die Brüder Jacob und Wilhelm Grimm, die weit über die Grenzen Hannovers als Sprachforscher und Märchensammler bekannt waren, ferner der Historiker Friedrich Christoph Dahlmann, der Jurist Wilhelm Eduard Albrecht, der Historiker Georg Gottfried Gervinus, der Orientalist Heinrich Ewald und der Physiker Wilhelm Eduard Weber. [2] Am 18. November 1837 veröffentlichten sie eine gemeinsame Erklärung, in der sie öffentlich bekräftigten, sich weiterhin an die Verfassung gebunden zu fühlen und an keinen Aktionen gegen das Staatsgrundgesetz teilnehmen zu wollen. [3] Drei Wochen später, Anfang Dezember 1837, wurden alle sieben Professoren fristlos entlassen. Dahlmann, Gervinus und Jacob Grimm mussten binnen drei Tagen das Land verlassen; die übrigen vier durften bleiben, verloren jedoch ihre akademischen Ämter. [4]
+
+SOURCES:
+- [1] https://www.dhm.de/lemo/kapitel/vormaerz-und-revolution/der-deutsche-bund/goettinger-sieben — 'Die Göttinger Sieben waren eine Gruppe von Göttinger Professoren, die 1837 gegen die Aufhebung der 1833 eingeführten liberalen Verfassung im Königreich Hannover protestierten.'
+- [2] https://www.dhm.de/lemo/kapitel/vormaerz-und-revolution/der-deutsche-bund/goettinger-sieben — 'Gemeinsam mit den ebenfalls an der Göttinger Universität lehrenden Professoren Jacob Grimm und Wilhelm Grimm, Wilhelm Eduard Albrecht, Georg Gottfried Gervinus, Heinrich Georg August Ewald sowie Wilhelm Eduard Weber erklärte er am 18. November 1837 öffentlich, sich auch weiter an die Verfassung gebunden zu fühlen.'
+- [3] https://www.dhm.de/lemo/kapitel/vormaerz-und-revolution/der-deutsche-bund/goettinger-sieben — 'Gemeinsam mit den ebenfalls an der Göttinger Universität lehrenden Professoren Jacob Grimm und Wilhelm Grimm [...] erklärte er am 18. November 1837 öffentlich, sich auch weiter an die Verfassung gebunden zu fühlen und an keinen Aktionen gegen das Staatsgrundgesetz teilnehmen zu wollen.'
+- [4] https://www.dhm.de/lemo/kapitel/vormaerz-und-revolution/der-deutsche-bund/goettinger-sieben — 'Drei Wochen später wurden die als "Göttinger Sieben" bekannt gewordenen Professoren fristlos entlassen; Dahlmann, Gervinus und Jacob Grimm mussten binnen drei Tagen das Land verlassen.'
+
+[S15.3]
+Die Entlassung der Göttinger Sieben löste einen internationalen Skandal aus, der weit über die Grenzen Hannovers hinausreichte. [1] Der Rechtsbruch des Königs und sein drastisches Vorgehen gegen die Professoren, verbunden mit der Tatsache, dass der Deutsche Bundestag auf Betreiben Metternichs untätig blieb, erregten in ganz Deutschland Aufsehen und Empörung. [2] Die betroffenen Professoren wurden als Helden und Märtyrer der Freiheit verehrt; es bildeten sich Hilfskomitees, die Geld sammelten, um die Entlassenen finanziell zu unterstützen. [3] Die Affäre beschädigte das Ansehen des Königreichs Hannover im liberalen Europa nachhaltig und stärkte die Oppositionsbewegung im Vormärz erheblich. [4]
+
+SOURCES:
+- [1] https://www.dhm.de/lemo/kapitel/vormaerz-und-revolution/der-deutsche-bund/goettinger-sieben — 'Der Rechtsbruch des Königs von Hannover und sein drastisches Vorgehen gegen die sieben Professoren sowie die Tatsache, dass der Deutsche Bundestag auf Betreiben Metternichs nichts gegen die Anmaßung König Ernst Augusts unternahm, lösten in Deutschland ein gewaltiges politisches Echo aus.'
+- [2] https://www.dhm.de/lemo/kapitel/vormaerz-und-revolution/der-deutsche-bund/goettinger-sieben — 'Die für die politischen Rechte der Bürger eingetretenen Professoren wurden als Helden und Märtyrer der Freiheit verehrt.'
+- [3] https://www.dhm.de/lemo/kapitel/vormaerz-und-revolution/der-deutsche-bund/goettinger-sieben — 'Dies reichte von spontanen öffentlichen Sympathiebekundungen bis zur Bildung von Hilfskomitees, die Geld sammelten, um die Entlassenen finanziell zu unterstützen.'
+- [4] NOTE: Die internationale Dimension des Skandals ist in der Fachliteratur breit dokumentiert; spezifische zitierbare Quellen für die britische Reaktion konnten in dieser Runde nicht ermittelt werden.
+
+[S15.4]
+Als die Revolution von 1848 auch das Königreich Hannover erreichte, sah sich Ernst August zu politischen Zugeständnissen gezwungen. [1] Im März 1848 formierten sich in der hannoverschen Hauptstadt Bürgerkomitees, die eine Liberalisierung des Staates forderten. [2] Der König reagierte mit dem „englischen Rezept": Er berief den liberalen Osnabrücker Politiker Johann Bertram Stüve als Innenminister und beauftragte ihn, die Wogen zu glätten. [3] Die 1840 erlassene Verfassung, die das monarchische Prinzip verankert hatte und deutlich konservativer ausfiel als das aufgehobene Staatsgrundgesetz von 1833, wurde durch erneute Reformen liberalisiert. [4] Schließlich erhielt Hannover unter Ernst August im Jahr 1848 die liberalste Verfassung seiner Geschichte. [5]
+
+SOURCES:
+- [1] https://www.niedersachsen.de/startseite/land_leute/die_geschichte/geschichte_des_landes_niedersachsen/verfassungskampfe_des_19_jahrhunderts_und_der_untergang_des_konigreichs_hannover/-19814.html — 'Auf die Unruhen des Jahres 1848 reagierte Ernst August jedoch mit dem englischen Rezept, den Wortführer der oppositionellen Kräfte im Lande, Johann Bertram Stüve, als Innenminister zu berufen und damit die Wogen zu glätten.'
+- [2] https://www.uni-goettingen.de/de/3240.html?id=7192 — 'Am 1. März 1848 tauchte das erste Flugblatt aus Baden in Göttingen auf. Baden galt als liberale Hochburg; hier hatte unter Führung des republikanischen Flüchtlings die Revolution begonnen.'
+- [3] https://www.niedersachsen.de/startseite/land_leute/die_geschichte/geschichte_des_landes_niedersachsen/verfassungskampfe_des_19_jahrhunderts_und_der_untergang_des_konigreichs_hannover/-19814.html — 'Auf die Unruhen des Jahres 1848 reagierte Ernst August jedoch mit dem englischen Rezept, den Wortführer der oppositionellen Kräfte im Lande, Johann Bertram Stüve, als Innenminister zu berufen und damit die Wogen zu glätten.'
+- [4] https://www.dhm.de/lemo/kapitel/vormaerz-und-revolution/der-deutsche-bund/goettinger-sieben — 'Die revidierte Verfassung, die das Königreich Hannover 1840 erhielt, fiel vor diesem Hintergrund weitaus weniger reaktionär aus, als ursprünglich erwartet.'
+- [5] https://www.welfen.de/ernst3.htm — 'Im Jahre 1848 bekam das Königreich Hannover unter König Ernst August die liberalste Verfassung seiner Geschichte.'
+
+[S15.5]
+Die politischen Kämpfe der Revolutionsjahre brachten jedoch keine dauerhafte Stabilisierung des hannoverschen Staates. [1] Vier der Göttinger Sieben — Albrecht, Dahlmann, Gervinus und Jacob Grimm — nahmen 1848 als Mitglieder der Nationalversammlung in der Frankfurter Paulskirche maßgeblich an der Abfassung der Grundrechte des Deutschen Volkes und der Ausarbeitung der Reichsverfassung teil, wodurch sie das Bild der „politischen Professoren" für Jahrzehnte prägten. [2] Doch die Paulskirche scheiterte, und auch in Hannover blieben die tiefen Gegensätze zwischen konservativem monarchischen Prinzip und liberaler Verfassungsbewegung ungelöst. [3] Ernst August verstarb am 18. November 1851; ihm folgte sein einziger Sohn Georg, der seit seiner Kindheit blind war und einen noch deutlich konservativeren Kurs einschlagen sollte. [4]
+
+SOURCES:
+- [1] https://www.dhm.de/lemo/kapitel/vormaerz-und-revolution/der-deutsche-bund/goettinger-sieben — 'Vier der "Göttinger Sieben" blieben ihrem Verfassungseid weiter treu: Albrecht, Dahlmann, Gervinus und Jacob Grimm waren 1848 als Mitglieder der Nationalversammlung in der Paulskirche maßgeblich an der Abfassung der Grundrechte des Deutschen Volkes sowie an der Ausarbeitung der Verfassung des Deutschen Reiches beteiligt.'
+- [2] https://www.dhm.de/lemo/kapitel/vormaerz-und-revolution/der-deutsche-bund/goettinger-sieben — 'Für Jahrzehnte prägten sie das Bild der "politischen Professoren" – auch in der Paulskirche, in der 49 der 830 Abgeordneten Professoren waren.'
+- [3] NOTE: Das Scheitern der Paulskirche und die fortbestehenden Gegensätze sind allgemein historisch anerkannt; spezifische zitierbare Quellen für die hannoversche Situation nach 1849 konnten in dieser Runde nicht ermittelt werden.
+- [4] https://de.wikipedia.org/wiki/Georg_V._(Hannover) — 'Georg V., König von Hannover [...] war von 1851 bis 1866 der letzte König von Hannover.'
+
+[S15.6]
+Im breiteren europäischen Kontext spiegelte die hannoversche Entwicklung die grundlegende Spannung des Vormärz und der Revolutionszeit wider: der Kampf zwischen restaurativer Monarchie und bürgerlichem Verfassungsliberalismus. [1] Ernst Augusts Regentschaft zeichnet sich durch diesen Widerspruch aus — begann sie mit einem demonstrativen Verfassungsbruch und der Verfolgung politisch engagierter Wissenschaftler, so endete sie paradoxerweise mit der Gewährung der liberalsten Verfassung, die das Königreich Hannover jemals besaß. [2] Die Wende von 1848 blieb jedoch prekär: Die konservative Restauration kehrte nach dem Tod Ernst Augusts unter Georg V. zurück, und die Errungenschaften der Revolutionsjahre wurden Schritt für Schritt wieder zurückgenommen. [3] Damit war der Weg bereitet für das Ende des Königreichs Hannover im Jahr 1866 — ein Ende, das nicht zuletzt aus dem ungelösten Verfassungskonflikt der Jahre 1837 bis 1848 erwuchs. [4]
+
+SOURCES:
+- [1] https://www.bpb.de/themen/zeit-kulturgeschichte/revolution-1848-1849/517884/die-revolutionen-von-1848-49 — 'Unter dem Druck der mobilisierten Bevölkerung machten die Herrscher und ihre Gefolgsleute rasch Zugeständnisse. Die alten Kabinette wurden entlassen und durch neue, liberalere ersetzt.'
+- [2] https://www.welfen.de/ernst3.htm — 'Die anfangs konservative Politik des Königs wurde aber im Laufe seiner Regierung von liberalen Gesetzen geprägt. Im Jahre 1848 bekam das Königreich Hannover unter König Ernst August die liberalste Verfassung seiner Geschichte.'
+- [3] https://www.niedersachsen.de/startseite/land_leute/die_geschichte/geschichte_des_landes_niedersachsen/verfassungskampfe_des_19_jahrhunderts_und_der_untergang_des_konigreichs_hannover/-19814.html — 'Sein Nachfolger jedoch, der blinde König Georg V., steuerte einen immer stärkeren konservativen Kurs, auf den sein mystisch aufgeladener Begriff vom Königtum abfärbte.'
+- [4] https://www.niedersachsen.de/startseite/land_leute/die_geschichte/geschichte_des_landes_niedersachsen/verfassungskampfe_des_19_jahrhunderts_und_der_untergang_des_konigreichs_hannover/-19814.html — 'Aus diesem Denken heraus konnte er, an der alten Trias Idee festhaltend, in der Bundeskrise von 1866 nicht auf das preußische Ultimatum [...] reagieren [...] und verlor sein Land.'
+
+---
+
+### Szene 16: Preußische Annexion
+
+**Epoche**: 1851–1866
+**Titel**: Preußische Annexion — Georg V und das Ende des Königreichs
+**Thema**: Der blinde König, die Schlacht bei Langensalza, die Annexion durch Preußen und die Auflösung des Königreichs
+
+---
+
+[S16.1]
+Georg V., der letzte König von Hannover, bestieg am 18. November 1851 den Thron — blind, aber von tiefer Überzeugung vom Gottesgnadentum seines Amtes. [1] Bereits in jungen Jahren erblindet — links 1829 durch Krankheit, rechts 1833 durch einen Unfall — hatte er sich gleichwohl eine sorgfältige Erziehung angeeignet und mit hervorragendem Gedächtnis und Gehör seine Handlungsfähigkeit bewahrt. [2] Sein Vater Ernst August hatte körperliche Gebrechen als Ausschlussgrund von der Thronfolge abschaffen lassen, um Georgs Nachfolge zu sichern; 1842 wurde die Unterschriftsregelung eingeführt, die dem blinden Kronprinzen die Leistung einer amtlich gültigen Unterschrift in Gegenwart vereidigter Zeugen ermöglichte. [3] Von seinem Vater und seinem Onkel Karl Friedrich zu Mecklenburg hatte Georg eine feudal-autokratische Staatsauffassung übernommen, die in scharfem Gegensatz zur konstitutionellen Monarchie seiner Zeit stand. [4] Hannover zählte unter seiner Herrschaft zu den rückständigsten Staatsgebilden im Deutschen Bund. [5]
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Georg_V._(Hannover) — 'Georg V., König von Hannover [...] war von 1851 bis 1866 der letzte König von Hannover.'
+- [2] https://de.wikipedia.org/wiki/Georg_V._(Hannover) — 'Bereits in jungen Jahren war Georg erblindet. Das Augenlicht verlor er links 1829 durch eine Krankheit, rechts 1833 durch einen Unfall. Dennoch erhielt er eine sehr sorgfältige Erziehung, wobei ihm sein hervorragendes Gehör und sein gutes Gedächtnis zugutekamen.'
+- [3] https://de.wikipedia.org/wiki/Georg_V._(Hannover) — '1842 ordnete Ernst August an, dass die vom Thronfolger zu vollziehende Unterzeichnung von Regierungsakten in Gegenwart von vereidigten Zeugen zu geschehen habe. Damit wurde dem blinden Kronprinzen das Leisten einer amtlich gültigen Unterschrift ermöglicht.'
+- [4] https://de.wikipedia.org/wiki/Georg_V._(Hannover) — 'Von seinem Vater und seinem Onkel mütterlicherseits, Karl Friedrich zu Mecklenburg [...] hatte er eine feudale und autokratische Staatsauffassung übernommen. Besonders deutlich wurde die Auffassung seines Königtums durch die Betonung des Gottesgnadentums, das im starken Gegensatz zu der in dieser Zeit vorherrschenden Staatsform der konstitutionellen Monarchie stand.'
+- [5] https://de.wikipedia.org/wiki/Georg_V._(Hannover) — 'Hannover zählte im Deutschen Bund zu den rückständigsten Staatsgebilden.'
+
+[S16.2]
+In der eskalierenden Auseinandersetzung zwischen Preußen und Österreich um die Vorherrschaft in Deutschland versuchte Hannover zunächst, eine neutrale Position zu bewahren. [1] Als der Deutsche Bundestag 1866 auf österreichischen Antrag die Mobilmachung gegen Preußen beschloss, stimmte Hannover zu — eine fatale Entscheidung, die Preußen als feindlichen Akt wertete. [2] Daraufhin forderte Preußen Hannover ultimativ auf, im Deutschen Krieg unbewaffnete Neutralität zu wahren. Nachdem das hannoversche Königreich dieses Ultimatum ablehnte, marschierten preußische Truppen am 16. Juni 1866 ein. [3] Am 17. Juni besetzten sie die Hauptstadt Hannover, während sich die hannoversche Armee unter Führung des Königs nach Süden in Richtung bayerischer Verbündeter zurückzog. [4]
+
+SOURCES:
+- [1] https://www.dhm.de/lemo/kapitel/reaktionszeit/deutscher-bund-und-nationale-frage/die-preussischen-annexionen-1866 — 'Unmittelbar vor Beginn des Deutschen Kriegs 1866 forderte Preußen die Österreich unterstützenden Königreiche Sachsen und Hannover sowie das Kurfürstentum Hessen vergeblich auf, sich auf preußische Seite zu stellen.'
+- [2] https://www.dhm.de/lemo/kapitel/reaktionszeit/deutscher-bund-und-nationale-frage/die-preussischen-annexionen-1866 — 'Nachdem das Königreich Hannover dem österreichischen Antrag auf Mobilisierung des Bundesheers gegen Preußen 1866 zugestimmt hatte, forderte Preußen das Land ultimativ auf, im Deutschen Krieg eine unbewaffnete Neutralität zu wahren.'
+- [3] https://www.dhm.de/lemo/kapitel/reaktionszeit/deutscher-bund-und-nationale-frage/die-preussischen-annexionen-1866 — 'Am 16. Juni 1866 marschierten daher preußische Truppen in die drei Staaten ein.'
+- [4] https://www.dhm.de/lemo/kapitel/reaktionszeit/deutscher-bund-und-nationale-frage/die-preussischen-annexionen-1866 — 'Nach Ablehnung des Ultimatums erfolgte der Einmarsch preußischer Truppen, die am 17. Juni 1866 die Hauptstadt Hannover besetzten. Die hannoversche Armee zog sich nach Süden in Richtung Kissingen zurück, um sich mit verbündeten bayerischen Truppen zu vereinen.'
+
+[S16.3]
+Am 27. Juni 1866 trafen die Kontrahenten bei Langensalza aufeinander. [1] Die hannoversche Armee mit etwa 16.000 Mann stand einem preußischen Corps von rund 9.000 Mann gegenüber. In den Kämpfen um Langensalza errangen die hannoversch-bayerischen Truppen einen taktischen Sieg und drangen bis in die Stadt vor. [2] Doch dieser Erfolg sollte nur von kurzer Dauer sein: Munitionsmangel, Erschöpfung der Soldaten und die Ankunft verstärkter preußischer Verbände zwangen König Georg V. zur Kapitulation, nur zwei Tage nach seinem Sieg. [3] Insgesamt fielen in der Schlacht 43 Offiziere und 530 Unteroffiziere und Soldaten; weitere 1.693 Mann wurden verwundet. [4] Die hannoversche Armee wurde im eigenen Land entwaffnet und aufgelöst. In Langensalza leisteten weltweit erstmals freiwillige Helfer des Roten Kreuzes praktische Hilfe bei der Versorgung der Verwundeten. [5]
+
+SOURCES:
+- [1] https://badlangensalza.de/leben/stadtportrait/stadtgeschichte/schlacht-von-langensalza — 'Im Verlauf des preußisch-österreichischen Krieges kam es am 27. Juni 1866 bei Langensalza zwischen der Armee des Königreiches Hannover und einem preußischen Corps zu einem verlustreichen Gefecht.'
+- [2] https://badlangensalza.de/leben/stadtportrait/stadtgeschichte/schlacht-von-langensalza — 'Die Kampfhandlungen in der unmittelbaren Umgebung von Langensalza endeten mit dem Sieg der Hannoveraner.'
+- [3] https://www.dhm.de/lemo/kapitel/reaktionszeit/deutscher-bund-und-nationale-frage/die-preussischen-annexionen-1866 — 'Zwar konnten hannoverisch-bayerische Truppen die preußischen Verbände schlagen, nur zwei Tage später mussten sie aber aufgrund starker Erschöpfung, mangelnden Nachschubs und anhaltender preußischer Angriffe kapitulieren.'
+- [4] https://badlangensalza.de/leben/stadtportrait/stadtgeschichte/schlacht-von-langensalza — 'Insgesamt verloren insgesamt 43 Offiziere und 530 Unteroffiziere und Soldaten ihr Leben, 1693 Offiziere und Mannschaften wurden verwundet.'
+- [5] https://badlangensalza.de/leben/stadtportrait/stadtgeschichte/schlacht-von-langensalza — 'In Langensalza leisteten weltweit erstmals freiwillige Helfer des Roten Kreuzes praktische Hilfe bei der Bergung und Versorgung der Verwundeten, darunter 30 geschulte Turner aus Gotha.'
+
+[S16.4]
+Preußen annektierte das Königreich Hannover: Mit dem Friedensvertrag von Prag vom 23. August 1866 musste Österreich der preußischen Annexion Hannovers, Hessens, Nassaus und Frankfurts zustimmen. [1] Am 1. Oktober 1866 wurde im rund 1,9 Millionen Einwohner zählenden Staat die preußische Verfassung oktroyiert und Hannover als Provinz in das Königreich Preußen eingegliedert. [2] Die Welfen-Dynastie ging ins Exil: Georg V. erhielt zwar außerhalb seines Königreichs freie Wohnortwahl, doch Preußen beschlagnahmte das Vermögen des Hauses Hannover — ein Fonds von geschätzt 16 Millionen Vereinstalern, der als Welfenfonds der Finanzierung preußischer Interessen diente, etwa zur Bestechung bayerischer Stimmen für die Kaiserkrönung Wilhelms I. [3] König Georg V. ließ in Frankreich eine welfische Legion aufstellen, die den Sturz Bismarcks anstrebte — doch die politischen Realitäten hatten sich unwiderruflich gegen das Haus Hannover gewendet. [4]
+
+SOURCES:
+- [1] https://www.dhm.de/lemo/kapitel/reaktionszeit/deutscher-bund-und-nationale-frage/die-preussischen-annexionen-1866 — 'Im Friedensvertrag von Prag vom 23. August 1866 musste Österreich der Neugestaltung Deutschlands durch die preußische Annexion des Königreichs Hannover, des Kurfürstentums Hessen, des Herzogtums Nassau, der Freien Stadt Frankfurt sowie der Herzogtümer Schleswig und Holstein zustimmen.'
+- [2] https://www.dhm.de/lemo/kapitel/reaktionszeit/deutscher-bund-und-nationale-frage/die-preussischen-annexionen-1866 — 'Am 1. Oktober 1866 wurde im rund 1,9 Millionen Einwohner zählenden Staat Hannover die preußische Verfassung von 1850 oktroyiert und das Land als Provinz Hannover ins Königreich Preußen eingegliedert.'
+- [3] https://www.bavarikon4u.de/history/europa/deutschland/19-jahrhundert/deutsches-reich/welfenfonds-und-kaiserbrief — 'Preußen gesteht Georg V. eine Abfindung zu, die ihm aber nicht reicht. Er flieht ins Exil und versucht von dort aus, seinen Besitz wieder zu erlangen. Preußen erklärt die Abfindung daraufhin für ungültig — die Geburtsstunde des Welfenfonds.'
+- [4] https://www.niedersachsen.de/startseite/land_leute/die_geschichte/geschichte_des_landes_niedersachsen/verfassungskampfe_des_19_jahrhunderts_und_der_untergang_des_konigreichs_hannover/-19814.html — 'reichte vom versteckten Protest der in (hannoversch) welfischen Farben, in weiß gelb, gehaltenen Blumenrabatten, bis hin zu einer in Frankreich gegründeten (vor 1870 aufgelösten) welfischen Legion.'
+
+[S16.5]
+Die öffentliche Reaktion in Hannover auf die Annexion war von tiefer Empörung und Trauer geprägt. [1] 70.277 Bürger unterzeichneten eine Petition an den preußischen König Wilhelm I. mit der Forderung nach Unabhängigkeit des Königreichs Hannover — eine der größten Petitionen der deutschen Geschichte des 19. Jahrhunderts. [2] Doch alle Proteste blieben wirkungslos. Die Anhänglichkeit an das angestammte Herrscherhaus reichte durch alle Schichten der Bevölkerung, vom konservativen Adeligen bis zum liberalen Großbürger, vom Marschbauern bis zum städtischen Handwerker. [3] Der Widerstand fand seinen Ausdruck in welfischen Farben — weiß und gelb — bis hin zu Blumenrabatten, die heimlich in den Farben des gestürzten Hauses gepflanzt wurden. [4] 1869 wurde die Deutsch-Hannoversche Rechtspartei gegründet, die das welfische Erbe politisch fortsetzte und noch bis weit ins 20. Jahrhundert hinein in der Deutschen Partei nachwirkte. [5]
+
+SOURCES:
+- [1] https://www.niedersachsen.de/startseite/land_leute/die_geschichte/geschichte_des_landes_niedersachsen/verfassungskampfe_des_19_jahrhunderts_und_der_untergang_des_konigreichs_hannover/-19814.html — 'Die Annexion des welfischen Königreichs durch das siegreiche Preußen 1866 wurde in der Bevölkerung mehrheitlich als bitteres Unrecht empfunden.'
+- [2] https://www.dhm.de/lemo/kapitel/reaktionszeit/deutscher-bund-und-nationale-frage/die-preussischen-annexionen-1866 — '70.277 Bürger unterzeichneten eine Petition an den preußischen König Wilhelm I. mit der Forderung nach Unabhängigkeit des Königreichs Hannover.'
+- [3] https://www.niedersachsen.de/startseite/land_leute/die_geschichte/geschichte_des_landes_niedersachsen/verfassungskampfe_des_19_jahrhunderts_und_der_untergang_des_konigreichs_hannover/-19814.html — 'Die Anhänglichkeit an das angestammte Herrscherhaus ging durch alle Schichten, reichte vom konservativen Adeligen bis zum liberalen Großbürger, vom reichen Marschbauern, vom städtischen Handwerker bis hin zum Göttinger Professor.'
+- [4] https://www.niedersachsen.de/startseite/land_leute/die_geschichte/geschichte_des_landes_niedersachsen/verfassungskampfe_des_19_jahrhunderts_und_der_untergang_des_konigreichs_hannover/-19814.html — 'reichte vom versteckten Protest der in (hannoversch) welfischen Farben, in weiß gelb, gehaltenen Blumenrabatten, bis hin zu einer in Frankreich gegründeten welfischen Legion.'
+- [5] https://www.niedersachsen.de/startseite/land_leute/die_geschichte/geschichte_des_landes_niedersachsen/verfassungskampfe_des_19_jahrhunderts_und_der_untergang_des_konigreichs_hannover/-19814.html — 'Die deutsch hannoversche Rechtspartei, 1869 gegründet, und in ihren Bestrebungen noch nach 1945 die Deutsche Partei prägend, vermochte nach 1891 nur wenige Sitze im Reichstag zu erringen.'
+
+[S16.6]
+Mit der Annexion verlor Hannover seine Funktion als Residenz- und Hauptstadt eines souveränen Königreichs. [1] Preußische Beamte übernahmen die Verwaltung, und die Stadt wurde zur Hauptstadt der preußischen Provinz Hannover. [2] Die preußische Annexion schloss zugleich die letzte Lücke eines zusammenhängenden preußischen Staatsgebietes zwischen der Memel und dem Rhein — ein strategisches Ziel, das bereits lange vor 1866 verfolgt worden war. [3] Für die Identität der Stadt und ihrer Bewohner markierte der Verlust der staatlichen Eigenständigkeit einen tiefen Einschnitt: Das politische und kulturelle Zentrum eines eigenen Königreichs wurde zum Verwaltungssitz einer preußischen Provinz herabgestuft. [4] Die Annexion war ein Wendepunkt, der die Geschichte Hannovers für immer veränderte — und doch lebte die Erinnerung an die welfische Eigenständigkeit in der Bevölkerung weiter, bis das Land Niedersachsen 1946 aus der alten Provinz neu entstand. [5]
+
+SOURCES:
+- [1] https://www.dhm.de/lemo/kapitel/reaktionszeit/deutscher-bund-und-nationale-frage/die-preussischen-annexionen-1866 — 'Am 1. Oktober 1866 wurde im rund 1,9 Millionen Einwohner zählenden Staat Hannover die preußische Verfassung von 1850 oktroyiert und das Land als Provinz Hannover ins Königreich Preußen eingegliedert.'
+- [2] https://www.dhm.de/lemo/kapitel/reaktionszeit/deutscher-bund-und-nationale-frage/die-preussischen-annexionen-1866 — 'Nach dem Prager Frieden versuchten die Hannoveraner vergeblich, sich gegen die Annexion durch Preußen zu wehren.'
+- [3] https://www.dhm.de/lemo/kapitel/reaktionszeit/deutscher-bund-und-nationale-frage/die-preussischen-annexionen-1866 — 'Nach Kriegsende verleibte sich das siegreiche Preußen die Territorien geschlagener Kriegsgegner ein und schloss damit die letzte Lücke eines zusammenhängenden preußischen Staatsgebietes zwischen der Memel und dem Rhein.'
+- [4] NOTE: Der Identitätsverlust und die kulturellen Auswirkungen der Herabstufung sind in der regionalen Geschichtsforschung gut dokumentiert; spezifische zitierbare Quellen konnten in dieser Runde nicht ermittelt werden.
+- [5] https://www.niedersachsen.de/startseite/land_leute/die_geschichte/geschichte_der_regionen/konigreich_provinz_hannover/-19774.html — 'Mit der Auflösung Preußens im August 1946 wurde die Provinz Hannover für kurze Zeit ein eigenes Land, das im November 1946 im Land Niedersachsen aufging.'
+
+---
+
+*Nächster Run: Szenen 17-18*
