@@ -65,5 +65,60 @@
   ],
   "accent": "#f39c12",
   "visual_treatment": "default",
-  "total_scenes": 28
+  "total_scenes": 28,
+  "visual_events": [
+    {
+      "type": "callout",
+      "trigger_time": 2.0,
+      "duration": 6.0,
+      "text": "Aug. 1914",
+      "subtext": "Ausbruch des Ersten Weltkriegs\nHannover einbezogen",
+      "position": "center",
+      "anim": "pop",
+      "style": "warning",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "card",
+      "trigger_time": 14.0,
+      "duration": 6.0,
+      "title": "Heimatfront",
+      "body": "Frauen in den Fabriken\nMännliche Belegschaft im Krieg\nContinental = Rüstung",
+      "position": "right",
+      "anim": "slide_left",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "callout",
+      "trigger_time": 26.0,
+      "duration": 6.0,
+      "text": "Britische Seeblockade",
+      "subtext": "Hungersnöte\nVersorgungskrise",
+      "position": "center",
+      "anim": "pop",
+      "style": "warning",
+      "anim_duration": 0.4
+    },
+    {
+      "type": "callout",
+      "trigger_time": 38.0,
+      "duration": 7.0,
+      "text": "Nov. 1918",
+      "subtext": "Revolution erreicht\nNorddeutschland",
+      "position": "center",
+      "anim": "pop",
+      "style": "warning",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "callout",
+      "trigger_time": 50.0,
+      "duration": 6.0,
+      "text": "Gefallene",
+      "subtext": "Tausende hannoversche\nSoldaten kehren nicht zurück",
+      "position": "center",
+      "anim": "pop",
+      "anim_duration": 0.4
+    }
+  ]
 }

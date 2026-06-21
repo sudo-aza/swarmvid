@@ -63,5 +63,50 @@
   ],
   "accent": "#ff7979",
   "visual_treatment": "default",
-  "total_scenes": 28
+  "total_scenes": 28,
+  "visual_events": [
+    {
+      "type": "callout",
+      "trigger_time": 2.0,
+      "duration": 6.0,
+      "text": "30. Jan. 1933",
+      "subtext": "Hitler zum Reichskanzler\nernannt",
+      "position": "center",
+      "anim": "pop",
+      "style": "warning",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "card",
+      "trigger_time": 14.0,
+      "duration": 7.0,
+      "title": "Jüdische Gemeinde",
+      "body": "Bis ins 13. Jh. zurückreichend\nNS-Verfolgung beginnt 1933\nEntrechtung, Enteignung",
+      "position": "right",
+      "anim": "slide_left",
+      "style": "warning",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "callout",
+      "trigger_time": 26.0,
+      "duration": 7.0,
+      "text": "9.–10. Nov. 1938",
+      "subtext": "Reichspogromnacht\nNeue Synagoge zerstört\nCalenberger Neustadt",
+      "position": "center",
+      "anim": "pop",
+      "style": "warning",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "card",
+      "trigger_time": 50.0,
+      "duration": 6.0,
+      "title": "Maschsee",
+      "body": "NS-Baupropaganda\nKünstlicher See\n1934–1936 erbaut",
+      "position": "left",
+      "anim": "slide_right",
+      "anim_duration": 0.5
+    }
+  ]
 }

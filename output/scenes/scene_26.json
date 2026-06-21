@@ -71,5 +71,50 @@
   ],
   "accent": "#ff6b6b",
   "visual_treatment": "stark",
-  "total_scenes": 28
+  "total_scenes": 28,
+  "visual_events": [
+    {
+      "type": "callout",
+      "trigger_time": 2.0,
+      "duration": 6.0,
+      "text": "1990",
+      "subtext": "Deutsche Wiedervereinigung\nNeue geopolitische Lage",
+      "position": "center",
+      "anim": "pop",
+      "style": "highlight",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "callout",
+      "trigger_time": 14.0,
+      "duration": 6.0,
+      "text": "1. Juni – 31. Okt. 2000",
+      "subtext": "EXPO 2000 in Hannover\nMensch, Natur, Technik",
+      "position": "center",
+      "anim": "pop",
+      "style": "highlight",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "card",
+      "trigger_time": 26.0,
+      "duration": 6.0,
+      "title": "EXPO Highlights",
+      "body": "Christo & Jeanne-Claude\nProjekt: Verhüllter Reichstag\nDutch Pavilion (MVRDV)",
+      "position": "right",
+      "anim": "slide_left",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "callout",
+      "trigger_time": 38.0,
+      "duration": 6.0,
+      "text": "Besucherdurchfall",
+      "subtext": "Erwartet: 40 Mio.\nTatsächlich: 18 Mio.",
+      "position": "center",
+      "anim": "pop",
+      "style": "warning",
+      "anim_duration": 0.4
+    }
+  ]
 }

@@ -567,6 +567,360 @@ def populate_scene_10(s):
     return events
 
 
+def populate_scene_11(s):
+    """Die Universität Göttingen (1737-1800)."""
+    events = []
+    events.append({"type": "callout", "trigger_time": seg_time(s, 0, 1.0), "duration": 6.0,
+        "text": "1737", "subtext": "Gründung der Georgia Augusta", "position": "center",
+        "anim": "pop", "style": "highlight", "anim_duration": 0.5})
+    events.append({"type": "card", "trigger_time": seg_time(s, 1, 2.0), "duration": 7.0,
+        "title": "Berühmte Gelehrte", "body": "Albrecht von Haller (Medizin)\nJohann David Michaelis (Orientalistik)\nGeorg Christoph Lichtenberg (Physik)",
+        "position": "right", "anim": "slide_left", "anim_duration": 0.5})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 2, 2.0), "duration": 6.0,
+        "text": "Göttinger Hainbund", "subtext": "Zentrum der Empfindsamkeit\nund des Sturm und Drang", "position": "center",
+        "anim": "pop", "style": "highlight", "anim_duration": 0.4})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 3, 1.0), "duration": 6.0,
+        "text": "1751", "subtext": "Königliche Gesellschaft\nder Wissenschaften", "position": "left",
+        "anim": "pop", "anim_duration": 0.5})
+    events.append({"type": "card", "trigger_time": seg_time(s, 4, 2.0), "duration": 6.0,
+        "title": "Göttinger Bibliothek", "body": "1734 gegründet\nHeute: Niedersächsische Staats-\nund Universitätsbibliothek",
+        "position": "right", "anim": "slide_left", "anim_duration": 0.5})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 5, 2.0), "duration": 6.0,
+        "text": "Personalunion", "subtext": "Georg II. — Verbindung\nGöttingen ↔ Hannover", "position": "center",
+        "anim": "pop", "style": "highlight", "anim_duration": 0.4})
+    return events
+
+
+def populate_scene_12(s):
+    """Das napoleonische Zeitalter (1789-1813)."""
+    events = []
+    events.append({"type": "callout", "trigger_time": seg_time(s, 0, 1.0), "duration": 6.0,
+        "text": "1789", "subtext": "Französische Revolution\nerschüttert Europa", "position": "center",
+        "anim": "pop", "style": "warning", "anim_duration": 0.5})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 1, 2.0), "duration": 6.0,
+        "text": "1803", "subtext": "Kapitulation Hannovers\nReichsdeputationshauptschluss", "position": "center",
+        "anim": "pop", "style": "warning", "anim_duration": 0.5})
+    events.append({"type": "card", "trigger_time": seg_time(s, 2, 2.0), "duration": 6.0,
+        "title": "Königreich Westfalen", "body": "1807 — napoleonischer\nSatellitenstaat\nTeile Hannovers eingegliedert",
+        "position": "right", "anim": "slide_left", "style": "warning", "anim_duration": 0.5})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 4, 2.0), "duration": 6.0,
+        "text": "16.–19. Okt. 1813", "subtext": "Völkerschlacht bei Leipzig\nNapoleons Niederlage", "position": "center",
+        "anim": "pop", "style": "highlight", "anim_duration": 0.5})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 5, 2.0), "duration": 7.0,
+        "text": "1814", "subtext": "Georg III. wird\nKönig von Hannover", "position": "center",
+        "anim": "pop", "style": "highlight", "anim_duration": 0.5})
+    return events
+
+
+def populate_scene_13(s):
+    """Das Königreich Hannover (1814-1830)."""
+    events = []
+    events.append({"type": "callout", "trigger_time": seg_time(s, 0, 2.0), "duration": 7.0,
+        "text": "1814–1815", "subtext": "Wiener Kongress\nNeuordnung Europas", "position": "center",
+        "anim": "pop", "style": "highlight", "anim_duration": 0.5})
+    events.append({"type": "card", "trigger_time": seg_time(s, 1, 2.0), "duration": 6.0,
+        "title": "Verfassung", "body": "1833 — Staatsgrundgesetz\nErbmonarchie mit\nStändeversammlung",
+        "position": "right", "anim": "slide_left", "anim_duration": 0.5})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 3, 2.0), "duration": 6.0,
+        "text": "Personalunion", "subtext": "Britisch-hannoversche\nWirtschaftsverbindungen", "position": "center",
+        "anim": "pop", "anim_duration": 0.4})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 4, 2.0), "duration": 6.0,
+        "text": "1815", "subtext": "Schlacht bei Waterloo\nHannoversche Truppen", "position": "center",
+        "anim": "pop", "style": "warning", "anim_duration": 0.5})
+    events.append({"type": "card", "trigger_time": seg_time(s, 5, 2.0), "duration": 6.0,
+        "title": "Kultur in Hannover", "body": "Gesellschaftliches Leben\nDer Adel als\nkulturelle Elite", "position": "left",
+        "anim": "slide_right", "anim_duration": 0.5})
+    return events
+
+
+def populate_scene_14(s):
+    """Ende der Personalunion (1830-1837)."""
+    events = []
+    events.append({"type": "callout", "trigger_time": seg_time(s, 0, 2.0), "duration": 6.0,
+        "text": "1830", "subtext": "Wilhelm IV. besteigt\nbeide Throne", "position": "center",
+        "anim": "pop", "style": "highlight", "anim_duration": 0.5})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 1, 2.0), "duration": 7.0,
+        "text": "1837", "subtext": "Ende der Personalunion\nVictoria = UK\nErnst August = Hannover", "position": "center",
+        "anim": "pop", "style": "warning", "anim_duration": 0.5})
+    events.append({"type": "card", "trigger_time": seg_time(s, 2, 2.0), "duration": 6.0,
+        "title": "Verfassungsbruch", "body": "Ernst August hebt\nVerfassung 1837 ab\nInternationaler Eklat", "position": "right",
+        "anim": "slide_left", "style": "warning", "anim_duration": 0.5})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 3, 2.0), "duration": 6.0,
+        "text": "123 Jahre", "subtext": "Personalunion beendet\nWirtschaftliche Folgen", "position": "center",
+        "anim": "pop", "style": "warning", "anim_duration": 0.4})
+    return events
+
+
+def populate_scene_15(s):
+    """Ernst August (1837-1851)."""
+    events = []
+    events.append({"type": "callout", "trigger_time": seg_time(s, 0, 2.0), "duration": 6.0,
+        "text": "20. Juni 1837", "subtext": "Ernst August von Cumberland\nThronbesteigung", "position": "center",
+        "anim": "pop", "style": "highlight", "anim_duration": 0.5})
+    events.append({"type": "card", "trigger_time": seg_time(s, 1, 2.0), "duration": 7.0,
+        "title": "Göttinger Sieben", "body": "7 Professoren protestieren\ngegen Verfassungsbruch\n1837 entlassen", "position": "right",
+        "anim": "slide_left", "style": "warning", "anim_duration": 0.5})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 2, 1.0), "duration": 6.0,
+        "text": "Internationaler Skandal", "subtext": "Protest in ganz Europa\ngegen den Verfassungsbruch", "position": "center",
+        "anim": "pop", "style": "warning", "anim_duration": 0.4})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 3, 2.0), "duration": 6.0,
+        "text": "März 1848", "subtext": "Revolution erreicht\nKönigreich Hannover", "position": "center",
+        "anim": "pop", "anim_duration": 0.5})
+    return events
+
+
+def populate_scene_16(s):
+    """Preußische Annexion (1851-1866)."""
+    events = []
+    events.append({"type": "callout", "trigger_time": seg_time(s, 0, 2.0), "duration": 6.0,
+        "text": "1851", "subtext": "Georg V. — letzter\nKönig von Hannover", "position": "center",
+        "anim": "pop", "style": "highlight", "anim_duration": 0.5})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 2, 2.0), "duration": 6.0,
+        "text": "27. Juni 1866", "subtext": "Schlacht bei Langensalza\nHannover vs. Preußen", "position": "center",
+        "anim": "pop", "style": "warning", "anim_duration": 0.5})
+    events.append({"type": "card", "trigger_time": seg_time(s, 3, 2.0), "duration": 6.0,
+        "title": "Annexion", "body": "23. Aug. 1866\nFriedensvertrag von Prag\nPreußen annektiert Hannover", "position": "right",
+        "anim": "slide_left", "style": "warning", "anim_duration": 0.5})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 4, 2.0), "duration": 6.0,
+        "text": "70.277", "subtext": "Bürger unterzeichnen\nPetition gegen Annexion", "position": "center",
+        "anim": "pop", "anim_duration": 0.4})
+    return events
+
+
+def populate_scene_17(s):
+    """Preußische Provinz (1866-1890)."""
+    events = []
+    events.append({"type": "callout", "trigger_time": seg_time(s, 0, 2.0), "duration": 6.0,
+        "text": "1866", "subtext": "Welfischer Widerstand\ngegen Preußen", "position": "center",
+        "anim": "pop", "style": "warning", "anim_duration": 0.5})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 1, 2.0), "duration": 6.0,
+        "text": "1870/71", "subtext": "Deutsch-Französischer Krieg\nSieg bei Sedan", "position": "center",
+        "anim": "pop", "style": "highlight", "anim_duration": 0.5})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 2, 2.0), "duration": 6.0,
+        "text": "8. Okt. 1871", "subtext": "Continental AG gegründet\nin Hannover", "position": "center",
+        "anim": "pop", "style": "highlight", "anim_duration": 0.4})
+    events.append({"type": "card", "trigger_time": seg_time(s, 3, 2.0), "duration": 6.0,
+        "title": "Bevölkerungswachstum", "body": "1850: ~42.500\n1900: ~250.000\nExplosionartige Expansion",
+        "position": "right", "anim": "slide_left", "anim_duration": 0.5})
+    events.append({"type": "card", "trigger_time": seg_time(s, 4, 2.0), "duration": 6.0,
+        "title": "Infrastruktur", "body": "Herrenhäuser Allee\nStädtischer Ausbau\nRingstraßen", "position": "left",
+        "anim": "slide_right", "anim_duration": 0.5})
+    return events
+
+
+def populate_scene_18(s):
+    """Wilhelminisches Hannover (1890-1914)."""
+    events = []
+    events.append({"type": "callout", "trigger_time": seg_time(s, 0, 2.0), "duration": 6.0,
+        "text": "Continental AG", "subtext": "Globaler Industriegigant\nReifenproduktion", "position": "center",
+        "anim": "pop", "style": "highlight", "anim_duration": 0.5})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 1, 2.0), "duration": 6.0,
+        "text": "Industrialisierung", "subtext": "Arbeitnehmerschaft als\nstärkste gesellschaftliche Gruppe", "position": "center",
+        "anim": "pop", "anim_duration": 0.4})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 3, 2.0), "duration": 6.0,
+        "text": "1831/1879", "subtext": "Technische Hochschule\nLeibniz Universität heute", "position": "center",
+        "anim": "pop", "style": "highlight", "anim_duration": 0.5})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 4, 2.0), "duration": 6.0,
+        "text": "4. Mai 1865", "subtext": "Erlebnis-Zoo Hannover\n8. Zoo in Deutschland", "position": "center",
+        "anim": "pop", "anim_duration": 0.4})
+    return events
+
+
+def populate_scene_19(s):
+    """Der Erste Weltkrieg (1914-1918)."""
+    events = []
+    events.append({"type": "callout", "trigger_time": seg_time(s, 0, 2.0), "duration": 6.0,
+        "text": "Aug. 1914", "subtext": "Ausbruch des Ersten Weltkriegs\nHannover einbezogen", "position": "center",
+        "anim": "pop", "style": "warning", "anim_duration": 0.5})
+    events.append({"type": "card", "trigger_time": seg_time(s, 1, 2.0), "duration": 6.0,
+        "title": "Heimatfront", "body": "Frauen in den Fabriken\nMännliche Belegschaft im Krieg\nContinental = Rüstung",
+        "position": "right", "anim": "slide_left", "anim_duration": 0.5})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 2, 2.0), "duration": 6.0,
+        "text": "Britische Seeblockade", "subtext": "Hungersnöte\nVersorgungskrise", "position": "center",
+        "anim": "pop", "style": "warning", "anim_duration": 0.4})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 3, 2.0), "duration": 7.0,
+        "text": "Nov. 1918", "subtext": "Revolution erreicht\nNorddeutschland", "position": "center",
+        "anim": "pop", "style": "warning", "anim_duration": 0.5})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 4, 2.0), "duration": 6.0,
+        "text": "Gefallene", "subtext": "Tausende hannoversche\nSoldaten kehren nicht zurück", "position": "center",
+        "anim": "pop", "anim_duration": 0.4})
+    return events
+
+
+def populate_scene_20(s):
+    """Die Weimarer Republik (1918-1933)."""
+    events = []
+    events.append({"type": "callout", "trigger_time": seg_time(s, 0, 2.0), "duration": 6.0,
+        "text": "1921", "subtext": "NSDAP in Hannover\ngegründet", "position": "center",
+        "anim": "pop", "style": "warning", "anim_duration": 0.5})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 1, 2.0), "duration": 6.0,
+        "text": "März 1920", "subtext": "Kapp-Putsch\nArbeiterbewegung\nstreikt", "position": "center",
+        "anim": "pop", "style": "warning", "anim_duration": 0.4})
+    events.append({"type": "card", "trigger_time": seg_time(s, 2, 2.0), "duration": 6.0,
+        "title": "Architektur-Blüte", "body": "Otto Haesler\nNeues Bauen in Hannover\nProgressive Siedlungen",
+        "position": "right", "anim": "slide_left", "anim_duration": 0.5})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 4, 2.0), "duration": 6.0,
+        "text": "1929", "subtext": "Weltwirtschaftskrise\nArbeitslosigkeit\n~5,5 Millionen in DE", "position": "center",
+        "anim": "pop", "style": "warning", "anim_duration": 0.5})
+    return events
+
+
+def populate_scene_21(s):
+    """Nationalsozialismus (1933-1938)."""
+    events = []
+    events.append({"type": "callout", "trigger_time": seg_time(s, 0, 2.0), "duration": 6.0,
+        "text": "30. Jan. 1933", "subtext": "Hitler zum Reichskanzler\nernannt", "position": "center",
+        "anim": "pop", "style": "warning", "anim_duration": 0.5})
+    events.append({"type": "card", "trigger_time": seg_time(s, 1, 2.0), "duration": 7.0,
+        "title": "Jüdische Gemeinde", "body": "Bis ins 13. Jh. zurückreichend\nNS-Verfolgung beginnt 1933\nEntrechtung, Enteignung",
+        "position": "right", "anim": "slide_left", "style": "warning", "anim_duration": 0.5})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 2, 2.0), "duration": 7.0,
+        "text": "9.–10. Nov. 1938", "subtext": "Reichspogromnacht\nNeue Synagoge zerstört\nCalenberger Neustadt", "position": "center",
+        "anim": "pop", "style": "warning", "anim_duration": 0.5})
+    events.append({"type": "card", "trigger_time": seg_time(s, 4, 2.0), "duration": 6.0,
+        "title": "Maschsee", "body": "NS-Baupropaganda\nKünstlicher See\n1934–1936 erbaut", "position": "left",
+        "anim": "slide_right", "anim_duration": 0.5})
+    return events
+
+
+def populate_scene_22(s):
+    """Der Zweite Weltkrieg (1939-1945)."""
+    events = []
+    events.append({"type": "callout", "trigger_time": seg_time(s, 0, 2.0), "duration": 6.0,
+        "text": "1939", "subtext": "Hannover = Rüstungsstandort\nContinental, Hanomag", "position": "center",
+        "anim": "pop", "style": "warning", "anim_duration": 0.5})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 1, 2.0), "duration": 6.0,
+        "text": "Zwangsarbeiter", "subtext": "Zehntausende verschleppt\nPolen, Sowjetunion, Frankreich", "position": "center",
+        "anim": "pop", "style": "warning", "anim_duration": 0.4})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 2, 2.0), "duration": 6.0,
+        "text": "88 Luftangriffe", "subtext": "~60 % der Stadt zerstört\n1,8 Mio. Brandbomben", "position": "center",
+        "anim": "pop", "style": "warning", "anim_duration": 0.5})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 4, 2.0), "duration": 6.0,
+        "text": "6.782 Tote", "subtext": "4.748 Zivilisten\nbei den Luftangriffen", "position": "center",
+        "anim": "pop", "style": "warning", "anim_duration": 0.4})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 5, 2.0), "duration": 6.0,
+        "text": "10. Apr. 1945", "subtext": "US-Truppen rücken in\nHannover ein", "position": "center",
+        "anim": "pop", "style": "highlight", "anim_duration": 0.5})
+    return events
+
+
+def populate_scene_23(s):
+    """Trümmerfrauen und der Neuanfang (1945-1950)."""
+    events = []
+    events.append({"type": "callout", "trigger_time": seg_time(s, 0, 2.0), "duration": 6.0,
+        "text": "Apr. 1945", "subtext": "Britische Militärverwaltung\nin Hannover", "position": "center",
+        "anim": "pop", "anim_duration": 0.4})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 1, 2.0), "duration": 6.0,
+        "text": "Trümmerfrauen", "subtext": "Symbol des Wiederaufbaus\nund der Überlebenskraft", "position": "center",
+        "anim": "pop", "style": "highlight", "anim_duration": 0.5})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 2, 2.0), "duration": 6.0,
+        "text": "Hungersnot", "subtext": "Streng rationiert\nSchwarzmarkt blüht", "position": "center",
+        "anim": "pop", "style": "warning", "anim_duration": 0.4})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 3, 2.0), "duration": 6.0,
+        "text": "Flüchtlinge", "subtext": "Tausende aus Ostgebieten\nnach Niedersachsen", "position": "center",
+        "anim": "pop", "anim_duration": 0.4})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 4, 2.0), "duration": 6.0,
+        "text": "1. Nov. 1946", "subtext": "Land Niedersachsen\nmit Hauptstadt Hannover", "position": "center",
+        "anim": "pop", "style": "highlight", "anim_duration": 0.5})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 5, 2.0), "duration": 6.0,
+        "text": "20. Juni 1948", "subtext": "Währungsreform\nBeginn des Wirtschaftswunders", "position": "center",
+        "anim": "pop", "style": "highlight", "anim_duration": 0.5})
+    return events
+
+
+def populate_scene_24(s):
+    """Wiederaufbau (1950-1970)."""
+    events = []
+    events.append({"type": "card", "trigger_time": seg_time(s, 0, 2.0), "duration": 6.0,
+        "title": "Wiederaufbau", "body": "Prägt das Stadtbild\nbis in die Gegenwart\nKein reiner originalgetreuer Aufbau",
+        "position": "right", "anim": "slide_left", "anim_duration": 0.5})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 1, 2.0), "duration": 6.0,
+        "text": "Neues Rathaus", "subtext": "Markantestes Bauwerk\nBereits vor dem Krieg errichtet", "position": "center",
+        "anim": "pop", "style": "highlight", "anim_duration": 0.4})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 3, 2.0), "duration": 6.0,
+        "text": "Hannover Messe", "body": "Wichtigste internationale\nIndustriemesse der 1950er", "position": "center",
+        "anim": "pop", "style": "highlight", "anim_duration": 0.5})
+    events.append({"type": "card", "trigger_time": seg_time(s, 5, 2.0), "duration": 6.0,
+        "title": "Herrenhäuser Gärten", "body": "Barocke Gartenkunst\nNach Zerstörung\nwiederhergestellt", "position": "left",
+        "anim": "slide_right", "anim_duration": 0.5})
+    return events
+
+
+def populate_scene_25(s):
+    """Kulturleben (1950-2000)."""
+    events = []
+    events.append({"type": "callout", "trigger_time": seg_time(s, 0, 2.0), "duration": 6.0,
+        "text": "Opernhaus", "subtext": "Einst Königliches Hoftheater\nMusikalisches Herz der Stadt", "position": "center",
+        "anim": "pop", "style": "highlight", "anim_duration": 0.4})
+    events.append({"type": "card", "trigger_time": seg_time(s, 2, 2.0), "duration": 6.0,
+        "title": "Museumslandschaft", "body": "Landesmuseum\nKestner Gesellschaft\nWilhelm Busch Museum", "position": "right",
+        "anim": "slide_left", "anim_duration": 0.5})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 3, 2.0), "duration": 6.0,
+        "text": "NDR Radiophilharmonie", "subtext": "Hannover als Zentrum\nder klassischen Musik", "position": "center",
+        "anim": "pop", "style": "highlight", "anim_duration": 0.4})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 4, 2.0), "duration": 6.0,
+        "text": "NDR", "subtext": "Landesfunkhaus Hannover\nMedienstandort", "position": "center",
+        "anim": "pop", "anim_duration": 0.4})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 5, 2.0), "duration": 6.0,
+        "text": "Welfen-Dynastie", "subtext": "Kulturelle Erinnerung\nan die Residenzzeit", "position": "center",
+        "anim": "pop", "anim_duration": 0.4})
+    return events
+
+
+def populate_scene_26(s):
+    """Die EXPO 2000 (1990-2005)."""
+    events = []
+    events.append({"type": "callout", "trigger_time": seg_time(s, 0, 2.0), "duration": 6.0,
+        "text": "1990", "subtext": "Deutsche Wiedervereinigung\nNeue geopolitische Lage", "position": "center",
+        "anim": "pop", "style": "highlight", "anim_duration": 0.5})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 1, 2.0), "duration": 6.0,
+        "text": "1. Juni – 31. Okt. 2000", "subtext": "EXPO 2000 in Hannover\nMensch, Natur, Technik", "position": "center",
+        "anim": "pop", "style": "highlight", "anim_duration": 0.5})
+    events.append({"type": "card", "trigger_time": seg_time(s, 2, 2.0), "duration": 6.0,
+        "title": "EXPO Highlights", "body": "Christo & Jeanne-Claude\nProjekt: Verhüllter Reichstag\nDutch Pavilion (MVRDV)",
+        "position": "right", "anim": "slide_left", "anim_duration": 0.5})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 3, 2.0), "duration": 6.0,
+        "text": "Besucherdurchfall", "subtext": "Erwartet: 40 Mio.\nTatsächlich: 18 Mio.", "position": "center",
+        "anim": "pop", "style": "warning", "anim_duration": 0.4})
+    return events
+
+
+def populate_scene_27(s):
+    """Hannover heute (2005-present)."""
+    events = []
+    events.append({"type": "callout", "trigger_time": seg_time(s, 0, 2.0), "duration": 6.0,
+        "text": "~558.000", "subtext": "Einwohner\nLandeshauptstadt", "position": "center",
+        "anim": "pop", "style": "highlight", "anim_duration": 0.5})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 1, 2.0), "duration": 6.0,
+        "text": "CeBIT", "subtext": "Einst weltweit größte\nIT-Messe\n~30 Jahre in Hannover", "position": "center",
+        "anim": "pop", "anim_duration": 0.4})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 2, 2.0), "duration": 6.0,
+        "text": "Leibniz Universität", "subtext": "Größte Hochschule\nNorddeutschlands", "position": "center",
+        "anim": "pop", "style": "highlight", "anim_duration": 0.4})
+    events.append({"type": "card", "trigger_time": seg_time(s, 3, 2.0), "duration": 6.0,
+        "title": "Wirtschaft", "body": "Automobil & Zulieferer\nContinental, Volkswagen\nInternational vernetzt", "position": "right",
+        "anim": "slide_left", "anim_duration": 0.5})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 4, 2.0), "duration": 6.0,
+        "text": "Identität", "subtext": "Herrenhäuser Gärten\nMaschsee, Eilenriede\nAltstadt", "position": "center",
+        "anim": "pop", "anim_duration": 0.4})
+    return events
+
+
+def populate_scene_28(s):
+    """Epilog (present)."""
+    events = []
+    events.append({"type": "callout", "trigger_time": seg_time(s, 0, 2.0), "duration": 7.0,
+        "text": ">1000 Jahre", "subtext": "Geschichte Hannovers\nGermanische Siedlung bis heute", "position": "center",
+        "anim": "pop", "style": "highlight", "anim_duration": 0.5})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 1, 2.0), "duration": 6.0,
+        "text": "Widerstandskraft", "subtext": "Leitmotiv dieser Stadt\nKriege, Zerstörung, Überleben", "position": "center",
+        "anim": "pop", "style": "highlight", "anim_duration": 0.4})
+    events.append({"type": "callout", "trigger_time": seg_time(s, 2, 2.0), "duration": 6.0,
+        "text": "Handel & Innovation", "subtext": "Von Gilden über Messe\nbis Industrie 4.0", "position": "center",
+        "anim": "pop", "style": "highlight", "anim_duration": 0.4})
+    return events
+
+
 POPULATORS = {
     1: populate_scene_01,
     2: populate_scene_02,
@@ -578,6 +932,24 @@ POPULATORS = {
     8: populate_scene_08,
     9: populate_scene_09,
     10: populate_scene_10,
+    11: populate_scene_11,
+    12: populate_scene_12,
+    13: populate_scene_13,
+    14: populate_scene_14,
+    15: populate_scene_15,
+    16: populate_scene_16,
+    17: populate_scene_17,
+    18: populate_scene_18,
+    19: populate_scene_19,
+    20: populate_scene_20,
+    21: populate_scene_21,
+    22: populate_scene_22,
+    23: populate_scene_23,
+    24: populate_scene_24,
+    25: populate_scene_25,
+    26: populate_scene_26,
+    27: populate_scene_27,
+    28: populate_scene_28,
 }
 
 

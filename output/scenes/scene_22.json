@@ -69,5 +69,62 @@
   ],
   "accent": "#eb4d4b",
   "visual_treatment": "fullscreen_text",
-  "total_scenes": 28
+  "total_scenes": 28,
+  "visual_events": [
+    {
+      "type": "callout",
+      "trigger_time": 2.0,
+      "duration": 6.0,
+      "text": "1939",
+      "subtext": "Hannover = Rüstungsstandort\nContinental, Hanomag",
+      "position": "center",
+      "anim": "pop",
+      "style": "warning",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "callout",
+      "trigger_time": 14.0,
+      "duration": 6.0,
+      "text": "Zwangsarbeiter",
+      "subtext": "Zehntausende verschleppt\nPolen, Sowjetunion, Frankreich",
+      "position": "center",
+      "anim": "pop",
+      "style": "warning",
+      "anim_duration": 0.4
+    },
+    {
+      "type": "callout",
+      "trigger_time": 26.0,
+      "duration": 6.0,
+      "text": "88 Luftangriffe",
+      "subtext": "~60 % der Stadt zerstört\n1,8 Mio. Brandbomben",
+      "position": "center",
+      "anim": "pop",
+      "style": "warning",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "callout",
+      "trigger_time": 50.0,
+      "duration": 6.0,
+      "text": "6.782 Tote",
+      "subtext": "4.748 Zivilisten\nbei den Luftangriffen",
+      "position": "center",
+      "anim": "pop",
+      "style": "warning",
+      "anim_duration": 0.4
+    },
+    {
+      "type": "callout",
+      "trigger_time": 62.0,
+      "duration": 6.0,
+      "text": "10. Apr. 1945",
+      "subtext": "US-Truppen rücken in\nHannover ein",
+      "position": "center",
+      "anim": "pop",
+      "style": "highlight",
+      "anim_duration": 0.5
+    }
+  ]
 }

@@ -74,5 +74,59 @@
   ],
   "accent": "#e94560",
   "visual_treatment": "stark",
-  "total_scenes": 28
+  "total_scenes": 28,
+  "visual_events": [
+    {
+      "type": "callout",
+      "trigger_time": 2.0,
+      "duration": 6.0,
+      "text": "Opernhaus",
+      "subtext": "Einst Königliches Hoftheater\nMusikalisches Herz der Stadt",
+      "position": "center",
+      "anim": "pop",
+      "style": "highlight",
+      "anim_duration": 0.4
+    },
+    {
+      "type": "card",
+      "trigger_time": 26.0,
+      "duration": 6.0,
+      "title": "Museumslandschaft",
+      "body": "Landesmuseum\nKestner Gesellschaft\nWilhelm Busch Museum",
+      "position": "right",
+      "anim": "slide_left",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "callout",
+      "trigger_time": 38.0,
+      "duration": 6.0,
+      "text": "NDR Radiophilharmonie",
+      "subtext": "Hannover als Zentrum\nder klassischen Musik",
+      "position": "center",
+      "anim": "pop",
+      "style": "highlight",
+      "anim_duration": 0.4
+    },
+    {
+      "type": "callout",
+      "trigger_time": 50.0,
+      "duration": 6.0,
+      "text": "NDR",
+      "subtext": "Landesfunkhaus Hannover\nMedienstandort",
+      "position": "center",
+      "anim": "pop",
+      "anim_duration": 0.4
+    },
+    {
+      "type": "callout",
+      "trigger_time": 62.0,
+      "duration": 6.0,
+      "text": "Welfen-Dynastie",
+      "subtext": "Kulturelle Erinnerung\nan die Residenzzeit",
+      "position": "center",
+      "anim": "pop",
+      "anim_duration": 0.4
+    }
+  ]
 }

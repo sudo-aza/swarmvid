@@ -72,5 +72,50 @@
   ],
   "accent": "#f0932b",
   "visual_treatment": "default",
-  "total_scenes": 28
+  "total_scenes": 28,
+  "visual_events": [
+    {
+      "type": "callout",
+      "trigger_time": 2.0,
+      "duration": 6.0,
+      "text": "20. Juni 1837",
+      "subtext": "Ernst August von Cumberland\nThronbesteigung",
+      "position": "center",
+      "anim": "pop",
+      "style": "highlight",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "card",
+      "trigger_time": 14.0,
+      "duration": 7.0,
+      "title": "Göttinger Sieben",
+      "body": "7 Professoren protestieren\ngegen Verfassungsbruch\n1837 entlassen",
+      "position": "right",
+      "anim": "slide_left",
+      "style": "warning",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "callout",
+      "trigger_time": 25.0,
+      "duration": 6.0,
+      "text": "Internationaler Skandal",
+      "subtext": "Protest in ganz Europa\ngegen den Verfassungsbruch",
+      "position": "center",
+      "anim": "pop",
+      "style": "warning",
+      "anim_duration": 0.4
+    },
+    {
+      "type": "callout",
+      "trigger_time": 38.0,
+      "duration": 6.0,
+      "text": "März 1848",
+      "subtext": "Revolution erreicht\nKönigreich Hannover",
+      "position": "center",
+      "anim": "pop",
+      "anim_duration": 0.5
+    }
+  ]
 }

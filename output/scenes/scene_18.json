@@ -69,5 +69,49 @@
   ],
   "accent": "#ff6b6b",
   "visual_treatment": "title_card",
-  "total_scenes": 28
+  "total_scenes": 28,
+  "visual_events": [
+    {
+      "type": "callout",
+      "trigger_time": 2.0,
+      "duration": 6.0,
+      "text": "Continental AG",
+      "subtext": "Globaler Industriegigant\nReifenproduktion",
+      "position": "center",
+      "anim": "pop",
+      "style": "highlight",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "callout",
+      "trigger_time": 14.0,
+      "duration": 6.0,
+      "text": "Industrialisierung",
+      "subtext": "Arbeitnehmerschaft als\nstärkste gesellschaftliche Gruppe",
+      "position": "center",
+      "anim": "pop",
+      "anim_duration": 0.4
+    },
+    {
+      "type": "callout",
+      "trigger_time": 38.0,
+      "duration": 6.0,
+      "text": "1831/1879",
+      "subtext": "Technische Hochschule\nLeibniz Universität heute",
+      "position": "center",
+      "anim": "pop",
+      "style": "highlight",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "callout",
+      "trigger_time": 50.0,
+      "duration": 6.0,
+      "text": "4. Mai 1865",
+      "subtext": "Erlebnis-Zoo Hannover\n8. Zoo in Deutschland",
+      "position": "center",
+      "anim": "pop",
+      "anim_duration": 0.4
+    }
+  ]
 }

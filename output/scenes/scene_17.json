@@ -71,5 +71,60 @@
   ],
   "accent": "#e94560",
   "visual_treatment": "fullscreen_text",
-  "total_scenes": 28
+  "total_scenes": 28,
+  "visual_events": [
+    {
+      "type": "callout",
+      "trigger_time": 2.0,
+      "duration": 6.0,
+      "text": "1866",
+      "subtext": "Welfischer Widerstand\ngegen Preußen",
+      "position": "center",
+      "anim": "pop",
+      "style": "warning",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "callout",
+      "trigger_time": 14.0,
+      "duration": 6.0,
+      "text": "1870/71",
+      "subtext": "Deutsch-Französischer Krieg\nSieg bei Sedan",
+      "position": "center",
+      "anim": "pop",
+      "style": "highlight",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "callout",
+      "trigger_time": 26.0,
+      "duration": 6.0,
+      "text": "8. Okt. 1871",
+      "subtext": "Continental AG gegründet\nin Hannover",
+      "position": "center",
+      "anim": "pop",
+      "style": "highlight",
+      "anim_duration": 0.4
+    },
+    {
+      "type": "card",
+      "trigger_time": 38.0,
+      "duration": 6.0,
+      "title": "Bevölkerungswachstum",
+      "body": "1850: ~42.500\n1900: ~250.000\nExplosionartige Expansion",
+      "position": "right",
+      "anim": "slide_left",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "card",
+      "trigger_time": 50.0,
+      "duration": 6.0,
+      "title": "Infrastruktur",
+      "body": "Herrenhäuser Allee\nStädtischer Ausbau\nRingstraßen",
+      "position": "left",
+      "anim": "slide_right",
+      "anim_duration": 0.5
+    }
+  ]
 }

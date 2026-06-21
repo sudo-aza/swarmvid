@@ -72,5 +72,50 @@
   ],
   "accent": "#e74c3c",
   "visual_treatment": "default",
-  "total_scenes": 28
+  "total_scenes": 28,
+  "visual_events": [
+    {
+      "type": "callout",
+      "trigger_time": 2.0,
+      "duration": 6.0,
+      "text": "1921",
+      "subtext": "NSDAP in Hannover\ngegründet",
+      "position": "center",
+      "anim": "pop",
+      "style": "warning",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "callout",
+      "trigger_time": 14.0,
+      "duration": 6.0,
+      "text": "März 1920",
+      "subtext": "Kapp-Putsch\nArbeiterbewegung\nstreikt",
+      "position": "center",
+      "anim": "pop",
+      "style": "warning",
+      "anim_duration": 0.4
+    },
+    {
+      "type": "card",
+      "trigger_time": 26.0,
+      "duration": 6.0,
+      "title": "Architektur-Blüte",
+      "body": "Otto Haesler\nNeues Bauen in Hannover\nProgressive Siedlungen",
+      "position": "right",
+      "anim": "slide_left",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "callout",
+      "trigger_time": 50.0,
+      "duration": 6.0,
+      "text": "1929",
+      "subtext": "Weltwirtschaftskrise\nArbeitslosigkeit\n~5,5 Millionen in DE",
+      "position": "center",
+      "anim": "pop",
+      "style": "warning",
+      "anim_duration": 0.5
+    }
+  ]
 }

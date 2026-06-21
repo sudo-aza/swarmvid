@@ -73,5 +73,40 @@
   ],
   "accent": "#e74c3c",
   "visual_treatment": "fullscreen_text",
-  "total_scenes": 28
+  "total_scenes": 28,
+  "visual_events": [
+    {
+      "type": "callout",
+      "trigger_time": 2.0,
+      "duration": 7.0,
+      "text": ">1000 Jahre",
+      "subtext": "Geschichte Hannovers\nGermanische Siedlung bis heute",
+      "position": "center",
+      "anim": "pop",
+      "style": "highlight",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "callout",
+      "trigger_time": 14.0,
+      "duration": 6.0,
+      "text": "Widerstandskraft",
+      "subtext": "Leitmotiv dieser Stadt\nKriege, Zerstörung, Überleben",
+      "position": "center",
+      "anim": "pop",
+      "style": "highlight",
+      "anim_duration": 0.4
+    },
+    {
+      "type": "callout",
+      "trigger_time": 26.0,
+      "duration": 6.0,
+      "text": "Handel & Innovation",
+      "subtext": "Von Gilden über Messe\nbis Industrie 4.0",
+      "position": "center",
+      "anim": "pop",
+      "style": "highlight",
+      "anim_duration": 0.4
+    }
+  ]
 }

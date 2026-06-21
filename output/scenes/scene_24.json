@@ -79,5 +79,49 @@
   ],
   "accent": "#e55039",
   "visual_treatment": "stark",
-  "total_scenes": 28
+  "total_scenes": 28,
+  "visual_events": [
+    {
+      "type": "card",
+      "trigger_time": 2.0,
+      "duration": 6.0,
+      "title": "Wiederaufbau",
+      "body": "Prägt das Stadtbild\nbis in die Gegenwart\nKein reiner originalgetreuer Aufbau",
+      "position": "right",
+      "anim": "slide_left",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "callout",
+      "trigger_time": 14.0,
+      "duration": 6.0,
+      "text": "Neues Rathaus",
+      "subtext": "Markantestes Bauwerk\nBereits vor dem Krieg errichtet",
+      "position": "center",
+      "anim": "pop",
+      "style": "highlight",
+      "anim_duration": 0.4
+    },
+    {
+      "type": "callout",
+      "trigger_time": 38.0,
+      "duration": 6.0,
+      "text": "Hannover Messe",
+      "body": "Wichtigste internationale\nIndustriemesse der 1950er",
+      "position": "center",
+      "anim": "pop",
+      "style": "highlight",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "card",
+      "trigger_time": 62.0,
+      "duration": 6.0,
+      "title": "Herrenhäuser Gärten",
+      "body": "Barocke Gartenkunst\nNach Zerstörung\nwiederhergestellt",
+      "position": "left",
+      "anim": "slide_right",
+      "anim_duration": 0.5
+    }
+  ]
 }

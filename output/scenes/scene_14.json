@@ -60,5 +60,51 @@
   ],
   "accent": "#eb4d4b",
   "visual_treatment": "title_card",
-  "total_scenes": 28
+  "total_scenes": 28,
+  "visual_events": [
+    {
+      "type": "callout",
+      "trigger_time": 2.0,
+      "duration": 6.0,
+      "text": "1830",
+      "subtext": "Wilhelm IV. besteigt\nbeide Throne",
+      "position": "center",
+      "anim": "pop",
+      "style": "highlight",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "callout",
+      "trigger_time": 14.0,
+      "duration": 7.0,
+      "text": "1837",
+      "subtext": "Ende der Personalunion\nVictoria = UK\nErnst August = Hannover",
+      "position": "center",
+      "anim": "pop",
+      "style": "warning",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "card",
+      "trigger_time": 26.0,
+      "duration": 6.0,
+      "title": "Verfassungsbruch",
+      "body": "Ernst August hebt\nVerfassung 1837 ab\nInternationaler Eklat",
+      "position": "right",
+      "anim": "slide_left",
+      "style": "warning",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "callout",
+      "trigger_time": 38.0,
+      "duration": 6.0,
+      "text": "123 Jahre",
+      "subtext": "Personalunion beendet\nWirtschaftliche Folgen",
+      "position": "center",
+      "anim": "pop",
+      "style": "warning",
+      "anim_duration": 0.4
+    }
+  ]
 }

@@ -69,5 +69,70 @@
   ],
   "accent": "#f39c12",
   "visual_treatment": "fullscreen_text",
-  "total_scenes": 28
+  "total_scenes": 28,
+  "visual_events": [
+    {
+      "type": "callout",
+      "trigger_time": 1.0,
+      "duration": 6.0,
+      "text": "1737",
+      "subtext": "Gründung der Georgia Augusta",
+      "position": "center",
+      "anim": "pop",
+      "style": "highlight",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "card",
+      "trigger_time": 14.0,
+      "duration": 7.0,
+      "title": "Berühmte Gelehrte",
+      "body": "Albrecht von Haller (Medizin)\nJohann David Michaelis (Orientalistik)\nGeorg Christoph Lichtenberg (Physik)",
+      "position": "right",
+      "anim": "slide_left",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "callout",
+      "trigger_time": 26.0,
+      "duration": 6.0,
+      "text": "Göttinger Hainbund",
+      "subtext": "Zentrum der Empfindsamkeit\nund des Sturm und Drang",
+      "position": "center",
+      "anim": "pop",
+      "style": "highlight",
+      "anim_duration": 0.4
+    },
+    {
+      "type": "callout",
+      "trigger_time": 37.0,
+      "duration": 6.0,
+      "text": "1751",
+      "subtext": "Königliche Gesellschaft\nder Wissenschaften",
+      "position": "left",
+      "anim": "pop",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "card",
+      "trigger_time": 50.0,
+      "duration": 6.0,
+      "title": "Göttinger Bibliothek",
+      "body": "1734 gegründet\nHeute: Niedersächsische Staats-\nund Universitätsbibliothek",
+      "position": "right",
+      "anim": "slide_left",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "callout",
+      "trigger_time": 62.0,
+      "duration": 6.0,
+      "text": "Personalunion",
+      "subtext": "Georg II. — Verbindung\nGöttingen ↔ Hannover",
+      "position": "center",
+      "anim": "pop",
+      "style": "highlight",
+      "anim_duration": 0.4
+    }
+  ]
 }

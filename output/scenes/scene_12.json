@@ -65,5 +65,62 @@
   ],
   "accent": "#e74c3c",
   "visual_treatment": "default",
-  "total_scenes": 28
+  "total_scenes": 28,
+  "visual_events": [
+    {
+      "type": "callout",
+      "trigger_time": 1.0,
+      "duration": 6.0,
+      "text": "1789",
+      "subtext": "Französische Revolution\nerschüttert Europa",
+      "position": "center",
+      "anim": "pop",
+      "style": "warning",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "callout",
+      "trigger_time": 14.0,
+      "duration": 6.0,
+      "text": "1803",
+      "subtext": "Kapitulation Hannovers\nReichsdeputationshauptschluss",
+      "position": "center",
+      "anim": "pop",
+      "style": "warning",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "card",
+      "trigger_time": 26.0,
+      "duration": 6.0,
+      "title": "Königreich Westfalen",
+      "body": "1807 — napoleonischer\nSatellitenstaat\nTeile Hannovers eingegliedert",
+      "position": "right",
+      "anim": "slide_left",
+      "style": "warning",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "callout",
+      "trigger_time": 50.0,
+      "duration": 6.0,
+      "text": "16.–19. Okt. 1813",
+      "subtext": "Völkerschlacht bei Leipzig\nNapoleons Niederlage",
+      "position": "center",
+      "anim": "pop",
+      "style": "highlight",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "callout",
+      "trigger_time": 62.0,
+      "duration": 7.0,
+      "text": "1814",
+      "subtext": "Georg III. wird\nKönig von Hannover",
+      "position": "center",
+      "anim": "pop",
+      "style": "highlight",
+      "anim_duration": 0.5
+    }
+  ]
 }

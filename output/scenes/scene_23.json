@@ -68,5 +68,71 @@
   ],
   "accent": "#f0932b",
   "visual_treatment": "stark",
-  "total_scenes": 28
+  "total_scenes": 28,
+  "visual_events": [
+    {
+      "type": "callout",
+      "trigger_time": 2.0,
+      "duration": 6.0,
+      "text": "Apr. 1945",
+      "subtext": "Britische Militärverwaltung\nin Hannover",
+      "position": "center",
+      "anim": "pop",
+      "anim_duration": 0.4
+    },
+    {
+      "type": "callout",
+      "trigger_time": 14.0,
+      "duration": 6.0,
+      "text": "Trümmerfrauen",
+      "subtext": "Symbol des Wiederaufbaus\nund der Überlebenskraft",
+      "position": "center",
+      "anim": "pop",
+      "style": "highlight",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "callout",
+      "trigger_time": 26.0,
+      "duration": 6.0,
+      "text": "Hungersnot",
+      "subtext": "Streng rationiert\nSchwarzmarkt blüht",
+      "position": "center",
+      "anim": "pop",
+      "style": "warning",
+      "anim_duration": 0.4
+    },
+    {
+      "type": "callout",
+      "trigger_time": 38.0,
+      "duration": 6.0,
+      "text": "Flüchtlinge",
+      "subtext": "Tausende aus Ostgebieten\nnach Niedersachsen",
+      "position": "center",
+      "anim": "pop",
+      "anim_duration": 0.4
+    },
+    {
+      "type": "callout",
+      "trigger_time": 50.0,
+      "duration": 6.0,
+      "text": "1. Nov. 1946",
+      "subtext": "Land Niedersachsen\nmit Hauptstadt Hannover",
+      "position": "center",
+      "anim": "pop",
+      "style": "highlight",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "callout",
+      "trigger_time": 62.0,
+      "duration": 6.0,
+      "text": "20. Juni 1948",
+      "subtext": "Währungsreform\nBeginn des Wirtschaftswunders",
+      "position": "center",
+      "anim": "pop",
+      "style": "highlight",
+      "anim_duration": 0.5
+    }
+  ]
 }

@@ -75,5 +75,50 @@
   ],
   "accent": "#e55039",
   "visual_treatment": "map_focus",
-  "total_scenes": 28
+  "total_scenes": 28,
+  "visual_events": [
+    {
+      "type": "callout",
+      "trigger_time": 2.0,
+      "duration": 6.0,
+      "text": "1851",
+      "subtext": "Georg V. — letzter\nKönig von Hannover",
+      "position": "center",
+      "anim": "pop",
+      "style": "highlight",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "callout",
+      "trigger_time": 26.0,
+      "duration": 6.0,
+      "text": "27. Juni 1866",
+      "subtext": "Schlacht bei Langensalza\nHannover vs. Preußen",
+      "position": "center",
+      "anim": "pop",
+      "style": "warning",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "card",
+      "trigger_time": 38.0,
+      "duration": 6.0,
+      "title": "Annexion",
+      "body": "23. Aug. 1866\nFriedensvertrag von Prag\nPreußen annektiert Hannover",
+      "position": "right",
+      "anim": "slide_left",
+      "style": "warning",
+      "anim_duration": 0.5
+    },
+    {
+      "type": "callout",
+      "trigger_time": 50.0,
+      "duration": 6.0,
+      "text": "70.277",
+      "subtext": "Bürger unterzeichnen\nPetition gegen Annexion",
+      "position": "center",
+      "anim": "pop",
+      "anim_duration": 0.4
+    }
+  ]
 }
