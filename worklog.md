@@ -105,3 +105,24 @@ Stage Summary:
 - narration_v2.md: 1223 lines, Scenes 1-20 complete (20/28 = 71%)
 - NOTE: Scene 20 has many NOTE tags because local Hannover sources for Weimar era are scarce online. Key find: NS-Zeit-Hannover.de has detailed sourced article on NSDAP rise in Hannover with specific numbers.
 - Next: Scenes 21-22
+
+---
+Task ID: cron-221005-20260621
+Agent: zai-2 (researcher, cron #221005)
+Task: Continue narration_v2.md rewrite — Scenes 21-22
+
+Work Log:
+- Pulled repo (f799dd2) — noted new output/ and scripts/ files from other agents
+- Extracted Scene 21 (NS-Zeit, 1933-1938, 6 segments) and Scene 22 (Zweiter Weltkrieg, 1939-1945, 7 segments)
+- Searched 10+ sources: ns-zeit-hannover.de (3 articles: Machtergreifung, SA, KZ), DHM Gleichschaltung, pogrome1938-niedersachsen.de (detailed Hannover 1938), NDR Maschsee, Wikipedia Luftangriffe auf Hannover, KZ-Gedenkstätte Neuengamme (Ahlem), NDR Befreiung Hannover, dasjahr1945.de
+- Read key pages for verbatim quotes
+- Wrote Scene 21: 5 segments covering Gleichschaltung, jüdische Geschichte + Synagoge, Reichspogromnacht (3 Uhr→7:30 Synagoge Sprengung), Gestapo + KZ Ahlem, Maschsee (1934-1936, 64 Pfennige/h)
+- Wrote Scene 22: 6 segments covering Rüstungsproduktion, Zwangsarbeiter + KZ Stöcken/Ahlem, 88 Luftangriffe (6.782 tot, 90% zerstört), Kirchenruinen, 10. April 1945 Befreiung (Bratke), Trümmerfeld
+- NOTE: Scene 21 has only 5 segments (merged S21.5+Widerstand into S21.4)
+- 13 NOTE tags
+- Pushed as eb983a8
+
+Stage Summary:
+- narration_v2.md: 1339 lines, Scenes 1-22 complete (22/28 = 79%)
+- Key sources: pogrome1938-niedersachsen.de (very detailed for Synagoge history + 1938), Wikipedia Luftangriffe (comprehensive stats: 88 attacks, 6782 dead, 90% center destroyed, 7.5M m³ rubble), NDR Maschsee (64 Pfennige/h, 780K m³ excavated)
+- Next: Scenes 23-24 (6 scenes remaining to complete)
