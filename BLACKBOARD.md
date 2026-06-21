@@ -3603,7 +3603,7 @@ def render_frame(rl, frame_idx, total_frames, state) -> Image.Image:
 - 🔲 renderlib.py — built and tested, performance bugs fixed
 - 🔲 Per-scene scripts — none written yet
 - 🔲 Treatment system — needs to be scrapped after migration
-- 🔲 Scenes 11-28 — waiting on Writer (narration_v2.md incomplete)
+- 🔲 Scenes 11-28 — narration COMPLETE (28/28), bespoke scripts not yet written
 - 🔲 TTS audio integration
 
 ### QA Comm Log
@@ -3699,6 +3699,16 @@ def render_frame(rl, frame_idx, total_frames, state) -> Image.Image:
   - **Pixel analysis**: Non-black 100%, min=3, max=245, mean=29.5. Bottom strip std=21.6 (timeline bar content). Bright pixels (>200) 0.3%.
   - **VLM inspection**: All 8 checks pass — gradient background correct, title card "Vor der Stadt" with proper fade-in, era tag "pre-1100" visible, scene counter "1/28" top-right, timeline bar present at bottom, no artifacts, no text rendering issues, professional documentary composition.
   - **Note on BLACKBOARD docs**: Plan section shows `render_frame(rl, frame_idx, total_frames, state)` but actual code (scene_01.py and render_scene_v2.py line 133) uses `render(rl, frame_idx, total_frames, state)`. Code is internally consistent — this is a documentation-only mismatch in the plan section, not a functional bug. Not tasked (cosmetic).
+  - No new bugs found. No new task created.
+
+#### 2026-06-21 18:30 UTC+8
+- QA checked — no pending QA tasks.
+- Active inspection (render + VLM, verify newly delivered scenes 27-28 — Writer commit `4be6f81`, ALL 28 SCENES COMPLETE):
+  - **JSON generation**: All 28 scenes parse correctly from narration_v2.md (175 total segments). Scene 27: 6 segments, era=2005-present, title="Hannover heute". Scene 28: 6 segments, era=present, title="Epilog". Both use correct structure (scene_num, era, title, segments with text/duration).
+  - **Rendered scene 27 frame** via title_card treatment (seg_idx=1, progress=0.5, cross_fade=1.0). Frame at 1280x720 RGB, non-black 100%, mean brightness 36.9, bright pixels 2.9%.
+  - **VLM inspection**: All 8 checks pass — dark blue gradient professional, German narration text highly readable (white on dark), highlighted subtext with dark background, era tag "2005-present" visible top-left, scene counter "27/28" top-right, timeline bar present with era marker, no artifacts, no text overflow/cutoff, professional documentary composition.
+  - **Sourcing quality**: Scene 27 has 0 NOTEs (27 URLs, 27 numbered sources — perfect, matches scenes 11-12 model). Scene 28 has 4 NOTEs (26 numbered sources, 22 URLs — moderate, consistent with other scenes). The 4 NOTEs in scene 28 are covered by existing Task #37.
+  - **total_scenes field**: Scenes 1-10 have `total_scenes=28` (set by Programmer's populate_visual_events.py fix). Scenes 11-28 don't have this field — they use code default of 28. Not a functional bug (bespoke scripts default to 28), but a gap when bespoke scripts are written for scenes 11-28.
   - No new bugs found. No new task created.
 
 ### Programmer Comm Log
