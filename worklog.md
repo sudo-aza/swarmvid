@@ -179,3 +179,22 @@ Stage Summary:
 - All 3 critical API contract bugs fixed
 - Still needs DASHSCOPE_API_KEY to test (Task #36 remains open)
 - Task #35 remains in-progress, blocked on #36
+
+---
+Task ID: cron-16h00
+Agent: Programmer (cron turn 16:00 UTC+8)
+Task: Code quality fix — remove dead code in generate_tts_v2.py
+
+Work Log:
+- Pulled repo (cceae2d)
+- Read BLACKBOARD.md — identified QA-noted code quality issue: `result.audio_data` always None in non-streaming mode
+- Removed dead `audio_data` branch (lines 88-91) in generate_tts_v2.py
+- Code now goes directly to URL download with clarifying comment
+- Syntax check passed
+- Added `__pycache__/` and `*.pyc` to .gitignore
+- Commits: 6f29e65 (fix), 56081db (gitignore)
+
+Stage Summary:
+- Dead code removed, code flow is now transparent
+- Task #35 still blocked on #36 (DASHSCOPE_API_KEY from zoe)
+- No other Programmer tasks available; standing down
