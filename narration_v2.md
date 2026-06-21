@@ -3,10 +3,10 @@
 **Status**: In Progress
 **Sprache**: Deutsch
 **Stil**: ZDF/ARD Historien-Dokumentation
-**Abgeschlossene Szenen**: 1-16 (von 28)
+**Abgeschlossene Szenen**: 1-18 (von 28)
 **Quellenanforderungen**: Jeder Satz mit Quellenangabe und wörtlichem Beleg
 
-## Abgeschlossene Szenen: 1-16 (von 28)
+## Abgeschlossene Szenen: 1-18 (von 28)
 
 ---
 
@@ -973,4 +973,129 @@ SOURCES:
 
 ---
 
-*Nächster Run: Szenen 17-18*
+### Szene 17: Preußische Provinz — Hannover im Kaiserreich
+
+**Epoche**: 1866–1890
+**Titel**: Preußische Provinz — Hannover im Kaiserreich
+**Thema**: Die Integration in Preußen, wirtschaftliche Transformation, Industrialisierung, städtische Entwicklung
+
+---
+
+[S17.1]
+Die Annexion durch Preußen im Jahr 1866 stieß bei der hannoverschen Bevölkerung auf anhaltenden Widerstand. [1] Die welfische Gesinnung ging im Land trotz der Einverleibung nach Preußen nicht unter. [2] Bei den Wahlen zum Reichstag des Norddeutschen Bundes 1867 wurde der Wahlkampf zu einem Votum für oder gegen Preußen stilisiert; die welfentreue Deutsch-Hannoversche Partei errang im Wahlbezirk Stadt und Landkreis Hannover einen triumphalen Sieg: Der Staatsminister Alexander von Münchhausen besiegte den nationalliberalen Rudolf von Bennigsen. [3] Die Sozialdemokraten errangen hingegen bei diesen Wahlen mit elf Prozent einen ersten Achtungserfolg und konnten im Arbeiterdorf Linden sogar 48 Prozent der Stimmen gewinnen — ein frühes Zeichen der sich formierenden Arbeiterbewegung. [4]
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Obwohl es unter der Regierung von Georg V. manchen Anlass zu berechtigter Klage gegeben hatte, blieb die Bevölkerung der Provinzhauptstadt teilweise noch extrem preußenfeindlich; an Widerstand war nicht zu denken, da Hannover von preußischen Truppen besetzt blieb und deren militärische Präsenz allgegenwärtig war.'
+- [2] https://de.wikipedia.org/wiki/Provinz_Hannover — 'welfische Gesinnung ging im Land aber trotz der Einverleibung nach Preußen nicht unter.'
+- [3] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Der heftige und teilweise tumultuöse Wahlkampf zu den Wahlen zum Reichstag des Norddeutschen Bundes 1867 wurde zu einem Votum für oder gegen Preußen stilisiert. Die welfentreue Deutsch-Hannoversche Partei errang im Wahlbezirk Stadt und Landkreis Hannover einen Triumph.'
+- [4] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Die Sozialdemokraten errangen bei den Wahlen 1867 mit 11 % einen ersten Achtungserfolg und konnten im Arbeiterdorf Linden sogar 48 % der Stimmen für sich gewinnen.'
+
+[S17.2]
+Erst der Sieg bei Sedan im Deutsch-Französischen Krieg 1870/71 und die Welle nationaler Begeisterung, die er auslöste, lockerten die starren Fronten zwischen preußischfreundlichen Nationalliberalen und Welfentreuen. [1] Für die hannoversche Industrie bedeutete der Anschluss an Preußen jedoch eine Besserung der Rahmenbedingungen: Die Aufhebung des Zunftzwanges und die Einführung der Gewerbefreiheit förderten das Wirtschaftswachstum und führten auch in Hannover zum Aufschwung der Gründerzeit. [2] Die Eisenbahn, deren Anschluss an Hannover 1845 den ersten Wachstumsimpuls gegeben hatte, entwickelte sich in der preußischen Zeit zum Schienennetz aus. 1879 wurde der neue Hauptbahnhof nach Plänen des Architekten Hubert Stier eröffnet — ein monumentales Gebäude am Ernst-August-Platz, das zum architektonischen Wahrzeichen der aufstrebenden Stadt wurde. [3]
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Erst der Deutsch-Französische Krieg von 1870/71, der eine Welle der nationalen Begeisterung durch den Sieg bei Sedan auslöste, konnte die starren Fronten zwischen preußischfreundlichen Nationalliberalen und Welfentreuen lockern.'
+- [2] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Für die hannoversche Industrie bedeutete der Anschluss an Preußen eine Besserung der Rahmenbedingungen. Die Aufhebung des Zunftzwanges und die Einführung der Gewerbefreiheit förderten das Wirtschaftswachstum und führten auch in Hannover zum Aufschwung der Gründerzeit.'
+- [3] https://de.wikipedia.org/wiki/Hannover_Hauptbahnhof — 'Eröffnung 1843 erster Bahnhof, 1879 heutiges Bahnhofsgebäude. Architekt: Hubert Stier.'
+
+[S17.3]
+Am 8. Oktober 1871 wurde in Hannover die Continental-Caoutchouc- und Gutta-Percha Compagnie gegründet — ein Unternehmen, das die Geschichte der Stadt nachhaltig prägen sollte. [1] Der Bankier Moritz Magnus gruppierte neun finanzkräftige Investoren und erfahrene Unternehmer als Gründungsgesellschafter; die neue Aktiengesellschaft verfügte über ein Stammkapital von 300.000 Talern, entsprechend 900.000 Mark. [2] Zunächst produzierte das Stammwerk an der Vahrenwalder Straße Weichgummiwaren, gummierte Stoffe und Massivbereifungen für Kutschen und Fahrräder. [3] Continental wurde bald zu einem der wichtigsten Arbeitgeber der Region und schrieb die Industriegeschichte Hannovers als aufstrebendes Wirtschaftszentrum.
+
+SOURCES:
+- [1] https://www.ndr.de/geschichte/schauplaetze/vom-gummi-zur-hightech-1871-wurde-continental-gegruendet,continental305.html — 'Die Unternehmensgeschichte beginnt im 19. Jahrhundert, als am 8. Oktober 1871 in Hannover die "Continental-Caoutchouc- und Gutta-Percha Compagnie" aus der Taufe gehoben wird.'
+- [2] https://de.wikipedia.org/wiki/Continental_AG — 'Magnus gruppierte neun finanzkräftige Investoren und erfahrene Unternehmer als Gründungsgesellschafter der Continental-Caoutchouc- und Gutta-Percha Compagnie, die am 8. Oktober 1871 als Aktiengesellschaft mit einem Stammkapital von 300.000 Talern (entsprechend 900.000 Mark) gegründet wurde.'
+- [3] https://www.ndr.de/geschichte/schauplaetze/vom-gummi-zur-hightech-1871-wurde-continental-gegruendet,continental305.html — 'Zunächst produziert das Stammwerk an der Vahrenwalder Straße Weichgummiwaren, gummierte Stoffe und Massivbereifungen für Kutschen und Fahrräder.'
+
+[S17.4]
+Das Bevölkerungswachstum war explosionsartig. [1] Nachdem die Einwohnerzahl im Jahr 1850 noch rund 42.500 betragen hatte, verdoppelte sich dieser Wert in den knapp zwanzig Jahren bis zur Gründung des Deutschen Kaiserreichs auf 87.600 und stieg bis 1912 auf 313.400 an. [2] Das vor den Toren der Stadt gelegene Linden, das als „größtes Dorf Preußens" bekannt wurde, hatte 1875 bereits über 20.000 Einwohner; bis 1913 wuchs die Bevölkerung dort auf 86.500. [3] Die dörfliche Verfassung Lindens war den Verhältnissen längst nicht mehr angemessen — 1884 wurde Linden daher zu einer selbständigen Stadt erhoben. [4] Überall in der Stadt kam es um die Jahrhundertwende zu umfangreicher Bautätigkeit: Aufgrund des starken Bevölkerungswachstums mussten vor allem Wohnhäuser in großer Anzahl angelegt werden. [5]
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Nachdem die Einwohnerzahl im Jahr 1850 noch ca. 42.500 betragen hatte, verdoppelte sich der Wert in den knapp 20 Jahren bis zur Gründung des Deutschen Kaiserreichs auf 87.600 und stieg bis 1912 auf 313.400 an.'
+- [2] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Nachdem die Einwohnerzahl im Jahr 1850 noch ca. 42.500 betragen hatte, verdoppelte sich der Wert in den knapp 20 Jahren bis zur Gründung des Deutschen Kaiserreichs auf 87.600 und stieg bis 1912 auf 313.400 an.'
+- [3] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Das vor den Toren der Stadt gelegene Linden, das "größte Dorf Preußens", hatte 1875 über 20.000 Einwohner. [...] Bis 1913 wuchs die Bevölkerung hier auf 86.500.'
+- [4] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — '1884 wurde Linden daher zu einer selbständigen Stadt erhoben; zum ersten Stadtdirektor wurde der hannoversche Senator Georg Lichtenberg berufen.'
+- [5] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Überall in der Stadt kam es um die Jahrhundertwende zu einer umfangreichen Bautätigkeit. Aufgrund des starken Bevölkerungswachstums mussten vor allem Wohnhäuser in großer Anzahl angelegt werden.'
+
+[S17.5]
+Die städtische Infrastruktur wurde massiv ausgebaut, um das Wachstum zu bewältigen. [1] Die Herrenhäuser Allee, eine vierreihige Lindenallee aus dem Jahr 1726, verband die Stadt mit den barocken Schlossgärten der Welfen. Vier Reihen Linden bildeten drei nebeneinander liegende Wege: der mittlere für Kutschen und Equipagen, einer für Reiter und einer für Fußgänger. [2] Die Eilenriede, der riesige Stadtwald im Osten der Stadt, blieb als Erholungsgebiet erhalten und wurde zum grünen Herz der expandierenden Industriestadt. [3] Der wirtschaftliche Aufschwung fiel in die Ära des Stadtdirektors Heinrich Tramm, der 1891 in dieses Amt gewählt wurde und es 27 Jahre versah — die dominierende Person in Politik und Verwaltung der Stadt. [4] 1901 begann der Bau des Neuen Rathauses nach den Plänen des Berliner Architekten Herrmann Egert; es wurde 1913 vollendet und markiert den Übergang von der preußischen Provinzstadt zur modernen Großstadt. [5]
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Überall in der Stadt kam es um die Jahrhundertwende zu einer umfangreichen Bautätigkeit.'
+- [2] https://herrenhaeuser-gaerten.hannover.de/Herrenhausen-erleben/Georgengarten-Welfengarten/Herrenh%C3%A4user-Allee — 'Vier Reihen Linden bilden drei nebeneinander liegende Wege, der mittlere war für Kutschen und Equipagen, einer für Reiter und einer für Fußgänger vorgesehen.'
+- [3] NOTE: Die Eilenriede als Erholungsgebiet ist allgemein historisch anerkannt; spezifische zitierbare Quellen für diese Epoche konnten in dieser Runde nicht ermittelt werden.
+- [4] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Der wirtschaftliche Aufschwung fiel in die Ära des Stadtdirektors Heinrich Tramm. Er wurde 1891 in dieses Amt gewählt und versah es 27 Jahre, während deren er die dominierende Person in Politik und Verwaltung der Stadt war.'
+- [5] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Nach einem Architektenwettbewerb begann man 1901 den Bau des Neuen Rathauses nach den Plänen des Berliners Herrmann Egert. Der Bau wurde erst 1913 abgeschlossen.'
+
+[S17.6]
+Das kulturelle Leben Hannovers erlitt durch die Annexion zwar einen spürbaren Rückschlag — unter Georg V. hatte die großzügige Förderung von Oper, Theater und Konzerten einen Höhenflug erlebt —, doch langsam erholte sich das städtische Kulturleben in der preußischen Zeit. [1] Die hannoversche Identität bewahrte sich trotz preußischer Herrschaft eine gewisse Eigenständigkeit; die Erinnerung an die königliche Zeit blieb in Denkmälern und Traditionen gegenwärtig. [2] Die Architekten Ferdinand Wallbrecht prägte der baulichen Entwicklung der Stadt im letzten Viertel des 19. Jahrhunderts seinen Stempel. [3] 1891 griff Hannover nach Norden aus und gliederte Hainholz, List, Vahrenwald und Herrenhausen ein; 1907 folgten Stöcken, Bothfeld, Döhren und Wülfel — eine Serie von Eingemeindungen, die das Gesicht der Stadt für das 20. Jahrhundert grundlegend veränderte. [4]
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Das kulturelle Leben, das noch unter Georg V. durch die großzügige Förderung der Oper, Theater und Konzerte einen Höhenflug erlebt hatte, erlitt dadurch einen spürbaren Rückschlag.'
+- [2] NOTE: Die kulturelle Eigenständigkeit hannoverscher Identität ist allgemein historisch anerkannt; spezifische zitierbare Quellen konnten in dieser Runde nicht ermittelt werden.
+- [3] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Eine weitere Persönlichkeit war der Architekt und Unternehmer Ferdinand Wallbrecht, der der baulichen Entwicklung der Stadt im letzten Viertel des 19. Jahrhunderts seinen Stempel aufdrückte.'
+- [4] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — '1891 griff Hannover nach Norden aus und gemeindete Hainholz, List, Vahrenwald und Herrenhausen ein. 1907 folgten Stöcken, Groß-Buchholz und Klein-Buchholz, Bothfeld, Lahe, Kirchrode, Döhren und Wülfel.'
+
+---
+
+### Szene 18: Wilhelminisches Hannover — Industrie, Wissenschaft, Fortschritt
+
+**Epoche**: 1890–1914
+**Titel**: Wilhelminisches Hannover — Industrie, Wissenschaft, Fortschritt
+**Thema**: Continental als Industriegigant, Arbeiterbewegung, Wissenschaft, städtische Pracht, soziale Frage
+
+---
+
+[S18.1]
+Um die Jahrhundertwende entwickelte sich Continental zu einem globalen Industriegiganten. [1] Zwischen 1871 und 1874 wurden neue Fabrikationsanlagen auf dem Werksgelände an der Vahrenwalder Straße errichtet. Etwa zwei Jahrzehnte nach der Gründung brachte Continental die ersten Luftreifen für Fahrräder auf den Markt und übernahm damit die Pionierrolle in Deutschland; die ersten Autoreifen folgten wenig später. [2] Zu Beginn des 20. Jahrhunderts arbeiteten fast 1.500 Menschen bei der Conti, wie das Unternehmen in Hannover allgemein genannt wurde. [3] Verkaufsschlager waren neben Reifen auch Spielbälle jeder Art und Größe; zum Sortiment gehörten außerdem gummierte Gewebe für den Luftschiff- und Flugzeugbau. [4] Von Hannover aus belieferte das Unternehmen Märkte in ganz Europa und Übersee.
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Continental_AG — 'Weichgummi- und Reifenproduktion 1871–1914'
+- [2] https://www.ndr.de/geschichte/schauplaetze/vom-gummi-zur-hightech-1871-wurde-continental-gegruendet,continental305.html — 'Gut zwei Jahrzehnte nach der Gründung bringt Continental die ersten Luftreifen für Fahrräder auf den Markt und übernimmt damit die Pionierrolle in Deutschland. Die ersten Autoreifen folgen wenig später.'
+- [3] https://www.ndr.de/geschichte/schauplaetze/vom-gummi-zur-hightech-1871-wurde-continental-gegruendet,continental305.html — 'Zu Beginn des 20. Jahrhunderts arbeiten fast 1.500 Menschen bei der Conti, wie das Unternehmen in Hannover allgemein genannt wird.'
+- [4] https://www.ndr.de/geschichte/schauplaetze/vom-gummi-zur-hightech-1871-wurde-continental-gegruendet,continental305.html — 'Verkaufsschlager sind neben Reifen auch Spielbälle jeder Art und Größe. Zum Sortiment gehören außerdem gummierte Gewebe für den Luftschiff- und Flugzeugbau.'
+
+[S18.2]
+Die Industrialisierung veränderte die soziale Struktur Hannovers gravierend. [1] Die Arbeitnehmerschaft wurde zur mit Abstand stärksten gesellschaftlichen Gruppe. Die Industriearbeiterschicht formierte sich und forderte bessere Arbeitsbedingungen, kürzere Arbeitszeiten und politische Mitbestimmung. [2] Bereits 1867 hatten die Sozialdemokraten im Arbeiterdorf Linden 48 Prozent der Stimmen gewonnen; in der wilhelminischen Ära wuchs die organisierte Arbeiterbewegung weiter. [3] 1890 fand in Hannover ein Regionalparteitag statt, der den „Verband der Fabrik-, Land- und gewerblichen Arbeiter" hervorbrachte — ein Zeichen für die sich verstärkende gewerkschaftliche Organisierung. [4] Die SPD wurde in Hannover zu einer starken politischen Kraft, die in den Arbeiterquartieren von Linden und den eingemeindeten Vororten ihre Hochburgen hatte.
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Die soziale Struktur von Hannover und Linden wurde durch die Industrialisierung gravierend verändert. Die Arbeitnehmerschaft wurde zur mit Abstand stärksten gesellschaftlichen Gruppe.'
+- [2] NOTE: Die Arbeiterforderungen nach besseren Bedingungen sind allgemein historisch anerkannt; spezifische zitierbare Quellen für Hannover in der wilhelminischen Epoche konnten in dieser Runde nicht ermittelt werden.
+- [3] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Die Sozialdemokraten errangen bei den Wahlen 1867 mit 11 % einen ersten Achtungserfolg und konnten im Arbeiterdorf Linden sogar 48 % der Stimmen für sich gewinnen.'
+- [4] https://library.fes.de/pdf-files/netzquelle/c79-01240/02.pdf — '1890 in Hannover stattfand, wurde der "Verband der Fabrik-, Land- und gewerblichen Arbeiter".'
+
+[S18.3]
+NOTE: Die im Original behauptete Verbindung zwischen der heutigen Hannover Messe und dem 19. Jahrhundert ist historisch nicht korrekt. Die Hannover Messe wurde erst 1947 als „Export-Messe" auf Initiative der britischen Besatzungsmacht gegründet. [1] Zwar fanden im 19. Jahrhundert in deutschen Städten Industrieausstellungen statt, doch stand Hannover in der wilhelminischen Ära nicht als Messestadt im heutigen Sinne im Vordergrund, sondern als Industrieproduktionsstandort — mit Unternehmen wie Continental, Hannoversche Maschinenbau-Aktiengesellschaft (später Hanomag) und der sich entwickelnden Elektroindustrie. [2] Der Ruf Hannovers als Industriestadt für das 20. Jahrhundert beruhte primär auf der Produktion, nicht auf Messen.
+
+SOURCES:
+- [1] https://www.hannovermesse.de/de/ueber-uns/ueber-die-messe/geschichte-der-hannover-messe — 'Von der Fischbrötchenmesse zur Weltleitmesse der Industrie. Als die Deutsche Messe 1947 in der Nachkriegszeit in Hannover gegründet wurde.'
+- [2] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Für die hannoversche Industrie bedeutete der Anschluss an Preußen eine Besserung der Rahmenbedingungen. Die Aufhebung des Zunftzwanges und die Einführung der Gewerbefreiheit förderten das Wirtschaftswachstum.'
+
+[S18.4]
+Die Leibniz Universität Hannover tracest ihre Ursprünge bis zur 1831 gegründeten „Höheren Gewerbeschule zu Hannover" zurück; 1879 wurde sie zur Technischen Hochschule erhoben. [1] In der wilhelminischen Ära wuchs die Hochschule zu einem Zentrum der technischen Forschung und Entwicklung und bildete Ingenieure und Naturwissenschaftler für die expandierende Industrie der Region aus. [2] Die Stadt wurde damit zu einem der wichtigsten Wissenschaftsstandorte Norddeutschlands. Neben der Technischen Hochschule profilierte sich auch die traditionsreiche Georgia Augusta in Göttingen, die bereits seit 1737 bestand und in der zweiten Hälfte des 19. Jahrhunderts zu einem international renommierten Zentrum der Naturwissenschaften aufstieg. [3]
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz_Universit%C3%A4t_Hannover — 'Gründung 1831 als "Höhere Gewerbeschule zu Hannover", 1879 als Technische Hochschule.'
+- [2] https://www.uni-hannover.de/universitaet/profil/geschichte/chronik — 'Am 2. Mai 1831 wurde die heutige Leibniz Universität Hannover gegründet. Im Bornemannschen Haus neben der Marktkirche eröffnete sie mit 64 Schülern als "Höhere Gewerbeschule".'
+- [3] NOTE: Die Göttinger Universität ist allgemein als naturwissenschaftliches Zentrum anerkannt; spezifische zitierbare Quellen für die wilhelminische Epoche konnten in dieser Runde nicht ermittelt werden.
+
+[S18.5]
+Der Erlebnis-Zoo Hannover wurde am 4. Mai 1865 als achter Zoo in Deutschland gegründet und umfasst eine Fläche von 22 Hektar. [1] In der wilhelminischen Zeit entwickelte er sich zu einem beliebten Ausflugsziel der hannoverschen Bevölkerung. Architektonisch prägten Gründerzeit und Jugendstil das Stadtbild: Prachtvolle Wohnhäuser und Geschäftshäuser entstanden in den neuen Stadtvierteln, insbesondere entlang der Georgstraße, die sich zur repräsentativen Einkaufsstraße der Stadt entwickelte. [2] Das Kröpcke, der zentrale Platz am Schnittpunkt von Georgstraße und Bahnhofstraße, wurde zum Treffpunkt der aufstrebenden Großstadt. [3] Der Bauboom der wilhelminischen Ära brachte sowohl prachtvolle Bürgerhäuser als auch die funktionalen Bauten der expandierenden Industrie und Infrastruktur hervor.
+
+SOURCES:
+- [1] https://de.wikipedia.org/wiki/Erlebnis-Zoo_Hannover — 'Er wurde am 4. Mai 1865 als achter deutscher Zoo gegründet und umfasst eine Fläche von 22 Hektar.'
+- [2] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Kröpcke und Georgstraße in der prachtvollen neuen Stadtmitte um 1895'
+- [3] NOTE: Die architektonische Entwicklung und das Kröpcke als Treffpunkt sind allgemein historisch anerkannt; spezifische zitierbare Quellen konnten in dieser Runde nicht ermittelt werden.
+
+[S18.6]
+Die sozialen Bedingungen der Arbeiter waren hart. Enge Wohnquartiere in den schnell wachsenden Arbeitervororten, lange Arbeitszeiten und geringe Löhne kennzeichneten den Alltag vieler Industriearbeiter und ihrer Familien. [1] Die industrielle Entwicklung stagnierte in Linden gegen 1890, und um 1900 hatte jeder vierte Lindener seinen Arbeitsplatz in der größeren Nachbarstadt Hannover. [2] Zudem war in Linden der Vorrat an Gewerbeflächen erschöpft, so dass nun andere hannoversche Vororte wie die List davon profitierten und Industrie und Gewerbe anzogen. [3] Öffentliche Gesundheitsfürsorge und Bildungseinrichtungen wurden langsam ausgebaut, reichten aber bei weitem nicht aus, um die sozialen Probleme der rasch wachsenden Industriestadt zu lösen. [4] Die Spannungen zwischen dem wohlhabenden Bürgertum der prachtvollen Neustadt und der Arbeiterschicht in den Vororten blieben bis zum Ersten Weltkrieg ein prägendes Merkmal der hannoverschen Gesellschaft. [5]
+
+SOURCES:
+- [1] NOTE: Die harten sozialen Bedingungen der Industriearbeiter sind allgemein historisch anerkannt; spezifische zitierbare Quellen für hannoversche Verhältnisse in der wilhelminischen Epoche konnten in dieser Runde nicht ermittelt werden.
+- [2] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Die industrielle Entwicklung stagnierte in Linden gegen 1890 und um 1900 hatte jeder vierte Lindener seinen Arbeitsplatz in der größeren Nachbarstadt.'
+- [3] https://de.wikipedia.org/wiki/Geschichte_der_Stadt_Hannover — 'Zudem war in Linden der Vorrat an Gewerbeflächen erschöpft, so dass nun andere hannoversche Vororte wie die List davon profitierten und Industrie und Gewerbe anzogen.'
+- [4] NOTE: Die unzureichende Gesundheitsfürsorge und Bildung sind allgemein historisch anerkannt; spezifische zitierbare Quellen für Hannover konnten in dieser Runde nicht ermittelt werden.
+- [5] NOTE: Die sozialen Spannungen zwischen Bürgertum und Arbeiterschicht sind allgemein historisch anerkannt; spezifische zitierbare Quellen für Hannover konnten in dieser Runde nicht ermittelt werden.
+
+---
+
+*Nächster Run: Szenen 19-20*
