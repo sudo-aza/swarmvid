@@ -9,12 +9,13 @@ Rendering pipeline (per frame, back to front):
     1. Pre-computed gradient background
     2. Title card (first ~5 seconds only, fade in/out)
     3. Visual events from JSON (callouts, cards, images, diagrams)
-    4. Narration text (word reveal, position depends on treatment)
-    5. Particles
-    6. Era tag (top-left, persistent after fade-in)
-    7. Scene counter (top-right)
-    8. Progress bar
-    9. Timeline bar
+    4. Particles
+    5. Era tag (top-left, persistent after fade-in)
+    6. Scene counter (top-right)
+    7. Progress bar
+    8. Timeline bar
+
+Narration is AUDIO ONLY (TTS). No on-screen text for narration.
 """
 
 from __future__ import annotations
@@ -125,13 +126,12 @@ def render(rl, frame_idx: int, total_frames: int, state: dict) -> Image.Image:
     Composition order (back to front):
         1. Pre-computed gradient background
         2. Title card (first ~5 seconds only)
-        3. Visual events from JSON
-        4. Narration text (word reveal)
-        5. Particles
-        6. Era tag (top-left, persistent)
-        7. Scene counter (top-right)
-        8. Progress bar
-        9. Timeline bar
+        3. Visual events from JSON (callouts, cards, images, diagrams)
+        4. Particles
+        5. Era tag (top-left, persistent)
+        6. Scene counter (top-right)
+        7. Progress bar
+        8. Timeline bar
     """
     t_sec = rl.time(frame_idx)
     w, h = rl.w, rl.h
@@ -150,26 +150,23 @@ def render(rl, frame_idx: int, total_frames: int, state: dict) -> Image.Image:
     # ── 3. Visual events from scene JSON ──
     _render_visual_events(rl, t_sec, state)
 
-    # ── 4. Narration text ──
-    _render_narration(rl, t_sec, frame_idx, total_frames, state)
-
-    # ── 5. Particles ──
+    # ── 4. Particles ──
     if frame_idx % 2 == 0:
         rl.draw_particles()
 
-    # ── 6. Era tag (top-left) ──
+    # ── 5. Era tag (top-left) ──
     _render_era_tag(rl, t_sec, state)
 
-    # ── 7. Scene counter ──
+    # ── 6. Scene counter ──
     rl.scene_counter(
         scene_num=state["scene_num"],
         total_scenes=state["total_scenes"],
     )
 
-    # ── 8. Progress bar ──
+    # ── 7. Progress bar ──
     rl.progress_bar(y=h - 22, height=2)
 
-    # ── 9. Timeline bar ──
+    # ── 8. Timeline bar ──
     rl.timeline_bar(
         scene_num=state["scene_num"],
         total_scenes=state["total_scenes"],
@@ -256,90 +253,6 @@ def _render_title(rl, t_sec: float, state: dict) -> None:
             color=alpha_color(accent, int(200 * title_alpha)),
             anchor="mt",
         )
-
-
-# ── Narration Text ──────────────────────────────────────────────────────────
-
-def _render_narration(rl, t_sec: float, frame_idx: int, total_frames: int,
-                     state: dict) -> None:
-    """Render word-by-word narration text."""
-    if t_sec < TITLE_TOTAL:
-        return  # Don't show narration during title card
-
-    segments = rl.scene.get("segments", [])
-    if not segments:
-        return
-
-    seg_idx, seg_progress = rl.segment_at_time(t_sec)
-    if seg_idx >= len(segments):
-        return
-
-    seg = segments[seg_idx]
-    text = seg.get("text", "")
-
-    treatment = state["treatment"]
-    w, h = rl.w, rl.h
-
-    # Determine text layout based on treatment
-    if treatment == "fullscreen_text":
-        text_x = 80
-        text_y = 120
-        text_w = w - 160
-        max_lines = 14
-        line_height = 32
-    elif treatment == "stark":
-        text_x = (w * 2) // 5 + 40
-        text_y = 120
-        text_w = (w * 3) // 5 - 80
-        max_lines = 8
-        line_height = 28
-    else:
-        # default, map_focus, title_card — text on right portion
-        text_x = (w * 2) // 5 + 40
-        text_y = 120
-        text_w = (w * 3) // 5 - 80
-        max_lines = 10
-        line_height = 28
-
-    # Text backdrop
-    backdrop_h = max_lines * line_height + 30
-    rl.rect_filled(
-        text_x - 15, text_y - 15,
-        text_w + 30, backdrop_h,
-        fill=(0, 0, 0, 70),
-        radius=6,
-    )
-    # Accent left edge
-    rl.rect_filled(
-        text_x - 15, text_y - 15,
-        3, backdrop_h,
-        fill=alpha_color(rl.accent, 140),
-    )
-
-    # Word reveal
-    reveal_progress = min(1.0, seg_progress * 1.3)  # Slightly faster than segment
-    rl.reveal_text(
-        text, reveal_progress,
-        text_x, text_y, text_w,
-        font="body",
-        color=(240, 240, 240, 230),
-        max_lines=max_lines,
-        line_height=line_height,
-    )
-
-    # Segment progress indicator
-    bar_y = text_y + backdrop_h + 10
-    rl.rect_filled(text_x, bar_y, text_w, 3, fill=(60, 60, 60, 80))
-    fill_w = int(text_w * seg_progress)
-    rl.rect_filled(text_x, bar_y, fill_w, 3, fill=alpha_color(rl.accent, 160))
-
-    # Scene title in top area of text panel
-    if treatment != "fullscreen_text":
-        title = state["title"]
-        if title:
-            rl.text(title, text_x, 50,
-                    font="subtitle",
-                    color=alpha_color((220, 220, 220), 200))
 
 
 # ── Visual Events ──────────────────────────────────────────────────────────
