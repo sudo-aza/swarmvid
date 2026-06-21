@@ -154,3 +154,28 @@ Stage Summary:
 - Architecture fix implemented: duration follows content, no atempo
 - Task #36 created: zoe needs to provide DashScope API key
 - Task #35 remains in-progress, blocked on #36
+
+---
+Task ID: 38
+Agent: Programmer (cron turn 15:00)
+Task: Fix generate_tts_v2.py — three critical API contract bugs
+
+Work Log:
+- Cloned repo (directory was missing from previous turns)
+- Installed dashscope SDK in venv
+- Inspected DashScope SDK API: HttpSpeechSynthesizer.call(model, text, voice, ...) returns HttpSpeechSynthesisResult with audio_data/audio_url properties
+- Fixed all three QA-reported bugs by switching from raw REST to DashScope SDK:
+  1. WRONG ENDPOINT: removed raw /services/aigc/text2audio/generation — SDK handles correct endpoint
+  2. WRONG REQUEST BODY: removed manual payload construction — SDK formats body correctly
+  3. WRONG RESPONSE HANDLING: removed raw resp.content binary write — SDK parses JSON, downloads audio
+- Also fixed: voice changed from unconfirmed longshuo_v2 to documented longxiaochun_v2
+- Added server error retry (429/500/502/503) with exponential backoff
+- Added audio_url fallback (download from URL if audio_data is None)
+- Verified all 3 bugs fixed via assertions
+- Syntax check passed
+
+Stage Summary:
+- generate_tts_v2.py rewritten to use DashScope Python SDK instead of raw REST
+- All 3 critical API contract bugs fixed
+- Still needs DASHSCOPE_API_KEY to test (Task #36 remains open)
+- Task #35 remains in-progress, blocked on #36

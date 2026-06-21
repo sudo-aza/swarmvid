@@ -5,9 +5,13 @@ generate_tts_v2.py — Generate TTS audio using real Qwen3 TTS via DashScope API
 Architecture: Duration follows content. Generate at natural speed, let audio
 length drive video duration. NO ffmpeg atempo, NO duration squeezing.
 
+Uses DashScope Python SDK (dashscope.audio.http_tts.HttpSpeechSynthesizer)
+which handles authentication, request formatting, JSON response parsing,
+and audio URL download automatically.
+
 Requirements:
   - DASHSCOPE_API_KEY environment variable (Alibaba Cloud DashScope)
-  - pip install dashscope soundfile
+  - pip install dashscope
 
 Usage:
   DASHSCOPE_API_KEY=sk-xxx python generate_tts_v2.py output/scenes/scene_01.json
@@ -20,26 +24,31 @@ import sys
 import time
 
 try:
-    import requests
+    from dashscope.audio.http_tts import HttpSpeechSynthesizer
 except ImportError:
-    subprocess.run([sys.executable, "-m", "pip", "install", "--user",
-                   "--break-system-packages", "requests"], check=True)
-    import requests
+    subprocess.run(
+        [sys.executable, "-m", "pip", "install", "dashscope"],
+        check=True,
+        capture_output=True,
+    )
+    from dashscope.audio.http_tts import HttpSpeechSynthesizer
 
 SCENE_JSON = sys.argv[1] if len(sys.argv) > 1 else "output/scenes/scene_01.json"
 OUTPUT_DIR = "output/audio"
 
 # DashScope API config
-# Model options: "cosyvoice-v2", "cosyvoice-v3-flash", "qwen3-tts-instruct-flash"
+# Model options: "cosyvoice-v2", "cosyvoice-v1", "cosyvoice-v3-flash", "cosyvoice-v3-plus"
+# Voice options for cosyvoice-v2 (documented): longxiaochun_v2
+# For cosyvoice-v1: longxiaochun, longlaotie, longshu, longjing, longmiao, longsui, longfei, longbella, longshuo
 MODEL = "cosyvoice-v2"
-# Voice options for CosyVoice v2: longxiaochun_v2, longlaotie_v2, longshuo_v2,
-#   longshu_v2, longjing_v2, longmiao_v2, longsui_v2, longfei_v2, etc.
-# For German narration, try: longshuo_v2 (clear/standard male)
-VOICE = "longshuo_v2"
-FORMAT = "wav"       # mp3 or wav
+VOICE = "longxiaochun_v2"  # Documented in DashScope voice list for cosyvoice-v2
+FORMAT = "wav"
 SAMPLE_RATE = 24000
 
-DASHSCOPE_API_URL = "https://dashscope.aliyuncs.com/api/v1/services/aigc/text2audio/generation"
+# Retry config
+MAX_RETRIES = 5
+BASE_DELAY = 10  # seconds
+RETRYABLE_STATUS_CODES = {429, 500, 502, 503}
 
 
 def get_api_key():
@@ -52,50 +61,58 @@ def get_api_key():
 
 
 def generate_segment(text: str, output_path: str, api_key: str) -> bool:
-    """Generate TTS for a single text segment via DashScope REST API."""
-    headers = {
-        "Authorization": f"Bearer {api_key}",
-        "Content-Type": "application/json",
-    }
-    payload = {
-        "model": MODEL,
-        "input": {"text": text},
-        "parameters": {
-            "voice": VOICE,
-            "format": FORMAT,
-            "sample_rate": SAMPLE_RATE,
-        }
-    }
+    """Generate TTS for a single text segment via DashScope SDK.
 
-    for attempt in range(5):
+    Uses HttpSpeechSynthesizer.call() which handles:
+    - Authentication (Bearer token)
+    - Correct endpoint: /services/audio/tts/SpeechSynthesizer
+    - Correct request body format (input dict with voice/format/sample_rate inside)
+    - Response parsing (JSON with audio URL → download audio data)
+    """
+    for attempt in range(MAX_RETRIES):
         if attempt > 0:
-            delay = 10 * (2 ** (attempt - 1))
+            delay = BASE_DELAY * (2 ** min(attempt - 1, 4))
             print(f"    retry {attempt} in {delay}s...", flush=True)
             time.sleep(delay)
 
         try:
-            resp = requests.post(DASHSCOPE_API_URL, json=payload, headers=headers, timeout=120)
-            if resp.status_code == 200:
-                # DashScope returns audio as binary in the response
-                audio_data = resp.content
-                if len(audio_data) < 100:
-                    print(f"    ERROR: response too small ({len(audio_data)} bytes)")
-                    continue
+            result = HttpSpeechSynthesizer.call(
+                model=MODEL,
+                text=text,
+                voice=VOICE,
+                audio_format=FORMAT,
+                sample_rate=SAMPLE_RATE,
+                api_key=api_key,
+            )
+
+            if result.audio_data is not None and len(result.audio_data) > 100:
                 with open(output_path, "wb") as f:
-                    f.write(audio_data)
+                    f.write(result.audio_data)
                 return True
-            elif resp.status_code == 429:
-                print(f"    rate-limited", end="", flush=True)
-                continue
             else:
-                print(f"    API error {resp.status_code}: {resp.text[:200]}")
-                return False
-        except requests.exceptions.Timeout:
-            print(f"    timeout", end="", flush=True)
-            continue
+                # SDK may return URL-only on some models; fall back to download
+                if result.audio_url:
+                    import requests
+                    resp = requests.get(result.audio_url, timeout=60)
+                    if resp.status_code == 200 and len(resp.content) > 100:
+                        with open(output_path, "wb") as f:
+                            f.write(resp.content)
+                        return True
+                print(f"    no audio data (attempt {attempt})", end="", flush=True)
+                time.sleep(5)
+                continue
+
         except Exception as e:
+            err_str = str(e).lower()
+            # Check for retryable conditions
+            is_retryable = any(code in err_str for code in ["429", "500", "502", "503"])
+            if is_retryable and attempt < MAX_RETRIES - 1:
+                print(f"    server error, will retry", end="", flush=True)
+                continue
             print(f"    ERROR: {e}")
-            return False
+            if attempt == MAX_RETRIES - 1:
+                return False
+            continue
 
     print("    FAILED after max retries")
     return False
@@ -122,7 +139,7 @@ def main():
     seg_dir = os.path.join(OUTPUT_DIR, f"scene_{scene_num:02d}")
     os.makedirs(seg_dir, exist_ok=True)
 
-    print(f"Qwen3 TTS (DashScope) — Scene {scene_num}: {len(segments)} segments")
+    print(f"Qwen3 TTS (DashScope SDK) — Scene {scene_num}: {len(segments)} segments")
     print(f"Model: {MODEL}, Voice: {VOICE}, Speed: natural (1.0)")
 
     seg_files = []
