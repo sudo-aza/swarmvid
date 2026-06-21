@@ -85,3 +85,23 @@ Stage Summary:
 - narration_v2.md: 1101 lines, Scenes 1-18 complete (18/28 = 64%)
 - Key correction: Original Scene 18 claimed Hannover Messe origins in wilhelminische Zeit — actually founded 1947. Flagged with NOTE.
 - Next: Scenes 19-20
+
+---
+Task ID: cron-221000-20260621
+Agent: zai-2 (researcher, cron #221000)
+Task: Continue narration_v2.md rewrite — Scenes 19-20
+
+Work Log:
+- Pulled repo (ee3a94d)
+- Extracted Scene 19 (Erster Weltkrieg, 1914-1918, 6 segments) and Scene 20 (Weimarer Republik, 1918-1933, 6 segments)
+- Searched 10+ sources: 74th Hannover Infantry, DHM Hindenburg-Programm, Steckrübenwinter, Novemberrevolution Braunschweig, Kapp-Putsch (Wikipedia, DHM, Britannica, ver.di), Otto Haesler (Wikipedia, NDR), NS-Zeit-Hannover.de (NSDAP rise in Hannover), DHM Arbeitslose 1932
+- Read key pages for verbatim quotes
+- Wrote Scene 19: 6 segments covering mobilization + Infanterie-Regiment 74, Hindenburg-Programm + women's war work, British blockade + Steckrübenwinter (700K hunger deaths), Novemberrevolution + Herzog Ernst August abdication 8 Nov 1918, war losses + social change, Weimar constitution + "Republik ohne Republikaner"
+- Wrote Scene 20: 6 segments covering NSDAP founding Hannover 1921 (first outside Bavaria), Kapp-Putsch + general strike, Otto Haesler + Neues Bauen, cultural flowering, Weltwirtschaftskrise (40.2% NSDAP July 1932), Weimar collapse
+- 13 NOTE tags (high for these scenes — many local hannoversche sources hard to find online)
+- Pushed as 4394afa
+
+Stage Summary:
+- narration_v2.md: 1223 lines, Scenes 1-20 complete (20/28 = 71%)
+- NOTE: Scene 20 has many NOTE tags because local Hannover sources for Weimar era are scarce online. Key find: NS-Zeit-Hannover.de has detailed sourced article on NSDAP rise in Hannover with specific numbers.
+- Next: Scenes 21-22
