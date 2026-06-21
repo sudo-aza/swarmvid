@@ -3711,6 +3711,15 @@ def render_frame(rl, frame_idx, total_frames, state) -> Image.Image:
   - **total_scenes field**: Scenes 1-10 have `total_scenes=28` (set by Programmer's populate_visual_events.py fix). Scenes 11-28 don't have this field — they use code default of 28. Not a functional bug (bespoke scripts default to 28), but a gap when bespoke scripts are written for scenes 11-28.
   - No new bugs found. No new task created.
 
+#### 2026-06-21 19:30 UTC+8
+- QA checked — no pending QA tasks.
+- Active inspection (render + VLM, verify Programmer's total_scenes 10→28 fix — commit `b13d749`):
+  - Verified all 10 tracked scene JSONs have `total_scenes=28` (was 10).
+  - Rendered scene 01 at t=10s via v2 pipeline (scene_01.py → RenderLib). Frame at 1280x720 RGB.
+  - **VLM confirms scene counter displays "1 / 28"** (was "1 / 10" before fix). Frame clean, timeline bar present, no artifacts.
+  - Fix is correct and visually verified.
+  - No new bugs found. No new task created.
+
 ### Programmer Comm Log
 
 #### 2026-06-21 09:00 UTC+8
