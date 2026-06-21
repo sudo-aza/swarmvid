@@ -275,8 +275,8 @@ Build an **all-in-one LaTeX helper toolkit** consisting of:
 |---|------|-------------|--------|---------|
 | SV-01 | Add 28 image visual events to scenes 1-10 JSONs (link output/media/ images) | Programmer | **done** | 2026-06-21 |
 | SV-02 | Source images for scenes 11-28 (currently zero images, zero image events) | Programmer | pending | 2026-06-21 |
-| SV-03 | Generate TTS audio for all 175 segments (Qwen3-TTS batch, ~1852 chunks) | Programmer | pending | 2026-06-21 |
-| SV-04 | Update scene JSON durations from actual TTS audio lengths | Programmer | pending | 2026-06-21 |
+| SV-03 | Generate TTS audio for all 175 segments (Qwen3-TTS batch, ~1852 chunks) | Programmer | **in-progress** | 2026-06-21 |
+| SV-04 | ~~Update scene JSON durations from actual TTS audio lengths~~ **Built into SV-03** — `generate_tts_batch.py` now writes `duration_s` to JSON after each segment completes. No separate step needed. | Programmer | **done** | 2026-06-22 |
 | SV-05 | Render all 28 scene MP4s (Pillow → ffmpeg H.264) | Programmer | pending | 2026-06-21 |
 | SV-06 | Assemble final documentary MP4 from scene clips | Programmer | pending | 2026-06-21 |
 
@@ -3943,3 +3943,14 @@ def render_frame(rl, frame_idx, total_frames, state) -> Image.Image:
 - Updated Task #40 status to done in BLACKBOARD
 - Note: Task #41 (Chinese TTS) already resolved by QA — false positive, Zoe confirmed German audio is correct
 - Pending Programmer tasks: #39 (restore image events), #35 (TTS batch generation + render)
+
+#### 2026-06-22 01:00 UTC+8
+- Task: SV-03 — TTS batch generation with memory guard + JSON duration update
+- **Memory guard added** to `generate_tts_batch.py`: checks available RAM via `/proc/meminfo` before each chunk subprocess. Requires 6200MB free (model 4.2GB + generation peak 1.5GB + safety margin). Blocks with status messages if insufficient. Forces `gc.collect()` after each chunk to help kernel reclaim pages.
+- **JSON duration update added**: after each complete segment WAV is concatenated, writes actual `duration_s` back to the scene JSON. Previously all segments had `duration_s: 0.0` and renderer fell back to 12.0s — audio/video sync would be completely broken. Fixes QA's Task #44 finding.
+- **Environment setup**: Installed torch (CPU 2.12.1), qwen-tts, torchaudio (CPU) in venv. Model cached at ~/.cache/huggingface/ (2.4GB).
+- **Testing**: Single-chunk verification: 148 chars → 9.0s audio in 49s CPU (~5.4x realtime with cached model). Memory guard passed (7523MB available). System recovered to 7529MB after chunk — subprocess isolation confirmed working.
+- **Scene 1 seg 0 completed**: All 9 chunks generated and concatenated into `seg_00.wav` (2.3MB, 49.28s). JSON updated: `duration_s: 12.0 → 49.28`. Verified via ffprobe.
+- **Background process limitation**: nohup/setsid background processes die after 1-2 segments due to container process lifecycle. Cannot run full 175-segment batch in single tool call (tool timeout ~2min, batch needs ~14 hours).
+- **Cron job created** (ID: 222859, hourly) to run batch with `--resume` flag — each hourly turn will pick up where the last one left off.
+- Commit: pending

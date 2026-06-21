@@ -1,25 +1,0 @@
-
-********
-Warning: flash-attn is not installed. Will only run the manual PyTorch version. Please install flash-attn for faster inference.
-********
- 
-/bin/sh: 1: sox: not found
-SoX could not be found!
-
-    If you do not have SoX, proceed here:
-     - - - http://sox.sourceforge.net/ - - -
-
-    If you do (or think that you should) have SoX, double-check your
-    path variables.
-    
-Loading Qwen3-TTS (speaker=ryan)...
-Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 72315.59it/s]
-Model loaded: 8s
-
-Scene 28 (Epilog): 6 segments
-  Seg 0 (727 chars → 8 chunks):
-    chunk 0 (66 chars)... Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-OK audio=4.6s cpu=16s
-    chunk 1 (102 chars)... Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.
-OK audio=7.7s cpu=26s
-    chunk 2 (114 chars)... Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.

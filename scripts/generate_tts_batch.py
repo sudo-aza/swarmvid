@@ -30,6 +30,51 @@ import subprocess
 import sys
 import time
 
+
+# ── Memory guard ────────────────────────────────────────────────────────────────
+
+# Qwen3-TTS-12Hz-0.6B in float32 needs ~4.2GB model + ~1.5GB generation peak = ~5.7GB.
+# We require MIN_FREE_MB of available RAM before spawning a chunk subprocess.
+MIN_FREE_MB = 6200  # ~6.2 GB safety margin
+MEMORY_CHECK_INTERVAL = 10  # seconds between checks when waiting
+
+
+def get_available_mb() -> int:
+    """Return available memory in MB (from /proc/meminfo or free)."""
+    try:
+        with open("/proc/meminfo") as f:
+            for line in f:
+                if line.startswith("MemAvailable:"):
+                    return int(line.split()[1]) // 1024
+    except (OSError, FileNotFoundError):
+        pass
+    # Fallback: free command
+    try:
+        out = subprocess.check_output(["free", "-m"], text=True)
+        # header line is 'Mem:', data is second line
+        lines = out.strip().split("\n")
+        if len(lines) >= 2:
+            return int(lines[1].split()[6])  # 'available' column
+    except Exception:
+        pass
+    return 0
+
+
+def wait_for_memory(min_mb: int, label: str = "") -> None:
+    """Block until at least min_mb is available. Prints status."""
+    avail = get_available_mb()
+    if avail >= min_mb:
+        return
+    print(f"    [MEM] Waiting for memory: {avail}MB available, need {min_mb}MB {label}", flush=True)
+    waited = 0
+    while avail < min_mb:
+        time.sleep(MEMORY_CHECK_INTERVAL)
+        waited += MEMORY_CHECK_INTERVAL
+        avail = get_available_mb()
+        if waited % 60 == 0:
+            print(f"    [MEM] Still waiting... {avail}MB available ({waited}s) {label}", flush=True)
+    print(f"    [MEM] Memory OK: {avail}MB available (waited {waited}s) {label}", flush=True)
+
 # Add scripts/ to path
 SCRIPTS_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, SCRIPTS_DIR)
@@ -166,9 +211,12 @@ def generate_one_chunk(text: str, output_path: str, speaker: str) -> tuple[float
         "--speaker", speaker,
         "--language", LANGUAGE,
     ]
+    wait_for_memory(MIN_FREE_MB, f"for chunk ({len(text)} chars)")
     t0 = time.time()
     result = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
     cpu_time = time.time() - t0
+    # Force kernel to reclaim pages from exited child
+    gc.collect()
 
     if result.returncode != 0:
         raise RuntimeError(result.stderr[-500:] if result.stderr else "unknown error")
@@ -222,6 +270,9 @@ def main():
     print(f"Qwen3-TTS batch generation (reload-per-chunk, speaker={args.speaker})", flush=True)
     print(f"Scenes: {scene_nums[0] if scene_nums else '?'}-{scene_nums[-1] if scene_nums else '?'} ({len(scene_nums)} total)", flush=True)
     print(f"Max chunk size: {args.max_chars} chars", flush=True)
+    print(f"Memory guard: require {MIN_FREE_MB}MB free before each chunk", flush=True)
+    initial_mem = get_available_mb()
+    print(f"Available memory: {initial_mem}MB", flush=True)
 
     t_batch_start = time.time()
     total_cpu = 0.0
@@ -309,9 +360,17 @@ def main():
 
                 seg_dur = get_duration(out_path)
                 total_segs += 1
-                print(f"  Seg {i} DONE: {seg_dur:.1f}s total")
+                # Update scene JSON duration_s with actual audio length
+                scene["segments"][i]["duration_s"] = round(seg_dur, 2)
+                print(f"  Seg {i} DONE: {seg_dur:.1f}s total (JSON updated)")
             else:
                 print(f"  Seg {i}: NO chunks generated")
+
+        # Write updated JSON with new durations
+        if any(s.get("duration_s", 0) > 0 for s in scene.get("segments", [])):
+            with open(scene_path, "w") as f:
+                json.dump(scene, f, indent=2, ensure_ascii=False)
+            print(f"  >> Scene {scene_num:02d} JSON updated with audio durations")
 
         # Concat all segments for this scene
         seg_files = sorted([

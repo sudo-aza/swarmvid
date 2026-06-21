@@ -1,9 +1,0 @@
-Qwen3-TTS batch generation (reload-per-chunk, speaker=ryan)
-Scenes: 1-1 (1 total)
-Max chunk size: 150 chars
-
-============================================================
-Scene 01 (Vor der Stadt): 8 segments [0.0min elapsed]
-  Seg 0 (642 chars -> 9 chunks)
-    c0 (148 chars)... OK 9.0s/49s
-    c1 (132 chars)... 
