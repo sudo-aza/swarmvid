@@ -581,8 +581,19 @@ POPULATORS = {
 }
 
 
+def _count_total_scenes():
+    """Count total scene JSON files to set total_scenes in each scene."""
+    import glob
+    pattern = os.path.join(OUTPUT_DIR, "scene_*.json")
+    return len(glob.glob(pattern))
+
+
 def main():
     total_events = 0
+    total_scenes = _count_total_scenes()
+    if total_scenes > 0:
+        print(f"  Total scenes: {total_scenes}")
+
     for num in sorted(POPULATORS):
         path = os.path.join(OUTPUT_DIR, f"scene_{num:02d}.json")
         if not os.path.isfile(path):
@@ -592,13 +603,25 @@ def main():
         with open(path) as f:
             scene = json.load(f)
 
+        # Persist total_scenes in each scene JSON
+        needs_write = False
+        if total_scenes > 0 and scene.get("total_scenes") != total_scenes:
+            scene["total_scenes"] = total_scenes
+            needs_write = True
+
         new_events = POPULATORS[num](scene)
         # Merge: keep existing events (e.g. image-type), add new text events
         existing = scene.get("visual_events", [])
         # Skip if scene already has non-image events (idempotent)
         existing_text = [e for e in existing if e.get("type") != "image"]
         if existing_text:
-            print(f"  Scene {num} ({scene.get('title', '?')}): already has {len(existing_text)} text events, skipping")
+            # Still write if total_scenes was updated
+            if needs_write:
+                with open(path, 'w') as f:
+                    json.dump(scene, f, indent=2, ensure_ascii=False)
+                print(f"  Scene {num} ({scene.get('title', '?')}): updated total_scenes={total_scenes}")
+            else:
+                print(f"  Scene {num} ({scene.get('title', '?')}): already has {len(existing_text)} text events, skipping")
             continue
         scene["visual_events"] = existing + new_events
 

@@ -168,5 +168,6 @@
       "anim": "slide_left",
       "anim_duration": 0.4
     }
-  ]
+  ],
+  "total_scenes": 10
 }
